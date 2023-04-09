@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+  <title>Simulador de Ahorro</title>
+</head>
+
+<body>
+  <!-- Barra de navegación con logo y menú hamburguesa -->
+  <nav class="navbar">
+    <img src="img/logo.png" alt="logo">
+    <!-- Ícono del menú hamburguesa -->
+    <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
+      <span class="material-icons">menu</span>
+    </div>
+    <!-- Contenedor del menú hamburguesa desplegado -->
+    <div class="hamburger-menu-container">
+      <ul>
+        <li class="li-menu-button">
+          <a href="#" class="menu-button">
+            <img src="img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+          </a>
+        </li>
+        <li class="li-menu-button">
+          <a href="#" class="menu-button">
+            <img src="img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
+          </a>
+        </li>
+        <li class="dropdown">
+          <span class="dropdown-title" onclick="toggleDropdown(event)">
+            Clientes
+            <span class="arrow-down">&#9662;</span>
+          </span>
+          <ul class="submenu">
+            <li><a href="#">Personas con negocio</a></li>
+            <li><a href="#">Ahorradores e inversionistas</a></li>
+            <li><a href="#">Pensionados y maestros</a></li>
+            <li><a href="#">Colombianos en el exterior</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span class="dropdown-title" onclick="toggleDropdown(event)">
+            Productos y servicios
+            <span class="arrow-down">&#9662;</span>
+          </span>
+          <ul class="submenu">
+            <li><a href="#">Créditos</a></li>
+            <li><a href="#">Cuentas de ahorro e inversión</a></li>
+            <li><a href="#">Giros internacionales</a></li>
+            <li><a href="#">Seguros</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span class="dropdown-title" onclick="toggleDropdown(event)">
+            Asesoría financiera
+            <span class="arrow-down">&#9662;</span>
+          </span>
+          <ul class="submenu">
+            <li><a href="#">Educación financiera</a></li>
+            <li><a href="#">Consumidor financiero</a></li>
+            <li><a href="#">Seguridad bancaria</a></li>
+            <li><a href="#">Revista</a></li>
+            <li><a href="#">Clasificados</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span class="dropdown-title" onclick="toggleDropdown(event)">
+            Acerca de nosotros
+            <span class="arrow-down">&#9662;</span>
+          </span>
+          <ul class="submenu">
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Opción transaccional</a></li>
+            <li><a href="#">Línea telefónica</a></li>
+            <li><a href="#">PQRS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Botón "Atrás" -->
+  <div class="hero">
+    <img src="img/hero_landing.svg" alt="Imagen del hero">
+    <div class="hero-title">
+      <h1>¡SOLICITA TU<br>CRÉDITO!</h1>
+      <p>de libre inversión y paga<br> con tu salario</p>
+      <button class="hero-button">!Conoce más!</button>
+    </div>
+  </div>
+  <div class="hero-3-buttons">
+    <button class="hero-options">
+      <img class="button-image" src="img/credito.svg" alt="Crédito inmediato">
+      <span>Crédito<br>inmediato</span>
+    </button>
+    <button class="hero-options-middle">
+      <img class="button-image" src="img/banca.svg" alt="Banca telefónica">
+      <span>Banca<br>telefónica</span>
+    </button>
+    <button class="hero-options-last">
+      <img class="button-image" src="img/consumidor.svg" alt="Consumidor financiero">
+      <span>Consumidor<br>financiero</span>
+    </button>
+  </div>
+  <div class="recomendaciones">
+    <h2>Recomendaciones</h2>
+    <div class="imagenes-recomendaciones">
+      <div class="recomendacion-1">
+        <img src="img/credito_en_minutos.svg" alt="Imagen del hero">
+        <div class="recomendacion-1-title">
+          <h1>Crédito en minutos</h1>
+          <p>Solicita ya tu crédito sin necesidad<br>de salir de casa</p>
+          <button class="recomendacion-1-button">!Solicita ahora!</button>
+        </div>
+      </div>
+      <div class="recomendacion-2">
+        <img src="img/preocupado.svg" alt="Imagen del hero">
+        <div class="recomendacion-2-title">
+          <h1>Preocupado por<br>tu hogar?</h1>
+          <p>Conoce nuestro crédto de vivienda</p>
+          <button class="recomendacion-2-button">!Conoce más!</button>
+        </div>
+      </div>
+      <div class="recomendacion-3">
+        <img src="img/asegura.svg" alt="Imagen del hero">
+        <div class="recomendacion-3-title">
+          <h1>Asegura tu futuro</h1>
+          <p>Infórmate antes de tomar<br>decisiones financieras que podrían<br>afectar tu futuro</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="temas-de-interes"></div>
+  <h3>Temas de interés</h3>
+  <div class="slider">
+    <div class="slider-track">
+      <div class="card">
+        <img class="card-image" src="img/gastos.svg" alt="Imagen 1">
+        <div class="card-content">
+          <h4 class="card-title">Gastos emocionales
+          </h4>
+          <p class="card-text">Implementar algunas acciones sencillas para reconocer el gasto emocional puede ayudar a
+            que sea más fácil ajustarte a tu presupuesto.</p>
+          <button class="card-button">Ver más videos <span>&rarr;</span></button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="img/ponle.svg" alt="Imagen 2">
+        <div class="card-content">
+          <h4 class="card-title">Ponle alas a tu negocio
+          </h4>
+          <p class="card-text">Hace algunos años escuchábamos hablar del correo de brujas, o sabíamos de la vecina
+            azafata que en sus viajes traía perfumes o ropa para vender; vimos como muchos amigos y …
+            .</p>
+          <button class="card-button">Ver más artículos<span>&rarr;</span></button>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="img/programa.svg" alt="Imagen 3">
+        <div class="card-content">
+          <h4 class="card-title">Programa de Apoyo al Empleo Formal (PAEF)
+          </h4>
+          <p class="card-text">Si eres un empleador podrás recibir un beneficio monetario mensual
+            .</p>
+          <button class="card-button">Ver más documentos<span>&rarr;</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
