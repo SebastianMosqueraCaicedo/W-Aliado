@@ -1,0 +1,665 @@
+@font-face {
+  font-family: "Geomanist Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Geomanist Bold"),
+    url("fonts/Geomanist-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Geomanist Book";
+  src: url("../font/Geomanist-Book.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bariol Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Regular"),
+    url("fonts/bariol_regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bariol Regular Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Regular Italic"),
+    url("fonts/bariol_regular_italic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bariol Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Thin Italic"),
+    url("fonts/bariol_thin_italic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bariol Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Thin"),
+    url("fonts/bariol_thin-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bariol Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Light"),
+    url("fonts/bariol_light-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bariol Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Light Italic"),
+    url("fonts/bariol_light_italic-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bariol Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Bold"),
+    url("fonts/bariol_bold-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Bariol Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Bariol Bold Italic"),
+    url("fonts/bariol_bold_italic-webfont.woff") format("woff");
+}
+
+/* Estilos generales para la página */
+body {
+  margin: 0;
+  width: auto;
+  font-family: "Bariol Regular", sans-serif;
+}
+
+/* Estilos para el navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
+.navbar img {
+  padding: 2%;
+}
+/* Estilos para el menú hamburguesa */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.material-icons {
+  color: #00a2af;
+}
+/* Estilos para el ícono del menú hamburguesa */
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.submenu {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* Estilos para el menú hamburguesa desplegado */
+.hamburger-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 10;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+}
+/* Estilos para botones naranjas del menú hamburguesa */
+.menu-button {
+  background-color: #ff8833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.menu-button img {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+.li-menu-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+/* Estilos para titulos naranjas menú hamburguesa */
+.dropdown-title {
+  position: relative;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.dropdown-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 10px;
+  border-bottom: 1px solid #ffe1cc;
+}
+.arrow-down {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+.dropdown-title:hover {
+  cursor: pointer;
+}
+
+.hamburger-menu-container ul li .dropdown-title {
+  color: #ff8833;
+}
+.hamburger-menu-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hamburger-menu-container ul li a {
+  display: block;
+  color: #676767;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.hamburger-menu-container a.menu-button {
+  color: white;
+}
+.hamburger-menu-container ul li .dropdown {
+  display: none;
+  position: relative;
+}
+
+.hamburger-menu-container ul li .dropdown ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a {
+  padding: 5px 16px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a:hover {
+  background-color: #666;
+}
+
+.hamburger-menu-container ul li a:hover,
+.hamburger-menu-container ul li:hover > .dropdown {
+  cursor: pointer;
+}
+/*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Estilos para el hero y la imagen */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: "Geomanist Bold";
+  font-size: 20px;
+  color: #676767;
+  margin-bottom: 2%;
+}
+.hero p {
+  font-family: "Bariol Regular";
+  font-size: 12px;
+  color: #676767;
+  margin-top: 2%;
+}
+.hero img {
+  width: 100%;
+  position: relative;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0%, -80%);
+  text-align: left;
+}
+.hero-button {
+  background-color: #9f66db;
+  border-width: 0cm;
+  border-radius: 5px;
+  padding: 7%;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  font-family: "Bariol Regular";
+  font-size: 12px;
+}
+.hero-3-buttons {
+  transform: translate(0%, -100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.hero-options {
+  height: 92px;
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right: 1px solid #dfccf3;
+  background-color: white;
+  color: #9f66db;
+  font-family: "Bariol Regular";
+  font-size: 15px;
+}
+.hero-options-middle {
+  height: 92px;
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  border-radius: 0px 0px 0px 0px;
+  box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right: 1px solid #dfccf3;
+  background-color: white;
+  color: #9f66db;
+  font-family: "Bariol Regular";
+  font-size: 15px;
+}
+.hero-options-last {
+  height: 92px;
+  width: 115px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+  border-width: 0px;
+  background-color: white;
+  color: #9f66db;
+  font-family: "Bariol Regular";
+  font-size: 15px;
+}
+
+/* seccion de recomendaciones */
+.recomendaciones {
+  margin-top: -20%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.recomendaciones h2 {
+  font-family: "Geomanist Bold";
+  font-size: 20px;
+  color: #ff6900;
+  padding-bottom: 5%;
+}
+
+.imagenes-recomendaciones img {
+  padding-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.recomendacion-1-title {
+  position: absolute;
+  transform: translate(145%, -130%);
+  text-align: left;
+}
+.recomendacion-1-title h1 {
+  font-family: "Geomanist Bold";
+  font-size: 16px;
+  color: #efefef;
+  margin-bottom: 2%;
+}
+.recomendacion-1-title p {
+  font-family: "Bariol Regular";
+  font-size: 10px;
+  color: #efefef;
+  margin-top: 2%;
+}
+.recomendacion-1-button {
+  background-color: #ffa666;
+  border-width: 0cm;
+  border-radius: 5px;
+  padding: 4%;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  font-family: "Bariol Regular";
+  font-size: 12px;
+}
+.recomendacion-2-title {
+  position: absolute;
+  transform: translate(150%, -130%);
+  text-align: left;
+}
+.recomendacion-2-title h1 {
+  font-family: "Geomanist Bold";
+  font-size: 16px;
+  color: #676767;
+  margin-bottom: 2%;
+}
+.recomendacion-2-title p {
+  font-family: "Bariol Regular";
+  font-size: 10px;
+  color: #676767;
+  margin-top: 2%;
+}
+.recomendacion-2-button {
+  background-color: #9f66db;
+  border-width: 0cm;
+  border-radius: 5px;
+  padding: 4%;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  font-family: "Bariol Regular";
+  font-size: 12px;
+}
+.recomendacion-3-title {
+  position: absolute;
+  transform: translate(150%, -150%);
+  text-align: left;
+}
+.recomendacion-3-title h1 {
+  font-family: "Geomanist Bold";
+  font-size: 16px;
+  color: #efefef;
+  margin-bottom: 2%;
+}
+.recomendacion-3-title p {
+  font-family: "Bariol Regular";
+  font-size: 10px;
+  color: #efefef;
+  margin-top: 2%;
+}
+/*Card slider*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+h3 {
+  font-family: "Geomanist Bold";
+  font-size: 20px;
+  color: #ff6900;
+  padding-left: 5%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 0 4%;
+}
+
+.card {
+  flex: 0 0 calc(100% - 10px);
+  margin-right: 10px; /* Add 10px margin-right */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px; /* Add border-radius */
+  box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+  margin-bottom: 5%;
+}
+
+.card-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-family: "Geomanist Bold";
+  font-size: 20px;
+  color: #676767;
+}
+
+.card-text {
+  font-family: "Bariol Regular";
+  font-size: 15px;
+  color: #676767;
+}
+
+.card-button {
+  align-self: flex-end;
+  background-color: white;
+  color: #9f66db;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: white;
+}
+
+.card-button span {
+  font-weight: bold;
+}
+
+.subscribe {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.subscribe h1 {
+  font-family: "Geomanist Bold";
+  font-size: 20px;
+  color: white;
+  margin-bottom: 2%;
+}
+.subscribe p {
+  font-family: "Bariol Regular";
+  font-size: 13px;
+  color: white;
+  margin-top: 2%;
+}
+.subscribe img {
+  width: 100%;
+  position: relative;
+  padding: 4%;
+}
+
+.subscribe-title {
+  position: absolute;
+  transform: translate(27%, -130%);
+  text-align: center;
+}
+.input-placeholder {
+  padding: 5%;
+  width: 100%;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  background-image: url("img/icono-correo.svg"); /* Replace this with the path to your email icon */
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 10px center;
+  text-indent: 40px;
+}
+
+.subscribe-button {
+  background-color: #ffa666;
+  border-width: 0cm;
+  border-radius: 5px;
+  padding: 4%;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  font-family: "Bariol Regular";
+  font-size: 20px;
+}
+
+/* Estilos del footer */
+
+#dropdown-footer,
+#dropdown-footer2, 
+#dropdown-footer3, 
+#dropdown-footer4 {
+    display: none;
+  }
+  
+  #dropdown-footer.vision,
+  #dropdown-footer2.vision,
+  #dropdown-footer3.vision,
+  #dropdown-footer4.vision {
+    display: block;
+  }
+ 
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #EFEFEF;
+}  
+
+.footer-container {
+  padding: 42px 21px 35px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-button {
+  font-family: 'Geomanist';
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 11px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid orange;
+  color: #FF8833;
+  font-size: 16px;
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 11px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #FFC499;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list,
+.footer-list2 {
+  font-family: 'Bariol Regular';
+  padding: 0px 21px 0px 0px;
+  color: #676767;
+  font-size: 14px;
+}
+
+.footer-list li,
+.footer-list2 li{
+  list-style: none;
+  margin-bottom: 19px;
+}
+
+.footer-list ul li:nth-child(4) {
+  margin-bottom: 27px;
+}
+
+.footer-list2 ul li:nth-child(5) {
+  margin-bottom: 27px;
+}
+
+.last-footer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 21px;
+  color: #676767;
+  font-size: 10px;
+  font-family: 'Bariol Regular';
+}
