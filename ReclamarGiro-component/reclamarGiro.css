@@ -1,0 +1,692 @@
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../font/Geomanist-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Book';
+    src: url('../font/Geomanist-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bariol Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/bariol_regular-webfont.ttf') format('woff');
+    }
+
+:root {
+    --white: white;
+    --lila-lyrics: #9F66DB;
+    --lila-line: #DFCCF3;
+    --gray-lyric: #676767;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Estilos del menú de navegación */
+
+nav {
+    background-color: var(--white);
+    padding: 10px 17px;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo de miga de pan */
+
+.nav-crumbs { 
+    display: flex;
+    align-items: center;
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+.nav-crumbs p {
+    font-family: 'Bariol Regular';
+    font-size: 10px;
+    color: rgba(103, 103, 103, 0.36);
+    width: 112px;
+}
+
+/* Estilos de la portada de la página */
+
+.cover-page {
+    position: relative;
+    background: url(../img/portada-reclamar.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 336px;
+}
+
+.information {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   color: var(--gray-lyric);
+}
+
+.information h1 {
+    font-size: 31px;
+    font-family: 'Geomanist';
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 6px;
+    padding: 30px 65px 0px 65px;
+    line-height: 31px;
+}
+
+.information p {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+    line-height: 150%;
+}
+
+/* Estilos de la navegación secundaria */
+
+.nav-cover {
+    position: relative;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, 20%); 
+    background-color: var(--white);
+    width: 366px;
+    height: 37px; 
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px
+}
+
+.cover-buttons {
+    position: absolute;
+    top: 34%; 
+    left: 50%; 
+    transform: translate(-50%, -10%); 
+}
+
+.nav-cover ul {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.characters {
+    position: relative;
+    width: 25%;
+    right: 15px;
+}
+
+.benefits {
+    position: relative;
+    width: 25%;
+    left: 5px;
+
+}
+
+.tramits {
+    position: relative;
+    left: 10px;
+    width: 25%;
+}
+
+.devolutions {
+    position: relative;
+    left: 20px;
+    width: 25%;
+}
+
+#lyric {
+    width: 140px;
+}
+
+.nav-cover a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--lila-lyrics);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bariol Regular';
+    pointer-events: none;
+}
+
+.nav-cover p {
+    text-align: center;
+}
+
+/* Estilos de la lista */
+
+.subtitle,
+.subtitle2 {
+    font-family: 'Geomanist';
+    width: 350px;
+    color: var(--gray-lyric);
+    margin-top: 40px;
+    margin-bottom: 8px;
+    padding: 0 20px;
+}
+
+.subtitle2 {
+    font-family: 'Geomanist';
+    width: 350px;
+    color: var(--gray-lyric);
+    margin-top: 30px;
+    margin-bottom: 8px;
+    padding: 0 20px;
+}
+
+.list-container {
+    display: flex;
+    margin-top: 45px;
+    padding: 0 20px;
+    margin-bottom: 33px;
+}
+
+.list-container3 {
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.list-container4 {
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.list-container5 {
+    display: flex;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.info-list ,
+.info-list2,
+.info-list3,
+.info-list4 {
+    margin-left: 7px;
+}
+
+.info-list li,
+.info-list2 li, 
+.info-list3 li,
+.info-list4 li {
+    font-family: 'Bariol Regular';
+    list-style: none;
+    width: 328px;
+    height: 100%;
+    font-size: 13px;
+    color: var(--gray-lyric);
+    line-height: 150%;
+    cursor: pointer;
+    line-height: 19.5px;
+}
+
+.info-list .list-characters li:nth-child(1) {
+    margin-bottom: 27px;
+}
+
+.info-list .list-characters li:nth-child(2) {
+    margin-bottom: 31px;
+}
+
+.info-list .list-characters li:nth-child(3) {
+    margin-bottom: 28px;
+}
+
+.info-list .list-characters li:nth-child(4) {
+    margin-bottom: 28px;
+}
+
+.info-list .list-characters li:nth-child(5) {
+    margin-bottom: 32px;
+}
+
+/* Estilos para beneficios de la lista */
+
+.info-list2 .list-benefits li:nth-child(1) {
+    margin-bottom: 26px;
+}
+
+.info-list2 .list-benefits li:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.info-list2 .list-benefits li:nth-child(3) {
+    margin-bottom: 28px;
+}
+
+.info-list2 .list-benefits li:nth-child(4) {
+    margin-bottom: 30px;
+}
+
+.info-list2 .list-benefits li:nth-child(5) {
+    margin-bottom: 30px;
+}
+
+
+/* Estilos para trámites de la lista */
+
+.info-list3 .list-tramits li:nth-child(1) {
+    margin-bottom: 13px;
+}
+
+.info-list3 .list-tramits li:nth-child(2) {
+    margin-bottom: 13px;
+}
+
+.info-list3 .list-tramits li:nth-child(3) {
+    margin-bottom: 13px;
+}
+
+.info-list3 .list-tramits li:nth-child(4) {
+    margin-bottom: 13px;
+}
+
+.info-list3 .list-tramits li:nth-child(5) {
+    margin-bottom: 13px;
+}
+
+
+
+.info-list3 .list-tramits2 li:nth-child(1) {
+    margin-bottom: 14px;
+}
+
+.info-list3 .list-tramits2 li:nth-child(2) {
+    margin-bottom: 12px;
+}
+
+.info-list3 .list-tramits2 li:nth-child(3) {
+    margin-bottom: 12px;
+}
+
+.info-list3 .list-tramits2 li:nth-child(4) {
+    margin-bottom: 13px;
+}
+
+.info-list3 .list-tramits2 li:nth-child(5) {
+    margin-bottom: 13px;
+}
+
+.list-tramits2 li{
+    padding-right: 30px;
+}
+
+.info-list3 .list-tramits3 li:nth-child(1) {
+    margin-bottom: 13px;
+}
+
+.info-list3 .list-tramits3 li:nth-child(2) {
+    margin-bottom: 14px;
+}
+
+.info-list3 .list-tramits3 li:nth-child(3) {
+    margin-bottom: 14px;
+}
+
+.info-list3 .list-tramits3 li:nth-child(4) {
+    margin-bottom: 11px;
+}
+
+.list-tramits3 li{
+    padding-right: 23px;
+}
+
+/* Estilos para devoluciones de la lista */
+
+.info-list4 .list-devolutions li:nth-child(1) {
+    margin-bottom: 28px;
+}
+
+.last-info4 {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    color: var(--gray-lyric);
+    padding: 0 20px;
+    padding-top: 40px;
+}   
+
+#info1 {
+    font-family: 'Geomanist';
+    font-size: 13px;
+    color: var(--gray-lyric);
+    margin-bottom: 7px;
+    line-height: 150%;
+}
+
+#info2 {
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+
+.info-tramits {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    color: var(--gray-lyric);
+    padding: 0 20px;
+    padding-top: 20px;
+    line-height: 19.5px;
+}
+
+.info-tramits2 {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    color: var(--gray-lyric);
+    padding: 0 20px;
+    padding-top: 10px;
+}
+
+.info-drop1{
+    width: 366px;
+    height: 450px;
+    background: #FFFFFF;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+    margin-left: 13px;   
+    margin-bottom: 11px;
+}
+
+.info-drop2{
+    width: 366px;
+    height: 725px;
+    background: #FFFFFF;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+    margin-left: 13px;
+}
+
+.page1-drop {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2-drop {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.drop1 {
+    margin-bottom: 20px;
+}
+
+.drop1,
+.drop2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; 
+    width: 366px;
+    height: 65px;
+    background-color: var(--lila-lyrics);
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+}
+
+.drop1 p,
+.drop2 p{
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    color: var(--white);
+    padding-right: 80px;
+    line-height: 19.5px;
+}
+
+.last-info {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    color: var(--gray-lyric);
+    padding: 0 20px;
+    line-height: 19.5px;
+}
+
+.buttonn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button-tramits {
+    font-family: 'Bariol Regular';
+    font-size: 15.83px;
+    text-align: center;
+    width: 167px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9F66DB;
+    border-radius: 5.03716px;
+    color: var(--white);
+    border: none;
+}
+
+/* Estilos de la ultima parte de la lista de caracteristicas*/
+
+.rest-info {
+    width: 100%;
+    height: 430px;
+    background-color: var(--lila-lyrics);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rest-info h5{
+    font-family: 'Geomanist';
+    font-size: 13px;
+    color: var(--white);
+    padding: 32px 36px 0px 18px;
+    margin-bottom: 20px;
+}
+
+.list-rest {
+    display: flex;
+    padding-left: 18px;
+    
+}
+
+.list-rest li {
+    list-style: none;
+    padding-left: 7px;
+    padding-right: 22px;
+    color: var(--white);
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+}
+
+.list-rest li:nth-child(1){
+    margin-bottom: 33px;
+}
+
+.list-rest li:nth-child(2){
+    margin-bottom: 34px;
+}
+
+/* Estilos de la otra informacion de devoluciones  */
+
+.rest-info2 {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    background: var(--lila-lyrics);
+    line-height: 19.5px;
+}
+
+.rest-info2 h5{
+    font-family: 'Geomanist';
+    font-size: 13px;
+    color: var(--white);
+    padding: 22px 20px 15px 20px;
+}
+
+.rest-info2 div{
+    font-family: 'Bariol Regular';
+    display: flex;
+    padding: 0 20px;
+    padding-left: 30px;
+    color: var(--white);
+    font-size: 13px;
+    gap: 5px; 
+}
+
+#st-info {
+    margin-bottom: 10px;
+}
+
+.first-info {
+    margin-bottom: 15px;
+}
+
+.rest-info2 p {
+    line-height: 150%;
+}
+
+/* Estilos de para mayor información */
+
+.more-information {
+    width: 100%;
+    height: 120px;
+    margin-top: 50px;
+    background-color: var(--lila-lyrics);
+}
+
+.more-information p { 
+    font-family: 'Geomanist';
+    font-size: 14.72px;
+    color: var(--white);
+    padding-top: 31px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.buttons button:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 27px;
+    background: var(--white);
+    border-radius: 3.32887px;
+    color: var(--lila-lyrics);
+    font-size: 10.46px;
+    border: none;
+}
+
+.buttons button:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7.60884px 24px;
+    width: 180px;
+    height: 27px;
+    border: 0.951104px solid #FFFFFF;
+    border-radius: 3.32887px;
+    background-color: var(--lila-lyrics);
+    color: white;
+    font-size: 10.4621px;
+}
+
+
+#page2,
+#page3,
+#page4 {
+    display: none;
+}
+
+#dropdown-menu,
+#dropdown-menu2 {
+    display: none;
+  }
+  
+  #dropdown-menu.show {
+    display: block;
+  }
+
+  #dropdown-menu2.view {
+    display: block;
+  }
+
+    /* Iphone SE */
+ @media screen and (min-width: 375px) {
+    .nav-cover {
+        top: 46%; 
+        left: 50%; 
+    }
+    .information h1 {
+        padding: 45px 55px 0px 35px;
+    }
+    .information p {
+        padding: 0px 30px 0px 30px;
+    }
+    .info-drop1,
+    .info-drop2 {
+        margin-left: 5px;
+    }
+}
+      /* Iphone XR */
+@media screen and (min-width: 414px) {
+    .nav-cover {
+        top: 52%; 
+        left: 50%; 
+    }        
+    .information h1 {
+        padding: 27px 75px 0px 75px;
+    }
+    .information p {
+        padding: 0px 50px 0px 50px;
+    }
+}
+    /* Samsung Galaxy 8 */
+@media (max-width: 360px) {
+    .nav-cover {
+        top: 51.5%; 
+        left: 50%; 
+    }        
+    .information h1 {
+        padding: 30px 30px 0px 30px;
+    }
+    .information p {
+        padding: 0px 25px 0px 25px;
+    }
+}
+
+ 
+  
+ 
+
+
+
