@@ -444,10 +444,6 @@ h3 {
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
-}
-
 .slider {
   width: 100%;
   overflow: hidden;
@@ -456,17 +452,21 @@ body {
 .slider-track {
   display: flex;
   transition: transform 0.5s ease;
+  padding: 0 4%;
 }
 
 .card {
-  flex: 0 0 100%;
+  flex: 0 0 calc(100% - 10px);
+  margin-right: 10px; /* Add 10px margin-right */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  height: 400px; /* Ajusta la altura de la tarjeta */
+  height: 400px;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px; /* Add border-radius */
+  box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+  margin-bottom: 5%;
 }
 
 .card-image {
@@ -513,4 +513,62 @@ body {
 
 .card-button span {
   font-weight: bold;
+}
+
+.subscribe {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.subscribe h1 {
+  font-family: "Geomanist Bold";
+  font-size: 20px;
+  color: white;
+  margin-bottom: 2%;
+}
+.subscribe p {
+  font-family: "Bariol Regular";
+  font-size: 13px;
+  color: white;
+  margin-top: 2%;
+}
+.subscribe img {
+  width: 100%;
+  position: relative;
+  padding: 4%;
+}
+
+.subscribe-title {
+  position: absolute;
+  transform: translate(27%, -130%);
+  text-align: center;
+}
+.input-placeholder {
+  padding: 5%;
+  width: 100%;
+}
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  background-image: url("img/icono-correo.svg"); /* Replace this with the path to your email icon */
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 10px center;
+  text-indent: 40px;
+}
+
+.subscribe-button {
+  background-color: #ffa666;
+  border-width: 0cm;
+  border-radius: 5px;
+  padding: 4%;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  font-family: "Bariol Regular";
+  font-size: 20px;
 }

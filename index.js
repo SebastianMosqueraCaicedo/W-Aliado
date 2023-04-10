@@ -125,7 +125,7 @@ function setSliderPosition() {
 }
 
 function setPositionByIndex() {
-  currentTranslate = currentIndex * -window.innerWidth;
+  currentTranslate = currentIndex * -(window.innerWidth - 35);
   prevTranslate = currentTranslate;
   setSliderPosition();
 }
