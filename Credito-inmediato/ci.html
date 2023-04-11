@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ci.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+
+  <title>Simulador de Ahorro</title>
+</head>
+
+<body>
+  <!-- Barra de navegación con logo y menú hamburguesa -->
+  <nav class="navbar">
+    <img src="/icons/logo-w.svg" alt="logo">
+    <!-- Ícono del menú hamburguesa -->
+    <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
+      <span class="material-icons">menu</span>
+    </div>
+    <!-- Contenedor del menú hamburguesa desplegado -->
+    <div class="hamburger-menu-container">
+      <ul>
+        <li class="li-menu-button">
+          <a href="#" class="menu-button">
+            <img src="../img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+          </a>
+        </li>
+        <li class="li-menu-button">
+          <a href="#" class="menu-button">
+            <img src="../img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
+          </a>
+        </li>
+        <li class="dropdown">
+          <span class="dropdown-title" onclick="toggleDropdown(event)">
+            Clientes
+            <span class="arrow-down">&#9662;</span>
+          </span>
+          <ul class="submenu">
+            <li><a href="#">Personas con negocio</a></li>
+            <li><a href="#">Ahorradores e inversionistas</a></li>
+            <li><a href="#">Pensionados y maestros</a></li>
+            <li><a href="#">Colombianos en el exterior</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span class="dropdown-title" onclick="toggleDropdown(event)">
+            Productos y servicios
+            <span class="arrow-down">&#9662;</span>
+          </span>
+          <ul class="submenu">
+            <li><a href="#">Créditos</a></li>
+            <li><a href="#">Cuentas de ahorro e inversión</a></li>
+            <li><a href="#">Giros internacionales</a></li>
+            <li><a href="#">Seguros</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span class="dropdown-title" onclick="toggleDropdown(event)">
+            Asesoría financiera
+            <span class="arrow-down">&#9662;</span>
+          </span>
+          <ul class="submenu">
+            <li><a href="#">Educación financiera</a></li>
+            <li><a href="#">Consumidor financiero</a></li>
+            <li><a href="#">Seguridad bancaria</a></li>
+            <li><a href="#">Revista</a></li>
+            <li><a href="#">Clasificados</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <span class="dropdown-title" onclick="toggleDropdown(event)">
+            Acerca de nosotros
+            <span class="arrow-down">&#9662;</span>
+          </span>
+          <ul class="submenu">
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="#">Opción transaccional</a></li>
+            <li><a href="#">Línea telefónica</a></li>
+            <li><a href="#">PQRS</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Botón "Atrás" -->
+  <button class="back-button" onclick="goBack()">
+    < Atrás</button>
+
+
+      <div id="tipo-credito" class="tipo-credito">
+        <!-- Hero con imagen e icono -->
+        <div class="hero">
+          <img src="../img/ci-hero.svg" alt="Imagen del hero">
+          <div class="hero-icon">
+            <img src="../img/ci-icono.svg" alt="Icono Calculadora">
+            <h1>Solicitud de crédito<br>inmediato </h1>
+          </div>
+        </div>
+        <div class="breadcrumb">
+          <div class="grupo1">
+            <h4 id="paso1">Tipo de crédito</h4>
+            <div id="barra1" class="barra1"></div>
+          </div>
+          <div class="grupo2">
+            <h4 id="paso2">Datos personales</h4>
+            <div id="barra2" class="barra2"></div>
+          </div>
+          <div class="grupo3">
+            <h4 id="paso3">Enviar solicitud</h4>
+            <div id="barra3" class="barra3"></div>
+          </div>
+        </div>
+
+        <h3>Selecciona el tipo de crédito que deseas solicitar:</h3>
+        <div class="slider">
+          <div class="slider-track">
+            <div class="card-holder">
+              <div class="options">
+                <label class="option">
+                  <input class="checkbox" type="radio" name="exempt" value="yes" id="checkbox1">
+
+                </label>
+              </div>
+              <div class="card">
+                <img class="card-image" src="../img/gotaahorro.png" Imagen 1">
+                <div class="card-content">
+                  <h4 class="card-title">Gotahorro
+                  </h4>
+                  <p class="card-text">Crédito con asesoría personalizada que permitiendo realizar pagos de manera
+                    diaria,
+                    semanal o quincenal de forma ágil y sencilla mientras vas ahorrando, contribuyendo así a mejorar la
+                    calidad de vida de las personas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-holder">
+              <div class="options">
+                <label class="option">
+                  <input class="checkbox" type="radio" name="exempt" value="yes" id="checkbox2">
+                </label>
+              </div>
+              <div class="card">
+                <img class="card-image" src="../img/yoconstruyo.png" alt="Imagen 2">
+                <div class="card-content">
+                  <h4 class="card-title">Yo construyo
+                  </h4>
+                  <p class="card-text">Permitiendo realizar pagos de manera diaria, semanal o quincenal de forma ágil y
+                    sencilla mientras vas ahorrando, contribuyendo así a mejorar la calidad de vida de las personas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="siguiente-button-container">
+          <button class="siguiente-button" id="siguiente">Siguiente</button>
+        </div>
+      </div>
+
+
+
+      <div id="datos-personales-gotahorro" class="datos-personales" style="display: none;">
+        <!-- Hero con imagen e icono -->
+        <div class="hero">
+          <img src="../img/ci-hero.svg" alt="Imagen del hero">
+          <div class="hero-icon">
+            <img src="../img/ci-icono.svg" alt="Icono Calculadora">
+            <h1>Solicitud de crédito<br>Gotahorro </h1>
+          </div>
+        </div>
+        <div class="breadcrumb">
+          <div class="grupo1b">
+            <h4 id="paso1b">Tipo de crédito</h4>
+            <div id="barra1b" class="barra1b"></div>
+          </div>
+          <div class="grupo2b">
+            <h4 id="paso2b">Datos personales</h4>
+            <div id="barra2b" class="barra2b"></div>
+          </div>
+          <div class="grupo3b">
+            <h4 id="paso3b">Enviar solicitud</h4>
+            <div id="barra3b" class="barra3b"></div>
+          </div>
+        </div>
+        <h3>Diligencia tus datos personales a continuación:</h3>
+        <div class="input-container">
+          <label for="monto">Monto deseado:</label>
+          <input type="text" id="monto" name="monto" />
+        </div>
+        <div class="input-container">
+          <label for="nombre">Nombres y apellidos:</label>
+          <input type="text" id="nombre" name="nombre" />
+        </div>
+        <div class="input-container">
+          <label for="identificacion">Tipo de identificación:</label>
+          <select id="identificacion" name="identificacion">
+            <option value="cedula">Cédula de ciudadanía</option>
+            <option value="cedula-extranjera">Cédula extranjera</option>
+            <option value="nit">NIT</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="documento">Número de documento:</label>
+          <input type="text" id="documento" name="documento" />
+        </div>
+        <div class="input-container">
+          <label for="celular">Número de celular:</label>
+          <input type="text" id="celular" name="celular" />
+        </div>
+        <div class="input-container">
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" />
+        </div>
+        <div class="siguiente-button-container">
+          <button class="siguiente-button" id="siguiente2">Siguiente</button>
+        </div>
+      </div>
+
+
+      <div id="datos-personales-yoconstruyo" class="datos-personales" style="display: none;">
+        <!-- Hero con imagen e icono -->
+        <div class="hero">
+          <img src="../img/ci-hero.svg" alt="Imagen del hero">
+          <div class="hero-icon">
+            <img src="../img/ci-icono.svg" alt="Icono Calculadora">
+            <h1>Solicitud de crédito<br>Yo construyo </h1>
+          </div>
+        </div>
+        <h3>Diligencia tus datos personales a continuación:</h3>
+        <div class="breadcrumb">
+          <div class="grupo1b">
+            <h4 id="paso1b">Tipo de crédito</h4>
+            <div id="barra1b" class="barra1b"></div>
+          </div>
+          <div class="grupo2b">
+            <h4 id="paso2b">Datos personales</h4>
+            <div id="barra2b" class="barra2b"></div>
+          </div>
+          <div class="grupo3b">
+            <h4 id="paso3b">Enviar solicitud</h4>
+            <div id="barra3b" class="barra3b"></div>
+          </div>
+        </div>
+        <div class="input-container">
+          <label for="monto">Monto deseado:</label>
+          <input type="text" id="monto" name="monto" />
+        </div>
+        <div class="input-container">
+          <label for="nombre">Nombres y apellidos:</label>
+          <input type="text" id="nombre" name="nombre" />
+        </div>
+        <div class="input-container">
+          <label for="identificacion">Tipo de identificación:</label>
+          <select id="identificacion" name="identificacion">
+            <option value="cedula">Cédula de ciudadanía</option>
+            <option value="cedula-extranjera">Cédula extranjera</option>
+            <option value="nit">NIT</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="documento">Número de documento:</label>
+          <input type="text" id="documento" name="documento" />
+        </div>
+        <div class="input-container">
+          <label for="celular">Número de celular:</label>
+          <input type="text" id="celular" name="celular" />
+        </div>
+        <div class="input-container">
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" />
+        </div>
+        <div class="siguiente-button-container">
+          <button class="siguiente-button" id="siguiente3">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="credito-finalizado" class="credito-finalizado" style="display: none;">
+        <!-- Hero con imagen e icono -->
+        <div class="hero">
+          <img src="../img/ci-hero.svg" alt="Imagen del hero">
+          <div class="hero-icon">
+            <img src="../img/check.svg" alt="Icono Calculadora">
+            <h1>¡Gracias por tu<br>confianza! </h1>
+          </div>
+        </div>
+        <div class="breadcrumb">
+          <div class="grupo1c">
+            <h4 id="paso1c">Tipo de crédito</h4>
+            <div id="barra1c" class="barra1c"></div>
+          </div>
+          <div class="grupo2c">
+            <h4 id="paso2c">Datos personales</h4>
+            <div id="barra2c" class="barra2c"></div>
+          </div>
+          <div class="grupo3c">
+            <h4 id="paso3c">Enviar solicitud</h4>
+            <div id="barra3c" class="barra3c"></div>
+          </div>
+        </div>
+        <p class="finalizado">Has completado todos los pasos para llevar a cabo la solicitud. Dentro de 15 minutos te
+          estaremos dando respuesta tu petición.</p>
+        <div class="terminar-button-container">
+          <button class="terminar-button" id="terminar">Terminar</button>
+        </div>
+      </div>
+
+      <!--------------- fOOTER-------------------->
+
+      <footer>
+        <div class="footer-container">
+
+          <div class="footer-button" id="dropdown-button-footer">
+            <p>Nosotros</p>
+            <img src="../icons/fi_chevron-down.svg" alt="">
+          </div>
+
+          <div class="footer-list" id="dropdown-footer">
+            <ul>
+              <li>Quienes somos</li>
+              <li>Proveedores</li>
+              <li>Eduación financiera</li>
+              <li>Trabaja con nosotros</li>
+            </ul>
+          </div>
+
+
+          <div class="footer-button" id="dropdown-button-footer2">
+            <p>Canales de atención</p>
+            <img src="../icons/fi_chevron-down.svg" alt="">
+          </div>
+          <div class="footer-list" id="dropdown-footer2">
+            <ul>
+              <li>Oficinas </li>
+              <li>App móvil</li>
+              <li>Línea nacional gratuita</li>
+              <li>Corresponsales bancarios</li>
+            </ul>
+          </div>
+
+
+          <div class="footer-button" id="dropdown-button-footer3">
+            <p>Ayuda</p>
+            <img src="../icons/fi_chevron-down.svg" alt="">
+          </div>
+          <div class="footer-list2" id="dropdown-footer3">
+            <ul>
+              <li>Preguntas frecuentes </li>
+              <li>Tasas y tarifas</li>
+              <li>Información legal</li>
+              <li>Comunicados de prensa</li>
+              <li>PQRS</li>
+            </ul>
+          </div>
+
+
+          <div class="footer-button" id="dropdown-button-footer4">
+            <p>Síguenos</p>
+            <img src="../icons/fi_chevron-down.svg" alt="">
+          </div>
+          <div class="footer-list3" id="dropdown-footer4">
+            <div class="social-list">
+              <a href=""><img src="../icons/Facebook.svg" alt=""></a>
+
+              <a href=""><img src="../icons/Instagram.svg" alt=""></a>
+
+              <a href=""><img src="../icons/Twitter.svg" alt=""></a>
+
+              <a href=""><img src="../icons/TikTok.svg" alt=""></a>
+
+              <a href=""><img src="../icons/Youtube.svg" alt=""></a>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+      <div class="last-footer">
+        <img src="../icons/logoFull.png" alt="">
+        <p>Copyright © 2023 Banco W</p>
+      </div>
+
+
+      <script src="ci.js"></script>
+</body>
+
+</html>
