@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="ingresar-datos">
+        <div id="simulador-cdt">
+            <embed src="./assets/fi_chevron-down.svg" type="">
+            <p> Atrás </p>
+        </div>
+        <img src="./assets/simulador-cdt.png" alt="" class="images">
+        
+        <div>
+            <h2>Tipo de CDT</h2>
+            <select name="" id="tipo-de-cdt">
+                <option value="Escoge tu CDT">Escoge tu CDT</option>
+                <option value="CDT al vencimiento">CDT al vencimiento</option>
+                <option value="CDT al mensual">CDT al mensual</option>
+            </select>
+        </div>
+        <section id="inputs-cdt">
+            <div>
+                <h2>Monto</h2>
+                <input type="number" min="0" max="250000000" step="500000" id="monto">
+            </div>
+            <div>
+                <h2>Plazo en días</h2>
+                <select name="" id="plazo">
+                    <option value="60">60</option>
+                    <option value="90">90</option>
+                    <option value="120">120</option>
+                    <option value="180">180</option>
+                    <option value="360">360</option>
+                </select>
+                <p>Desde 60 a 360 días</p>
+            </div>
+            <button id="simular">Simular</button>
+            
+        </section>
+    </section>
+    <div id="resultado"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
