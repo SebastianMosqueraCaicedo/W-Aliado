@@ -211,6 +211,17 @@
 
 /* Estilos de la navegación secundaria */
 
+#marker {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #000;
+  bottom: -20px;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
 .nav-cover {
     position: relative;
     top: 50%; 

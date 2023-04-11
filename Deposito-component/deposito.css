@@ -248,14 +248,31 @@
     justify-content: center;
 }
 
+#marker {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: var(--lila-lyrics);
+  bottom: -2px;
+  transition: 0.5s;
+  border-radius: 4px;
+  z-index: 1;
+}
+
 .nav-cover ul {
+  position: relative;
     list-style: none;
     display: flex;
     transform: translate(0%, -100%);
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 2;
+}
+
+.nav-cover li {
+  position: relative;
 }
 
 .characters {
