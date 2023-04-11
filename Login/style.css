@@ -75,12 +75,28 @@
   src: local("Bariol Bold Italic"),
     url("fonts/bariol_bold_italic-webfont.woff") format("woff");
 }
-/* Estilos para el menú hamburguesa */
+/* Estilos generales para la página */
 body {
   margin: 0;
-  width: auto;
+  width: 100%;
   font-family: "Bariol Regular", sans-serif;
 }
+
+/* Estilos para el navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
+.navbar img {
+  padding: 2%;
+}
+/* Estilos para el menú hamburguesa */
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .material-icons {
