@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro e Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="login-component">
+        <img src="./assets/component-image.png" alt="" class="images">
+        <div id="login-component-card">
+            <div id="login-title">
+                <embed src="./assets/profile/24/Outline.svg" type="">
+                <h2>Inicia Sesión</h2>
+            </div>
+            <form id="login-form">
+                <div>
+                    <div id="login-inputs">
+                        <input type="email" id="email-login" name="email" required placeholder="Email" class="inputs">
+                        <input type="password" id="password-login" name="password-login" required
+                            placeholder="Contraseña" class="inputs">
+                    </div>
+                    <p id="forget-password"> ¿Olvidaste tu contraseña?</p>
+                </div>
+                <div id="login-buttons">
+                    <div class="text-sign-up">
+                        <p class="to-sign-up"> ¿Todavía no tienes una cuenta?</p>
+                        <p class="to-sign-up" id="register-text"> Registrate</p>
+                    </div>
+                    <input type="button" value="Ingresar" class="button">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="sign-up-component" style="display: none">
+        <img src="./assets/create-account.png" class="images" alt="">
+        <div id="form-component">
+            <form id="sign-up-form">
+                <div>
+                    <label for="user-name">Nombres:</label>
+                    <input type="text" id="name" name="name" required class="inputs" placeholder="Nombres">
+                </div>
+                <div>
+                    <label for="user-last-name">Apellidos:</label>
+                    <input type="text" id="last-name" name="last-name" required class="inputs" placeholder="Apellidos">
+                </div>
+                <div>
+                    <label for="genre">Sexo:</label>
+                    <select name="genre" id="genre" class="inputs">
+                        <option value="selecciona">Selecciona tu sexo</option>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="birthday"> Fecha de Nacimiento</label>
+                    <input type="date" name="birthday" id="birthday" class="inputs" placeholder="Fecha de nacimiento">
+                </div>
+                <div>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required class="inputs" placeholder="Email">
+                </div>
+                <div>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required class="inputs" placeholder="Contraseña">
+                </div>
+                <div>
+                    <label for="confirm-password">Confirma tu contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required class="inputs"
+                        placeholder="Confirmar contraseña">
+                </div>
+                <div id="to-login">
+                    <div class="text-sign-up">
+                        <p class="to-sign-up"> ¿Ya tienes una cuenta?</p>
+                        <p class="to-sign-up" id="register-text"> Ingresa</p>
+                    </div>
+                    <input type="button" value="Crear Cuenta" id="create-account" class="button">
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <div id="welcome" style="display:none">
+        <h2>Bienvenido!</h2>
+        <p>Has iniciado sesión con éxito.</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
