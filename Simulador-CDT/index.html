@@ -7,46 +7,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
 <body>
-    <section id="ingresar-datos">
-        <div id="simulador-cdt">
-            <embed src="./assets/fi_chevron-down.svg" type="">
-            <p> Atrás </p>
+    <!-- Barra de navegación con logo y menú hamburguesa -->
+    <nav class="navbar">
+        <img src="/img/logo.png" alt="logo">
+        <!-- Ícono del menú hamburguesa -->
+        <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
+            <span class="material-icons">menu</span>
         </div>
-        <img src="./assets/simulador-cdt.png" alt="" class="images">
-        
-        <div>
-            <h2>Tipo de CDT</h2>
-            <select name="" id="tipo-de-cdt">
-                <option value="Escoge tu CDT">Escoge tu CDT</option>
-                <option value="CDT al vencimiento">CDT al vencimiento</option>
-                <option value="CDT al mensual">CDT al mensual</option>
-            </select>
+        <!-- Contenedor del menú hamburguesa desplegado -->
+        <div class="hamburger-menu-container">
+            <ul>
+                <li class="li-menu-button">
+                    <a href="#" class="menu-button">
+                        <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+                    </a>
+                </li>
+                <li class="li-menu-button">
+                    <a href="#" class="menu-button">
+                        <img src="/img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Clientes
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Personas con negocio</a></li>
+                        <li><a href="/Ahorro-component/ahorro1.html">Ahorradores e inversionistas</a></li>
+                        <li><a href="#">Pensionados y maestros</a></li>
+                        <li><a href="#">Colombianos en el exterior</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Productos y servicios
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="/Credito-inmediato/ci.html">Créditos</a></li>
+                        <li><a>Cuentas de ahorro e inversión</a></li>
+                        <li><a href="#">Giros internacionales</a></li>
+                        <li><a href="#">Seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Asesoría financiera
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="#">Consumidor financiero</a></li>
+                        <li><a href="#">Seguridad bancaria</a></li>
+                        <li><a href="#">Revista</a></li>
+                        <li><a href="#">Clasificados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Acerca de nosotros
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Quiénes somos</a></li>
+                        <li><a href="#">Opción transaccional</a></li>
+                        <li><a href="#">Línea telefónica</a></li>
+                        <li><a href="#">PQRS</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <section id="inputs-cdt">
-            <div>
-                <h2>Monto</h2>
-                <input type="number" min="0" max="250000000" step="500000" id="monto">
-            </div>
-            <div>
-                <h2>Plazo en días</h2>
-                <select name="" id="plazo">
-                    <option value="60">60</option>
-                    <option value="90">90</option>
-                    <option value="120">120</option>
-                    <option value="180">180</option>
-                    <option value="360">360</option>
-                </select>
-                <p>Desde 60 a 360 días</p>
-            </div>
-            <button id="simular">Simular</button>
-            
-        </section>
-    </section>
-    <div id="resultado"></div>
-    <script src="index.js"></script>
+    </nav>
+    <!-- Botón "Atrás" -->
+    <a href="/Simuladores-VTU/vtu.html" class="back-button" onclick="goBack()">
+        < Atrás</a>
+            <section id="ingresar-datos">
+                <div id="simulador-cdt">
+                </div>
+                <img src="./assets/simulador-cdt.png" alt="" class="images">
+
+                <div>
+                    <h2>Tipo de CDT</h2>
+                    <select name="" id="tipo-de-cdt">
+                        <option value="Escoge tu CDT">Escoge tu CDT</option>
+                        <option value="CDT al vencimiento">CDT al vencimiento</option>
+                        <option value="CDT al mensual">CDT al mensual</option>
+                    </select>
+                </div>
+                <section id="inputs-cdt">
+                    <div>
+                        <h2>Monto</h2>
+                        <input type="number" min="0" max="250000000" step="500000" id="monto">
+                    </div>
+                    <div>
+                        <h2>Plazo en días</h2>
+                        <select name="" id="plazo">
+                            <option value="60">60</option>
+                            <option value="90">90</option>
+                            <option value="120">120</option>
+                            <option value="180">180</option>
+                            <option value="360">360</option>
+                        </select>
+                        <p>Desde 60 a 360 días</p>
+                    </div>
+                    <button id="simular">Simular</button>
+
+                </section>
+            </section>
+            <div id="resultado"></div>
+            <script src="index.js"></script>
 </body>
 
 </html>

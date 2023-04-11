@@ -7,115 +7,258 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banco W</title>
     <link rel="stylesheet" href="./ahorro1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 
 <body>
-
-    <!-- Menú de navegación principal -->
-
-    <nav>
-        <div class="nav-left">
-            <img class="logo" src="../icons/logo-w.svg" alt="Logo Banco W">
+    <nav class="navbar">
+        <img src="/img/logo.png" alt="logo">
+        <!-- Ícono del menú hamburguesa -->
+        <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
+            <span class="material-icons">menu</span>
         </div>
-
-        <div class="nav-right">
-            <img class="menu" src="../icons/menu.svg" alt="Icono menu">
+        <!-- Contenedor del menú hamburguesa desplegado -->
+        <div class="hamburger-menu-container">
+            <ul>
+                <li class="li-menu-button">
+                    <a href="#" class="menu-button">
+                        <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+                    </a>
+                </li>
+                <li class="li-menu-button">
+                    <a href="#" class="menu-button">
+                        <img src="/img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Clientes
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Personas con negocio</a></li>
+                        <li><a href="/Ahorro-component/ahorro1.html">Ahorradores e inversionistas</a></li>
+                        <li><a href="#">Pensionados y maestros</a></li>
+                        <li><a href="#">Colombianos en el exterior</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Productos y servicios
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Créditos</a></li>
+                        <li><a>Cuentas de ahorro e inversión</a></li>
+                        <li><a href="#">Giros internacionales</a></li>
+                        <li><a href="#">Seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Asesoría financiera
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="#">Consumidor financiero</a></li>
+                        <li><a href="#">Seguridad bancaria</a></li>
+                        <li><a href="#">Revista</a></li>
+                        <li><a href="#">Clasificados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Acerca de nosotros
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Quiénes somos</a></li>
+                        <li><a href="#">Opción transaccional</a></li>
+                        <li><a href="#">Línea telefónica</a></li>
+                        <li><a href="#">PQRS</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
+    <!-- Botón "Atrás" -->
+    <a href="/index.html" class="back-button" onclick="goBack()">
+        < Atrás</a>
 
-    <!-- Portada de la página -->
+            <!-- Portada de la página -->
 
-    <section class="cover-page">
-        <div class="information">
-            <h1>AHORRADORES E INVERSIONISTAS</h1>
-            <p>Para ti que eres una persona que encuentra en el ahorro una forma de cumplir tus sueños, tenemos la
-                rentabilidad y la seguridad que necesitas para que puedas lograrlo.</p>
-        </div>
+            <section class="cover-page">
+                <div class="information">
+                    <h1>AHORRADORES E INVERSIONISTAS</h1>
+                    <p>Para ti que eres una persona que encuentra en el ahorro una forma de cumplir tus sueños, tenemos
+                        la
+                        rentabilidad y la seguridad que necesitas para que puedas lograrlo.</p>
+                </div>
 
-        <!-- Menú de navegación de la portada de la página -->
+                <!-- Menú de navegación de la portada de la página -->
 
-        <div class="nav-cover second-menu">
-            <div class="cover-buttons">
-                <ul>
-                    <li class="all-menu" data-filter="all">
-                        <a>
-                            <img src="../icons/estrella-icono.svg" alt="Todas Icono">
-                            <p>Todas</p>
-                        </a>
-                    </li>
+                <div class="nav-cover second-menu">
+                    <div class="cover-buttons">
+                        <ul>
+                            <li class="all-menu" data-filter="all">
+                                <a>
+                                    <img src="../icons/estrella-icono.svg" alt="Todas Icono">
+                                    <p>Todas</p>
+                                </a>
+                            </li>
 
-                    <li class="saving-menu" data-filter="saving">
-                        <a>
-                            <img src="../icons/ahorro-icono.svg" alt="Ahorro Icono">
-                            <p>ahorro</p>
-                        </a>
-                    </li>
+                            <li class="saving-menu" data-filter="saving">
+                                <a>
+                                    <img src="../icons/ahorro-icono.svg" alt="Ahorro Icono">
+                                    <p>ahorro</p>
+                                </a>
+                            </li>
 
-                    <li class="invert-menu" data-filter="invert">
-                        <a>
-                            <img src="../icons/invertir-icono.svg" alt="Invertir Icono">
-                            <p>Invertir</p>
-                        </a>
-                    </li>
+                            <li class="invert-menu" data-filter="invert">
+                                <a>
+                                    <img src="../icons/invertir-icono.svg" alt="Invertir Icono">
+                                    <p>Invertir</p>
+                                </a>
+                            </li>
 
-                    <li class="spins-menu" data-filter="spin">
-                        <a>
-                            <img src="../icons/giros-icono.svg" alt="Giros internacionales Icono">
-                            <p>Giros internacionales</p>
-                        </a>
-                    </li>
-                </ul>
+                            <li class="spins-menu" data-filter="spin">
+                                <a>
+                                    <img src="../icons/giros-icono.svg" alt="Giros internacionales Icono">
+                                    <p>Giros internacionales</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards-container">
+                <div class="card-saving1 card-template saving">
+                    <img src="../img/ahorro1-imagen.png" alt="Imagen de cuenta de ahorro">
+                    <h5>Cuenta de ahorro</h5>
+                    <p>Ahorra fácil y gratis para que cumplas tus proyectos y tus propósitos personales como familiares.
+                    </p>
+                    <a href="/CuentaAhorro-component/ahorro2.html" class="button-primary">¡Conoce más!</a>
+                </div>
+
+                <div class="card-saving2 card-template saving">
+                    <img src="../img/ahorro2-imagen.png" alt="Imagen de cuenta de ahorro">
+                    <h5>Depósito de bajo monto</h5>
+                    <p>Sin salir de tu casa puedes obtener tu cuenta de ahorros en pocos minutos a cero costo y sin
+                        mayor
+                        documentación.</p>
+                    <a href="/Deposito-component/deposito.html" class="button-primary">¡Abre tu cuenta!</a>
+                </div>
+
+                <div class="card-cdt card-template invert">
+                    <img src="../img/cdt1-imagen.png" alt="Imagen de CDT">
+                    <h5>CDT</h5>
+                    <p>Haz tu inversión de manera segura, fácil y rentable a través de nuestros CDTs.</p>
+                    <a href="/CDT-component/cdt.html" class="button-primary">¡Conoce más!</a>
+                </div>
+
+                <div class="card-spin card-template spin">
+                    <img src="../img/giros1-imagen.png" alt="Imagen de CDT">
+                    <h5>Enviar giros</h5>
+                    <p>Envía de forma segura a tus seres queridos en otros países, la plata que te mantiene más cerca de
+                        ellos.
+                    </p>
+                    <a href="/EnviarGiro-component/enviarGiro.html" class="button-primary">¡Conoce más!</a>
+                </div>
+
+                <div class="card-spin2 card-template spin">
+                    <img src="../img/giros2-imagen.png" alt="Imagen de CDT">
+                    <h5>Reclamar giros</h5>
+                    <p>Recibe de forma fácil y segura los giros que te envían familiares, amigos o conocidos del
+                        exterior.</p>
+                    <a href="/ReclamarGiro-component/reclamarGiro.html" class="button-primary">¡Conoce más!</a>
+                </div>
+
+                <div class="card-spin3 card-template spin">
+                    <img src="../img/giros3-imagen.png" alt="Imagen de CDT">
+                    <h5>Ahorranza</h5>
+                    <p>Aliamos a las empresas para que sus empleados puedan empezar a ahorrar desde su salario.</p>
+                    <button class="button-primary">¡Conoce más!</button>
+                </div>
+            </section>
+
+            <!--------------- fOOTER-------------------->
+
+            <footer>
+                <div class="footer-container">
+
+                    <div class="footer-button" id="dropdown-button-footer">
+                        <p>Nosotros</p>
+                        <img src="../icons/fi_chevron-down.svg" alt="">
+                    </div>
+
+                    <div class="footer-list" id="dropdown-footer">
+                        <ul>
+                            <li>Quienes somos</li>
+                            <li>Proveedores</li>
+                            <li>Eduación financiera</li>
+                            <li>Trabaja con nosotros</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-button" id="dropdown-button-footer2">
+                        <p>Canales de atención</p>
+                        <img src="../icons/fi_chevron-down.svg" alt="">
+                    </div>
+                    <div class="footer-list" id="dropdown-footer2">
+                        <ul>
+                            <li>Oficinas </li>
+                            <li>App móvil</li>
+                            <li>Línea nacional gratuita</li>
+                            <li>Corresponsales bancarios</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-button" id="dropdown-button-footer3">
+                        <p>Ayuda</p>
+                        <img src="../icons/fi_chevron-down.svg" alt="">
+                    </div>
+                    <div class="footer-list2" id="dropdown-footer3">
+                        <ul>
+                            <li>Preguntas frecuentes </li>
+                            <li>Tasas y tarifas</li>
+                            <li>Información legal</li>
+                            <li>Comunicados de prensa</li>
+                            <li>PQRS</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-button" id="dropdown-button-footer4">
+                        <p>Síguenos</p>
+                        <img src="../icons/fi_chevron-down.svg" alt="">
+                    </div>
+                    <div class="footer-list3" id="dropdown-footer4">
+                        <div class="social-list">
+                            <a href=""><img src="../icons/Facebook.svg" alt=""></a>
+
+                            <a href=""><img src="../icons/Instagram.svg" alt=""></a>
+
+                            <a href=""><img src="../icons/Twitter.svg" alt=""></a>
+
+                            <a href=""><img src="../icons/TikTok.svg" alt=""></a>
+
+                            <a href=""><img src="../icons/Youtube.svg" alt=""></a>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+
+            <div class="last-footer">
+                <img src="../icons/logoFull.png" alt="">
+                <p>Copyright © 2023 Banco W</p>
             </div>
-        </div>
-    </section>
-
-    <section class="cards-container">
-        <div class="card-saving1 card-template saving">
-            <img src="../img/ahorro1-imagen.png" alt="Imagen de cuenta de ahorro">
-            <h5>Cuenta de ahorro</h5>
-            <p>Ahorra fácil y gratis para que cumplas tus proyectos y tus propósitos personales como familiares.</p>
-            <a href="/CuentaAhorro-component/ahorro2.html" class="button-primary">¡Conoce más!</a>
-        </div>
-
-        <div class="card-saving2 card-template saving">
-            <img src="../img/ahorro2-imagen.png" alt="Imagen de cuenta de ahorro">
-            <h5>Depósito de bajo monto</h5>
-            <p>Sin salir de tu casa puedes obtener tu cuenta de ahorros en pocos minutos a cero costo y sin mayor
-                documentación.</p>
-            <a href="/Deposito-component/deposito.html" class="button-primary">¡Abre tu cuenta!</a>
-        </div>
-
-        <div class="card-cdt card-template invert">
-            <img src="../img/cdt1-imagen.png" alt="Imagen de CDT">
-            <h5>CDT</h5>
-            <p>Haz tu inversión de manera segura, fácil y rentable a través de nuestros CDTs.</p>
-            <a href="/CDT-component/cdt.html" class="button-primary">¡Conoce más!</a>
-        </div>
-
-        <div class="card-spin card-template spin">
-            <img src="../img/giros1-imagen.png" alt="Imagen de CDT">
-            <h5>Enviar giros</h5>
-            <p>Envía de forma segura a tus seres queridos en otros países, la plata que te mantiene más cerca de ellos.
-            </p>
-            <a href="/EnviarGiro-component/enviarGiro.html" class="button-primary">¡Conoce más!</a>
-        </div>
-
-        <div class="card-spin2 card-template spin">
-            <img src="../img/giros2-imagen.png" alt="Imagen de CDT">
-            <h5>Reclamar giros</h5>
-            <p>Recibe de forma fácil y segura los giros que te envían familiares, amigos o conocidos del exterior.</p>
-            <a href="/ReclamarGiro-component/reclamarGiro.html" class="button-primary">¡Conoce más!</a>
-        </div>
-
-        <div class="card-spin3 card-template spin">
-            <img src="../img/giros3-imagen.png" alt="Imagen de CDT">
-            <h5>Ahorranza</h5>
-            <p>Aliamos a las empresas para que sus empleados puedan empezar a ahorrar desde su salario.</p>
-            <button class="button-primary">¡Conoce más!</button>
-        </div>
-    </section>
-
-    <script src="./ahorro1.js"></script>
+            <script src="./ahorro1.js"></script>
 
 </body>
 

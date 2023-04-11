@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: "Geomanist Book";
-  src: url("/fonts/Geomanist-Book.ttf");
+  src: url("../font/Geomanist-Book.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +25,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Bariol Regular Italic"),
-    url("/fonts/bariol_regular_italic-webfont.woff") format("woff");
+    url("fonts/bariol_regular_italic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Bariol Thin Italic"),
-    url("/fonts/bariol_thin_italic-webfont.woff") format("woff");
+    url("fonts/bariol_thin_italic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -41,7 +41,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Bariol Thin"),
-    url("/font/bariol_thin-webfont.woff") format("woff");
+    url("fonts/bariol_thin-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -49,7 +49,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Bariol Light"),
-    url("/fonts/bariol_light-webfont.woff") format("woff");
+    url("fonts/bariol_light-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -57,7 +57,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Bariol Light Italic"),
-    url("/fonts/bariol_light_italic-webfont.woff") format("woff");
+    url("fonts/bariol_light_italic-webfont.woff") format("woff");
 }
 
 @font-face {
@@ -73,7 +73,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Bariol Bold Italic"),
-    url("/fonts/bariol_bold_italic-webfont.woff") format("woff");
+    url("fonts/bariol_bold_italic-webfont.woff") format("woff");
 }
 
 /* Estilos generales para la página */
@@ -235,235 +235,235 @@ body {
   font-family: "Bariol Regular", sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/* Estilos para el hero y la imagen */
+.hero {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 2%;
 }
 
-#ingresar-datos {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
+.hero img {
+  width: 100%;
+  position: relative;
 }
 
-#simulador-cdt {
+.hero-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: xx-large;
+}
+
+/* logo de calculadora con su media query */
+.hero-icon img {
+  width: 100%;
+}
+@media screen and (max-width: 1020px) {
+  .hero-icon img {
+    width: 70%;
+    padding-top: 10%;
+  }
+}
+@media screen and (max-width: 834px) {
+  .hero-icon img {
+    width: 70%;
+  }
+}
+.hero-icon h1 {
+  font-size: 60px;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin: 0%;
+  font-family: "Geomanist Bold";
+}
+
+@media screen and (max-width: 768px) {
+  .hero-icon h1 {
+    font-size: 35px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-icon h1 {
+    font-size: 25px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+}
+
+/* Estilos para la pregunta e inputs */
+.question {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ff8833;
+}
+
+.options {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+/* Estilos para el monto */
+.amount-label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ff8833;
+}
+
+.amount-input {
+  width: 92.5%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
-  gap: 10px;
 }
-
-.images {
-  width: 100%;
+.input-section {
+  display: block;
+  padding-left: 2%;
+  padding-right: 2%;
 }
-
-h2 {
-  font-family: "Bariol";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Bariol Regular", sans-serif;
-
-  /* identical to box height */
-
-  /* Naranja/400 */
-
-  color: #ff8833;
-}
-
-input {
-  background: #ffffff;
-  border: 1.9316px solid #cdcdcd;
-  border-radius: 4.50708px;
-  height: 25px;
-  width: 100%;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-select {
-  background: #ffffff;
-  border: 1.9316px solid #cdcdcd;
-  border-radius: 4.50708px;
-  height: 25px;
-  width: 100%;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-option {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #acacac;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-button {
+.input-section .container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  padding: 16px 48px;
-  margin-top: 25px;
-
-  width: 100%;
-  height: 50px;
-  border: 0px;
-
-  /* Naranja/400 */
-
-  background: #ff8833;
-  border-radius: 7px;
-
-  font-family: "Bariol";
-  font-style: normal;
-  font-weight: 400;
+  align-items: center;
+  margin-top: 10%;
+}
+/* Estilos para el botón de simular */
+.simulate-button {
+  background-color: #ff8833;
+  color: white;
+  padding: 10px 20px;
   font-size: 18px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: #ffffff;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-#inputs-cdt {
-  display: flex;
-  flex-direction: column;
-}
-
-div:not(#simulador-cdt) {
-  /*display: flex;
-    flex-direction: column;*/
-  gap: 10px;
-  padding-top: 20px;
-}
-
-p {
-  font-family: "Bariol";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  /* identical to box height */
-
-  text-align: right;
-
-  /* gris/2 */
-
-  color: #676767;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-h4 {
-  font-family: "Bariol";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 134%;
-  /* or 19px */
-
-  /* gris/3 */
-
-  color: #acacac;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-.tabla {
-  background-color: #f3f4f5;
-}
-
-#resultados-tabla {
-  border: 1px solid #acacac;
-  border-radius: 7px;
-}
-
-#mostrar-datos {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
-  gap: 20px;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-.datos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  padding-top: 20px;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-h3 {
-  font-family: "Geomanist", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-
-  color: #ff8833;
-}
-
-h5 {
-  font-family: "Geomanist";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
-  text-align: center;
-  font-family: "Geomanist", sans-serif;
-
-  /* gris */
-
-  color: #efefef;
-}
-
-h6 {
-  font-family: "Geomanist", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 134%;
-  /* or 16px */
-
-  text-align: center;
-
-  /* gris */
-
-  color: #efefef;
-}
-
-#monto-cdt {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-#valor-monto {
-  background: #9f66db;
-  border-radius: 7px;
-  padding: 20px;
-}
-
-#regresar {
-  display: flex;
-  flex-direction: row;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
   justify-content: center;
-  align-items: flex-end;
-  padding: 16px 48px;
-  border-radius: 7px;
+  font-family: "Bariol Regular";
+}
+@media screen and (max-width: 480px) {
+  .simulate-button {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+/* Estilos para la sección de resultados */
+.results-section {
+  display: none;
+  padding: 2%;
+}
 
-  background: white;
+.results-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ff8833;
+  font-family: "Geomanist Bold";
+}
 
-  border: 4px;
-  border-color: #676767;
+.results-data .container {
+  color: white;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+  border-radius: 8px;
+}
+.results-data .container .column:nth-child(1) {
+  padding-right: 10px;
+}
+.results-data .container .column:nth-child(2) {
+  background-color: #9f66db;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.results-data p {
+  font-family: "Bariol Bold";
+  margin: 0;
+}
+
+.results-data strong {
+  font-family: "Geomanist Bold";
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  font-family: "Bariol Bold";
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #acacac;
+}
+
+.text-grey {
   color: #676767;
+}
+.text-cian {
+  color: #00b1bb;
+}
+.results-section .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilos para el botón de Solicitar Ahorro */
+.request-saving-button {
+  background-color: #ff8833;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Bariol Regular";
+}
+@media screen and (max-width: 480px) {
+  .request-saving-button {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+.back-button {
+  color: #676767;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Bariol Regular";
 }

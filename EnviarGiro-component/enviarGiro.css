@@ -1,343 +1,585 @@
 @font-face {
-    font-family: 'Geomanist';
-    src: url('../font/Geomanist-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Geomanist";
+  src: url("../font/Geomanist-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Geomanist Book';
-    src: url('../font/Geomanist-Book.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Geomanist Book";
+  src: url("../font/Geomanist-Book.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Bariol Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../font/bariol_regular-webfont.ttf') format('woff');
-    }
+  font-family: "Bariol Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/bariol_regular-webfont.ttf") format("woff");
+}
 
 :root {
-    --white: white;
-    --lila-lyrics: #9F66DB;
-    --lila-line: #DFCCF3;
-    --gray-lyric: #676767;
+  --white: white;
+  --lila-lyrics: #9f66db;
+  --lila-line: #dfccf3;
+  --gray-lyric: #676767;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Estilos del menú de navegación */
 
 nav {
-    background-color: var(--white);
-    padding: 10px 17px;
-    height: 73px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--white);
+  padding: 10px 17px;
+  height: 73px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Estilo de miga de pan */
 
-.nav-crumbs { 
-    display: flex;
-    align-items: center;
-    padding-top: 9px;
-    padding-left: 10px;
+.nav-crumbs {
+  display: flex;
+  align-items: center;
+  padding-top: 9px;
+  padding-left: 10px;
 }
 
 .nav-crumbs p {
-    font-family: 'Bariol Regular';
-    font-size: 10px;
-    color: rgba(103, 103, 103, 0.36);
-    width: 112px;
+  font-family: "Bariol Regular";
+  font-size: 10px;
+  color: rgba(103, 103, 103, 0.36);
+  width: 112px;
 }
 
 /* Estilos de la portada de la página */
 
 .cover-page {
-    position: relative;
-    background: url(../img/portada-enviarGiro.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 427px;
+  position: relative;
+  background: url(../img/portada-enviarGiro.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 427px;
 }
 
 .information {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   color: var(--gray-lyric);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--gray-lyric);
 }
 
 .information h1 {
-    font-size: 31px;
-    font-family: 'Geomanist';
-    line-height: 34px;
-    text-align: center;
-    margin-bottom: 6px;
-    padding: 30px 65px 0px 65px;
-    line-height: 31px;
+  font-size: 31px;
+  font-family: "Geomanist";
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 6px;
+  padding: 30px 65px 0px 65px;
+  line-height: 31px;
 }
 
 .information p {
-    font-family: 'Bariol Regular';
-    font-size: 13px;
-    text-align: center;
-    padding: 0px 40px 0px 40px;
-    line-height: 150%;
+  font-family: "Bariol Regular";
+  font-size: 13px;
+  text-align: center;
+  padding: 0px 40px 0px 40px;
+  line-height: 150%;
 }
 
 /* Estilos de la navegación secundaria */
 
 .nav-cover {
-    position: relative;
-    top: 61%; 
-    left: 50%; 
-    transform: translate(-50%, 20%); 
-    background-color: var(--white);
-    width: 366px;
-    height: 37px; 
-    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
-    border-radius: 7px
+  position: relative;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  background-color: var(--white);
+  width: 366px;
+  height: 37px;
+  box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+  border-radius: 7px;
 }
 
 .cover-buttons {
-    position: absolute;
-    top: 34%; 
-    left: 50%; 
-    transform: translate(-50%, -10%); 
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -10%);
 }
 
 .nav-cover ul {
-    list-style: none;
-    display: flex;
-    cursor: pointer;
+  list-style: none;
+  display: flex;
+  cursor: pointer;
 }
 
-
 .characters {
-    position: relative;
-    width: 33.3%;
-    right: 55px;
+  position: relative;
+  width: 33.3%;
+  right: 55px;
 }
 
 .benefits {
-    position: relative;
-    width: 33.3%;
-    left: 5px;
-
+  position: relative;
+  width: 33.3%;
+  left: 5px;
 }
 
 .requirements {
-    position: relative;
-    left: 55px;
-    width: 33.3%;
-}*/
-
-#lyric {
-    width: 140px;
+  position: relative;
+  left: 55px;
+  width: 33.3%;
+}
+*/ #lyric {
+  width: 140px;
 }
 
 .nav-cover a {
-    text-decoration: none;
-    font-size: 13px;
-    color: var(--lila-lyrics);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Bariol Regular';
-    pointer-events: none;
+  text-decoration: none;
+  font-size: 13px;
+  color: var(--lila-lyrics);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bariol Regular";
+  pointer-events: none;
 }
 
 .nav-cover p {
-    text-align: center;
+  text-align: center;
 }
 
 /* Estilos de la lista */
 
 .subtitle,
 .subtitle2 {
-    font-family: 'Geomanist';
-    width: 350px;
-    color: var(--gray-lyric);
-    margin-top: 40px;
-    margin-bottom: 8px;
-    padding: 0 20px;
+  font-family: "Geomanist";
+  width: 350px;
+  color: var(--gray-lyric);
+  margin-top: 40px;
+  margin-bottom: 8px;
+  padding: 0 20px;
 }
 
 .subtitle2 {
-    font-family: 'Geomanist';
-    width: 350px;
-    color: var(--gray-lyric);
-    margin-top: 30px;
-    margin-bottom: 8px;
-    padding: 0 20px;
+  font-family: "Geomanist";
+  width: 350px;
+  color: var(--gray-lyric);
+  margin-top: 30px;
+  margin-bottom: 8px;
+  padding: 0 20px;
 }
 
 .list-container {
-    display: flex;
-    margin-top: 45px;
-    padding: 0 20px;
-    margin-bottom: 33px;
+  display: flex;
+  margin-top: 45px;
+  padding: 0 20px;
+  margin-bottom: 33px;
 }
 
 .list-container3 {
-    display: flex;
-    padding: 0 20px;
-    margin-bottom: 15px;
+  display: flex;
+  padding: 0 20px;
+  margin-bottom: 15px;
 }
 
-.info-list ,
+.info-list,
 .info-list2,
 .info-list3,
 .info-list4 {
-    margin-left: 7px;
+  margin-left: 7px;
 }
 
 .info-list li,
 .info-list2 li,
-.info-list3 li, 
+.info-list3 li,
 .info-list4 li {
-    font-family: 'Bariol Regular';
-    list-style: none;
-    width: 328px;
-    height: 100%;
-    font-size: 13px;
-    color: var(--gray-lyric);
-    line-height: 150%;
-    cursor: pointer;
-    line-height: 19.5px;
+  font-family: "Bariol Regular";
+  list-style: none;
+  width: 328px;
+  height: 100%;
+  font-size: 13px;
+  color: var(--gray-lyric);
+  line-height: 150%;
+  cursor: pointer;
+  line-height: 19.5px;
 }
 
 .info-list .list-characters li:nth-child(1) {
-    margin-bottom: 27px;
+  margin-bottom: 27px;
 }
 
 .info-list .list-characters li:nth-child(2) {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .info-list .list-characters li:nth-child(3) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 /* Estilos para beneficios de la lista */
 
 .info-list2 .list-benefits li:nth-child(1) {
-    margin-bottom: 26px;
+  margin-bottom: 26px;
 }
 
 .info-list2 .list-benefits li:nth-child(2) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .info-list2 .list-benefits li:nth-child(3) {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .info-list2 .list-benefits li:nth-child(4) {
-    margin-bottom: 33px;
+  margin-bottom: 33px;
 }
-
 
 /* Estilos para requisitos de la lista */
 
 .info-list3 .list-requirements li:nth-child(1) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .info-list3 .list-requirements li:nth-child(2) {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .info-list3 .list-requirements li:nth-child(3) {
-    margin-bottom: 27px;
+  margin-bottom: 27px;
 }
 
 .info-list3 .list-requirements li:nth-child(3) {
-    margin-bottom: 27px;
+  margin-bottom: 27px;
 }
 
 /* Estilos para segunda parte requisitos de la lista */
 
 .info-list4 .list-requirements2 li:nth-child(1) {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .info-list4 .list-requirements2 li:nth-child(2) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .info-list4 .list-requirements2 li:nth-child(3) {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .info-list4 .list-requirements2 li:nth-child(4) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .info-list4 .list-requirements2 li:nth-child(5) {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.second-list span{
-    color: var(--lila-lyrics);
+.second-list span {
+  color: var(--lila-lyrics);
 }
 
-.second-list li{
-    margin-bottom: 11px;
+.second-list li {
+  margin-bottom: 11px;
 }
 
 /* Estilos de la ultima parte de la lista*/
 
 .rest-info {
-    width: 100%;
-    height: 148px;
-    background-color: var(--lila-lyrics);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  height: 148px;
+  background-color: var(--lila-lyrics);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rest-info p:nth-child(1) {
-    font-family: 'Bariol Regular';
-    font-size: 13px;
-    padding: 18px 20px 20px 20px;
-    color: var(--white);
+  font-family: "Bariol Regular";
+  font-size: 13px;
+  padding: 18px 20px 20px 20px;
+  color: var(--white);
 }
 
 .rest-info p:nth-child(2) {
-    font-family: 'Bariol Regular';
-    font-size: 13px;
-    padding: 18px 25px 0px 20px;
-    color: var(--white);
+  font-family: "Bariol Regular";
+  font-size: 13px;
+  padding: 18px 25px 0px 20px;
+  color: var(--white);
 }
 
 #page2,
 #page3 {
-    display: none;
-  }
- 
-    /* Iphone SE */  
+  display: none;
+}
+
+/* Iphone SE */
 @media screen and (min-width: 375px) {
-    .list-container3,
-    .list-container {
-        padding: 0px 20px 0px 10px;
-    }
-    .subtitle,
-    .subtitle2 {
-        padding-left: 10px;
-    }
-}  
+  .list-container3,
+  .list-container {
+    padding: 0px 20px 0px 10px;
+  }
+  .subtitle,
+  .subtitle2 {
+    padding-left: 10px;
+  }
+}
 
- 
+/* Estilos generales para la página */
+body {
+  margin: 0;
+  width: auto;
+  font-family: "Bariol Regular", sans-serif;
+}
 
+/* Estilos para el navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
+.navbar img {
+  padding: 2%;
+}
+/* Estilos para el menú hamburguesa */
 
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.material-icons {
+  color: #00a2af;
+}
+/* Estilos para el ícono del menú hamburguesa */
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.submenu {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* Estilos para el menú hamburguesa desplegado */
+.hamburger-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 10;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+}
+/* Estilos para botones naranjas del menú hamburguesa */
+.menu-button {
+  background-color: #ff8833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
 
+.menu-button img {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+.li-menu-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+/* Estilos para titulos naranjas menú hamburguesa */
+.dropdown-title {
+  position: relative;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.dropdown-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 10px;
+  border-bottom: 1px solid #ffe1cc;
+}
+.arrow-down {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+.dropdown-title:hover {
+  cursor: pointer;
+}
+
+.hamburger-menu-container ul li .dropdown-title {
+  color: #ff8833;
+}
+.hamburger-menu-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hamburger-menu-container ul li a {
+  display: block;
+  color: #676767;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.hamburger-menu-container a.menu-button {
+  color: white;
+}
+.hamburger-menu-container ul li .dropdown {
+  display: none;
+  position: relative;
+}
+
+.hamburger-menu-container ul li .dropdown ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a {
+  padding: 5px 16px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a:hover {
+  background-color: #666;
+}
+
+.hamburger-menu-container ul li a:hover,
+.hamburger-menu-container ul li:hover > .dropdown {
+  cursor: pointer;
+}
+/*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Estilos para el botón "Atrás" */
+.back-button {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  color: #676767;
+  font-family: "Bariol Regular", sans-serif;
+}
+/* Estilos del footer */
+
+#dropdown-footer,
+#dropdown-footer2,
+#dropdown-footer3,
+#dropdown-footer4 {
+  display: none;
+}
+
+#dropdown-footer.vision,
+#dropdown-footer2.vision,
+#dropdown-footer3.vision,
+#dropdown-footer4.vision {
+  display: block;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+}
+
+.footer-container {
+  padding: 42px 21px 35px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-button {
+  font-family: "Geomanist";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 11px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid orange;
+  color: #ff8833;
+  font-size: 16px;
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 11px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ffc499;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-list,
+.footer-list2 {
+  font-family: "Bariol Regular";
+  padding: 0px 21px 0px 0px;
+  color: #676767;
+  font-size: 14px;
+}
+
+.footer-list li,
+.footer-list2 li {
+  list-style: none;
+  margin-bottom: 19px;
+}
+
+.footer-list ul li:nth-child(4) {
+  margin-bottom: 27px;
+}
+
+.footer-list2 ul li:nth-child(5) {
+  margin-bottom: 27px;
+}
+
+.last-footer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 21px;
+  color: #676767;
+  font-size: 10px;
+  font-family: "Bariol Regular";
+}
+.footer-container p {
+  font-family: "Bariol Regular";
+}
