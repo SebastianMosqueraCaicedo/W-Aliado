@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro e Inicio de Sesión</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -11,7 +13,7 @@
 <body>
     <!-- Barra de navegación con logo y menú hamburguesa -->
     <nav class="navbar">
-        <img src="/img/logo.png" alt="logo">
+        <img src="/icons/logo-w.svg" alt="logo">
         <!-- Ícono del menú hamburguesa -->
         <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
             <span class="material-icons">menu</span>
@@ -21,12 +23,12 @@
             <ul>
                 <li class="li-menu-button">
                     <a href="#" class="menu-button">
-                        <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+                        <img src="../img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
                     </a>
                 </li>
                 <li class="li-menu-button">
                     <a href="#" class="menu-button">
-                        <img src="/img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
+                        <img src="../img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
                     </a>
                 </li>
                 <li class="dropdown">
@@ -36,7 +38,7 @@
                     </span>
                     <ul class="submenu">
                         <li><a href="#">Personas con negocio</a></li>
-                        <li><a href="/Ahorro-component/ahorro1.html">Ahorradores e inversionistas</a></li>
+                        <li><a href="#">Ahorradores e inversionistas</a></li>
                         <li><a href="#">Pensionados y maestros</a></li>
                         <li><a href="#">Colombianos en el exterior</a></li>
                     </ul>
@@ -47,8 +49,8 @@
                         <span class="arrow-down">&#9662;</span>
                     </span>
                     <ul class="submenu">
-                        <li><a href="/Credito-inmediato/ci.html">Créditos</a></li>
-                        <li><a>Cuentas de ahorro e inversión</a></li>
+                        <li><a href="#">Créditos</a></li>
+                        <li><a href="#">Cuentas de ahorro e inversión</a></li>
                         <li><a href="#">Giros internacionales</a></li>
                         <li><a href="#">Seguros</a></li>
                     </ul>
@@ -81,91 +83,98 @@
             </ul>
         </div>
     </nav>
-    <div id="login-component">
+    <!-- Botón "Atrás" -->
+    <a href="/index.html" class="back-button" onclick="goBack()">
+        < Atrás</a>
 
-        <img src="./assets/component-image.png" alt="" class="images">
-        <div id="login-component-card">
-            <div id="login-title">
-                <embed src="./assets/profile/24/Outline.svg" type="">
-                <h2>Inicia Sesión</h2>
+            <div id="login-component">
+
+                <img src="./assets/component-image.png" alt="" class="images">
+                <div id="login-component-card">
+                    <div id="login-title">
+                        <embed src="./assets/profile/24/Outline.svg" type="">
+                        <h2>Inicia Sesión</h2>
+                    </div>
+                    <form id="login-form">
+                        <div>
+                            <div id="login-inputs">
+                                <input type="email" id="email-login" name="email" required placeholder="Email"
+                                    class="inputs">
+                                <input type="password" id="password-login" name="password-login" required
+                                    placeholder="Contraseña" class="inputs">
+                            </div>
+                            <p id="forget-password"> ¿Olvidaste tu contraseña?</p>
+                        </div>
+                        <div id="login-buttons">
+                            <div class="text-sign-up">
+                                <p class="to-sign-up"> ¿Todavía no tienes una cuenta?</p>
+                                <p class="to-sign-up" id="register-text"> Registrate</p>
+                            </div>
+                            <a href="/index.html" type="button" value="Ingresar" class="button">Ingresar </a>
+                        </div>
+                </div>
+                </form>
             </div>
-            <form id="login-form">
-                <div>
-                    <div id="login-inputs">
-                        <input type="email" id="email-login" name="email" required placeholder="Email" class="inputs">
-                        <input type="password" id="password-login" name="password-login" required
-                            placeholder="Contraseña" class="inputs">
-                    </div>
-                    <p id="forget-password"> ¿Olvidaste tu contraseña?</p>
+            </div>
+            <div id="sign-up-component" style="display: none">
+                <img src="./assets/create-account.png" class="images" alt="">
+                <div id="form-component">
+                    <form id="sign-up-form">
+                        <div>
+                            <label for="user-name">Nombres:</label>
+                            <input type="text" id="name" name="name" required class="inputs" placeholder="Nombres">
+                        </div>
+                        <div>
+                            <label for="user-last-name">Apellidos:</label>
+                            <input type="text" id="last-name" name="last-name" required class="inputs"
+                                placeholder="Apellidos">
+                        </div>
+                        <div>
+                            <label for="genre">Sexo:</label>
+                            <select name="genre" id="genre" class="inputs">
+                                <option value="selecciona">Selecciona tu sexo</option>
+                                <option value="Hombre">Hombre</option>
+                                <option value="Mujer">Mujer</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="birthday"> Fecha de Nacimiento</label>
+                            <input type="date" name="birthday" id="birthday" class="inputs"
+                                placeholder="Fecha de nacimiento">
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required class="inputs" placeholder="Email">
+                        </div>
+                        <div>
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" required class="inputs"
+                                placeholder="Contraseña">
+                        </div>
+                        <div>
+                            <label for="confirm-password">Confirma tu contraseña:</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required class="inputs"
+                                placeholder="Confirmar contraseña">
+                        </div>
+                        <div id="to-login">
+                            <div class="text-sign-up">
+                                <p class="to-sign-up"> ¿Ya tienes una cuenta?</p>
+                                <p class="to-sign-up" id="register-text"> Ingresa</p>
+                            </div>
+                            <input type="button" value="Crear Cuenta" id="create-account" class="button">
+                        </div>
+                    </form>
                 </div>
-                <div id="login-buttons">
-                    <div class="text-sign-up">
-                        <p class="to-sign-up"> ¿Todavía no tienes una cuenta?</p>
-                        <p class="to-sign-up" id="register-text"> Registrate</p>
-                    </div>
-                    <a href="/index.html" type="button" value="Ingresar" class="button">Ingresar </a>
-                </div>
-        </div>
-        </form>
-    </div>
-    </div>
-    <div id="sign-up-component" style="display: none">
-        <img src="./assets/create-account.png" class="images" alt="">
-        <div id="form-component">
-            <form id="sign-up-form">
-                <div>
-                    <label for="user-name">Nombres:</label>
-                    <input type="text" id="name" name="name" required class="inputs" placeholder="Nombres">
-                </div>
-                <div>
-                    <label for="user-last-name">Apellidos:</label>
-                    <input type="text" id="last-name" name="last-name" required class="inputs" placeholder="Apellidos">
-                </div>
-                <div>
-                    <label for="genre">Sexo:</label>
-                    <select name="genre" id="genre" class="inputs">
-                        <option value="selecciona">Selecciona tu sexo</option>
-                        <option value="Hombre">Hombre</option>
-                        <option value="Mujer">Mujer</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="birthday"> Fecha de Nacimiento</label>
-                    <input type="date" name="birthday" id="birthday" class="inputs" placeholder="Fecha de nacimiento">
-                </div>
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required class="inputs" placeholder="Email">
-                </div>
-                <div>
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" name="password" required class="inputs"
-                        placeholder="Contraseña">
-                </div>
-                <div>
-                    <label for="confirm-password">Confirma tu contraseña:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required class="inputs"
-                        placeholder="Confirmar contraseña">
-                </div>
-                <div id="to-login">
-                    <div class="text-sign-up">
-                        <p class="to-sign-up"> ¿Ya tienes una cuenta?</p>
-                        <p class="to-sign-up" id="register-text"> Ingresa</p>
-                    </div>
-                    <input type="button" value="Crear Cuenta" id="create-account" class="button">
-                </div>
-            </form>
-        </div>
-    </div>
-    </div>
+            </div>
+            </div>
 
 
-    <div id="welcome" style="display:none">
-        <h2>Bienvenido!</h2>
-        <p>Has iniciado sesión con éxito.</p>
-    </div>
+            <div id="welcome" style="display:none">
+                <h2>Bienvenido!</h2>
+                <p>Has iniciado sesión con éxito.</p>
+            </div>
 
-    <script src="login.js"></script>
+            <script src="login.js"></script>
 </body>
 
 </html>
