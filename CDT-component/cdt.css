@@ -259,7 +259,7 @@
     position: absolute;
     left: 0;
     height: 4px;
-    width: 0;
+    width: 91.5px;
     background: var(--lila-lyrics);
     bottom: -2px;
     transition: 0.5s;
@@ -430,6 +430,7 @@
 
 .list-characters span{
     color: var(--lila-lyrics);
+    font-family: 'Bariol Bold';
 }
 
 .list-characters3 {
@@ -672,6 +673,7 @@
     color: var(--gray-lyric);
     padding: 0 20px;
     padding-top: 40px;
+    line-height: 19.5px;
 }
 
 .info-characters2 {
@@ -1152,16 +1154,6 @@ footer {
 }
 
 
-     /* Iphone SE */
-     @media screen and (min-width: 375px) {
-        .list-characters li{
-            padding-right: 17px;
-        }
-        .list-benefits li{
-            padding-right: 10px;
-        }
-        
-    }
           /* Iphone XR */
     @media screen and (min-width: 414px) {
         .information p {

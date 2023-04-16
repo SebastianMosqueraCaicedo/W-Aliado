@@ -250,7 +250,7 @@
   position: absolute;
   left: 0;
   height: 4px;
-  width: 0;
+  width: 122px;
   background: var(--lila-lyrics);
   bottom: -2px;
   transition: 0.5s;
@@ -289,7 +289,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    border-right: 1px solid var(--lila-line);
     cursor: pointer;
 }
 

@@ -214,12 +214,21 @@
 #marker {
   position: absolute;
   left: 0;
-  height: 4px;
-  width: 100%;
-  background: #000;
-  bottom: -20px;
-  transition: 0.5s;
+  height: 92px;
+  width: 0;
+  background: var(--lila-lyrics);
+  bottom: 0px;
+  transition: 0.3s;
   border-radius: 4px;
+}
+
+#page-switcher li{
+  color: var(--lila-lyrics);
+  cursor: pointer;
+}
+
+#page-switcher li.select {
+  color: var(--white);
 }
 
 .nav-cover {
@@ -230,10 +239,8 @@
     background-color: var(--white);
     width: 366px;
     height: 92px;
-    
     box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
     border-radius: 7px;
-    
 }
 
 .cover-buttons {
@@ -244,9 +251,13 @@
 }
 
 .nav-cover ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
+  position: relative;
+  list-style: none;
+  display: flex;
+  transform: translate(0%, 0%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .second-menu li {
@@ -254,35 +265,52 @@
 }
 
 .all-menu {
-    width: 25%;
+  position: relative;
+    width: 91.5px;
+    height: 92px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .spins-menu {
-    margin-right:0px !important;
-    margin-left: 0px !important;
+  position: relative;
     line-height: 12px;
     border-left: 1px solid var(--lila-line);
-    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91.5px;
+    height: 92px;
     cursor: pointer;
 }
 
 .saving-menu {
+  position: relative;
     border-left: 1px solid var(--lila-line);
-    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91.5px;
+    height: 92px;
     cursor: pointer;
 }
 
 .invert-menu {
+  position: relative;
     border-left: 1px solid var(--lila-line);
-    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 91.5px;
+    height: 92px;
     cursor: pointer;
 }
 
 .nav-cover a {
     text-decoration: none;
     font-size: 13px;
-    color: var(--lila-lyrics);
     display: flex;
     flex-direction: column;
     align-items: center;
