@@ -847,6 +847,7 @@ footer {
 
 .footer-button {
   font-family: 'Geomanist';
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -923,6 +924,9 @@ footer {
     }
     .information p {
         padding: 0px 50px 0px 50px;
+    }
+    .cover-page {
+        background: url(../img/portada-reclamar2.svg); 
     }
 }
     /* Samsung Galaxy 8 */

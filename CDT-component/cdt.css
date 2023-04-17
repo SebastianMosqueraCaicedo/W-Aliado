@@ -205,7 +205,7 @@
     background: url(../img/portada-cdt.png);
     background-repeat: no-repeat;
     width: 100%;
-    height: 427px;
+    height: 501px;
 }
 
 .information {
@@ -233,13 +233,35 @@
     line-height: 150%;
 }
 
+.simulator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 21px;
+  }
+  
+  .simulator-button {
+    font-family: 'Bariol Regular';
+    font-size: 13.42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    width: 124px;
+    height: 30.53px;
+    background: #9F66DB;
+    border-radius: 4.27119px;
+    text-align: center;
+    border: none;
+  }
+
 /* Estilos de la navegación secundaria */
 
 .nav-cover {
     position: relative;
-    top: 57.5%; 
+    top: 54.5%; 
     left: 50%; 
-    transform: translate(-50%, 60%); 
+    transform: translate(-50%, 50%); 
     background-color: var(--white);
     width: 366px;
     height: 37px; 
@@ -1093,6 +1115,7 @@ footer {
 
 .footer-button {
   font-family: 'Geomanist';
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1159,7 +1182,9 @@ footer {
         .information p {
             padding: 0px 80px 0px 80px;
         }
-        
+        .cover-page {
+            background: url(../img/portada-cdt2.png); 
+        }
     }
         /* Samsung Galaxy 8 */ 
     @media (max-width: 360px) {

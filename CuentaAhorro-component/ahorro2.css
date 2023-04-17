@@ -198,7 +198,7 @@
     background: url(../img/portada-ahorroCuenta.svg);
     background-repeat: no-repeat;
     width: 100%;
-    height: 383px;
+    height: 481px;
 }
 
 .information {
@@ -214,7 +214,7 @@
     line-height: 34px;
     text-align: center;
     margin-bottom: 6px;
-    padding: 40px 46px 0px 46px;
+    padding: 50px 46px 0px 46px;
 }
 
 .information p {
@@ -224,13 +224,35 @@
     padding: 0px 52px 0px 52px;
 }
 
+.simulator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 21px;
+}
+
+.simulator-button {
+  font-family: 'Bariol Regular';
+  font-size: 13.42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  width: 124px;
+  height: 30.53px;
+  background: #9F66DB;
+  border-radius: 4.27119px;
+  text-align: center;
+  border: none;
+}
+
 /* Estilos de la navegación secundaria */
 
 .nav-cover {
     position: relative;
-    top: 54%; 
+    top: 50%; 
     left: 50%; 
-    transform: translate(-50%, 20%); 
+    transform: translate(-50%, 115%); 
     background-color: var(--white);
     width: 366px;
     height: 37px; 
@@ -471,6 +493,7 @@ footer {
 
 .footer-button {
   font-family: 'Geomanist';
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -535,55 +558,45 @@ footer {
     display: none;
   }
 
+  
   /* Iphone SE */
 @media (min-width: 375px) {
     .nav-cover {
-        top: 51%; 
+        top: 43.7%; 
         left: 50%; 
     }
 
     .information h1 {
-        padding: 18px 46px 0px 46px;
+        padding: 50px 30px 0px 30px;
     }
 }
     /* Iphone XR */
 @media (min-width: 414px) {
     .nav-cover {
-        top: 60%; 
+        top: 45.5%; 
         left: 50%; 
     }        
     .information h1 {
-        padding: 40px 46px 0px 46px;
+        padding: 50px 46px 0px 46px;
     }
     .cover-page {
-    background: url(../img/portada-ahorroCuenta2.svg);
-    }
-}
-    /* Iphone 12 PRO */
-@media (min-width: 390px) {
-    .nav-cover {
-        top: 54%; 
-        left: 50%; 
-    }        
-    .information h1 {
-        padding: 40px 46px 0px 46px;
-    }
+      background: url(../img/portada-ahorroCuenta2.svg);
+      background-repeat: no-repeat;   
+  }
+
 }
     /* Samsung Galaxy 8+ */
-@media screen and (min-width: 360px) {
+@media screen and (max-width: 360px) {
     .nav-cover {
-        top: 60.5%; 
+        top: 51%; 
         left: 50%; 
     }        
     .information h1 {
-        padding: 20px 30px 0px 30px;
+        padding: 40px 30px 0px 30px;
     }
     .information p {
         padding: 0px 40px 0px 40px;
     }
-    .cover-page {
-        background: url(../img/portada-ahorroCuenta2.svg);
-     }
      .info-list li{
         padding-right: 24px;
      }

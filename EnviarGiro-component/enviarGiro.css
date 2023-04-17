@@ -516,6 +516,7 @@ footer {
 
 .footer-button {
   font-family: 'Geomanist';
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -587,6 +588,13 @@ footer {
         padding-left: 10px;
     }
 }  
+
+/* Iphone XR */
+@media screen and (min-width: 414px) {
+  .cover-page {
+      background: url(../img/portada-enviarGiro2.png); 
+  }
+}
 
  
 

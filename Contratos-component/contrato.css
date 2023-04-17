@@ -368,6 +368,7 @@ footer {
 
 .footer-button {
   font-family: 'Geomanist';
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: space-between;
