@@ -265,6 +265,7 @@ body {
   color: white;
   font-family: "Bariol Regular";
   font-size: 12px;
+  margin-top: 10%;
 }
 .hero-3-buttons {
   transform: translate(0%, -100%);
@@ -279,7 +280,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 3%;
   padding-left: 6%;
   padding-right: 6%;
@@ -300,7 +301,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 3%;
   padding-left: 6%;
   padding-right: 6%;
@@ -321,7 +322,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 3%;
   padding-left: 6%;
   padding-right: 6%;
@@ -359,6 +360,7 @@ body {
   position: absolute;
   transform: translate(145%, -130%);
   text-align: left;
+  margin-left: 4%;
 }
 .recomendacion-1-title h1 {
   font-family: "Geomanist Bold";
@@ -371,6 +373,7 @@ body {
   font-size: 10px;
   color: #efefef;
   margin-top: 2%;
+  width: 100%;
 }
 .recomendacion-1-button {
   background-color: #ffa666;
@@ -382,6 +385,7 @@ body {
   color: white;
   font-family: "Bariol Regular";
   font-size: 12px;
+  margin-top: 5%;
 }
 .recomendacion-2-title {
   position: absolute;
@@ -410,6 +414,7 @@ body {
   color: white;
   font-family: "Bariol Regular";
   font-size: 12px;
+  margin-top: 5%;
 }
 .recomendacion-3-title {
   position: absolute;
@@ -437,6 +442,8 @@ h3 {
   font-size: 20px;
   color: #ff6900;
   padding-left: 5%;
+  margin-top: 7%;
+  margin-bottom: 7%;
 }
 * {
   box-sizing: border-box;
@@ -529,7 +536,7 @@ h3 {
   margin-bottom: 2%;
 }
 .subscribe p {
-  font-family: "Bariol Regular";
+  font-family: "Bariol Regular", sans serif;
   font-size: 13px;
   color: white;
   margin-top: 2%;
@@ -603,7 +610,7 @@ footer {
 }
 
 .footer-button {
-  font-family: "Geomanist";
+  font-family: "Bariol Regular", sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -631,7 +638,7 @@ footer {
 
 .footer-list,
 .footer-list2 {
-  font-family: "Bariol Regular";
+  font-family: "Bariol Regular", sans-serif;
   padding: 0px 21px 0px 0px;
   color: #676767;
   font-size: 14px;
@@ -661,8 +668,5 @@ footer {
   padding: 8px 21px;
   color: #676767;
   font-size: 10px;
-  font-family: "Bariol Regular";
-}
-.footer-container p {
-  font-family: "Bariol Regular";
+  font-family: "Bariol Regular", sans-serif;
 }
