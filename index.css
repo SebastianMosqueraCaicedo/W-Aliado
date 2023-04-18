@@ -233,7 +233,7 @@ body {
 }
 
 .hamburger-menu-container ul li a:hover,
-.hamburger-menu-container ul li:hover>.dropdown {
+.hamburger-menu-container ul li:hover > .dropdown {
   cursor: pointer;
 }
 
@@ -592,7 +592,7 @@ h3 {
 
 .subscribe-title {
   position: absolute;
-  transform: translate(27%, -130%);
+  transform: translate(33%, -130%);
   text-align: center;
 }
 
@@ -724,17 +724,17 @@ footer {
 
 a {
   text-decoration: none;
-  color: #9F66DB;
+  color: #9f66db;
 }
 
 a:visited {
-  color: #9F66DB;
+  color: #9f66db;
 }
 
 a:hover {
-  color: #9F66DB;
+  color: #9f66db;
 }
 
 a:active {
-  color: #9F66DB;
+  color: #9f66db;
 }
