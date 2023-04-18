@@ -5,6 +5,7 @@
   src: local("Geomanist Bold"),
     url("/fonts/Geomanist-Bold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Geomanist Book";
   src: url("../font/Geomanist-Book.ttf");
@@ -75,6 +76,7 @@
   src: local("Bariol Bold Italic"),
     url("fonts/bariol_bold_italic-webfont.woff") format("woff");
 }
+
 /* Estilos generales para la página */
 body {
   margin: 0;
@@ -93,15 +95,18 @@ body {
   position: relative;
   z-index: 5;
 }
+
 .navbar img {
   padding: 2%;
 }
+
 /* Estilos para el menú hamburguesa */
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .material-icons {
   color: #00a2af;
 }
+
 /* Estilos para el ícono del menú hamburguesa */
 .hamburger-menu {
   display: flex;
@@ -109,12 +114,15 @@ body {
   align-items: center;
   cursor: pointer;
 }
+
 .submenu {
   display: none;
 }
+
 .show {
   display: block;
 }
+
 /* Estilos para el menú hamburguesa desplegado */
 .hamburger-menu-container {
   display: none;
@@ -127,6 +135,7 @@ body {
   width: 100%;
   box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
 }
+
 /* Estilos para botones naranjas del menú hamburguesa */
 .menu-button {
   background-color: #ff8833;
@@ -145,11 +154,13 @@ body {
   width: 24px;
   height: 24px;
 }
+
 .li-menu-button {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
+
 /* Estilos para titulos naranjas menú hamburguesa */
 .dropdown-title {
   position: relative;
@@ -159,6 +170,7 @@ body {
   margin-bottom: 5px;
   margin-left: 10px;
 }
+
 .dropdown-title::after {
   content: "";
   position: absolute;
@@ -167,6 +179,7 @@ body {
   right: 10px;
   border-bottom: 1px solid #ffe1cc;
 }
+
 .arrow-down {
   font-size: 0.8em;
   margin-right: 10px;
@@ -179,6 +192,7 @@ body {
 .hamburger-menu-container ul li .dropdown-title {
   color: #ff8833;
 }
+
 .hamburger-menu-container ul {
   list-style-type: none;
   padding: 0;
@@ -190,9 +204,11 @@ body {
   padding: 8px 16px;
   text-decoration: none;
 }
+
 .hamburger-menu-container a.menu-button {
   color: white;
 }
+
 .hamburger-menu-container ul li .dropdown {
   display: none;
   position: relative;
@@ -217,9 +233,10 @@ body {
 }
 
 .hamburger-menu-container ul li a:hover,
-.hamburger-menu-container ul li:hover > .dropdown {
+.hamburger-menu-container ul li:hover>.dropdown {
   cursor: pointer;
 }
+
 /*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 * {
@@ -372,7 +389,7 @@ embed {
   color: #ffffff;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -442,4 +459,3 @@ a:hover {
 a:active {
   color: #9F66DB;
 }
-
