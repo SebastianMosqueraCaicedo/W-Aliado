@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+    <!-- Barra de navegación con logo y menú hamburguesa -->
+    <nav class="navbar">
+        <img src="/img/logo.png" alt="logo">
+        <!-- Ícono del menú hamburguesa -->
+        <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
+            <span class="material-icons">menu</span>
+        </div>
+        <!-- Contenedor del menú hamburguesa desplegado -->
+        <div class="hamburger-menu-container">
+            <ul>
+                <li class="li-menu-button">
+                    <a href="#" class="menu-button">
+                        <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+                    </a>
+                </li>
+                <li class="li-menu-button">
+                    <a href="#" class="menu-button">
+                        <img src="/img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Clientes
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Personas con negocio</a></li>
+                        <li><a href="/Ahorro-component/ahorro1.html">Ahorradores e inversionistas</a></li>
+                        <li><a href="#">Pensionados y maestros</a></li>
+                        <li><a href="#">Colombianos en el exterior</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Productos y servicios
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="/Credito-inmediato/ci.html">Créditos</a></li>
+                        <li><a>Cuentas de ahorro e inversión</a></li>
+                        <li><a href="#">Giros internacionales</a></li>
+                        <li><a href="#">Seguros</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Asesoría financiera
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Educación financiera</a></li>
+                        <li><a href="#">Consumidor financiero</a></li>
+                        <li><a href="#">Seguridad bancaria</a></li>
+                        <li><a href="#">Revista</a></li>
+                        <li><a href="#">Clasificados</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <span class="dropdown-title" onclick="toggleDropdown(event)">
+                        Acerca de nosotros
+                        <span class="arrow-down">&#9662;</span>
+                    </span>
+                    <ul class="submenu">
+                        <li><a href="#">Quiénes somos</a></li>
+                        <li><a href="#">Opción transaccional</a></li>
+                        <li><a href="#">Línea telefónica</a></li>
+                        <li><a href="#">PQRS</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Botón "Atrás" -->
+    <a href="/Simuladores-VTU/vtu.html" class="back-button" onclick="goBack()"> </a>
+
+    <section id="cover-page">
+        <div class="nav-crumbs">
+            <img src="../icons/home.svg" alt="Icono de volver a la pantalla principal">
+            <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
+            <p>Personas con negocios</p>
+            <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
+            <p>Tu mejor opción</p>
+
+        </div>
+        <div class="information">
+            <h1>CONOCE TU MEJOR OPCIÓN</h1>
+            <p>¿Ya viste tus posibilidades de crédito o ahorro y aún no te decides? Mira aquí la clasificación que
+                más se ajusta a ti.
+            </p>
+            <h3>Escoge la opción que quieres comparar</h3>
+        </div>
+
+        <!-- Menú de navegación de la portada de la página -->
+
+        <div id="button-container">
+            <button class="comparative-button ahorro" id="savings-button">
+                <img src="./assets/ahorro.svg" alt="">
+                <p id="ahorro-text">Ahorro</p>
+            </button>
+            <button class="comparative-button" id="credit-button">
+                <img src="./assets/credito.svg" alt="">
+                <p id="credito-text">Créditos</p>
+            </button>
+        </div>
+        <img class="images" src="./assets/Mask group.png" alt="">
+
+    </section>
+
+    <section id="comparador" style="display: none;">
+        <div class="nav-crumbs">
+            <img src="../icons/home.svg" alt="Icono de volver a la pantalla principal">
+            <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
+            <p>Personas con negocios</p>
+            <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
+            <p>Tu mejor opción</p>
+        </div>
+        <div class="information">
+            <h1>CONOCE TU MEJOR OPCIÓN</h1>
+            <p>¿Ya viste tus posibilidades de crédito o ahorro y aún no te decides? Mira aquí la clasificación que
+                más se ajusta a ti.
+            </p>
+            <img src="./assets/credito.png" class="images image-resize" id="cover-image" alt="">
+        </div>
+        <div class="nav-cover second-menu">
+            <div class="cover-buttons">
+                <ul id="page-switcher">
+                    <li class="characters" id="ahorro-switcher">
+                        <a>
+                            <p id="lyric">Ahorro</p>
+                        </a>
+                    </li>
+
+                    <li class="requirements" id="credito-switcher">
+                        <a>
+                            <p>Crédito</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="filter-container" style="display: none;">
+            <div id="filter-title-container">
+                <h4 id="filter-title">Selecciona los productos a comparar</h4>
+            </div>
+            <div class="parameters-section" id="savings-section" style="display: none;">
+                <ul>
+                    <li class="filter-item">
+                        <p class="item-text">Cuenta de Ahorro</p>
+                        <img src="./assets/tick-fill.svg" alt="">
+                    </li>
+                    <li class="filter-item">
+                        <p class="item-text">Depósito de bajo Monto</p>
+                        <img src="./assets/tick-stroke.svg" alt="">
+                    </li>
+                    <li class="filter-item">
+                        <p class="item-text">Reclamar giros</p>
+                        <img src="./assets/tick-fill.svg" alt="">
+                    </li>
+                    <li class="filter-item">
+                        <p class="item-text">Enviar giros</p>
+                        <img src="./assets/tick-fill.svg" alt="">
+                    </li>
+                    <li class="filter-item">
+                        <p class="item-text">CDT</p>
+                        <img src="./assets/tick-stroke.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="parameters-section" id="credit-section" style="display:none;">
+                <ul>
+                    <li class="filter-item">
+                        <p class="item-text">Microcrédito</p>
+                        <img src="./assets/tick-fill.svg" alt="">
+                    </li>
+                    <li class="filter-item">
+                        <p class="item-text">Gotahorro</p>
+                        <img src="./assets/tick-fill.svg" alt="">
+                    </li>
+                    <li class="filter-item">
+                        <p class="item-text">Yo Construyo</p>
+                        <img src="./assets/tick-stroke.svg" alt="">
+                    </li>
+                    <li class="filter-item">
+                        <p class="item-text">Inmueble Productivo</p>
+                        <img src="./assets/tick-fill.svg" alt="">
+                    </li>
+                    <li class="filter-item">
+                        <p class="item-text">Crédito de vehículo</p>
+                        <img src="./assets/tick-stroke.svg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <button id="compared">Comparar</button>
+        </div>
+        <img src="./assets/compared-ahorro.png" style="display: none;" class="images" id="comparison" alt="">
+    </section>
+
+    <script src="./comparador-inversion.js"></script>
+
+</body>
+
+</html>
