@@ -595,7 +595,13 @@ h3 {
   transform: translate(33%, -130%);
   text-align: center;
 }
-
+@media screen and (min-width: 428px) {
+  .subscribe-title {
+    position: absolute;
+    transform: translate(40%, -145%);
+    text-align: center;
+  }
+}
 .input-placeholder {
   padding: 5%;
   width: 100%;
