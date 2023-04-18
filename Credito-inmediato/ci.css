@@ -238,7 +238,7 @@ body {
 /* Estilos para el hero y la imagen */
 .hero {
   position: relative;
-  width: auto;
+  width: 100%;
   overflow: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -291,7 +291,7 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 428px) {
   .hero-icon h1 {
     font-size: 20px;
     padding-top: 5%;

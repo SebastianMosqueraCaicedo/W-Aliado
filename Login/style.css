@@ -233,7 +233,7 @@ body {
 }
 
 .hamburger-menu-container ul li a:hover,
-.hamburger-menu-container ul li:hover>.dropdown {
+.hamburger-menu-container ul li:hover > .dropdown {
   cursor: pointer;
 }
 
@@ -423,7 +423,7 @@ a {
 }
 
 label {
-  font-family: "Bariol";
+  font-family: "Bariol", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -445,17 +445,17 @@ label {
 
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 a:visited {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 a:active {
-  color: #FFFFFF;
+  color: #ffffff;
 }
