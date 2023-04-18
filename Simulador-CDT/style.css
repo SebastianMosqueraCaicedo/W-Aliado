@@ -467,3 +467,20 @@ h6 {
   border-color: #676767;
   color: #676767;
 }
+
+a {
+  text-decoration: none;
+  color: #9F66DB;
+}
+
+a:visited {
+  color: #9F66DB;
+}
+
+a:hover {
+  color: #9F66DB;
+}
+
+a:active {
+  color: #9F66DB;
+}

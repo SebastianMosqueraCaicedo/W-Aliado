@@ -1,0 +1,29 @@
+{
+  "name": "bancow-solucion-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianMosqueraCaicedo/bancoW-solucion-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SebastianMosqueraCaicedo/bancoW-solucion-3/issues"
+  },
+  "homepage": "https://github.com/SebastianMosqueraCaicedo/bancoW-solucion-3#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
