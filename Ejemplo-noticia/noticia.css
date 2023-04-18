@@ -1,222 +1,220 @@
 @font-face {
-  font-family: 'Geomanist Medium';
-  src: url('../font/Geomanist-Medium.ttf');
+  font-family: "Geomanist Medium";
+  src: url("../font/Geomanist-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-    font-family: 'Geomanist Bold';
-    src: url('../font/Geomanist-Bold.ttf');
-    font-weight: bold;
-    font-style: normal;
+  font-family: "Geomanist Bold";
+  src: url("../font/Geomanist-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Geomanist Book';
-    src: url('../font/Geomanist-Book.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Geomanist Book";
+  src: url("../font/Geomanist-Book.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Geomanist Regular';
-    src: url('../font/Geomanist-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Geomanist Regular";
+  src: url("../font/Geomanist-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Bariol Bold';
+  font-family: "Bariol Bold";
   font-style: normal;
   font-weight: normal;
-  src: local('Bariol Bold'), url('../font/bariol_bold-webfont.ttf') format('woff');
-  }
-
-@font-face {
-    font-family: 'Bariol Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../font/bariol_regular-webfont.ttf') format('woff');
-    }
-
-    
-
-:root {
-    --white: white;
-    --lila-lyrics: #9F66DB;
-    --lila-line: #DFCCF3;
-    --gray-lyric: #676767;
-    --lila-dark: #4D1E7F;
+  src: local("Bariol Bold"),
+    url("../font/bariol_bold-webfont.ttf") format("woff");
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-    font-family: "Bariol Regular", sans-serif;  
+@font-face {
+  font-family: "Bariol Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/bariol_regular-webfont.ttf") format("woff");
+}
+
+:root {
+  --white: white;
+  --lila-lyrics: #9f66db;
+  --lila-line: #dfccf3;
+  --gray-lyric: #676767;
+  --lila-dark: #4d1e7f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bariol Regular", sans-serif;
 }
 
 /* Estilos del menú de navegación */
 
 /* Estilos para el navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
-    padding: 10px;
-    position: relative;
-    z-index: 5;
-  }
-  .navbar img {
-    padding: 2%;
-  }
-  
-  /* Estilos para el menú hamburguesa */
-  
-  /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-  .material-icons {
-    color: #00a2af;
-  }
-  /* Estilos para el ícono del menú hamburguesa */
-  .hamburger-menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    cursor: pointer;
-  }
-  .submenu {
-    display: none;
-  }
-  .watch {
-    display: block;
-  }
-  /* Estilos para el menú hamburguesa desplegado */
-  .hamburger-menu-container {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #ffffff;
-    z-index: 10;
-    border-radius: 5px;
-    width: 100%;
-    box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
-  }
-  /* Estilos para botones naranjas del menú hamburguesa */
-  .menu-button {
-    background-color: #ff8833;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 8px 20px;
-    border-radius: 5px;
-    margin: 5px 0;
-  }
-  
-  .menu-button img {
-    margin-right: 5px;
-    vertical-align: middle;
-    width: 24px;
-    height: 24px;
-  }
-  .li-menu-button {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-  }
-  /* Estilos para titulos naranjas menú hamburguesa */
-  .dropdown-title {
-    position: relative;
-    padding-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    margin-left: 10px;
-  }
-  .dropdown-title::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    right: 10px;
-    border-bottom: 1px solid #ffe1cc;
-  }
-  .arrow-down {
-    font-size: 0.8em;
-    margin-right: 10px;
-  }
-  
-  .dropdown-title:hover {
-    cursor: pointer;
-  }
-  
-  .hamburger-menu-container ul li .dropdown-title {
-    color: #ff8833;
-  }
-  .hamburger-menu-container ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .hamburger-menu-container ul li a {
-    display: block;
-    color: #676767;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  .hamburger-menu-container a.menu-button {
-    color: white;
-  }
-  .hamburger-menu-container ul li .dropdown {
-    display: none;
-    position: relative;
-  }
-  
-  .hamburger-menu-container ul li .dropdown ul {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 250px;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .hamburger-menu-container ul li .dropdown ul li a {
-    padding: 5px 16px;
-  }
-  
-  .hamburger-menu-container ul li .dropdown ul li a:hover {
-    background-color: #666;
-  }
-  
-  .hamburger-menu-container ul li a:hover,
-  .hamburger-menu-container ul li:hover > .dropdown {
-    cursor: pointer;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
+.navbar img {
+  padding: 2%;
+}
+
+/* Estilos para el menú hamburguesa */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.material-icons {
+  color: #00a2af;
+}
+/* Estilos para el ícono del menú hamburguesa */
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.submenu {
+  display: none;
+}
+.watch {
+  display: block;
+}
+/* Estilos para el menú hamburguesa desplegado */
+.hamburger-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 10;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+}
+/* Estilos para botones naranjas del menú hamburguesa */
+.menu-button {
+  background-color: #ff8833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.menu-button img {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+.li-menu-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+/* Estilos para titulos naranjas menú hamburguesa */
+.dropdown-title {
+  position: relative;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+.dropdown-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 10px;
+  border-bottom: 1px solid #ffe1cc;
+}
+.arrow-down {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+.dropdown-title:hover {
+  cursor: pointer;
+}
+
+.hamburger-menu-container ul li .dropdown-title {
+  color: #ff8833;
+}
+.hamburger-menu-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hamburger-menu-container ul li a {
+  display: block;
+  color: #676767;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.hamburger-menu-container a.menu-button {
+  color: white;
+}
+.hamburger-menu-container ul li .dropdown {
+  display: none;
+  position: relative;
+}
+
+.hamburger-menu-container ul li .dropdown ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a {
+  padding: 5px 16px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a:hover {
+  background-color: #666;
+}
+
+.hamburger-menu-container ul li a:hover,
+.hamburger-menu-container ul li:hover > .dropdown {
+  cursor: pointer;
+}
 
 /* Estilo de miga de pan */
 
-.nav-crumbs { 
+.nav-crumbs {
   position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    width: 100%;
-    height: 36px;
-    background-color: var(--lila-lyrics);
-    z-index: 2;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 100%;
+  height: 36px;
+  background-color: var(--lila-lyrics);
+  z-index: 2;
 }
 
 .nav-crumbs p {
-    font-family: 'Bariol Regular';
-    font-size: 10px;
-    color: var(--white);
-    
+  font-family: "Bariol Regular";
+  font-size: 10px;
+  color: var(--white);
 }
 
 /* Estilos de la info de arriba */
@@ -233,31 +231,29 @@
 }
 
 .info-top div {
-  padding: 38px 20px 0px 20px; 
+  padding: 38px 20px 0px 20px;
   line-height: 19.5px;
 }
 
 .info-top div h1 {
-  font-family: 'Geomanist';
+  font-family: "Geomanist", sans-serif;
   color: var(--lila-lyrics);
   font-size: 25px;
 }
 
 .info-top div p {
   margin-top: 14px;
-  font-family: 'Bariol Regular';
+  font-family: "Bariol Regular";
   color: var(--gray-lyric);
   font-size: 13px;
 }
 
-
-
 /* Estilos de la info de abajo*/
-.autor{
+.autor {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Bariol Regular';
+  font-family: "Bariol Regular", sans-serif;
   color: var(--white);
   font-size: 13px;
   line-height: 19.5px;
@@ -265,11 +261,11 @@
 }
 
 .autor span {
-  font-family: 'Bariol Bold';
+  font-family: "Bariol Bold";
 }
 
 .p-style {
-  font-family: 'Bariol Regular';
+  font-family: "Bariol Regular", sans-serif;
   color: var(--white);
   font-size: 13px;
   line-height: 19.5px;
@@ -283,9 +279,9 @@
   padding: 37px 24px 0px 19px;
 }
 
-.info-down h6{
+.info-down h6 {
   color: var(--white);
-  font-family: 'Geomanist Regular';
+  font-family: "Geomanist", sans-serif;
   font-size: 16px;
   line-height: 16px;
 }
@@ -312,8 +308,8 @@ figure {
   margin-bottom: 12px;
 }
 
-.list-info p{
-  font-family: 'Geomanist Regular';
+.list-info p {
+  font-family: "Bariol Regular", sans-serif;
   color: var(--white);
   font-size: 13px;
   line-height: 19.5px;
@@ -323,15 +319,14 @@ figure {
 /* Estilos de la portada de la página */
 
 .cover-page {
-    position: relative;
-    background: url(../img/portada-negocio.svg);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 353px;
-    background-color: var(--lila-line);
-    z-index: 1;
+  position: relative;
+  background: url(../img/portada-negocio.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 353px;
+  background-color: var(--lila-line);
+  z-index: 1;
 }
-
 
 /* Estilo del carrusel */
 
@@ -340,13 +335,12 @@ figure {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 h3 {
-  font-family: "Geomanist Bold";
+  font-family: "Geomanist", sans-serif;
   font-size: 20px;
   color: #ff6900;
   padding-left: 5%;
   padding-top: 25px;
   padding-bottom: 25px;
-  
 }
 * {
   box-sizing: border-box;
@@ -426,28 +420,27 @@ h3 {
   font-weight: bold;
 }
 
-
 /* Estilos del footer */
 
 #dropdown-footer,
-#dropdown-footer2, 
-#dropdown-footer3, 
+#dropdown-footer2,
+#dropdown-footer3,
 #dropdown-footer4 {
-    display: none;
-  }
-  
-  #dropdown-footer.vision,
-  #dropdown-footer2.vision,
-  #dropdown-footer3.vision,
-  #dropdown-footer4.vision {
-    display: block;
-  }
- 
+  display: none;
+}
+
+#dropdown-footer.vision,
+#dropdown-footer2.vision,
+#dropdown-footer3.vision,
+#dropdown-footer4.vision {
+  display: block;
+}
+
 footer {
   width: 100%;
   height: 100%;
-  background-color: #EFEFEF;
-}  
+  background-color: #efefef;
+}
 
 .footer-container {
   padding: 42px 21px 15px 15px;
@@ -456,7 +449,7 @@ footer {
 }
 
 .footer-button {
-  font-family: 'Geomanist Bold';
+  font-family: "Geomanist Bold";
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -464,7 +457,7 @@ footer {
   padding-bottom: 11px;
   margin-bottom: 20px;
   border-bottom: 1px solid orange;
-  color: #FF8833;
+  color: #ff8833;
   font-size: 16px;
 }
 
@@ -474,7 +467,7 @@ footer {
   justify-content: space-between;
   padding-bottom: 11px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #FFC499;
+  border-bottom: 1px solid #ffc499;
 }
 
 .social-list {
@@ -485,14 +478,14 @@ footer {
 
 .footer-list,
 .footer-list2 {
-  font-family: 'Bariol Regular';
+  font-family: "Bariol Regular";
   padding: 0px 21px 0px 0px;
   color: #676767;
   font-size: 14px;
 }
 
 .footer-list li,
-.footer-list2 li{
+.footer-list2 li {
   list-style: none;
   margin-bottom: 19px;
 }
@@ -515,18 +508,12 @@ footer {
   padding: 8px 21px;
   color: #676767;
   font-size: 10px;
-  font-family: 'Bariol Regular';
+  font-family: "Bariol Regular";
 }
 
-    /* Iphone XR */
-    @media screen and (min-width: 414px) {
-      .cover-page {
-          background: url(../img/portada-negocio2.svg); 
-      }
+/* Iphone XR */
+@media screen and (min-width: 414px) {
+  .cover-page {
+    background: url(../img/portada-negocio2.svg);
   }
-
-
-
-
-
-
+}

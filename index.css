@@ -670,3 +670,10 @@ footer {
   font-size: 10px;
   font-family: "Bariol Regular", sans-serif;
 }
+.boton-noticia {
+  display: flex;
+  justify-content: end;
+}
+a {
+  text-decoration: none;
+}
