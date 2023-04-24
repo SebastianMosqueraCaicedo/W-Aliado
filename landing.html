@@ -14,7 +14,7 @@
 <body>
   <!-- Barra de navegación con logo y menú hamburguesa -->
   <nav class="navbar">
-    <img src="img/logo.png" alt="logo">
+    <img src="img/logow.svg" alt="logo">
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
       <span class="material-icons">menu</span>
@@ -83,13 +83,82 @@
         </li>
       </ul>
     </div>
+    <!-- Contenedor del menú hamburguesa responsive -->
+    <div class="desktop-menu">
+      <div class="top-level-items">
+        <img src="img/logow.svg" alt="logo">
+        <a href="#" class="contactanos-button">Contactanos
+        </a>
+        <a href="#" class="preguntas-frecuentes-button">Preguntas Frecuentes
+        </a>
+        <a href="#" class="menu-button">
+          <img src="img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
+        </a>
+        <a href="/Login-y-Registro/index.html" class="menu-button">
+          <img src="img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesión
+        </a>
+      </div>
+      <ul class="category-items">
+        <ul>
+          <li class="dropdown">
+            <span class="dropdown-title" onclick="toggleDropdown(event)">
+              Clientes
+              <span class="arrow-down">&#9662;</span>
+            </span>
+            <ul class="submenu">
+              <li><a href="#">Personas con negocio</a></li>
+              <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
+              <li><a href="#">Pensionados y maestros</a></li>
+              <li><a href="#">Colombianos en el exterior</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <span class="dropdown-title" onclick="toggleDropdown(event)">
+              Productos y servicios
+              <span class="arrow-down">&#9662;</span>
+            </span>
+            <ul class="submenu">
+              <li><a href="#">Créditos</a></li>
+              <li><a href="/Cuenta-de-Ahorro/ahorro2.html">Cuentas de ahorro e inversión</a></li>
+              <li><a href="#">Giros internacionales</a></li>
+              <li><a href="#">Seguros</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <span class="dropdown-title" onclick="toggleDropdown(event)">
+              Asesoría financiera
+              <span class="arrow-down">&#9662;</span>
+            </span>
+            <ul class="submenu">
+              <li><a href="#">Educación financiera</a></li>
+              <li><a href="#">Consumidor financiero</a></li>
+              <li><a href="#">Seguridad bancaria</a></li>
+              <li><a href="#">Revista</a></li>
+              <li><a href="/Comparador-inversion/comparador-inversion.html">Tu mejor opción</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <span class="dropdown-title" onclick="toggleDropdown(event)">
+              Acerca de nosotros
+              <span class="arrow-down">&#9662;</span>
+            </span>
+            <ul class="submenu">
+              <li><a href="#">Quiénes somos</a></li>
+              <li><a href="#">Opción transaccional</a></li>
+              <li><a href="#">Línea telefónica</a></li>
+              <li><a href="#">PQRS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </ul>
+    </div>
   </nav>
   <!-- Botón "Atrás" -->
   <div class="hero">
     <img src="img/hero_landing.svg" alt="Imagen del hero">
     <div class="hero-title">
-      <h1>¡SOLICITA TU<br>CRÉDITO!</h1>
-      <p>de libre inversión y paga<br> con tu salario</p>
+      <h1>¡SOLICITA TU CRÉDITO!</h1>
+      <p>de libre inversión y paga con tu salario</p>
       <button class="hero-button">!Conoce más!</button>
     </div>
   </div>
