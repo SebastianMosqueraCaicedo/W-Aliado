@@ -366,10 +366,13 @@ body {
 }
 
 /* seccion de recomendaciones */
+.recomendaciones-responsive {
+  display: none;
+}
 .recomendaciones {
   margin-top: -20%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
 .recomendaciones h2 {
@@ -822,10 +825,32 @@ a:active {
   .navbar li:hover .submenu {
     display: block;
   }
-
+  .hero-image {
+    display: none;
+  }
+  /* Create a pseudo-element to display the new image */
+  .hero-img::before {
+    content: url("img/hero_responsive.svg");
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10%;
+  }
+  .hero-3-buttons {
+    transform: translate(0%, -230%);
+  }
+  .hero-options {
+    padding-top: 1%;
+  }
+  .hero-options-middle {
+    padding-top: 1%;
+  }
+  .hero-options-last {
+    padding-top: 1%;
+  }
   /* Estilos titulos */
   .hero-title {
-    transform: translate(10%, -100%);
+    transform: translate(-10%, -40%);
   }
   .hero-title h1 {
     font-size: 52px;
@@ -836,8 +861,10 @@ a:active {
   .hero-button {
     width: auto;
     font-size: 22px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   h3 {
     font-family: "Geomanist Bold";
@@ -847,7 +874,38 @@ a:active {
     margin-top: 7%;
     margin-bottom: 7%;
   }
+  /* Estilos para recomendaciones en pantallas grandes */
+  .recomendaciones {
+    padding-top: 4%;
+    width: 100%;
+  }
+  .imagenes-recomendaciones {
+    height: 100%;
+    display: none;
+  }
+  .recomendaciones-responsive {
+    display: flex;
+  }
 
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+  }
+
+  .container-img1,
+  .container-img2 {
+    width: 100%;
+    /* Cambia el valor a continuación si deseas un espacio entre las imágenes */
+    margin-bottom: 0px;
+  }
+
+  .container2 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   /* Estilos para el slider en pantallas grandes */
   .slider-track {
     justify-content: center;
