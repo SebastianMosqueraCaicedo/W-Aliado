@@ -774,7 +774,19 @@ a:active {
 
   .top-level-items {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+  .pago-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .contact-preguntas {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 100px;
   }
@@ -784,22 +796,31 @@ a:active {
   .top-level-items img {
     display: block;
   }
-
+  .contact-preguntas a {
+    color: #676767;
+  }
+  a.menu-button {
+    color: #efefef;
+  }
   .category-items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    gap: 40px;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%;
+  }
+  .dropdown-container {
+    margin-right: 150px;
+  }
+  .dropdown-container:last-child {
+    margin-right: 0;
   }
 
   .navbar li {
     position: relative;
     display: inline-block;
+    transform: translate(0%, 10%);
+    font-size: 20px;
   }
 
   .navbar li > a {
@@ -807,6 +828,7 @@ a:active {
     padding: 8px 16px;
     text-decoration: none;
     color: #676767;
+    align-items: center;
   }
 
   .navbar .submenu {
@@ -886,7 +908,46 @@ a:active {
   .recomendaciones-responsive {
     display: flex;
   }
-
+  .recomendacion-1-title {
+    transform: translate(-10%, -50%);
+  }
+  .recomendacion-1-title h1 {
+    font-size: 40px;
+  }
+  .recomendacion-1-title p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .recomendacion-1-button {
+    transform: translate(20%, 500%);
+    font-size: 22px;
+  }
+  .recomendacion-2-title {
+    transform: translate(125%, -120%);
+  }
+  .recomendacion-2-title h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .recomendacion-2-title p {
+    font-size: 20px;
+    text-align: center;
+  }
+  .recomendacion-2-button {
+    transform: translate(20%, 20%);
+    font-size: 22px;
+  }
+  .recomendacion-3-title {
+    transform: translate(135%, -130%);
+  }
+  .recomendacion-3-title h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .recomendacion-3-title p {
+    font-size: 20px;
+    text-align: center;
+  }
   .container1 {
     display: flex;
     flex-direction: column;
