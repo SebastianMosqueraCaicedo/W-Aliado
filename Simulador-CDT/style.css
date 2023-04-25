@@ -244,6 +244,7 @@ body {
 #ingresar-datos {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -275,12 +276,36 @@ h2 {
   color: #ff8833;
 }
 
+@media (max-width: 700px) {
+  #cdt-type{
+    width: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  #inputs-cdt {
+    width: 100%;
+  }
+}
+
+@media (min-width: 701px) {
+  #cdt-type{
+    width: 50%;
+  }
+  input {
+    width: 100%;
+  }
+
+  #inputs-cdt {
+    width: 50%;
+  }
+}
+
 input {
   background: #ffffff;
   border: 1.9316px solid #cdcdcd;
   border-radius: 4.50708px;
   height: 25px;
-  width: 100%;
   font-family: "Bariol Regular", sans-serif;
 }
 
@@ -385,6 +410,7 @@ h4 {
 #mostrar-datos {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding-left: 10px;
   padding-right: 10px;
   gap: 20px;
@@ -445,12 +471,42 @@ h6 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
+
+@media (max-width: 700px) {
+  #solicitar-cdt{
+    width: 100%;
+    }
+}
+
+@media (min-width: 701px) {
+  #valor-monto {
+    width: 300px;
+    height: 150px;
+  }
+  h5 {
+    font-size: 30px;
+  }
+  #monto-cdt{
+    width: 50%;
+  }
+  #resultados-tabla{
+    width: 50%;
+  }
+  #solicitar-cdt{
+  width: 50%;
+  }
+}
+
 
 #valor-monto {
   background: #9f66db;
   border-radius: 7px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #regresar {
