@@ -385,7 +385,9 @@ body {
   font-family: "Bariol Regular";
   font-size: 15px;
 }
-
+.button-image {
+  width: 50%;
+}
 /* seccion de recomendaciones */
 .recomendaciones-responsive {
   display: none;
@@ -945,7 +947,7 @@ a:active {
   }
 
   .hero-3-buttons {
-    transform: translate(0%, -230%);
+    transform: translate(0%, -190%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -953,13 +955,13 @@ a:active {
   }
 
   .hero-options {
-    height: 92px;
+    height: 120px;
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 1%;
+    padding: 2%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 5px 0px 0px 5px;
@@ -975,13 +977,13 @@ a:active {
   }
 
   .hero-options-middle {
-    height: 92px;
+    height: 120px;
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 1%;
+    padding: 2%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 0px 0px 0px 0px;
@@ -996,13 +998,13 @@ a:active {
     font-size: 15px;
   }
   .hero-options-middle2 {
-    height: 92px;
+    height: 120px;
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 1%;
+    padding: 2%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 0px 0px 0px 0px;
@@ -1017,13 +1019,13 @@ a:active {
     font-size: 15px;
   }
   .hero-options-last {
-    height: 92px;
+    height: 120px;
     width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 1%;
+    padding: 2%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 0px 5px 5px 0px;
@@ -1033,6 +1035,9 @@ a:active {
     color: #9f66db;
     font-family: "Bariol Regular";
     font-size: 15px;
+  }
+  .button-image img {
+    width: 100%;
   }
   .hero-options a {
     text-decoration: none;
