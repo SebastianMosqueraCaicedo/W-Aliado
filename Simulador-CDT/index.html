@@ -90,9 +90,12 @@
             <section id="ingresar-datos">
                 <div id="simulador-cdt">
                 </div>
-                <img src="./assets/simulador-cdt.png" alt="" class="images">
-
-                <div>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="./assets/simulador-cdt.png" class="images">
+                    <source media="(min-width: 701px)" srcset="./assets/web-simulador-cdt.png" class="images">
+                    <img src="./assets/simulador-cdt.png" alt="" class="images">
+                </picture>
+                <div id="cdt-type">
                     <h2>Tipo de CDT</h2>
                     <select name="" id="tipo-de-cdt">
                         <option value="Escoge tu CDT">Escoge tu CDT</option>
