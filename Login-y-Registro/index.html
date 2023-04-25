@@ -85,8 +85,11 @@
     </nav>
 
     <div id="login-component">
-
-        <img src="./assets/component-image.png" alt="" class="images">
+        <picture>
+            <source media="(max-width: 700px)" srcset="./assets/component-image.png"class="images">
+            <source media="(min-width: 701px)" srcset="./assets/web-login.png" class="images">
+            <img src="./assets/component-image.png" alt="" class="images">
+        </picture>
         <div id="login-component-card">
             <div id="login-title">
                 <embed src="./assets/profile/24/Outline.svg" type="">
@@ -113,7 +116,11 @@
     </div>
     </div>
     <div id="sign-up-component" style="display: none">
-        <img src="./assets/create-account.png" class="images" alt="">
+        <picture>
+            <source media="(max-width: 700px)" srcset="./assets/create-account.png" class="images">
+            <source media="(min-width: 701px)" srcset="./assets/web-create-account.png" class="images">
+            <img src="./assets/create-account.png" alt="" class="images">
+        </picture>
         <div id="form-component">
             <form id="sign-up-form">
                 <div>

@@ -169,7 +169,11 @@ function renderResultado(info) {
   if (info.total >= 0) {
     resultado.innerHTML = `
         <section id="mostrar-datos">
-            <img src="./assets/resultados-cdt.png" alt="" class="images">
+            <picture>
+                    <source media="(max-width: 700px)" srcset="./assets/resultados-cdt.png" class="images">
+                    <source media="(min-width: 701px)" srcset="./assets/web-resultados-cdt.png" class="images">
+                    <img src="./assets/resultados-cdt.png" alt="" class="images">
+                </picture>
             <div id="monto-cdt">
                 <h3> Resultados de la Simulación </h3>
                 <div id="valor-monto">
@@ -203,7 +207,7 @@ function renderResultado(info) {
                     <p> ${info.total.toLocaleString("en-US")}</p>
                 </div>
             </section>
-            <div>
+            <div id = "solicitar-cdt">
                 <button id="simular">Solicitar CDT</button>
                 <button id="regresar">Regresar</button>
             </div>
