@@ -243,11 +243,17 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 html {
   width: 100%;
   height: 100%;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -281,22 +287,31 @@ p {
   left: 0px;
 }
 
+#login-component{
+  display: flex;
+  align-items: center;
+}
+
+
 #login-component-card {
   background-color: white;
+
   position: absolute;
+  right: 0;
+  left: 0;
+  top: 200px;
+  margin: auto;
+
   align-items: center;
-  left: 5%;
-  top: 15%;
-  width: 82%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
   border-radius: 8px;
-  margin: 20px;
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 150px;
   padding-bottom: 30px;
+  box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.48);
 
   gap: 10px;
 }
@@ -414,12 +429,26 @@ a {
   justify-content: center;
 }
 
-#sign-up-form {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  gap: 20px;
-  padding-top: 20px;
+
+
+@media (max-width: 700px) {
+  #sign-up-form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    gap: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 701px) {
+  #sign-up-form {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 20px;
+    padding-top: 20px;
+  }
 }
 
 label {
