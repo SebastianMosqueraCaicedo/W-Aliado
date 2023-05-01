@@ -159,3 +159,52 @@ var dropdownFooter4 = document.getElementById("dropdown-footer4");
 dropdownButtonFooter4.addEventListener("click", function () {
   dropdownFooter4.classList.toggle("vision");
 });
+
+////// logica landing-user //////
+
+document
+  .getElementById("mis-productos-btn")
+  .addEventListener("click", function () {
+    showDiv("mis-productos");
+  });
+
+document
+  .getElementById("estado-tramites-btn")
+  .addEventListener("click", function () {
+    showDiv("estado-tramite");
+  });
+
+document
+  .getElementById("acciones-rapidas-btn")
+  .addEventListener("click", function () {
+    showDiv("acciones-rapidas");
+  });
+
+function showDiv(divId) {
+  var divs = ["mis-productos", "estado-tramite", "acciones-rapidas"];
+  divs.forEach(function (id) {
+    document.querySelector("." + id).classList.toggle("hidden", id !== divId);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const userSelectors = document.querySelectorAll(".user-selector");
+
+  userSelectors.forEach((button) => {
+    button.addEventListener("click", (event) => {
+      userSelectors.forEach((btn) => {
+        btn.style.backgroundColor = "#f3f3f3";
+        btn.style.color = "#676767";
+      });
+
+      event.target.style.backgroundColor = "#DFCCF3";
+      event.target.style.color = "#5F259F";
+    });
+  });
+
+  // Seleccionar "Mis productos" al cargar la página
+  showDiv("mis-productos");
+  document.getElementById("mis-productos-btn").style.backgroundColor =
+    "#DFCCF3";
+  document.getElementById("mis-productos-btn").style.color = "#5F259F";
+});
