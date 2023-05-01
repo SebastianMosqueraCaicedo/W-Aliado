@@ -1184,4 +1184,206 @@ ul {
     width: 400px;
   }
   /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*Card slider*/
+
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+  h3 {
+    font-family: "Bariol Regular";
+    font-size: 16px;
+    color: #676767;
+    padding-left: 3%;
+    padding-bottom: 5%;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .slider {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider-track {
+    padding: 0% 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card-holder {
+    display: flex;
+  }
+  input[type="radio" i] {
+    margin-top: 150px;
+    margin-right: 30px;
+    margin-left: -20px;
+  }
+
+  .card {
+    flex: 0 0 calc(100% - 10px);
+    margin-right: 10px; /* Add 10px margin-right */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px; /* Add border-radius */
+    box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+    margin-bottom: 5%;
+    margin-left: 0%;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  .card-text {
+    margin-top: 5%;
+  }
+
+  .card-title {
+    font-family: "Geomanist Bold";
+    font-size: 20px;
+    color: #676767;
+  }
+
+  .card-text {
+    font-family: "Bariol Regular";
+    font-size: 15px;
+    color: #676767;
+  }
+
+  .card-button {
+    align-self: flex-end;
+    background-color: white;
+    color: #9f66db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .card-button:hover {
+    background-color: white;
+  }
+
+  .card-button span {
+    font-weight: bold;
+  }
+  .siguiente-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .siguiente-button {
+    margin-top: 20px;
+    background-color: #ff8833;
+    color: white;
+    padding: 10px 150px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Bariol Regular";
+  }
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+  /*Datos personales*/
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .input-container label {
+    margin-bottom: 5px;
+    display: block;
+    color: #ff8833;
+    font-family: "Bariol Regular";
+    font-size: 16px;
+  }
+
+  .input-container select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #676767;
+    font-family: "Bariol Regular";
+    font-size: 16px;
+  }
+
+  .datos-personales {
+    display: none;
+    margin-bottom: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .tipo-credito {
+    margin-bottom: 40px;
+  }
+
+  .tipo-credito,
+  .datos-personales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .datos-personales input,
+  .datos-personales select {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 }
