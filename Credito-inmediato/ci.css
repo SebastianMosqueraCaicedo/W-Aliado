@@ -248,6 +248,7 @@ body {
 .hero img {
   width: 100%;
   position: relative;
+  display: block;
 }
 
 .hero-icon {
@@ -886,4 +887,301 @@ ul {
 }
 .footer-container p {
   font-family: "Bariol Regular";
+}
+@media screen and (min-width: 1200px) {
+  .hero img {
+    width: 100%;
+    position: relative;
+    display: none;
+  }
+  .hero {
+    padding: 0%;
+  }
+  .hero-image {
+    display: none;
+  }
+  /* Create a pseudo-element to display the new image */
+  .hero::before {
+    content: url("/img/creditoi_responsive.svg");
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 0%;
+  }
+  .hero-icon {
+    width: 8%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+  }
+  .hero-icon h1 {
+    font-size: 44px;
+    width: 500px;
+    transform: translate(-37%, -10%);
+    display: none;
+  }
+  /*Barra de progreso 1*/
+  .breadcrumb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5%;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .grupo1 h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #ffa666;
+  }
+  .grupo2 h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #d9d9d9;
+  }
+  .grupo3 h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #d9d9d9;
+  }
+  .grupo1 {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .grupo2 {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .grupo3 {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .barra1 {
+    height: 2px;
+    background-color: #ffa666;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+  .barra2 {
+    height: 2px;
+    background-color: #d9d9d9;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+  .barra3 {
+    height: 2px;
+    background-color: #d9d9d9;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+
+  /* =================================================================*/
+
+  /*Barra de progreso 1*/
+  .breadcrumb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5%;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .grupo1b h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #ffa666;
+  }
+  .grupo2b h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #ffa666;
+  }
+  .grupo3b h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #d9d9d9;
+  }
+  .grupo1b {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .grupo2b {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .grupo3b {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .barra1b {
+    height: 2px;
+    background-color: #ffa666;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+  .barra2b {
+    height: 2px;
+    background-color: #ffa666;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+  .barra3b {
+    height: 2px;
+    background-color: #d9d9d9;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+  /*Barra de progreso 1*/
+  .breadcrumb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5%;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .grupo1c h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #ffa666;
+  }
+  .grupo2c h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #ffa666;
+  }
+  .grupo3c h4 {
+    font-size: 15px;
+    display: block;
+    text-align: center;
+    color: #ffa666;
+  }
+  .grupo1c {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .grupo2c {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .grupo3c {
+    align-items: center;
+    text-align: center;
+    display: block;
+    justify-content: center;
+  }
+  .barra1c {
+    height: 2px;
+    background-color: #ffa666;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+  .barra2c {
+    height: 2px;
+    background-color: #ffa666;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+  .barra3c {
+    height: 2px;
+    background-color: #ffa666;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    position: relative;
+    border-radius: 5px;
+    padding: 1%;
+    width: 400px;
+  }
+  /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 }

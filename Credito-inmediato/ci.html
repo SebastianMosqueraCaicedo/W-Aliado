@@ -86,14 +86,14 @@
     </div>
   </nav>
   <!-- Botón "Atrás" -->
-  <a href="/landing.html" class="back-button" onclick="goBack()">
+  <a href="/index.html" class="back-button" onclick="goBack()">
     < Atrás</a>
 
 
       <div id="tipo-credito" class="tipo-credito">
         <!-- Hero con imagen e icono -->
         <div class="hero">
-          <img src="../img/ci-hero.svg" alt="Imagen del hero">
+          <img src="../img/ci-hero.svg" alt="Imagen del hero" class="hero-image">
           <div class="hero-icon">
             <img src="../img/ci-icono.svg" alt="Icono Calculadora">
             <h1>Solicitud de crédito<br>inmediato </h1>
@@ -199,6 +199,35 @@
             <option value="nit">NIT</option>
           </select>
         </div>
+        <div class="siguiente-button-container">
+          <button class="siguiente-button" id="siguiente2">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="datos-personales-gotahorro2" class="datos-personales" style="display: none;">
+        <!-- Hero con imagen e icono -->
+        <div class="hero">
+          <img src="../img/ci-hero.svg" alt="Imagen del hero">
+          <div class="hero-icon">
+            <img src="../img/ci-icono.svg" alt="Icono Calculadora">
+            <h1>Solicitud de crédito<br>Gotahorro </h1>
+          </div>
+        </div>
+        <div class="breadcrumb">
+          <div class="grupo1b">
+            <h4 id="paso1b">Tipo de crédito</h4>
+            <div id="barra1b" class="barra1b"></div>
+          </div>
+          <div class="grupo2b">
+            <h4 id="paso2b">Datos personales</h4>
+            <div id="barra2b" class="barra2b"></div>
+          </div>
+          <div class="grupo3b">
+            <h4 id="paso3b">Enviar solicitud</h4>
+            <div id="barra3b" class="barra3b"></div>
+          </div>
+        </div>
+        <h3>Diligencia tus datos personales a continuación:</h3>
         <div class="input-container">
           <label for="documento">Número de documento:</label>
           <input type="text" id="documento" name="documento" />
@@ -212,12 +241,58 @@
           <input type="email" id="correo" name="correo" />
         </div>
         <div class="siguiente-button-container">
-          <button class="siguiente-button" id="siguiente2">Siguiente</button>
+          <button class="siguiente-button" id="siguiente3">Siguiente</button>
         </div>
       </div>
 
 
       <div id="datos-personales-yoconstruyo" class="datos-personales" style="display: none;">
+        <!-- Hero con imagen e icono -->
+        <div class="hero">
+          <img src="../img/ci-hero.svg" alt="Imagen del hero">
+          <div class="hero-icon">
+            <img src="../img/ci-icono.svg" alt="Icono Calculadora">
+            <h1>Solicitud de crédito<br>Yo construyo </h1>
+          </div>
+        </div>
+        <div class="breadcrumb">
+          <div class="grupo1b">
+            <h4 id="paso1b">Tipo de crédito</h4>
+            <div id="barra1b" class="barra1b"></div>
+          </div>
+          <div class="grupo2b">
+            <h4 id="paso2b">Datos personales</h4>
+            <div id="barra2b" class="barra2b"></div>
+          </div>
+          <div class="grupo3b">
+            <h4 id="paso3b">Enviar solicitud</h4>
+            <div id="barra3b" class="barra3b"></div>
+          </div>
+        </div>
+        <h3>Diligencia tus datos personales a continuación:</h3>
+
+        <div class="input-container">
+          <label for="monto">Monto deseado:</label>
+          <input type="text" id="monto" name="monto" />
+        </div>
+        <div class="input-container">
+          <label for="nombre">Nombres y apellidos:</label>
+          <input type="text" id="nombre" name="nombre" />
+        </div>
+        <div class="input-container">
+          <label for="identificacion">Tipo de identificación:</label>
+          <select id="identificacion" name="identificacion">
+            <option value="cedula">Cédula de ciudadanía</option>
+            <option value="cedula-extranjera">Cédula extranjera</option>
+            <option value="nit">NIT</option>
+          </select>
+        </div>
+        <div class="siguiente-button-container">
+          <button class="siguiente-button" id="siguiente4">Siguiente</button>
+        </div>
+      </div>
+
+      <div id="datos-personales-yoconstruyo2" class="datos-personales" style="display: none;">
         <!-- Hero con imagen e icono -->
         <div class="hero">
           <img src="../img/ci-hero.svg" alt="Imagen del hero">
@@ -242,22 +317,6 @@
           </div>
         </div>
         <div class="input-container">
-          <label for="monto">Monto deseado:</label>
-          <input type="text" id="monto" name="monto" />
-        </div>
-        <div class="input-container">
-          <label for="nombre">Nombres y apellidos:</label>
-          <input type="text" id="nombre" name="nombre" />
-        </div>
-        <div class="input-container">
-          <label for="identificacion">Tipo de identificación:</label>
-          <select id="identificacion" name="identificacion">
-            <option value="cedula">Cédula de ciudadanía</option>
-            <option value="cedula-extranjera">Cédula extranjera</option>
-            <option value="nit">NIT</option>
-          </select>
-        </div>
-        <div class="input-container">
           <label for="documento">Número de documento:</label>
           <input type="text" id="documento" name="documento" />
         </div>
@@ -270,7 +329,7 @@
           <input type="email" id="correo" name="correo" />
         </div>
         <div class="siguiente-button-container">
-          <button class="siguiente-button" id="siguiente3">Siguiente</button>
+          <button class="siguiente-button" id="siguiente5">Siguiente</button>
         </div>
       </div>
 
