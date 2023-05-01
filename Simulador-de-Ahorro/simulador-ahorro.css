@@ -467,3 +467,46 @@ th {
   cursor: pointer;
   font-family: "Bariol Regular";
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 0%;
+  }
+  .hero-image {
+    display: none;
+  }
+  /* Create a pseudo-element to display the new image */
+  .hero::before {
+    content: url("/img/hero_simulador.svg");
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  .hero-icon {
+    width: 8%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .hero-icon h1 {
+    font-size: 44px;
+    width: 500px;
+    transform: translate(-37%, -10%);
+  }
+  .input-section {
+    padding-left: 35%;
+    padding-right: 35%;
+  }
+  .options {
+    gap: 100px;
+  }
+  .results-section {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .results-data .container {
+    gap: 500px;
+  }
+}
