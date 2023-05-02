@@ -854,6 +854,7 @@ a:active {
     width: 100%;
     /* Cambia el valor a continuación si deseas un espacio entre las imágenes */
     margin-bottom: 0px;
+    padding-bottom: 5%;
   }
 
   .container2 {
@@ -861,6 +862,8 @@ a:active {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 5%;
+    padding-right: 5%;
   }
   /* Estilos para el slider en pantallas grandes */
   .slider-track {
@@ -954,7 +957,9 @@ a:active {
     .subscribe-image {
       display: none;
     }
-
+    .pago-login img {
+      padding-right: 30px;
+    }
     /* Create a pseudo-element to display the new image */
     .subscribe-img::before {
       content: url("img/subscribe-responsive.svg");
@@ -963,51 +968,560 @@ a:active {
       width: 100%;
       padding-left: 5%;
     }
-  }
 
-  .subscribe img {
-    width: 1440px;
-    height: 501px;
-    position: relative;
-    padding: 4%;
-  }
+    .subscribe img {
+      width: 1440px;
+      height: 501px;
+      position: relative;
+      padding: 4%;
+    }
 
-  .subscribe-title {
-    position: absolute;
-    transform: translate(150%, -110%);
-    text-align: center;
-  }
+    .subscribe-title {
+      position: absolute;
+      transform: translate(150%, -110%);
+      text-align: center;
+    }
 
-  .input-placeholder {
-    padding: 5%;
-    width: 100%;
-  }
+    .input-placeholder {
+      padding: 5%;
+      width: 100%;
+    }
 
-  input[type="email"] {
-    width: 100%;
-    padding: 10px;
+    input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      background-image: url("img/icono-correo.svg");
+      /* Replace this with the path to your email icon */
+      background-repeat: no-repeat;
+      background-size: 24px;
+      background-position: 10px center;
+      text-indent: 40px;
+      margin-bottom: 7%;
+      font-size: 20px;
+    }
+
+    .subscribe-button {
+      background-color: #ffa666;
+      border-width: 0cm;
+      border-radius: 5px;
+      padding: 4%;
+      padding-left: 15%;
+      padding-right: 15%;
+      color: white;
+      font-family: "Bariol Regular";
+      font-size: 30px;
+    }
+    /******************************** Landing user*/
+    .ver-todos {
+      display: flex;
+      padding-bottom: 2%;
+      justify-content: end;
+      font-family: "Geomanist Bold";
+      font-size: 20px;
+      color: #9f66db;
+    }
+    .user-data {
+      padding-bottom: 100px;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: -70px;
+      display: flex;
+      flex-direction: column;
+    }
+    .user-data h4 {
+      padding: 0%;
+      margin-bottom: 2%;
+      margin-top: 0%;
+      color: #676767;
+      font-family: "Geomanist Bold";
+      font-size: 30px;
+    }
+    .user-selector {
+      margin-right: 10px;
+      border-radius: 5px;
+      border-color: #666;
+      border-width: 1px;
+      background-color: #f3f3f3;
+      color: #676767;
+      cursor: pointer;
+      padding: 8px 12px;
+      transition: background-color 0.3s, color 0.3s;
+      font-family: "Bariol Regular";
+      font-size: 15px;
+    }
+
+    .user-selector:focus,
+    .user-selector:active {
+      background-color: #dfccf3;
+      color: #5f259f;
+      outline: none;
+      font-family: "Bariol Regular";
+      font-size: 15px;
+    }
+
+    .mis-productos,
+    .estado-tramite,
+    .acciones-rapidas {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 6px rgba(159, 102, 219, 0.25);
+    }
+  }
+  .container-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .container-info img {
+    margin-right: 40px;
+  }
+  .container-info .titulo,
+  .container-info .subtitulo {
+    margin: 0;
+  }
+  .titulo {
+    font-family: "Geomanist Bold";
+    font-size: 18px;
+    color: #ff8833;
+  }
+  .titulo2 {
+    font-family: "Bariol Regular";
+    font-size: 18px;
+    color: #676767;
+  }
+  .titulo3 {
+    font-family: "Bariol Regular";
+    font-size: 23px;
+    color: #9f66db;
+  }
+  .subtitulo {
+    font-family: "Bariol Light";
+    font-size: 18px;
+    color: #676767;
+  }
+  .container-info .subtitulo {
+    margin-top: 4px;
+  }
+  .p {
+    padding-left: 800px;
+    color: #ff8833;
+    font-size: 28px;
+  }
+  .p2 {
+    padding-left: 840px;
+    color: #ff8833;
+    font-size: 28px;
+  }
+  .status1 {
     border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    background-image: url("img/icono-correo.svg");
-    /* Replace this with the path to your email icon */
-    background-repeat: no-repeat;
-    background-size: 24px;
-    background-position: 10px center;
-    text-indent: 40px;
-    margin-bottom: 7%;
+    border-color: #5f259f;
+    border-width: 10px;
+    background-color: #dfccf3;
+    color: #5f259f;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 10px;
+    padding: 2%;
+  }
+  .status {
+    border-radius: 5px;
+    border-color: #666;
+    border-width: 1px;
+    background-color: #ffe1cc;
+    color: #ff8833;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 10px;
+    padding: 2%;
+  }
+  .acciones-rapidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .acciones-rapidas .container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    padding: 10px;
+  }
+
+  .acciones-rapidas .container-info img {
+    margin-bottom: 10px;
+  }
+  .container-info2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(159, 102, 219, 0.25);
+  }
+  .container-info2 img {
+    margin-right: 0px;
+  }
+  .container-info2 .titulo,
+  .container-info2 .subtitulo {
+    margin: 0;
+  }
+  .container-info2 .subtitulo {
+    margin-top: 4px;
+  }
+  .acciones-rapidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .acciones-rapidas .container-info2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .acciones-rapidas .container-info2 img {
+    margin-bottom: 10px;
+  }
+  .hidden {
+    display: none;
+  }
+  .imgtext {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    padding: 40px 140px 40px 140px;
+  }
+  .imgtext2 {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    padding: 40px 130px 40px 130px;
+  }
+  .imgtext3 {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    text-align: center;
+    padding: 40px 90px 40px 90px;
+  }
+}
+
+/* =================================================================*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
+
+.navbar img {
+  padding: 2%;
+}
+
+/* Estilos para el menú hamburguesa */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.material-icons {
+  color: #00a2af;
+}
+
+/* Estilos para el ícono del menú hamburguesa */
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+
+.submenu {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.desktop-menu {
+  flex-direction: column;
+  width: 100%;
+  display: none;
+}
+
+/* Estilos para el menú hamburguesa desplegado */
+.hamburger-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 10;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+}
+
+/* Estilos para botones naranjas del menú hamburguesa */
+.menu-button {
+  background-color: #ff8833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.menu-button img {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+.top-level-items img {
+  display: none;
+}
+
+.li-menu-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* Estilos para titulos naranjas menú hamburguesa */
+.dropdown-title {
+  position: relative;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.dropdown-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 10px;
+  border-bottom: 1px solid #ffe1cc;
+}
+
+.arrow-down {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
+
+.dropdown-title:hover {
+  cursor: pointer;
+}
+
+.hamburger-menu-container ul li .dropdown-title {
+  color: #ff8833;
+}
+
+.hamburger-menu-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hamburger-menu-container ul li a {
+  display: block;
+  color: #676767;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.hamburger-menu-container a.menu-button {
+  color: white;
+}
+
+.hamburger-menu-container ul li .dropdown {
+  display: none;
+  position: relative;
+}
+
+.hamburger-menu-container ul li .dropdown ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a {
+  padding: 5px 16px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a:hover {
+  background-color: #666;
+}
+
+.hamburger-menu-container ul li a:hover,
+.hamburger-menu-container ul li:hover > .dropdown {
+  cursor: pointer;
+}
+
+/*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 1200px) {
+  /* Estilos navbar */
+  .hamburger-menu {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    padding: 0%;
+  }
+
+  .desktop-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .top-level-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+    padding: 1%;
+  }
+
+  .pago-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-preguntas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .navbar img {
+    display: none;
+  }
+
+  .top-level-items img {
+    display: block;
+    padding: 0%;
+  }
+
+  .contact-preguntas a {
+    color: #676767;
+  }
+
+  a.menu-button {
+    color: #efefef;
+    text-decoration: none;
+  }
+
+  .dropdown-title2 {
+    position: relative;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Geomanist Medium", sans-serif;
+    color: #676767;
+  }
+
+  .dropdown-title2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 10px;
+    border-bottom: 0px solid #ffe1cc;
+  }
+
+  .arrow-down {
+    display: none;
+    font-size: 0.8em;
+    margin-right: 10px;
+  }
+
+  .category-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 1%;
+    background-color: #efefef;
+    width: 100%;
+    margin-bottom: 0%;
+  }
+
+  .dropdown-container {
+    margin-right: 150px;
+  }
+
+  .dropdown-container:last-child {
+    margin-right: 0;
+  }
+
+  .navbar li {
+    position: relative;
+    display: inline-block;
+    transform: translate(0%, 10%);
     font-size: 20px;
   }
 
-  .subscribe-button {
-    background-color: #ffa666;
-    border-width: 0cm;
+  .navbar li > a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #676767;
+    align-items: center;
+  }
+
+  .navbar .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
     border-radius: 5px;
-    padding: 4%;
-    padding-left: 15%;
-    padding-right: 15%;
-    color: white;
-    font-family: "Bariol Regular";
-    font-size: 30px;
+    z-index: 10;
+    width: auto;
+    padding: 10px;
+  }
+
+  .navbar li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+    background-color: #efefef;
   }
 }
