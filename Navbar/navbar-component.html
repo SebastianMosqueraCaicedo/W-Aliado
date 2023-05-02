@@ -1,10 +1,5 @@
-class Navbar extends HTMLElement {
-  constructor() {
-    super();
-
-    const template = document.createElement("template");
-    template.innerHTML = `
-    <style>
+<template id="navbar-template">
+  <style>
     .navbar {
       display: flex;
       justify-content: space-between;
@@ -14,7 +9,6 @@ class Navbar extends HTMLElement {
       padding: 10px;
       position: relative;
       z-index: 5;
-      width: 100%;
     }
 
     .navbar img {
@@ -264,7 +258,7 @@ class Navbar extends HTMLElement {
         list-style-type: none;
         padding: 1%;
         background-color: #efefef;
-        width: 98%;
+        width: 100%;
         margin-bottom: 0%;
 
       }
@@ -314,7 +308,7 @@ class Navbar extends HTMLElement {
     }
   </style>
   <nav class="navbar">
-    <img src="/img/logow.svg" alt="logo">
+    <img src="img/logow.svg" alt="logo">
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
       <span class="material-icons">menu</span>
@@ -324,12 +318,12 @@ class Navbar extends HTMLElement {
       <ul>
         <li class="li-menu-button">
           <a href="#" class="menu-button">
-            <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+            <img src="img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
           </a>
         </li>
         <li class="li-menu-button">
           <a href="/Login-y-Registro/index.html" class="menu-button">
-            <img src="/img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
+            <img src="img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
           </a>
         </li>
         <li class="dropdown">
@@ -386,7 +380,7 @@ class Navbar extends HTMLElement {
     <!-- Contenedor del menú hamburguesa responsive -->
     <div class="desktop-menu">
       <div class="top-level-items">
-        <img src="/img/logow.svg" alt="logo">
+        <img src="${this._rootURL}img/logow.svg" alt="logo">
         <a href="#" class="contactanos-button">
         </a>
         <a href="#" class="contactanos-button">
@@ -399,10 +393,10 @@ class Navbar extends HTMLElement {
         </div>
         <div class="pago-login">
           <a href="#" class="menu-button">
-            <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
+            <img src="img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
           </a>
           <a href="/Login-y-Registro/index.html" class="menu-button">
-            <img src="/img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesión
+            <img src="img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesión
           </a>
         </div>
       </div>
@@ -461,45 +455,4 @@ class Navbar extends HTMLElement {
       </ul>
     </div>
   </nav>
-`;
-
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
-  }
-}
-
-customElements.define("custom-navbar", Navbar);
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Función para mostrar u ocultar el menú hamburguesa
-  const menu = document.querySelector(".hamburger-menu-container");
-  function toggleHamburgerMenu() {
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "block";
-    }
-  }
-});
-
-// Función para cerrar el menú hamburguesa al hacer clic fuera de él
-document.addEventListener("click", function (event) {
-  const menu = this.shadowRoot.querySelector(".hamburger-menu-container");
-  const target = event.target;
-  if (
-    !target.closest(".hamburger-menu") &&
-    !target.closest(".hamburger-menu-container")
-  ) {
-    menu.style.display = "none";
-  }
-});
-// Función para dropdown menu
-
-function toggleDropdown(event) {
-  const dropdownTitle = event.target;
-  const dropdownMenu = dropdownTitle.nextElementSibling;
-
-  if (dropdownMenu.classList.contains("submenu")) {
-    dropdownMenu.classList.toggle("show");
-  }
-}
+</template>
