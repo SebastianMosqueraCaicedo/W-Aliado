@@ -260,6 +260,10 @@
   z-index: 1;
 }
 
+.container-characters {
+  display: none;
+}
+
 .nav-cover ul {
   position: relative;
     list-style: none;
@@ -589,8 +593,303 @@ footer {
   font-family: 'Bariol Regular';
 }
 
+
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1440px) {
+
+  /* Estilos del responsive */
+
+  .nav-cover {
+    position: absolute;
+    top: 91%;
+    transform: translate(-50%, 50%);
+    width: 1262px;
+    height: 43px;
+  }
+  
+  #marker {
+    bottom: 0px;
+    width: 420px;
+  }
+
+  .characters {
+    width: 420px;
+    height: 43px;
+  }
+  
+  .requirements {
+    width: 420px;
+    height: 43px;
+    border-left: 1px solid var(--lila-line);
+  }
+
+  .benefits {
+    width: 420px;
+    height: 43px; 
+    border-right: 1px solid var(--lila-line);
+}
+
+  .nav-cover a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--lila-lyrics);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bariol Regular";
+    pointer-events: none;
+  }
+
+  .nav-crumbs {
+    display: none;
+  }
+  
+  .cover-page {
+    position: relative;
+    background: url(../img/portada-deposito-desktop.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 479px;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    margin-left: 59%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    /* margin-left: -149px; */
+    /* padding: 115px 0px 0px 500px; */
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    /* padding: 0px 0px 0px 530px; */
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Estilos de la lista */
+  .list-characters,
+ .info-list,
+ .list-characters2,
+ .info-list2,
+ .list-characters3,
+ .info-list3 {
+  display: none;
+ }
+
+  .container-characters {
+  display: block;
+  }
+
+  .list-container {
+    width: 100%;
+  }
+
+  .info-list-desktop {
+    padding-left: 3%;
+  }
+
+  .container-characters {
+  display: flex;
+  justify-content: center;
+  width: 33.33333%;
+  font-size: 20px;
+  }
+
+  .container-characters li {
+    list-style: none;
+    padding-right: 20%;
+    color: var(--gray-lyric);
+  }
+
+  .list-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    padding: 0px 0px 0px 7%;
+    margin-bottom: 33px;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+
+ /* LISTA1*/
+
+  .list1 li:nth-child(1){
+    margin-bottom: 7.5%;
+  }
+
+  .list1 li:nth-child(2){
+    margin-bottom: 19.5%;
+  }
+
+  .list1 li:nth-child(3){
+    margin-bottom: 18.5%;
+  }
+
+  .list1 li:nth-child(4){
+    margin-bottom: 47.5%;
+  }
+
+   /* LISTA2*/
+
+   .list2 li:nth-child(1){
+    margin-bottom: 13%;
+  }
+
+  .list2 li:nth-child(2){
+    margin-bottom: 14%;
+  }
+
+  .list2 li:nth-child(3){
+    margin-bottom: 30%;
+  }
+
+  .list2 li:nth-child(4){
+    margin-bottom: 23%;
+  }
+
+
+   /* LISTA3*/
+
+   .list3 li:nth-child(1){
+    margin-bottom: 12%;
+  }
+   .list3 li:nth-child(2){
+    margin-bottom: 14%;
+  }
+   .list3 li:nth-child(3){
+    margin-bottom: 24%;
+  }
+   .list3 li:nth-child(4){
+    margin-bottom: 54%;
+  }
+
+   /* LISTA4*/
+
+   .list4 li:nth-child(1){
+    margin-bottom: 13.5%;
+  }
+  
+   /* LISTA5*/
+
+   .list5 li:nth-child(1){
+    margin-bottom: 25.5%;
+  }
+
+   /* LISTA7*/
+
+   .list7 li:nth-child(1){
+    margin-bottom: 18.5%;
+  }
+
+
+  /* Estilo de más informacion */
+
+  .more-information {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .more-information p {
+    font-size: 35px;
+    color: var(--white);
+  }
+  
+  .buttons button:nth-child(1) {
+    width: 298.52px;
+    height: 44.78px;
+    font-size: 17.35px;
+  }
+  
+  .buttons button:nth-child(2) {
+    width: 298.52px;
+    height: 44.78px;
+    font-size: 17.35px;
+  }
+  
+
+ /* Estilos del responsive footer */
+
+ .footer-container {
+  padding: 42px 75px 15px 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-button {
+  width: 262px;
+}
+
+.footer-button img {
+  display: none;
+}
+
+#dropdown-footer,
+#dropdown-footer2,
+#dropdown-footer3,
+#dropdown-footer4 {
+  display: block;
+}
+
+#dropdown-footer.vision,
+#dropdown-footer2.vision,
+#dropdown-footer3.vision,
+#dropdown-footer4.vision {
+  display: block;
+}
+
+.last-footer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  gap: 550px;
+  align-items: center;
+}
+}
+
+@media (min-width: 1024px) {
+ 
+  .cards-container {
+    max-width: 1280px;
+    margin: 65px auto;
+    margin-bottom: 25px;
+    padding: 2rem;
+  }
+
+  .cover-page {
+    background: url(../img/portada-deposito-desktop2.jpg);
+  }
+}
+
+
     /* Iphone SE */
-@media (min-width: 375px) {
+@media (max-width: 375px) {
     .information h1 {
         padding: 18px 55px 0px 55px;
     }
@@ -599,7 +898,7 @@ footer {
     }
 }
     /* Iphone XR */
-@media (min-width: 414px) {    
+@media (max-width: 414px) {    
     .information h1 {
         padding: 27px 90px 0px 90px;
     }
@@ -611,7 +910,7 @@ footer {
     }
 }
     /* Iphone 12 PRO */
-@media (min-width: 390px) {     
+@media (max-width: 390px) {     
     .information h1 {
         padding: 25px 65px 0px 65px;
     }

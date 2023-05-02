@@ -202,7 +202,7 @@
 
 .cover-page {
     position: relative;
-    background: url(../img/portada-cdt.png);
+    background: url(../img/portada-cdt-desktop.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 501px;
@@ -256,6 +256,19 @@
   }
 
 /* Estilos de la navegación secundaria */
+
+.container-characters,
+.container-characters1,
+.container-characters2,
+.container-characters3,
+.container-characters4,
+.container-characters5 {
+ display: none;
+ }
+
+ .info-numbers {
+  display: none;
+ }
 
 .nav-cover {
     position: relative;
@@ -715,11 +728,10 @@
 }
 
 .info-tramits2 {
-    font-family: 'Geomanist';
     font-size: 13px;
     color: var(--gray-lyric);
-    padding: 0 20px;
-    padding-top: 20px;
+    padding: 0 2%;
+    padding-top: 3%;
 }
 
 .page3-container {
@@ -1176,9 +1188,567 @@ footer {
   font-family: 'Bariol Regular';
 }
 
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1440px) {
+
+    /* Estilos del responsive */
+
+  .list-characters,
+ .info-list,
+ .list-characters2,
+ .info-list2,
+ .list-characters3,
+ .list-characters6,
+ .info-list3,
+ .info-list4, 
+ .info-list5,
+ .info-list6,
+ .info-list7 {
+  display: none;
+ }
+
+ .rest-info2 {
+  display: none;
+}
+
+ .button-tramits {
+  display: none;
+ }
+  
+    .nav-cover {
+      position: absolute;
+      top: 91%;
+      transform: translate(-50%, 50%);
+      width: 1262px;
+      height: 43px;
+    }
+    
+    #marker {
+      bottom: 0px;
+      width: 315.5px;
+    }
+  
+    .characters {
+        width: 315.5px;
+        height: 43px; 
+    }
+    
+    .devolutions {
+        width: 315.5px;
+        height: 43px; 
+      border-left: 1px solid var(--lila-line);
+    }
+  
+    .benefits {
+        width: 315.5px;
+        height: 43px; 
+      border-right: 1px solid var(--lila-line);
+  }
+
+  .tramits {
+    width: 315.5px;
+    height: 43px; 
+  }
+  
+    .nav-cover a {
+      text-decoration: none;
+      font-size: 20px;
+      color: var(--lila-lyrics);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Bariol Regular";
+      pointer-events: none;
+    }
+  
+    .nav-crumbs {
+      display: none;
+    }
+    
+    .cover-page {
+      position: relative;
+      background: url(../img/portada-cdt-desktop.jpg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 479px;
+    }
+    
+    .information {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      margin-left: 61%;
+      padding-top: 12%;
+    }
+  
+    .information > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .information h1 {
+      font-size: 32px;
+      font-family: "Geomanist";
+      line-height: 40.54px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 0;
+    }
+    
+    .information p {
+      font-family: "Bariol Regular";
+      font-size: 20px;
+      text-align: start;
+      line-height: 23.72px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .rest-info {
+        height: 350px;
+    }
+    
+    .rest-info h5{
+        font-size: 30px;
+        width: 100%;
+        padding: 32px 22% 0px 99px;
+    }
+    
+    .list-rest {
+      display: none;
+    }
+
+    .info-tramits {
+      font-size: 20px;
+      line-height: 26.5px;
+  }
+  
+  .info-tramits2 {
+      font-size: 25px;
+  }
+   
+  .last-info {
+    font-size: 20px;
+  }
+    .info-drop1{
+      width: 1260px;
+      max-width: 1440px;
+      height: 112px;
+    }
+
+  .info-drop2{
+    position: relative;
+    bottom: 40px;
+    width: 1260px;
+    max-width: 1440px;
+    height: 320px;
+}
+
+    .info-drop3{
+      width: 1260px;
+      max-width: 1440px;
+      height: 112px;
+    }
+
+  .info-drop4{
+    position: relative;
+    bottom: 40px;
+    width: 1260px;
+    max-width: 1440px;
+    height: 285px;
+}
+  .info-drop5{
+    position: relative;
+    bottom: 40px;
+    width: 1260px;
+    max-width: 1440px;
+    height: 340px;
+}
+  .info-drop6{
+    position: relative;
+    bottom: 40px;
+    width: 1260px;
+    max-width: 1440px;
+    height: 340px;
+}
+
+  .drop1,
+  .drop2,
+  .drop3,
+  .drop4,
+  .drop5,
+  .drop6 {
+      width: 1260px;
+      max-width: 1440PX;
+      height: 94px;
+  }
+
+  .drop1 p,
+  .drop2 p,
+  .drop3 p,
+  .drop4 p,
+  .drop5 p,
+  .drop6 p{
+    font-size: 20px;
+}
+
+.last-info4 {
+  font-family: 'Bariol Regular';
+  font-size: 13px;
+  color: var(--gray-lyric);
+  padding: 0 7%;
+  padding-top: 40px;
+}   
+
+#info1 {
+  font-size: 30px;
+  line-height: 150%;
+}
+
+#info2 {
+  line-height: 150%;
+  font-size: 23px;
+  margin-bottom: 40px;
+}
+
+.rest-info-desktop {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--lila-lyrics);
+  line-height: 19.5px;
+}
+
+
+.info-characters {
+    font-size: 20px;
+    padding: 0 6%;
+    padding-top: 40px;
+    line-height: 28.5px;
+    margin-bottom: 20px;
+    margin-bottom: 2%;
+}
+
+.info-characters2 {
+    font-size: 40px;
+    padding: 0 6%;
+}
+
+    /* Estilos de la lista */
+    .list-container {
+      width: 100%;
+    }
+  
+    .info-list-desktop {
+      padding-left: 3%;
+    }
+  
+    .container-characters,
+    .container-characters2{
+    display: flex;
+    justify-content: center;
+    width: 33.33333%;
+    font-size: 20px;
+    }
+
+    .container-characters3 {
+    display: flex;
+    justify-content: center;
+    width: 38%;
+    font-size: 20px;
+    }
+
+    .container-characters1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 20px;
+    }
+  
+    .container-characters4 {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    font-size: 20px;
+    }
+
+    .container-characters5 {
+    display: flex;
+    justify-content: center;
+    width: 48%;
+    font-size: 20px;
+    gap: 2%;
+    }
+    .container-characters5 {
+    line-height: 30px;
+    }
+  
+    .container-characters li {
+      list-style: none;
+      padding-right: 20%;
+      color: var(--gray-lyric);
+    }
+    
+    .container-characters2 li {
+      list-style: none;
+      padding-right: 20%;
+      color: var(--white);
+    }
+
+    .container-characters1 li,
+    .container-characters3 li,
+    .container-characters4 li,
+    .container-characters5 li {
+      list-style: none;
+      color: var(--gray-lyric);
+    }
+  
+    .list-container-desktop {
+      display: flex;
+      flex-direction: row;
+      margin-top: 60px;
+      padding: 0px 0px 0px 7%;
+      margin-bottom: 33px;
+      max-width: 1440px;
+      margin-inline: auto;
+    }
+
+    .list-container,
+    .list-container2 {
+      display: flex;
+      flex-direction: row;
+      margin-top: 60px;
+      padding: 0px 0px 0px 7%;
+      margin-bottom: 33px;
+      max-width: 1440px;
+      margin-inline: auto;
+    }
+
+    .info-numbers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .up-numbers,
+    .down-numbers {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20%;
+    }
+
+    .up-numbers {
+      margin-bottom: 5%;
+    }
+
+    .noa {
+      width: 282px;
+    }
+
+    .list-container5, 
+    .list-container6 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      margin-bottom: 15px;
+      margin-top: 3%;
+  }
+
+    .one,
+    .two,
+    .three,
+    .four {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--gray-lyric);
+      font-size: 20px;
+      line-height: 150%;
+    }
+  
+   /* LISTA1*/
+  
+    .list1 li:nth-child(1){
+      margin-bottom: 2.5%;
+    }
+
+    .list1 li:nth-child(2){
+      margin-bottom: 2.5%;
+    }
+  
+     /* LISTA2*/
+  
+     .list2 li:nth-child(1){
+      margin-bottom: 24%;
+    }
+
+     /* LISTA3*/
+  
+     .list3 li:nth-child(1){
+      margin-bottom: 24%;
+    }
+     /* LISTA5*/
+
+     .list5 li:nth-child(1){
+      margin-bottom: 17%;
+    }
+     .list5 li:nth-child(2){
+      margin-bottom: 42%;
+    }
+  
+     /* LISTA6*/
+
+     .list6 li:nth-child(1){
+      margin-bottom: 15.5%;
+    }
+     .list6 li:nth-child(2){
+      margin-bottom: 30.5%;
+    }
+
+     /* LISTA7*/
+
+     .list7 li:nth-child(1){
+      margin-bottom: 9%;
+    }
+     .list7 li:nth-child(2){
+      margin-bottom: 23%;
+    }
+
+    /* LISTA8*/
+     .list8 li:nth-child(1){
+      margin-bottom: 12%;
+    }
+    /* LISTA9*/
+     .list9 li:nth-child(1){
+      margin-bottom: 18%;
+    }
+    /* LISTA10*/
+     .list10 li:nth-child(1){
+      margin-bottom: 15%;
+    }
+
+    /* LISTA11*/
+     .list11 li:nth-child(1){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(2){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(3){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(4){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(5){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(5){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(6){
+      margin-bottom: 2.5%;
+    }
+  
+    /* Estilo de más informacion */
+  
+    .more-information {
+      width: 100%;
+      height: 200px;
+      margin-top: 0;
+    }
+    
+    .more-information p {
+      font-size: 35px;
+      color: var(--white);
+    }
+
+    a {
+      text-decoration: none;
+    }
+    
+    .buttons button:nth-child(1) {
+      width: 298.52px;
+      height: 44.78px;
+      font-size: 17.35px;
+    }
+    
+    .buttons button:nth-child(2) {
+      width: 298.52px;
+      height: 44.78px;
+      font-size: 17.35px;
+    }
+
+    .simulator {
+      display: flex;
+      flex-direction: column;
+      margin-left: 35%;
+      padding-top: 6%;
+      margin-top: -69px;
+    }
+    
+    .simulator-button {
+      font-size: 13.42px;
+      width: 186.29px;
+      height: 45.86px;
+      border-radius: 4.27119px;
+      font-size: 20.17px;
+    }
+    
+   /* Estilos del responsive footer */
+  
+   .footer-container {
+    padding: 42px 75px 15px 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer-button {
+    width: 262px;
+  }
+  
+  .footer-button img {
+    display: none;
+  }
+  
+  #dropdown-footer,
+  #dropdown-footer2,
+  #dropdown-footer3,
+  #dropdown-footer4 {
+    display: block;
+  }
+  
+  #dropdown-footer.vision,
+  #dropdown-footer2.vision,
+  #dropdown-footer3.vision,
+  #dropdown-footer4.vision {
+    display: block;
+  }
+  
+  .last-footer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    gap: 550px;
+    align-items: center;
+  }
+  }
+
 
           /* Iphone XR */
-    @media screen and (min-width: 414px) {
+    @media screen and (max-width: 414px) {
         .information p {
             padding: 0px 80px 0px 80px;
         }
