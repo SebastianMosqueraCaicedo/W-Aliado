@@ -315,9 +315,14 @@ a {
   font-size: 13px;
   display: flex;
   flex-direction: column;
+  gap: 5px;
   align-items: center;
   font-family: "Bariol Regular";
   pointer-events: none;
+}
+
+a svg {
+  height: 27px;
 }
 
 .nav-cover img {
@@ -335,9 +340,10 @@ a {
   display: grid;
   place-items: center;
   gap: 2rem;
-  grid-auto-rows: 22rem;
+  padding: 1rem;
+  grid-auto-rows: 23rem;
   margin-bottom: 25px;
-  grid-template-columns: repeat(autofill, minmax(min(100%, 25rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
 }
 
 .card-template {
@@ -345,7 +351,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   padding: 17px 14px;
-  width: 365px;
+  width: 100%;
   height: 100%;
   background: #ffffff;
   box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
@@ -357,8 +363,8 @@ a {
   flex-direction: column;
   align-items: flex-start;
   padding: 17px 14px;
-  width: 365px;
-  height: 370px;
+  width: 100%;
+  height: 100%;
   background: #ffffff;
   box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
   border-radius: 7px;
@@ -366,6 +372,9 @@ a {
 
 .card-template img {
   margin-bottom: 12px;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
 }
 
 .card-template h5 {
@@ -513,6 +522,174 @@ footer {
   font-family: "Bariol Regular";
 }
 
+
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1440px) {
+
+  /* Estilos del responsive */
+
+  .nav-cover {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: var(--white);
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+    width: 851px;
+    height: 114px;
+  }
+
+  .nav-cover a {
+    font-size: 17px;   
+  }
+
+  .nav-cover svg {
+    width: 100%;
+  }
+
+  .all-menu {
+    width: 212.75px;
+    height: 114px;
+  }
+  
+  .spins-menu {
+    width: 212.75px;
+    height: 114px;
+  }
+
+  .spins-menu svg {
+    margin-bottom: 10px;
+  }
+
+  .spins-menu p {
+    padding: 0 50px;
+  }
+  
+  .saving-menu {
+    width: 212.75px; 
+    height: 114px;
+  }
+  
+  .invert-menu {
+    width: 212.75px;
+    height: 114px;
+  }
+
+  #marker {
+    height: 114px;
+  }
+
+  .cover-page {
+    position: relative;
+    background: url(../img/portada-ahorro-deskto.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 479px;
+  }
+  
+  .information {
+    display: flex;
+    /* align-items: flex-end; */
+    flex-direction: column;
+    color: white;
+    width: 25%;
+    /* position: relative; */
+    /* left: 315px; */
+    margin-left: 58%;
+    padding-top: 9%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    /* margin-left: -149px; */
+    /* padding: 115px 0px 0px 500px; */
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    /* padding: 0px 0px 0px 530px; */
+    line-height: 20.72px;
+    width: 100%;
+    padding: 0;
+  }
+
+ /* Estilos del responsive footer */
+
+ .footer-container {
+  padding: 42px 75px 15px 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#we {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-button {
+  width: 262px;
+}
+
+.footer-button img {
+  display: none;
+}
+
+#dropdown-footer,
+#dropdown-footer2,
+#dropdown-footer3,
+#dropdown-footer4 {
+  display: block;
+}
+
+#dropdown-footer.vision,
+#dropdown-footer2.vision,
+#dropdown-footer3.vision,
+#dropdown-footer4.vision {
+  display: block;
+}
+
+.last-footer {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: start;
+  gap: 550px;
+  align-items: center;
+}
+
+
+@media (max-width: 1024px) {
+  .cover-page {
+    background: url(../img/portada-ahorro-desktop2.svg);
+    background-repeat: no-repeat;
+  }
+
+  .cards-container {
+    max-width: 1280px;
+    margin: 65px auto;
+    margin-bottom: 25px;
+    padding: 2rem;
+  }
+}
+
 @media (max-width: 360px) {
   .nav-cover {
     top: 49.5%;
@@ -525,4 +702,5 @@ footer {
   .information p {
     padding: 0px 50px 0px 50px;
   }
+}
 }

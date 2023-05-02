@@ -12,90 +12,20 @@
 
 <body>
     <!-- Barra de navegación con logo y menú hamburguesa -->
-    <nav class="navbar">
-        <img src="/icons/logo-w.svg" alt="logo">
-        <!-- Ícono del menú hamburguesa -->
-        <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
-            <span class="material-icons">menu</span>
-        </div>
-        <!-- Contenedor del menú hamburguesa desplegado -->
-        <div class="hamburger-menu-container">
-            <ul>
-                <li class="li-menu-button">
-                    <a href="#" class="menu-button">
-                        <img src="../img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
-                    </a>
-                </li>
-                <li class="li-menu-button">
-                    <a href="#" class="menu-button">
-                        <img src="../img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
-                    </a>
-                </li>
-                <li class="dropdown">
-                    <span class="dropdown-title" onclick="toggleDropdown(event)">
-                        Clientes
-                        <span class="arrow-down">&#9662;</span>
-                    </span>
-                    <ul class="submenu">
-                        <li><a href="#">Personas con negocio</a></li>
-                        <li><a href="#">Ahorradores e inversionistas</a></li>
-                        <li><a href="#">Pensionados y maestros</a></li>
-                        <li><a href="#">Colombianos en el exterior</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span class="dropdown-title" onclick="toggleDropdown(event)">
-                        Productos y servicios
-                        <span class="arrow-down">&#9662;</span>
-                    </span>
-                    <ul class="submenu">
-                        <li><a href="#">Créditos</a></li>
-                        <li><a href="#">Cuentas de ahorro e inversión</a></li>
-                        <li><a href="#">Giros internacionales</a></li>
-                        <li><a href="#">Seguros</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span class="dropdown-title" onclick="toggleDropdown(event)">
-                        Asesoría financiera
-                        <span class="arrow-down">&#9662;</span>
-                    </span>
-                    <ul class="submenu">
-                        <li><a href="#">Educación financiera</a></li>
-                        <li><a href="#">Consumidor financiero</a></li>
-                        <li><a href="#">Seguridad bancaria</a></li>
-                        <li><a href="#">Revista</a></li>
-                        <li><a href="#">Clasificados</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <span class="dropdown-title" onclick="toggleDropdown(event)">
-                        Acerca de nosotros
-                        <span class="arrow-down">&#9662;</span>
-                    </span>
-                    <ul class="submenu">
-                        <li><a href="#">Quiénes somos</a></li>
-                        <li><a href="#">Opción transaccional</a></li>
-                        <li><a href="#">Línea telefónica</a></li>
-                        <li><a href="#">PQRS</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <custom-navbar></custom-navbar>
 
     <div id="login-component">
         <picture>
-            <source media="(max-width: 700px)" srcset="./assets/component-image.png"class="images">
-            <source media="(min-width: 701px)" srcset="./assets/web-login.png" class="images">
-            <img src="./assets/component-image.png" alt="" class="images">
+            <source media="(max-width: 700px)" srcset="./assets/component_image_4x.webp">
+            <source media="(min-width: 701px)" srcset="./assets/web-login_4x.webp" class="images">
+            <img src="./assets/component_image_4x.webp" alt="" class="images">
         </picture>
         <div id="login-component-card">
-            <div id="login-title">
-                <embed src="./assets/profile/24/Outline.svg" type="">
-                <h2>Inicia Sesión</h2>
-            </div>
             <form id="login-form">
+                <div id="login-title">
+                    <embed src="./assets/profile/24/Outline.svg" type="">
+                    <h2>Inicia Sesión</h2>
+                </div>
                 <div>
                     <div id="login-inputs">
                         <input type="email" id="email-login" name="email" required placeholder="Email" class="inputs">
@@ -109,17 +39,21 @@
                         <p class="to-sign-up"> ¿Todavía no tienes una cuenta?</p>
                         <p class="to-sign-up" id="register-text"> Registrate</p>
                     </div>
-                    <a href="/index.html" type="button" value="Ingresar" class="button" id="login">Ingresar </a>
+                    <a href="../Landing-user/landing-user.html" type="button" value="Ingresar" class="button"
+                        id="login">Ingresar </a>
                 </div>
+            </form>
+            <figure id="image-login">
+                <img src="./assets/login-desktop-image_4x.webp" id="image-login-section" alt="">
+            </figure>
         </div>
-        </form>
     </div>
     </div>
     <div id="sign-up-component" style="display: none">
         <picture>
-            <source media="(max-width: 700px)" srcset="./assets/create-account.png" class="images">
-            <source media="(min-width: 701px)" srcset="./assets/web-create-account.png" class="images">
-            <img src="./assets/create-account.png" alt="" class="images">
+            <source media="(max-width: 700px)" srcset="./assets/create-account_4x.webp" class="images">
+            <source media="(min-width: 701px)" srcset="./assets/web-create-account_4x.webp" class="images">
+            <img src="./assets/create-account_4x.webp" alt="" class="images">
         </picture>
         <div id="form-component">
             <form id="sign-up-form">
@@ -130,6 +64,14 @@
                 <div>
                     <label for="user-last-name">Apellidos:</label>
                     <input type="text" id="last-name" name="last-name" required class="inputs" placeholder="Apellidos">
+                </div>
+                <div>
+                    <label for="user-type">Tipo de Perfil:</label>
+                    <select name="user-type" id="user-type" class="inputs">
+                        <option value="selecciona">Selecciona tu perfil</option>
+                        <option value="Hombre">Ahorradores</option>
+                        <option value="Mujer">Personas con negocio</option>
+                    </select>
                 </div>
                 <div>
                     <label for="genre">Sexo:</label>
@@ -176,6 +118,8 @@
     </div>
 
     <script src="login.js"></script>
+    <script type="module" src="/Navbar/navbar-component.js"></script>
+
 </body>
 
 </html>

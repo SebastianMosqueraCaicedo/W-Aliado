@@ -228,6 +228,20 @@
 
 /* Estilos de la navegación secundaria */
 
+
+ .container-characters,
+ .container-characters,
+ .container-characters2,
+ .container-characters3,
+ .container-characters4,
+ .container-characters5 {
+  display: none;
+  }
+
+  .rest-info-desktop {
+    display: none;
+  }
+
 .nav-cover {
     position: relative;
     top: 53.5%; 
@@ -665,7 +679,7 @@
 
 .rest-info {
     width: 100%;
-    height: 430px;
+    height: 270px;
     background-color: var(--lila-lyrics);
     display: flex;
     flex-direction: column;
@@ -748,7 +762,6 @@
 .more-information {
     width: 100%;
     height: 120px;
-    margin-top: 50px;
     background-color: var(--lila-lyrics);
 }
 
@@ -908,8 +921,461 @@ footer {
   font-family: 'Bariol Regular';
 }
 
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1440px) {
+
+    /* Estilos del responsive */
+
+  .list-characters,
+ .info-list,
+ .list-characters2,
+ .info-list2,
+ .list-characters3,
+ .info-list3,
+ .info-list4 {
+  display: none;
+ }
+
+ .rest-info2 {
+  display: none;
+}
+
+ .button-tramits {
+  display: none;
+ }
+  
+    .nav-cover {
+      position: absolute;
+      top: 91%;
+      transform: translate(-50%, 50%);
+      width: 1262px;
+      height: 43px;
+    }
+    
+    #marker {
+      bottom: 0px;
+      width: 315.5px;
+    }
+  
+    .characters {
+        width: 315.5px;
+        height: 43px; 
+    }
+    
+    .devolutions {
+        width: 315.5px;
+        height: 43px; 
+      border-left: 1px solid var(--lila-line);
+    }
+  
+    .benefits {
+        width: 315.5px;
+        height: 43px; 
+      border-right: 1px solid var(--lila-line);
+  }
+
+  .tramits {
+    width: 315.5px;
+    height: 43px; 
+  }
+  
+    .nav-cover a {
+      text-decoration: none;
+      font-size: 20px;
+      color: var(--lila-lyrics);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Bariol Regular";
+      pointer-events: none;
+    }
+  
+    .nav-crumbs {
+      display: none;
+    }
+    
+    .cover-page {
+      position: relative;
+      background: url(../img/portada-reclamar-desktop.jpg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 479px;
+    }
+    
+    .information {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      margin-left: 61%;
+      padding-top: 12%;
+    }
+  
+    .information > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .information h1 {
+      font-size: 32px;
+      font-family: "Geomanist";
+      line-height: 40.54px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 0;
+    }
+    
+    .information p {
+      font-family: "Bariol Regular";
+      font-size: 20px;
+      text-align: start;
+      line-height: 23.72px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .rest-info {
+        height: 350px;
+    }
+    
+    .rest-info h5{
+        font-size: 30px;
+        width: 100%;
+        padding: 32px 22% 0px 99px;
+    }
+    
+    .list-rest {
+      display: none;
+    }
+
+    .info-tramits {
+      font-size: 20px;
+      line-height: 26.5px;
+  }
+  
+  .info-tramits2 {
+      font-size: 20px;
+  }
+   
+  .last-info {
+    font-size: 20px;
+  }
+    .info-drop1{
+      width: 1260px;
+      max-width: 1440px;
+      height: 465px;
+  }
+
+  .info-drop2{
+    position: relative;
+    bottom: 40px;
+    width: 1260px;
+    max-width: 1440px;
+    height: 810px;
+}
+
+  .drop1,
+  .drop2 {
+      width: 1260px;
+      max-width: 1440PX;
+      height: 94px;
+  }
+
+  .drop1 p,
+  .drop2 p{
+    font-size: 20px;
+}
+
+.last-info4 {
+  font-family: 'Bariol Regular';
+  font-size: 13px;
+  color: var(--gray-lyric);
+  padding: 0 7%;
+  padding-top: 40px;
+}   
+
+#info1 {
+  font-size: 30px;
+  line-height: 150%;
+}
+
+#info2 {
+  line-height: 150%;
+  font-size: 23px;
+  margin-bottom: 40px;
+}
+
+.rest-info-desktop {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--lila-lyrics);
+  line-height: 19.5px;
+}
+
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-1,
+.info-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.rest-info-desktop h5{
+  font-family: 'Geomanist';
+  font-size: 40px;
+  color: var(--white);
+  padding: 22px 20px 55px 20px;
+}
+
+.rest-info-desktop div{
+  font-family: 'Bariol Regular';
+  display: flex;
+  padding: 0 20px;
+  padding-left: 30px;
+  color: var(--white);
+  font-size: 20px;
+  gap: 5px; 
+  text-align: center;
+}
+
+
+
+    /* Estilos de la lista */
+  
+  
+    .list-container {
+      width: 100%;
+    }
+  
+    .info-list-desktop {
+      padding-left: 3%;
+    }
+  
+    .container-characters,
+    .container-characters2{
+    display: flex;
+    justify-content: center;
+    width: 33.33333%;
+    font-size: 20px;
+    }
+
+    .container-characters3 {
+    display: flex;
+    justify-content: center;
+    width: 38%;
+    font-size: 20px;
+    }
+  
+    .container-characters4 {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    font-size: 20px;
+    }
+
+    .container-characters5 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-size: 20px;
+    }
+  
+    .container-characters li {
+      list-style: none;
+      padding-right: 20%;
+      color: var(--gray-lyric);
+    }
+    
+    .container-characters2 li {
+      list-style: none;
+      padding-right: 20%;
+      color: var(--white);
+    }
+
+    .container-characters3 li,
+    .container-characters4 li,
+    .container-characters5 li {
+      list-style: none;
+      color: var(--gray-lyric);
+    }
+  
+    .list-container-desktop {
+      display: flex;
+      flex-direction: row;
+      margin-top: 60px;
+      padding: 0px 0px 0px 7%;
+      margin-bottom: 33px;
+      max-width: 1440px;
+      margin-inline: auto;
+    }
+
+    .list-container {
+      display: flex;
+      flex-direction: row;
+      margin-top: 60px;
+      padding: 0px 0px 0px 7%;
+      margin-bottom: 33px;
+      max-width: 1440px;
+      margin-inline: auto;
+    }
+  
+   /* LISTA1*/
+  
+    .list1 li:nth-child(1){
+      margin-bottom: 25%;
+    }
+  
+    .list1 li:nth-child(2){
+      margin-bottom: 26.5%;
+    }
+  
+     /* LISTA2*/
+  
+     .list2 li:nth-child(1){
+      margin-bottom: 24%;
+    }
+
+     /* LISTA3*/
+  
+     .list3 li:nth-child(1){
+      margin-bottom: 24%;
+    }
+  
+     /* LISTA7*/
+  
+     .list7 li:nth-child(1){
+      margin-bottom: 6.5%;
+    }
+    /* LISTA8*/
+     .list8 li:nth-child(1){
+      margin-bottom: 12%;
+    }
+    /* LISTA9*/
+     .list9 li:nth-child(1){
+      margin-bottom: 18%;
+    }
+    /* LISTA10*/
+     .list10 li:nth-child(1){
+      margin-bottom: 4%;
+    }
+     .list10 li:nth-child(2){
+      margin-bottom: 6%;
+    }
+     .list10 li:nth-child(3){
+      margin-bottom: 5.5%;
+    }
+     .list10 li:nth-child(4){
+      margin-bottom: 5.5%;
+    }
+     .list10 li:nth-child(5){
+      margin-bottom: 5%;
+    }
+    /* LISTA11*/
+     .list11 li:nth-child(1){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(2){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(3){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(4){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(5){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(5){
+      margin-bottom: 2.5%;
+    }
+     .list11 li:nth-child(6){
+      margin-bottom: 2.5%;
+    }
+  
+    /* Estilo de más informacion */
+  
+    .more-information {
+      width: 100%;
+      height: 200px;
+      margin-top: 0;
+    }
+    
+    .more-information p {
+      font-size: 35px;
+      color: var(--white);
+    }
+    
+    .buttons button:nth-child(1) {
+      width: 298.52px;
+      height: 44.78px;
+      font-size: 17.35px;
+    }
+    
+    .buttons button:nth-child(2) {
+      width: 298.52px;
+      height: 44.78px;
+      font-size: 17.35px;
+    }
+    
+   /* Estilos del responsive footer */
+  
+   .footer-container {
+    padding: 42px 75px 15px 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .footer-button {
+    width: 262px;
+  }
+  
+  .footer-button img {
+    display: none;
+  }
+  
+  #dropdown-footer,
+  #dropdown-footer2,
+  #dropdown-footer3,
+  #dropdown-footer4 {
+    display: block;
+  }
+  
+  #dropdown-footer.vision,
+  #dropdown-footer2.vision,
+  #dropdown-footer3.vision,
+  #dropdown-footer4.vision {
+    display: block;
+  }
+  
+  .last-footer {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    gap: 550px;
+    align-items: center;
+  }
+  }
+
     /* Iphone SE */
- @media screen and (min-width: 375px) {
+ @media screen and (max-width: 375px) {
     .information h1 {
         padding: 45px 55px 0px 35px;
     }
@@ -918,7 +1384,7 @@ footer {
     }
 }
       /* Iphone XR */
-@media screen and (min-width: 414px) {     
+@media screen and (max-width: 414px) {     
     .information h1 {
         padding: 27px 75px 0px 75px;
     }
