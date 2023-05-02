@@ -43,8 +43,14 @@ function toggleInputs(checkboxId) {
   const datosPersonalesGotahorro = document.getElementById(
     "datos-personales-gotahorro"
   );
+  const datosPersonalesGotahorro2 = document.getElementById(
+    "datos-personales-gotahorro2"
+  );
   const datosPersonalesYoConstruyo = document.getElementById(
     "datos-personales-yoconstruyo"
+  );
+  const datosPersonalesYoConstruyo2 = document.getElementById(
+    "datos-personales-yoconstruyo2"
   );
   const creditoFinalizado = document.getElementById("credito-finalizado");
 
@@ -59,10 +65,22 @@ function toggleInputs(checkboxId) {
     datosPersonalesYoConstruyo.style.display = "block";
     creditoFinalizado.style.display = "none";
   }
-  if (checkboxId === "siguiente2" || checkboxId === "siguiente3") {
+  if (checkboxId === "siguiente2" || checkboxId === "siguiente4") {
     tipoCredito.style.display = "none";
     datosPersonalesGotahorro.style.display = "none";
+    datosPersonalesGotahorro2.style.display = "block";
+    datosPersonalesYoConstruyo2.style.display = "none";
+
     datosPersonalesYoConstruyo.style.display = "none";
+    creditoFinalizado.style.display = "none";
+  }
+  if (checkboxId === "siguiente3" || checkboxId === "siguiente5") {
+    tipoCredito.style.display = "none";
+    datosPersonalesGotahorro.style.display = "none";
+    datosPersonalesGotahorro2.style.display = "none";
+
+    datosPersonalesYoConstruyo.style.display = "none";
+    datosPersonalesYoConstruyo2.style.display = "none";
     creditoFinalizado.style.display = "block";
   }
   if (checkboxId === "terminar") {
@@ -85,6 +103,12 @@ document.getElementById("siguiente2").addEventListener("click", function () {
 });
 document.getElementById("siguiente3").addEventListener("click", function () {
   toggleInputs("siguiente3");
+});
+document.getElementById("siguiente4").addEventListener("click", function () {
+  toggleInputs("siguiente4");
+});
+document.getElementById("siguiente5").addEventListener("click", function () {
+  toggleInputs("siguiente5");
 });
 document.getElementById("terminar").addEventListener("click", function () {
   toggleInputs("terminar");
