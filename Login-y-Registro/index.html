@@ -86,16 +86,16 @@
 
     <div id="login-component">
         <picture>
-            <source media="(max-width: 700px)" srcset="./assets/component-image.png"class="images">
-            <source media="(min-width: 701px)" srcset="./assets/web-login.png" class="images">
-            <img src="./assets/component-image.png" alt="" class="images">
+            <source media="(max-width: 700px)" srcset="./assets/component_image_4x.webp" >
+            <source media="(min-width: 701px)" srcset="./assets/web-login_4x.webp" class="images">
+            <img src="./assets/component_image_4x.webp" alt="" class="images">
         </picture>
         <div id="login-component-card">
-            <div id="login-title">
-                <embed src="./assets/profile/24/Outline.svg" type="">
-                <h2>Inicia Sesión</h2>
-            </div>
             <form id="login-form">
+                <div id="login-title">
+                    <embed src="./assets/profile/24/Outline.svg" type="">
+                    <h2>Inicia Sesión</h2>
+                </div>
                 <div>
                     <div id="login-inputs">
                         <input type="email" id="email-login" name="email" required placeholder="Email" class="inputs">
@@ -111,15 +111,18 @@
                     </div>
                     <a href="/index.html" type="button" value="Ingresar" class="button" id="login">Ingresar </a>
                 </div>
+            </form>
+            <figure id="image-login">
+                <img src="./assets/login-desktop-image_4x.webp" id="image-login-section" alt="">
+            </figure>
         </div>
-        </form>
     </div>
     </div>
     <div id="sign-up-component" style="display: none">
         <picture>
-            <source media="(max-width: 700px)" srcset="./assets/create-account.png" class="images">
-            <source media="(min-width: 701px)" srcset="./assets/web-create-account.png" class="images">
-            <img src="./assets/create-account.png" alt="" class="images">
+            <source media="(max-width: 700px)" srcset="./assets/create-account_4x.webp" class="images">
+            <source media="(min-width: 701px)" srcset="./assets/web-create-account_4x.webp" class="images">
+            <img src="./assets/create-account_4x.webp" alt="" class="images">
         </picture>
         <div id="form-component">
             <form id="sign-up-form">
@@ -130,6 +133,14 @@
                 <div>
                     <label for="user-last-name">Apellidos:</label>
                     <input type="text" id="last-name" name="last-name" required class="inputs" placeholder="Apellidos">
+                </div>
+                <div>
+                    <label for="user-type">Tipo de Perfil:</label>
+                    <select name="user-type" id="user-type" class="inputs">
+                        <option value="selecciona">Selecciona tu perfil</option>
+                        <option value="Hombre">Ahorradores</option>
+                        <option value="Mujer">Personas con negocio</option>
+                    </select>
                 </div>
                 <div>
                     <label for="genre">Sexo:</label>
