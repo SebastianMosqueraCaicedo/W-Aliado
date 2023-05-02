@@ -1,0 +1,51 @@
+.boton-div {
+	position: fixed;
+	bottom: 40px;
+	right: 20px;
+}
+
+/* Modo estandar */
+
+.boton-asesoria {
+	width: 60px;
+	height: 60px;
+	background-color: #FFFFFF;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.boton-chat {
+	width: 60px;
+	height: 60px;
+	background-color: #FFFFFF;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.boton-pqrs {
+	width: 60px;
+	height: 60px;
+	background-color: #FFFFFF;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.boton-tutoriales {
+	width: 60px;
+	height: 60px;
+	background-color: #FFFFFF;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*
+	background-color: #FF8833;
+*/
