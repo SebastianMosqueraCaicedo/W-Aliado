@@ -170,9 +170,9 @@ function renderResultado(info) {
     resultado.innerHTML = `
         <section id="mostrar-datos">
             <picture>
-                    <source media="(max-width: 700px)" srcset="./assets/resultados-cdt.png" class="images">
-                    <source media="(min-width: 701px)" srcset="./assets/web-resultados-cdt.png" class="images">
-                    <img src="./assets/resultados-cdt.png" alt="" class="images">
+                    <source media="(max-width: 700px)" srcset="./assets/resultados-cdt_4x.webp" class="images">
+                    <source media="(min-width: 701px)" srcset="./assets/web-resultados-cdt_4x.webp" class="images">
+                    <img src="./assets/resultados-cdt_4x.webp" alt="" class="images">
                 </picture>
             <div id="monto-cdt">
                 <h3> Resultados de la Simulación </h3>
