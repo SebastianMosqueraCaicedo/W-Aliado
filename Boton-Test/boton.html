@@ -224,25 +224,22 @@
     </div>
   </footer>
   <div class="boton-div">
-	  <div class="botons-up">
-		  <div class="boton-asesoria">
+	  <img onclick=toggleExtraButtons() src="../icons/boton-ayuda.svg" alt="" class="boton-ayuda"
+						     id="boton-ayuda">
+
+		  <div class="boton-asesoria botones-all">
 		  <img src="../icons/asesoria-boton.svg" alt="" id="boton-asesoria"></img>
 		  </div>
-		  <div class="boton-chat">
+		  <div class="boton-chat botones-all">
 		  <img src="../icons/chat-boton.svg" alt="" id="boton-chat"></img>
 		  </div>
-	  </div>
-
-	  <div class="botons-down">
-		  <div class="boton-pqrs">
+		  <div class="boton-pqrs botones-all">
 		  <img src="../icons/pqrs-boton.svg" alt="" id="boton-pqrs"></img>
 		  </div>
-		  <div class="boton-tutoriales">
+		  <div class="boton-tutoriales botones-all">
 		  <img src="../icons/tutoriales-boton.svg" alt="" id="boton-tutoriales"></img>
 		  </div>
-	  </div>
-	  <img src="../icons/boton-ayuda.svg" alt="" class="boton-ayuda"
-						     id="boton-ayuda"></img>
+	  </img>
   </div>
 
   <div class="boton-chat-ex">
@@ -255,7 +252,8 @@
     <p>Copyright © 2023 Banco W</p>
   </div>
 
-  <script src="landing.js"></script>
+  <script src="boton-ayuda-component.js"></script>
+  <script src="../landing.js"></script>
   <script type="module" src="/Navbar/navbar-component.js"></script>
 </body>
 
