@@ -10,77 +10,7 @@
 <body>
 
     <!-- Barra de navegación con logo y menú hamburguesa -->
-  <nav class="navbar">
-    <img src="../icons/logo.png" alt="logo">
-    <!-- Ícono del menú hamburguesa -->
-    <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
-      <span class="material-icons"><img src="../icons/menu.svg" alt=""></span>
-    </div>
-    <!-- Contenedor del menú hamburguesa desplegado -->
-    <div class="hamburger-menu-container">
-      <ul>
-        <li class="li-menu-button">
-          <a href="#" class="menu-button">
-            <img src="../icons/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
-          </a>
-        </li>
-        <li class="li-menu-button">
-          <a href="#" class="menu-button">
-            <img src="../icons/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
-          </a>
-        </li>
-        <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
-            Clientes
-            <span class="arrow-down">&#9662;</span>
-          </span>
-          <ul class="submenu">
-            <li><a href="#">Personas con negocio</a></li>
-            <li><a href="#">Ahorradores e inversionistas</a></li>
-            <li><a href="#">Pensionados y maestros</a></li>
-            <li><a href="#">Colombianos en el exterior</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
-            Productos y servicios
-            <span class="arrow-down">&#9662;</span>
-          </span>
-          <ul class="submenu">
-            <li><a href="#">Créditos</a></li>
-            <li><a href="#">Cuentas de ahorro e inversión</a></li>
-            <li><a href="#">Giros internacionales</a></li>
-            <li><a href="#">Seguros</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
-            Asesoría financiera
-            <span class="arrow-down">&#9662;</span>
-          </span>
-          <ul class="submenu">
-            <li><a href="#">Educación financiera</a></li>
-            <li><a href="#">Consumidor financiero</a></li>
-            <li><a href="#">Seguridad bancaria</a></li>
-            <li><a href="#">Revista</a></li>
-            <li><a href="#">Clasificados</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
-            Acerca de nosotros
-            <span class="arrow-down">&#9662;</span>
-          </span>
-          <ul class="submenu">
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">Opción transaccional</a></li>
-            <li><a href="#">Línea telefónica</a></li>
-            <li><a href="#">PQRS</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    <custom-navbar></custom-navbar>
 
     <!-- Portada de la página -->
 
@@ -509,6 +439,7 @@
         <p>Copyright © 2023 Banco W</p>
       </div>
     <script src="./enviarGiro.js"></script>
+    <script type="module" src="../Navbar/navbar-component.js"></script>
 
 </body>
 </html>
