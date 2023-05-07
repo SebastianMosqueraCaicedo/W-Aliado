@@ -1,337 +1,366 @@
-class Navbar extends HTMLElement {
-  constructor() {
-    super();
+let cssId = "myCss"; // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId)) {
+  let head = document.getElementsByTagName("head")[0];
+  let link = document.createElement("link");
+  link.id = cssId;
+  link.rel = "stylesheet";
+  link.type = "text/css";
+  link.href = "https://fonts.googleapis.com/icon?family=Material+Icons";
+  link.media = "all";
+  head.appendChild(link);
+}
 
-    const template = document.createElement("template");
-    template.innerHTML = `
-    <style>
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #ffffff;
-      box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
-      padding: 10px;
-      position: relative;
-      z-index: 5;
-      width: 100%;
-    }
+const header = document.getElementById("header2");
 
-    .navbar img {
-      padding: 2%;
-    }
+// Función para dropdown menu
+function toggleDropdown(event) {
+  const dropdownTitle = event.target;
+  const dropdownMenu = dropdownTitle.nextElementSibling;
 
-    /* Estilos para el menú hamburguesa */
+  if (dropdownMenu.classList.contains("submenu")) {
+    dropdownMenu.classList.toggle("show");
+  }
+}
 
-    /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-    .material-icons {
-      color: #00a2af;
-    }
+function toggleHamburgerMenu() {
+  const menu = document.getElementById("hamburgerMenu");
+  console.log(menu);
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+header.innerHTML = `
+<style>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+  padding: 10px;
+  position: relative;
+  z-index: 5;
+}
 
-    /* Estilos para el ícono del menú hamburguesa */
-    .hamburger-menu {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      cursor: pointer;
-    }
+.navbar img {
+  padding: 2%;
+}
 
-    .submenu {
-      display: none;
-    }
+/* Estilos para el menú hamburguesa */
 
-    .show {
-      display: block;
-    }
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.material-icons {
+  color: #00a2af;
+}
 
-    .desktop-menu {
-      flex-direction: column;
-      width: 100%;
-      display: none;
-    }
+/* Estilos para el ícono del menú hamburguesa */
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
 
-    /* Estilos para el menú hamburguesa desplegado */
-    .hamburger-menu-container {
-      display: none;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: #ffffff;
-      z-index: 10;
-      border-radius: 5px;
-      width: 100%;
-      box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
-    }
+.submenu {
+  display: none;
+}
 
-    /* Estilos para botones naranjas del menú hamburguesa */
-    .menu-button {
-      background-color: #ff8833;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 8px 20px;
-      border-radius: 5px;
-      margin: 5px 0;
-    }
+.show {
+  display: block;
+}
 
-    .menu-button img {
-      margin-right: 5px;
-      vertical-align: middle;
-      width: 24px;
-      height: 24px;
-    }
+.desktop-menu {
+  flex-direction: column;
+  width: 100%;
+  display: none;
+}
 
-    .top-level-items img {
-      display: none;
-    }
+/* Estilos para el menú hamburguesa desplegado */
+.hamburger-menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  z-index: 10;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+}
 
-    .li-menu-button {
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 10px;
-    }
+/* Estilos para botones naranjas del menú hamburguesa */
+.menu-button {
+  background-color: #ff8833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px 20px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
 
-    /* Estilos para titulos naranjas menú hamburguesa */
-    .dropdown-title {
-      position: relative;
-      padding-bottom: 5px;
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 5px;
-      margin-left: 10px;
-    }
+.menu-button img {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
 
-    .dropdown-title::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0px;
-      right: 10px;
-      border-bottom: 1px solid #ffe1cc;
-    }
+.top-level-items img {
+  display: none;
+}
 
-    .arrow-down {
-      font-size: 0.8em;
-      margin-right: 10px;
-    }
+.li-menu-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
 
-    .dropdown-title:hover {
-      cursor: pointer;
-    }
+/* Estilos para titulos naranjas menú hamburguesa */
+.dropdown-title {
+  position: relative;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
 
-    .hamburger-menu-container ul li .dropdown-title {
-      color: #ff8833;
-    }
+.dropdown-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  right: 10px;
+  border-bottom: 1px solid #ffe1cc;
+}
 
-    .hamburger-menu-container ul {
-      list-style-type: none;
-      padding: 0;
-    }
+.arrow-down {
+  font-size: 0.8em;
+  margin-right: 10px;
+}
 
-    .hamburger-menu-container ul li a {
-      display: block;
-      color: #676767;
-      padding: 8px 16px;
-      text-decoration: none;
-    }
+.dropdown-title:hover {
+  cursor: pointer;
+}
 
-    .hamburger-menu-container a.menu-button {
-      color: white;
-    }
+.hamburger-menu-container ul li .dropdown-title {
+  color: #ff8833;
+}
 
-    .hamburger-menu-container ul li .dropdown {
-      display: none;
-      position: relative;
-    }
+.hamburger-menu-container ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-    .hamburger-menu-container ul li .dropdown ul {
-      position: absolute;
-      top: 0;
-      left: 100%;
-      width: 250px;
-      background-color: #333;
-      padding: 10px;
-      border-radius: 5px;
-    }
+.hamburger-menu-container ul li a {
+  display: block;
+  color: #676767;
+  padding: 8px 16px;
+  text-decoration: none;
+}
 
-    .hamburger-menu-container ul li .dropdown ul li a {
-      padding: 5px 16px;
-    }
+.hamburger-menu-container a.menu-button {
+  color: white;
+}
 
-    .hamburger-menu-container ul li .dropdown ul li a:hover {
-      background-color: #666;
-    }
+.hamburger-menu-container ul li .dropdown {
+  display: none;
+  position: relative;
+}
 
-    .hamburger-menu-container ul li a:hover,
-    .hamburger-menu-container ul li:hover>.dropdown {
-      cursor: pointer;
-    }
+.hamburger-menu-container ul li .dropdown ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+}
 
-    /*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-    @media screen and (min-width: 1200px) {
+.hamburger-menu-container ul li .dropdown ul li a {
+  padding: 5px 16px;
+}
 
-      /* Estilos navbar */
-      .hamburger-menu {
-        display: none;
-      }
+.hamburger-menu-container ul li .dropdown ul li a:hover {
+  background-color: #666;
+}
 
-      .navbar {
-        flex-direction: column;
-        padding: 0%;
-      }
+.hamburger-menu-container ul li a:hover,
+.hamburger-menu-container ul li:hover>.dropdown {
+  cursor: pointer;
+}
 
-      .desktop-menu {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
+/*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width: 1200px) {
 
-      .top-level-items {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 100px;
-        height: 100%;
-        padding: 1%;
-      }
+  /* Estilos navbar */
+  .hamburger-menu {
+    display: none;
+  }
 
-      .pago-login {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 20px;
-      }
+  .navbar {
+    flex-direction: column;
+    padding: 0%;
+  }
 
-      .contact-preguntas {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 100px;
+  .desktop-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-      }
+  .top-level-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    height: 100%;
+    padding: 1%;
+  }
 
-      .navbar img {
-        display: none;
-      }
+  .pago-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
 
-      .top-level-items img {
-        display: block;
-        padding: 0%;
-      }
+  .contact-preguntas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
 
-      .contact-preguntas a {
-        color: #676767;
-      }
+  }
 
-      a.menu-button {
-        color: #efefef;
-        text-decoration: none;
-      }
+  .navbar img {
+    display: none;
+  }
 
-      .dropdown-title2 {
-        position: relative;
-        padding-bottom: 5px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5px;
-        margin-left: 10px;
-        width: 200px;
-        font-size: 20px;
-        font-family: "Geomanist Medium", sans-serif;
-        color: #676767;
-      }
+  .top-level-items img {
+    display: block;
+    padding: 0%;
+  }
 
-      .dropdown-title2::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0px;
-        right: 10px;
-        border-bottom: 0px solid #ffe1cc;
-      }
+  .contact-preguntas a {
+    color: #676767;
+  }
 
-      .arrow-down {
-        display: none;
-        font-size: 0.8em;
-        margin-right: 10px;
-      }
+  a.menu-button {
+    color: #efefef;
+    text-decoration: none;
+  }
 
-      .category-items {
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: row;
-        list-style-type: none;
-        padding: 1%;
-        background-color: #efefef;
-        width: 98%;
-        margin-bottom: 0%;
+  .dropdown-title2 {
+    position: relative;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 200px;
+    font-size: 20px;
+    font-family: "Geomanist Medium", sans-serif;
+    color: #676767;
+  }
 
-      }
+  .dropdown-title2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 10px;
+    border-bottom: 0px solid #ffe1cc;
+  }
 
-      .dropdown-container {
-        margin-right: 150px;
-      }
+  .arrow-down {
+    display: none;
+    font-size: 0.8em;
+    margin-right: 10px;
+  }
 
-      .dropdown-container:last-child {
-        margin-right: 0;
-      }
+  .category-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 1%;
+    background-color: #efefef;
+    width: 100%;
+    margin-bottom: 0%;
 
-      .navbar li {
-        position: relative;
-        display: inline-block;
-        transform: translate(0%, 10%);
-        font-size: 20px;
-      }
+  }
 
-      .navbar li>a {
-        display: block;
-        padding: 8px 16px;
-        text-decoration: none;
-        color: #676767;
-        align-items: center;
-      }
+  .dropdown-container {
+    margin-right: 150px;
+  }
 
-      .navbar .submenu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        display: none;
-        background-color: #ffffff;
-        box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
-        border-radius: 5px;
-        z-index: 10;
-        width: auto;
-        padding: 10px;
-      }
+  .dropdown-container:last-child {
+    margin-right: 0;
+  }
 
-      .navbar li:hover .submenu {
-        display: flex;
-        flex-direction: column;
-        width: 150%;
-        background-color: #efefef;
-      }
-    }
-  </style>
-  <nav class="navbar">
+  .navbar li {
+    position: relative;
+    display: inline-block;
+    transform: translate(0%, 10%);
+    font-size: 20px;
+  }
+
+  .navbar li>a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #676767;
+    align-items: center;
+  }
+
+  .navbar .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+    border-radius: 5px;
+    z-index: 10;
+    width: auto;
+    padding: 10px;
+  }
+
+  .navbar li:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+    background-color: #efefef;
+  }
+}
+</style>
+<nav class="navbar">
     <img src="/img/logow.svg" alt="logo">
     <!-- Ícono del menú hamburguesa -->
-    <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
-      <span class="material-icons">menu</span>
+    <div class="hamburger-menu" >
+      <span class="material-icons" id="toggleHamburgerMenu">menu</span>
     </div>
     <!-- Contenedor del menú hamburguesa desplegado -->
-    <div class="hamburger-menu-container">
+    <div class="hamburger-menu-container" id="hamburgerMenu">
       <ul>
-        <li class="li-menu-button">
-          <a href="#" class="menu-button">
-            <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
-          </a>
-        </li>
-        <li class="li-menu-button">
-        <img src="/img/profile.svg" alt="Pagos en línea" width="200" height="80">
+      <li class="li-menu-button">
+      <a href="#" class="menu-button">
+        <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+      </a>
+    </li>
+    <li class="li-menu-button">
+    <img src="/img/profile.svg" alt="Pagos en línea" width="200" height="80">
+    </li>
+
         </li>
         <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
+          <span class="dropdown-title" id="dropdown-clientes">
             Clientes
             <span class="arrow-down">&#9662;</span>
           </span>
@@ -343,7 +372,7 @@ class Navbar extends HTMLElement {
           </ul>
         </li>
         <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
+          <span class="dropdown-title" id="dropdown-pys">
             Productos y servicios
             <span class="arrow-down">&#9662;</span>
           </span>
@@ -355,7 +384,7 @@ class Navbar extends HTMLElement {
           </ul>
         </li>
         <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
+          <span class="dropdown-title" id="dropdown-af">
             Asesoría financiera
             <span class="arrow-down">&#9662;</span>
           </span>
@@ -368,7 +397,7 @@ class Navbar extends HTMLElement {
           </ul>
         </li>
         <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
+          <span class="dropdown-title" id="dropdown-acerca">
             Acerca de nosotros
             <span class="arrow-down">&#9662;</span>
           </span>
@@ -384,7 +413,7 @@ class Navbar extends HTMLElement {
     <!-- Contenedor del menú hamburguesa responsive -->
     <div class="desktop-menu">
       <div class="top-level-items">
-        <img src="/img/logow.svg" alt="logo">
+        <img src="img/logow.svg" alt="logo">
         <a href="#" class="contactanos-button">
         </a>
         <a href="#" class="contactanos-button">
@@ -397,9 +426,12 @@ class Navbar extends HTMLElement {
         </div>
         <div class="pago-login">
           <a href="#" class="menu-button">
-            <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
+            <img src="img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
           </a>
-            <img src="/img/profile.svg" width="200" height="80">        </div>
+          <a href="/Login-y-Registro/index.html" class="menu-button">
+            <img src="img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesión
+          </a>
+        </div>
       </div>
       <ul class="category-items">
         <ul>
@@ -456,30 +488,22 @@ class Navbar extends HTMLElement {
       </ul>
     </div>
   </nav>
-`;
+  `;
+const dropdownClientes = document.getElementById("dropdown-clientes");
+dropdownClientes.addEventListener("click", toggleDropdown);
+const dropdownPyS = document.getElementById("dropdown-pys");
+dropdownPyS.addEventListener("click", toggleDropdown);
+const dropdownAf = document.getElementById("dropdown-af");
+dropdownAf.addEventListener("click", toggleDropdown);
+const dropdownAcerca = document.getElementById("dropdown-acerca");
+dropdownAcerca.addEventListener("click", toggleDropdown);
 
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
-  }
-}
-
-customElements.define("custom-navbar-user", Navbar);
-
-document.addEventListener("DOMContentLoaded", function () {
-  // Función para mostrar u ocultar el menú hamburguesa
-  const menu = document.querySelector(".hamburger-menu-container");
-  function toggleHamburgerMenu() {
-    if (menu.style.display === "block") {
-      menu.style.display = "none";
-    } else {
-      menu.style.display = "block";
-    }
-  }
-});
+const toggleHamburgerMenuV = document.getElementById("toggleHamburgerMenu");
+toggleHamburgerMenuV.addEventListener("click", toggleHamburgerMenu);
 
 // Función para cerrar el menú hamburguesa al hacer clic fuera de él
 document.addEventListener("click", function (event) {
-  const menu = this.shadowRoot.querySelector(".hamburger-menu-container");
+  const menu = document.querySelector(".hamburger-menu-container");
   const target = event.target;
   if (
     !target.closest(".hamburger-menu") &&
@@ -488,13 +512,3 @@ document.addEventListener("click", function (event) {
     menu.style.display = "none";
   }
 });
-// Función para dropdown menu
-
-function toggleDropdown(event) {
-  const dropdownTitle = event.target;
-  const dropdownMenu = dropdownTitle.nextElementSibling;
-
-  if (dropdownMenu.classList.contains("submenu")) {
-    dropdownMenu.classList.toggle("show");
-  }
-}
