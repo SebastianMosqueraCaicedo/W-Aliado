@@ -12,78 +12,7 @@
 <body>
 
   <!-- Barra de navegación con logo y menú hamburguesa -->
-  <nav class="navbar">
-    <img src="../icons/logo.png" alt="logo">
-    <!-- Ícono del menú hamburguesa -->
-    <div class="hamburger-menu" onclick="toggleHamburgerMenu()">
-      <span class="material-icons"><img src="../icons/menu.svg" alt=""></span>
-    </div>
-    <!-- Contenedor del menú hamburguesa desplegado -->
-    <div class="hamburger-menu-container">
-      <ul>
-        <li class="li-menu-button">
-          <a href="#" class="menu-button">
-            <img src="../icons/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
-          </a>
-        </li>
-        <li class="li-menu-button">
-          <a href="#" class="menu-button">
-            <img src="../icons/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesion</a>
-          </a>
-        </li>
-        <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
-            Clientes
-            <span class="arrow-down">&#9662;</span>
-          </span>
-          <ul class="submenu">
-            <li><a href="#">Personas con negocio</a></li>
-            <li><a href="#">Ahorradores e inversionistas</a></li>
-            <li><a href="#">Pensionados y maestros</a></li>
-            <li><a href="#">Colombianos en el exterior</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
-            Productos y servicios
-            <span class="arrow-down">&#9662;</span>
-          </span>
-          <ul class="submenu">
-            <li><a href="#">Créditos</a></li>
-            <li><a href="#">Cuentas de ahorro e inversión</a></li>
-            <li><a href="#">Giros internacionales</a></li>
-            <li><a href="#">Seguros</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
-            Asesoría financiera
-            <span class="arrow-down">&#9662;</span>
-          </span>
-          <ul class="submenu">
-            <li><a href="#">Educación financiera</a></li>
-            <li><a href="#">Consumidor financiero</a></li>
-            <li><a href="#">Seguridad bancaria</a></li>
-            <li><a href="#">Revista</a></li>
-            <li><a href="#">Clasificados</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <span class="dropdown-title" onclick="toggleDropdown(event)">
-            Acerca de nosotros
-            <span class="arrow-down">&#9662;</span>
-          </span>
-          <ul class="submenu">
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="#">Opción transaccional</a></li>
-            <li><a href="#">Línea telefónica</a></li>
-            <li><a href="#">PQRS</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+  <header id="header"></header>
   <!-- Portada de la página -->
 
   <section class="cover-page">
@@ -144,9 +73,10 @@
                 disponibilidad total de tu dinero.</li>
               <li>Si haz solicitado un crédito con nosotros, puedes abrirla al momento de desembolsar el monto de tu
                 préstamo, y además puedes autorizar débito automático para que no tengas que desplazarte a pagar las
-                cuotas del crédito.</li>  
-                <li>Puedes trasladar electrónicamente tu dinero desde otras cuentas bancarias a tu cuenta del Banco W (ACH).
-                </li>
+                cuotas del crédito.</li>
+              <li>Puedes trasladar electrónicamente tu dinero desde otras cuentas bancarias a tu cuenta del Banco W
+                (ACH).
+              </li>
             </ul>
           </div>
 
@@ -172,27 +102,28 @@
 
         </div>
 
-          <div class="container-characters">
+        <div class="container-characters">
 
-            <div class="list-characters-desktop">
-              <img src="../list-img/list-caracteristica-ahorro-desktop3.svg" alt="Lista iconos">
-            </div>
-
-            <div class="info-list-desktop list3">
-              <ul>
-                <li>Puedes abrir tu cuenta, la de tus hijos o familiares desde $10.000 pesos.</li>
-                <li>Tu dinero estará más seguro, en todo momento, ya que nuestro Banco es una entidad sólida, vigilada por
-                  la Superintendencia Financiera; además, nuestras cuentas de ahorro se encuentran cubiertas hasta por
-                  $50.000.000 por el seguro de depósitos Fogafín. Este seguro aplica para la recuperación de tu dinero ante
-                  una eventual situación de liquidación de la entidad.</li>
-          
-              </ul>
-            </div>
-
+          <div class="list-characters-desktop">
+            <img src="../list-img/list-caracteristica-ahorro-desktop3.svg" alt="Lista iconos">
           </div>
 
-              <!-- Lista de carácteristicas y beneficios MOBILE-->
-          
+          <div class="info-list-desktop list3">
+            <ul>
+              <li>Puedes abrir tu cuenta, la de tus hijos o familiares desde $10.000 pesos.</li>
+              <li>Tu dinero estará más seguro, en todo momento, ya que nuestro Banco es una entidad sólida, vigilada por
+                la Superintendencia Financiera; además, nuestras cuentas de ahorro se encuentran cubiertas hasta por
+                $50.000.000 por el seguro de depósitos Fogafín. Este seguro aplica para la recuperación de tu dinero
+                ante
+                una eventual situación de liquidación de la entidad.</li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Lista de carácteristicas y beneficios MOBILE-->
+
         <div class="list-characters">
           <img id="list1" src="../list-img/list-caracteristicas.png" alt="Lista iconos">
         </div>
@@ -256,32 +187,33 @@
             <ul>
               <li>Para Pensionados: Fotocopia ampliada al 150% del documento de identificación y Fotocopia del último
                 desprendible de pago de la pensión.</li>
-                <li>Para Ama de casa, Estudiantes y Microempresarios: Fotocopia ampliada al 150% del documento de
-                  identificación y certificado de origen de fondos.</li>
+              <li>Para Ama de casa, Estudiantes y Microempresarios: Fotocopia ampliada al 150% del documento de
+                identificación y certificado de origen de fondos.</li>
             </ul>
           </div>
 
         </div>
 
-          <div class="container-characters">
+        <div class="container-characters">
 
-            <div class="list-characters-desktop">
-              <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
-            </div>
-
-            <div class="info-list-desktop list6">
-              <ul>
-                <li>Para personalizar Personas Jurídicas: Fotocopia ampliada al 150% del documento de identificación del
-                  Representante y de las personas autorizadas, Original Cámara y comercio no mayor a 30 días, fotocopia del
-                  número de identificación tributaria RUT, Acta de Junta Directiva facultando al representante legal para
-                  realizar movimientos ( en caso de no estar reflejado en el Certificado de Cámara y Comercio).</li>
-          
-              </ul>
-            </div>
-
+          <div class="list-characters-desktop">
+            <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
           </div>
 
-          <!-- Lista de carácteristicas y beneficios MOBILE-->
+          <div class="info-list-desktop list6">
+            <ul>
+              <li>Para personalizar Personas Jurídicas: Fotocopia ampliada al 150% del documento de identificación del
+                Representante y de las personas autorizadas, Original Cámara y comercio no mayor a 30 días, fotocopia
+                del
+                número de identificación tributaria RUT, Acta de Junta Directiva facultando al representante legal para
+                realizar movimientos ( en caso de no estar reflejado en el Certificado de Cámara y Comercio).</li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Lista de carácteristicas y beneficios MOBILE-->
 
         <div class="list-characters2">
           <img src="../list-img/list-requisitos.png" alt="Lista requisitos">
@@ -335,7 +267,7 @@
           </ul>
         </div>
       </div>
-      
+
       <div id="atention">
         <div class="footer-button" id="dropdown-button-footer2">
           <p>Canales de atención</p>
@@ -396,6 +328,7 @@
 
 
   <script src="./ahorro2.js"></script>
+  <script type="module" src="../Navbar/navbar-component.js"></script>
 
 </body>
 
