@@ -54,6 +54,9 @@ header.innerHTML = `
 .material-icons {
   color: #00a2af;
 }
+.profileimg{
+  margin-left: 100px;
+}
 
 /* Estilos para el ícono del menú hamburguesa */
 .hamburger-menu {
@@ -108,7 +111,6 @@ header.innerHTML = `
   width: 24px;
   height: 24px;
 }
-
 .top-level-items img {
   display: none;
 }
@@ -349,13 +351,11 @@ header.innerHTML = `
     <!-- Contenedor del menú hamburguesa desplegado -->
     <div class="hamburger-menu-container" id="hamburgerMenu">
       <ul>
+      <img class="profileimg"src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">
       <li class="li-menu-button">
       <a href="#" class="menu-button">
-        <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea</a>
+        <img src="/icons/exit.svg" class="exit" alt="Cerrar sesión" >Cerrar sesión</a>
       </a>
-    </li>
-    <li class="li-menu-button">
-    <img src="/img/profile.svg" alt="Pagos en línea" width="200" height="80">
     </li>
 
         </li>
@@ -413,7 +413,7 @@ header.innerHTML = `
     <!-- Contenedor del menú hamburguesa responsive -->
     <div class="desktop-menu">
       <div class="top-level-items">
-        <img src="img/logow.svg" alt="logo">
+        <img src="/img/logow.svg" alt="logo">
         <a href="#" class="contactanos-button">
         </a>
         <a href="#" class="contactanos-button">
@@ -426,11 +426,9 @@ header.innerHTML = `
         </div>
         <div class="pago-login">
           <a href="#" class="menu-button">
-            <img src="img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
+            <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
           </a>
-          <a href="/Login-y-Registro/index.html" class="menu-button">
-            <img src="img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesión
-          </a>
+            <img src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">
         </div>
       </div>
       <ul class="category-items">
