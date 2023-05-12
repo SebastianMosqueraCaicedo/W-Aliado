@@ -1,0 +1,524 @@
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../font/Geomanist-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Book';
+    src: url('../font/Geomanist-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bariol Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/bariol_regular-webfont.ttf') format('woff');
+    }
+
+:root {
+    --white: white;
+    --lila-lyrics: #9F66DB;
+    --lila-line: #DFCCF3;
+    --gray-lyric: #676767;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bariol Regular", sans-serif;
+}
+
+/* Estilos del menú de navegación */
+
+
+/* Estilo de miga de pan */
+
+.nav-crumbs { 
+    display: flex;
+    align-items: center;
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+.nav-crumbs p {
+    font-family: 'Bariol Regular';
+    font-size: 10px;
+    color: rgba(103, 103, 103, 0.36);
+    width: 112px;
+}
+
+/* Estilos de la portada de la página */
+
+.cover-page {
+    position: relative;
+    background: url(../img/portada-deposito.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 427px;
+}
+
+.information {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   color: var(--gray-lyric);
+}
+
+.information h1 {
+    font-size: 31px;
+    font-family: 'Geomanist';
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 6px;
+    padding: 25px 65px 0px 65px;
+    line-height: 31px;
+}
+
+.information p {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+    line-height: 150%;
+}
+
+/* Estilos de la navegación secundaria */
+
+.nav-cover {
+    position: relative;
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, 20%); 
+    background-color: var(--white);
+    width: 366px;
+    height: 37px; 
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px
+}
+
+.cover-buttons {
+    transform: translate(0%, 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#marker {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 122px;
+  background: var(--lila-lyrics);
+  bottom: -2px;
+  transition: 0.5s;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.container-characters {
+  display: none;
+}
+
+.nav-cover ul {
+  position: relative;
+    list-style: none;
+    display: flex;
+    transform: translate(0%, -100%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.nav-cover li {
+  position: relative;
+}
+
+.characters {
+    width: 122px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--lila-line);
+    cursor: pointer;
+}
+
+.benefits {
+    width: 122px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--lila-line);
+    cursor: pointer;
+}
+
+.requirements {
+    width: 122px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#lyric {
+    width: 140px;
+}
+
+.nav-cover a {
+    text-decoration: none;
+    font-size: 13px;
+    color: var(--lila-lyrics);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bariol Regular';
+    pointer-events: none;
+}
+
+.nav-cover p {
+    text-align: center;
+}
+
+/* Estilos de la lista */
+
+.list-container {
+    display: flex;
+    margin-top: 45px;
+    padding: 0 20px;
+    margin-bottom: 33px;
+}
+
+.info-list ,
+.info-list2,
+.info-list3 {
+    margin-left: 7px;
+}
+
+.info-list li,
+.info-list2 li,
+.info-list3 li {
+    font-family: 'Bariol Regular';
+    list-style: none;
+    width: 328px;
+    height: 100%;
+    font-size: 13px;
+    color: var(--gray-lyric);
+    line-height: 150%;
+    cursor: pointer;
+    line-height: 19.5px;
+}
+
+.info-list ul li:nth-child(1) {
+    margin-bottom: 27px;
+}
+
+.info-list ul li:nth-child(2) {
+    margin-bottom: 28px;
+}
+
+.info-list ul li:nth-child(3) {
+    margin-bottom: 32px;
+}
+
+.info-list ul li:nth-child(4) {
+    margin-bottom: 29px;
+}
+
+.info-list ul li:nth-child(5) {
+    margin-bottom: 27px;
+}
+
+.info-list ul li:nth-child(6) {
+    margin-bottom: 28px;
+}
+
+.info-list ul li:nth-child(7) {
+    margin-bottom: 29px;
+}
+
+.info-list ul li:nth-child(8) {
+    margin-bottom: 29px;
+}
+.info-list ul li:nth-child(9) {
+    margin-bottom: 29px;
+}
+.info-list ul li:nth-child(10) {
+    margin-bottom: 32px;
+}
+.info-list ul li:nth-child(11) {
+    margin-bottom: 29px;
+}
+.info-list ul li:nth-child(12) {
+    margin-bottom: 29px;
+}
+.info-list ul li:nth-child(13) {
+    margin-bottom: 30px;
+}
+.info-list ul li:nth-child(14) {
+    margin-bottom: 32px;
+}
+
+.info-list ul li:nth-child(15) {
+    margin-bottom: 29px;
+}
+
+/* Estilos para beneficios de la lista */
+
+.info-list2 ul li:nth-child(1) {
+    margin-bottom: 26px;
+}
+
+.info-list2 ul li:nth-child(2) {
+    margin-bottom: 32px;
+}
+
+.info-list2 ul li:nth-child(3) {
+    margin-bottom: 28px;
+}
+
+.info-list2 ul li:nth-child(4) {
+    margin-bottom: 33px;
+}
+
+
+/* Estilos para requisitos de la lista */
+
+.info-list3 ul li:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.info-list3 ul li:nth-child(2) {
+    margin-bottom: 28px;
+}
+
+.info-list3 ul li:nth-child(3) {
+    margin-bottom: 27px;
+}
+
+
+/* Estilos de para mayor información */
+
+.more-information {
+    width: 100%;
+    height: 120px;
+    background-color: var(--lila-lyrics);
+}
+
+.more-information p { 
+    font-family: 'Geomanist';
+    font-size: 14.72px;
+    color: var(--white);
+    padding-top: 31px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.buttons button:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 27px;
+    background: var(--white);
+    border-radius: 3.32887px;
+    color: var(--lila-lyrics);
+    font-size: 10.46px;
+    border: none;
+}
+
+.buttons button:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 7.60884px 24px;
+    width: 180px;
+    height: 27px;
+    border: 0.951104px solid #FFFFFF;
+    border-radius: 3.32887px;
+    background-color: var(--lila-lyrics);
+    color: white;
+    font-size: 10.4621px;
+}
+
+#page2,
+#page3 {
+    display: none;
+  }
+
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1440px) {
+
+  
+  /* Estilos del responsive */
+
+  .nav-cover {
+    position: absolute;
+    top: 91%;
+    transform: translate(-50%, 50%);
+    width: 1262px;
+    height: 43px;
+  }
+  
+  #marker {
+    bottom: 0px;
+    width: 420px;
+  }
+
+  .characters {
+    width: 420px;
+    height: 43px;
+  }
+  
+  .requirements {
+    width: 420px;
+    height: 43px;
+    border-left: 1px solid var(--lila-line);
+  }
+
+  .benefits {
+    width: 420px;
+    height: 43px; 
+    border-right: 1px solid var(--lila-line);
+}
+
+  .nav-cover a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--lila-lyrics);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bariol Regular";
+    pointer-events: none;
+  }
+
+  .nav-crumbs {
+    display: none;
+  }
+  
+  .cover-page {
+    position: relative;
+    background: url(../img/portada-donaciones.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 479px;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    margin-left: 59%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    /* margin-left: -149px; */
+    /* padding: 115px 0px 0px 500px; */
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    /* padding: 0px 0px 0px 530px; */
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+  }
+
+
+}
+
+@media (min-width: 1024px) {
+ 
+  .cards-container {
+    max-width: 1280px;
+    margin: 65px auto;
+    margin-bottom: 25px;
+    padding: 2rem;
+  }
+
+  .cover-page {
+    background: url(../img/portada-donaciones.jpg);
+  }
+}
+
+
+    /* Iphone SE */
+@media (max-width: 375px) {
+    .information h1 {
+        padding: 18px 55px 0px 55px;
+    }
+    .information p {
+        padding: 0px 30px 0px 30px;
+    }
+}
+    /* Iphone XR */
+@media (max-width: 414px) {    
+    .information h1 {
+        padding: 27px 90px 0px 90px;
+    }
+    .information p {
+        padding: 0px 20px 0px 20px;
+    }
+    .cover-page {
+        background: url(../img/portada-deposito2.png);
+    }
+}
+    /* Iphone 12 PRO */
+@media (max-width: 390px) {     
+    .information h1 {
+        padding: 25px 65px 0px 65px;
+    }
+    .information p {
+    padding: 0px 40px 0px 40px;
+}
+}
+    /* Samsung Galaxy 8+ */
+@media (max-width: 360px) {     
+    .information h1 {
+        padding: 18px 60px 0px 60px;
+    }
+    .information p {
+        padding: 0px 25px 0px 25px;
+    }
+    .list-container {
+        padding: 0px 0px 0px 5px; 
+    }
+}
+
+ 
+
