@@ -74,7 +74,6 @@
     color: var(--gray-lyric);
   }
   
-  /* Estilos de la navegación secundaria */
   
   /* Estilos de la navegación secundaria */
 
@@ -205,11 +204,9 @@
     place-items: center;
     gap: 2rem;
     padding: 1rem;
-    grid-auto-rows: 23rem;
+    grid-auto-rows: 26rem;
     margin-bottom: 25px;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
-    position: relative;
-    z-index: 1;
   }
   
   .card-template {
@@ -223,7 +220,6 @@
     box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
     border-radius: 7px;
   }
-  
   
   .card-template img {
     margin-bottom: 12px;
@@ -242,6 +238,42 @@
   
   .card-template p {
     font-family: "Geomanist Book";
+    color: var(--gray-lyric);
+    font-size: 13px;
+    width: 300px;
+    margin-bottom: 20px;
+    line-height: 19.5px;
+  }
+  
+  .card-template2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 17px 14px;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+  }
+  
+  .card-template2 img {
+    margin-bottom: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .card-template2 h5 {
+    font-family: "Geomanist";
+    color: var(--gray-lyric);
+    font-size: 16px;
+    margin-bottom:10px;
+  }
+  
+  .card-template2 p {
+    font-family: "Bariol Regular";
     color: var(--gray-lyric);
     font-size: 13px;
     width: 300px;
@@ -276,96 +308,12 @@
     display: block;
   }
   
-  /* Estilos del footer */
-  
-  #dropdown-footer,
-  #dropdown-footer2,
-  #dropdown-footer3,
-  #dropdown-footer4 {
+
+#page2,
+#page3,
+#page4 {
     display: none;
-  }
-  
-  #dropdown-footer.vision,
-  #dropdown-footer2.vision,
-  #dropdown-footer3.vision,
-  #dropdown-footer4.vision {
-    display: block;
-  }
-  
-  footer {
-    width: 100%;
-    height: 100%;
-    background-color: #efefef;
-  }
-  
-  .footer-container {
-    padding: 42px 21px 15px 15px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-button {
-    font-family: "Geomanist";
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 11px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid orange;
-    color: #ff8833;
-    font-size: 16px;
-  }
-  
-  .footer-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 11px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ffc499;
-  }
-  
-  .social-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-list,
-  .footer-list2 {
-    font-family: "Bariol Regular";
-    padding: 0px 21px 0px 0px;
-    color: #676767;
-    font-size: 14px;
-  }
-  
-  .footer-list li,
-  .footer-list2 li {
-    list-style: none;
-    margin-bottom: 19px;
-  }
-  
-  .footer-list ul li:nth-child(4) {
-    margin-bottom: 27px;
-  }
-  
-  .footer-list2 ul li:nth-child(5) {
-    margin-bottom: 27px;
-  }
-  
-  .last-footer {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 21px;
-    color: #676767;
-    font-size: 10px;
-    font-family: "Bariol Regular";
-  }
+}
   
   
   /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
@@ -472,53 +420,6 @@
       width: 100%;
       padding: 0;
     }
-  
-   /* Estilos del responsive footer */
-  
-   .footer-container {
-    padding: 42px 75px 15px 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  #we {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-button {
-    width: 262px;
-  }
-  
-  .footer-button img {
-    display: none;
-  }
-  
-  #dropdown-footer,
-  #dropdown-footer2,
-  #dropdown-footer3,
-  #dropdown-footer4 {
-    display: block;
-  }
-  
-  #dropdown-footer.vision,
-  #dropdown-footer2.vision,
-  #dropdown-footer3.vision,
-  #dropdown-footer4.vision {
-    display: block;
-  }
-  
-  .last-footer {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: start;
-    gap: 550px;
-    align-items: center;
-  }
-  
   
   @media (max-width: 1024px) {
     .cover-page {

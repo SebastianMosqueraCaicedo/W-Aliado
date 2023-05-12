@@ -46,8 +46,9 @@
     background-color: #ffffff;
     box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
     padding: 10px;
-    position: relative;
-    z-index: 5;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   }
   .navbar img {
     padding: 2%;
@@ -219,25 +220,24 @@
   .objects {
     position: absolute;
     top: 30px;
-    z-index: 1;
+    pointer-events: none;
   }
 
   .filter {
     position: relative;
     margin-left: 6%;
     margin-top: 3%;
-    z-index: 10;
   }
 
   /* /////////////////////// fILTRO /////////////// */
   aside {
-    position: absolute;
+    position: fixed;
     left: 0;
     background-image: url(../img/fondo-filtro.jpg);
     background-repeat: no-repeat;
-    width: 100%;
-    height: 840px;
-    z-index: 3;
+    inset: 0;
+    top: 90px;
+    z-index: 10;
 }
 
 .close {
@@ -530,98 +530,6 @@ label {
     display: block;
   }
   
-  /* Estilos del footer */
-  
-  #dropdown-footer,
-  #dropdown-footer2,
-  #dropdown-footer3,
-  #dropdown-footer4 {
-    display: none;
-  }
-  
-  #dropdown-footer.vision,
-  #dropdown-footer2.vision,
-  #dropdown-footer3.vision,
-  #dropdown-footer4.vision {
-    display: block;
-  }
-  
-  footer {
-    width: 100%;
-    height: 100%;
-    background-color: #efefef;
-  }
-  
-  .footer-container {
-    padding: 42px 21px 15px 15px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-button {
-    font-family: "Geomanist";
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 11px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid orange;
-    color: #ff8833;
-    font-size: 16px;
-  }
-  
-  .footer-button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 11px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ffc499;
-  }
-  
-  .social-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer-list,
-  .footer-list2 {
-    font-family: "Bariol Regular";
-    padding: 0px 21px 0px 0px;
-    color: #676767;
-    font-size: 14px;
-  }
-  
-  .footer-list li,
-  .footer-list2 li {
-    list-style: none;
-    margin-bottom: 19px;
-  }
-  
-  .footer-list ul li:nth-child(4) {
-    margin-bottom: 27px;
-  }
-  
-  .footer-list2 ul li:nth-child(5) {
-    margin-bottom: 27px;
-  }
-  
-  .last-footer {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 21px;
-    color: #676767;
-    font-size: 10px;
-    font-family: "Bariol Regular";
-  }
-  
-  
   /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
   
   @media (min-width: 1440px) {
@@ -727,52 +635,6 @@ label {
       width: 100%;
       padding: 0;
     }
-  
-   /* Estilos del responsive footer */
-  
-   .footer-container {
-    padding: 42px 75px 15px 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  #we {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .footer-button {
-    width: 262px;
-  }
-  
-  .footer-button img {
-    display: none;
-  }
-  
-  #dropdown-footer,
-  #dropdown-footer2,
-  #dropdown-footer3,
-  #dropdown-footer4 {
-    display: block;
-  }
-  
-  #dropdown-footer.vision,
-  #dropdown-footer2.vision,
-  #dropdown-footer3.vision,
-  #dropdown-footer4.vision {
-    display: block;
-  }
-  
-  .last-footer {
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: start;
-    gap: 550px;
-    align-items: center;
-  }
   
   
   @media (max-width: 1024px) {
