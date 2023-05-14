@@ -1291,6 +1291,7 @@
       width: 1260px;
       max-width: 1440PX;
       height: 94px;
+      cursor: pointer;
   }
 
   .drop1 p,
@@ -1609,6 +1610,7 @@
       height: 45.86px;
       border-radius: 4.27119px;
       font-size: 20.17px;
+      cursor: pointer;
     }
     
   }

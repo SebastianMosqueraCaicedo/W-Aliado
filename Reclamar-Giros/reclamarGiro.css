@@ -854,6 +854,7 @@
       width: 1260px;
       max-width: 1440PX;
       height: 94px;
+      cursor: pointer;
   }
 
   .drop1 p,
