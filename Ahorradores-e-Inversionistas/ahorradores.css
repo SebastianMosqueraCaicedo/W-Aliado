@@ -280,6 +280,7 @@ a svg {
   background: #ffffff;
   color: var(--lila-lyrics);
   margin-left: 14.34px;
+  cursor: pointer;
 }
 
 .card-saving2 button {
