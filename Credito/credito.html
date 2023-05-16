@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco W</title>
+  <link rel="stylesheet" href="./credito.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación con logo y menú hamburguesa -->
+  <custom-navbar></custom-navbar>
+  <!-- Portada de la página -->
+
+  <section class="cover-page">
+    <!-- <img src="/img/microcredito.png"alt=""> -->
+    <div class="information">
+      <h1>MICROCRÉDITO</h1>
+      <p>Crédito con asesoría personalizada que te permitirá fortalecer y hacer crecer tu negocio.</p>
+    </div>
+
+    <!-- Menú de navegación de la portada de la página -->
+
+    <div class="nav-cover second-menu">
+      <div class="cover-buttons">
+        <ul id="page-switcher">
+          <div id="marker"></div>
+          <li class="all-menu" data-filter="all" onclick="changeColor(event)">
+            <a>
+              <p>Características</p>
+            </a>
+          </li>
+
+          <li class="saving-menu" data-filter="saving" onclick="changeColor(event)">
+            <a>
+              <p>Requisitos</p>
+            </a>
+          </li>
+
+          <li class="invert-menu" data-filter="invert" onclick="changeColor(event)">
+            <a>
+              <p>Trámites</p>
+            </a>
+          </li>
+
+          <li class="spins-menu" data-filter="spin" onclick="changeColor(event)">
+            <a>
+              <p>Solicitud</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <ul class="custom-list">
+    <li>Antigüedad mínima del negocio: 1 año.</li>
+    <li>Monto: desde 1 SMMLV hasta 120 SMMLV.</li>
+    <li>Tasa fija durante toda la vigencia del préstamo.</li>
+    <li>El plazo será dado de acuerdo al monto y al tipo de cliente.</li>
+    <li>Tienes la opción de ahorrar mientras pagas tu crédito con nuestro Pagahorro. <a href="#">Clic aquí para más
+        información</a></li>
+    <li>Se otorga a clientes nuevos, renovación y preferenciales.</li>
+    <li>Puedes adquirir de manera opcional:
+      <ul>
+        <li>Soy previsión exequial</li>
+        <li>Soy Vida</li>
+        <li>SoyProtección familiar</li>
+        <li>Soy patrimonio seguro</li>
+      </ul>
+    </li>
+    <li>Seguros Obligatorios:
+      <ul>
+        <li>Seguros deudores</li>
+      </ul>
+    </li>
+    <li>Asegúrate de estar informado con nuestro nuevo portal de seguros. Un lugar que te permite conocer todo lo
+      necesario sobre tu seguro y las demás opciones que tenemos para ti.</li>
+  </ul>
+
+
+
+
+
+  <custom-footer></custom-footer>
+
+  <script src="./ahorradores.js"></script>
+  <script type="module" src="../Navbar/navbar-component.js"></script>
+  <script type="module" src="../Footer/footer-component.js"></script>
+
+</body>
+
+</html>

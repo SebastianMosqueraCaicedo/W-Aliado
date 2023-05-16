@@ -1,3 +1,7 @@
+/* .cover-page img {
+  width: 100%;
+  height: auto;
+} */
 @font-face {
   font-family: "Geomanist";
   src: url("../font/Geomanist-Bold.ttf");
@@ -47,8 +51,9 @@ a {
 
 .cover-page {
   position: relative;
-  background: url(../img/portada-ahorro2.svg);
+  background: url(../img/microcredito.png);
   background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 535px;
 }
@@ -57,7 +62,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: #676767;
 }
 
 .information h1 {
@@ -197,6 +202,56 @@ a svg {
 
 .nav-cover p {
   text-align: center;
+}
+
+/*Estilo de listas */ ///////////////////////////////
+
+.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  color: #676767;
+  margin-bottom: 20px;
+  padding-left: 25px;
+}
+
+.custom-list li:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 2px solid orange;
+  border-radius: 50%;
+}
+
+.custom-list li:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 7px;
+  bottom: 50%;
+  width: 2px;
+  background-color: orange;
+}
+
+.custom-list li:last-child:after {
+  bottom: auto;
+}
+
+.custom-list a {
+  color: white;
+  text-decoration: underline;
+}
+
+.custom-list ul {
+  padding-left: 20px;
 }
 
 /* Estilo de las cards */
@@ -411,7 +466,7 @@ a svg {
 
   @media (max-width: 1024px) {
     .cover-page {
-      background: url(../img/portada-ahorro-desktop2.svg);
+      background: url(../img/microcredito.png);
       background-repeat: no-repeat;
     }
 
