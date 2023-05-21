@@ -413,7 +413,7 @@ header.innerHTML = `
     <!-- Contenedor del menú hamburguesa responsive -->
     <div class="desktop-menu">
       <div class="top-level-items">
-        <img src="img/logow.svg" alt="logo">
+        <img src="/img/logow.svg" alt="logo">
         <a href="#" class="contactanos-button">
         </a>
         <a href="#" class="contactanos-button">
@@ -426,10 +426,10 @@ header.innerHTML = `
         </div>
         <div class="pago-login">
           <a href="#" class="menu-button">
-            <img src="img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
+            <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
           </a>
           <a href="/Login-y-Registro/index.html" class="menu-button">
-            <img src="img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesión
+            <img src="/img/user.svg" alt="Iniciar sesión" width="16" height="16">Iniciar sesión
           </a>
         </div>
       </div>
