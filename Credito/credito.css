@@ -271,6 +271,7 @@ a svg {
   border-radius: 10px;
   margin: 5px 0;
   height: 60px;
+  margin-bottom: 20px;
 }
 
 .dropdown-btn.active {
@@ -295,7 +296,7 @@ a svg {
 .input-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -315,6 +316,10 @@ a svg {
   color: #676767;
   font-family: "Bariol Regular";
   font-size: 16px;
+  padding: 10px;
+}
+.input-container input {
+  padding: 10px;
 }
 .card-spin {
   margin-top: 20px;
@@ -323,6 +328,7 @@ a svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 50px;
 }
 .siguiente-button {
   margin-top: 20px;
@@ -378,6 +384,21 @@ a svg {
   background-color: #ff8833;
   color: white;
 }
+.data2text {
+  position: relative;
+  background: url(../img/data2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%;
+  height: 90px;
+  margin-bottom: 15%;
+  margin-top: 10%;
+  margin-left: 2%;
+}
+.data2 {
+  display: none;
+}
+
 /* ///////////////////////////////// Text switcher //////////////////////// */
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
