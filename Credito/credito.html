@@ -55,43 +55,173 @@
       </div>
     </div>
   </section>
-  <section class="cards-container">
+  <section class="cards-container2">
     <div class="card-saving1 card-template all">
       <div class="text1"></div>
+      <!-- Sección de mayor información -->
+
+      <section class="more-information">
+        <p>Para mayor información</p>
+        <div class="buttons">
+          <a href="/CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
+            <button class="button">Contratos y reglamentos de productos</button>
+          </a>
+          <button class="button button--border">Tasas y tarifas vigentes</button>
+        </div>
+      </section>
     </div>
 
     <div class="card-saving2 card-template saving">
       <div class="text2"></div>
+      <section class="more-information">
+        <p>Para mayor información</p>
+        <div class="buttons">
+          <a href="/CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
+            <button class="button">Contratos y reglamentos de productos</button>
+          </a>
+          <button class="button button--border">Tasas y tarifas vigentes</button>
+        </div>
+      </section>
     </div>
 
     <div class="card-cdt card-template invert">
-
+      <div class="container">
+        <button class="dropdown-btn">Tramites de apertura
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <div class="apertura"></div>
+        </div>
+        <button class="dropdown-btn">Tramites de cancelacion
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <div class="cancelacion"></div>
+        </div>
+      </div>
+      <section class="more-information">
+        <p>Para mayor información</p>
+        <div class="buttons">
+          <a href="/CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
+            <button class="button">Contratos y reglamentos de productos</button>
+          </a>
+          <button class="button button--border">Tasas y tarifas vigentes</button>
+        </div>
+      </section>
     </div>
 
     <div class="card-spin card-template spin">
-      <img src="../img/giros1-imagen.png" alt="Imagen de CDT">
-      <h5>Enviar giros</h5>
-      <p>Envía de forma segura a tus seres queridos en otros países, la plata que te mantiene más cerca de ellos.</p>
-      <a href="../Envia-Giros/enviarGiro.html">
-        <button class="button-primary">¡Conoce más!</button>
-      </a>
+      <div class="input-container">
+        <label for="monto">Monto deseado:</label>
+        <input type="text" id="monto" name="monto" />
+      </div>
+      <div class="input-container">
+        <label for="nombre">Nombres y apellidos:</label>
+        <input type="text" id="nombre" name="nombre" />
+      </div>
+      <div class="input-container">
+        <label for="identificacion">Tipo de identificación:</label>
+        <select id="identificacion" name="identificacion">
+          <option value="cedula">Cédula de ciudadanía</option>
+          <option value="cedula-extranjera">Cédula extranjera</option>
+          <option value="nit">NIT</option>
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="documento">Número de documento:</label>
+        <input type="text" id="documento" name="documento" />
+      </div>
+      <div class="input-container">
+        <label for="celular">Número de celular:</label>
+        <input type="text" id="celular" name="celular" />
+      </div>
+      <div class="input-container">
+        <label for="identificacion">Departamento</label>
+        <select id="identificacion" name="identificacion">
+          <option value="cedula">Amazonas</option>
+          <option value="cedula">Antioquia</option>
+          <option value="cedula">Arauca</option>
+          <option value="cedula">Atlántico</option>
+          <option value="cedula">Bogotá</option>
+          <option value="cedula">Bolívar </option>
+          <option value="cedula">Boyacá</option>
+          <option value="cedula">Caldas</option>
+          <option value="cedula">Caquetá</option>
+          <option value="cedula">Casanare</option>
+          <option value="cedula">Cauca</option>
+          <option value="cedula">Cesar</option>
+          <option value="cedula">Chocó</option>
+          <option value="cedula">Córdoba</option>
+          <option value="cedula">Cundinamarca</option>
+          <option value="cedula">Guainía</option>
+          <option value="cedula">Guaviare</option>
+          <option value="cedula">Huila</option>
+          <option value="cedula">La Guajira </option>
+          <option value="cedula">Magdalena</option>
+          <option value="cedula">Meta</option>
+          <option value="cedula">Nariño</option>
+          <option value="cedula">Norte de Santander </option>
+          <option value="cedula">Putumayo</option>
+          <option value="cedula">Quindío</option>
+          <option value="cedula">Risaralda</option>
+          <option value="cedula">San Andrés y Providencia </option>
+          <option value="cedula">Santander</option>
+          <option value="cedula">Sucre</option>
+          <option value="cedula">Tolima</option>
+          <option value="cedula">Valle del Cauca</option>
+          <option value="cedula">Vaupés</option>
+          <option value="cedula">Vichada</option>
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="identificacion">Ciudad</label>
+        <select id="identificacion" name="identificacion">
+          <option value="cedula">Leticia</option>
+          <option value="cedula">Medellín</option>
+          <option value="cedula">Arauca</option>
+          <option value="cedula">Barranquilla</option>
+          <option value="cedula">Bogotá</option>
+          <option value="cedula">Cartagena </option>
+          <option value="cedula">Tunja</option>
+          <option value="cedula">Manizales</option>
+          <option value="cedula">Florencia</option>
+          <option value="cedula">Yopal</option>
+          <option value="cedula">Popayán</option>
+          <option value="cedula">Valledupar</option>
+          <option value="cedula">Quibdó</option>
+          <option value="cedula">Montería</option>
+          <option value="cedula">Bogotá</option>
+          <option value="cedula">Inírida</option>
+          <option value="cedula">San José del Guaviare </option>
+          <option value="cedula">Neiva</option>
+          <option value="cedula">Riohacha </option>
+          <option value="cedula">Santa Marta </option>
+          <option value="cedula">Villavicencio</option>
+          <option value="cedula">Pasto</option>
+          <option value="cedula">Cucuta</option>
+          <option value="cedula">Mocoa</option>
+          <option value="cedula">Armenia</option>
+          <option value="cedula">Pereira</option>
+          <option value="cedula">San Andrés </option>
+          <option value="cedula">Bucaramanga</option>
+          <option value="cedula">Sincelejo</option>
+          <option value="cedula">Ibague</option>
+          <option value="cedula">Cali</option>
+          <option value="cedula">Mitu</option>
+          <option value="cedula">Puerto Careno</option>
+        </select>
+      </div>
+      <div class="input-container">
+        <label for="celular">Barrio</label>
+        <input type="text" id="barrio" name="barrio" />
+      </div>
+      <div class="siguiente-button-container">
+        <button class="siguiente-button" id="siguiente2">Siguiente</button>
+      </div>
+    </div>
     </div>
 
-    <div class="card-spin2 card-template spin">
-      <img src="../img/giros2-imagen.png" alt="Imagen de CDT">
-      <h5>Reclamar giros</h5>
-      <p>Recibe de forma fácil y segura los giros que te envían familiares, amigos o conocidos del exterior.</p>
-      <a href="../Reclamar-Giros/reclamarGiro.html">
-        <button class="button-primary">¡Conoce más!</button>
-      </a>
-    </div>
 
-    <div class="card-spin3 card-template spin">
-      <img src="../img/giros3-imagen.png" alt="Imagen de CDT">
-      <h5>Ahorranza</h5>
-      <p>Aliamos a las empresas para que sus empleados puedan empezar a ahorrar desde su salario.</p>
-      <button class="button-primary">¡Conoce más!</button>
-    </div>
   </section>
 
   <custom-footer></custom-footer>
