@@ -33,8 +33,9 @@
     font-family: "Bariol Regular", sans-serif;
 }
 
-/* Estilos del menú de navegación */
-
+a {
+  text-decoration: none;
+}
 
 /* Estilo de miga de pan */
 
