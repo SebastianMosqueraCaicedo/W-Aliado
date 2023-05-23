@@ -33,6 +33,10 @@
     font-family: "Bariol Regular", sans-serif; 
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Estilos del menú de navegación */
   
 .nav-crumbs { 
@@ -400,7 +404,7 @@
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
   /* Estilos del responsive */
 

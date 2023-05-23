@@ -36,6 +36,7 @@
 a {
   text-decoration: none;
 }
+
 /* Estilos del menú de navegación */
 
 /* Estilos para el navbar */
@@ -340,6 +341,9 @@ a {
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
+@media (min-width: 1200px) {
+
+=======
 @media (min-width: 1440px) {
   /* Estilos del responsive */
 

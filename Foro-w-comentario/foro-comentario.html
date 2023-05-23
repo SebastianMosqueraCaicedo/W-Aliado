@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco W</title>
+    <link rel="stylesheet" href="./foro-comentario.css">
+</head>
+<body>
+<!-- Barra de navegación con logo y menú hamburguesa -->
+<header id="header"></header>
+
+<!-- FILTER MOBILE -->
+
+<aside id="menu">
+    <div class="close" onclick="toggleFilter()">
+        <img src="/icons/close.svg" alt="">
+        <p>Cerrar</p>
+    </div>
+
+    <p class="subtitles">Explorar</p>
+
+    <div class="normal-butons">
+        <img src="/icons/history.svg" alt="">
+        <p>Más recientes</p>
+    </div>
+
+    <div class="normal-butons">
+        <img src="/icons/star-menu.svg" alt="">
+        <p>Más populares</p>
+    </div>
+
+    <div class="normal-butons">
+        <img src="/icons/save.svg" alt="">
+        <p>Guardados</p>
+    </div>
+
+    <div class="normal-butons">
+        <img src="/icons/ask.svg" alt="">
+        <p>Mis preguntas</p>
+    </div>
+
+    <p class="subtitles">Categorias</p>
+
+    <div class="dropdowns">
+        <div class="dropdowns-container">
+
+            <div id="dropdown-button">
+                <img src="/icons/calculator-menu.svg" alt="">
+                <p>Contabilidad y finanzas</p>
+                <img src="/icons/right-arrow-menu.svg" alt="">
+            </div>
+        
+            <div id="dropdown-menu">
+
+            </div>
+
+            <div id="dropdown-button">
+                <img src="/icons/marketing.svg" alt="">
+                <p>Marketing y ventas</p>
+                <img src="/icons/right-arrow-menu.svg" alt="">
+            </div>
+        
+            <div id="dropdown-menu">
+
+            </div>
+
+            <div id="dropdown-button">
+                <img src="/icons/business.svg" alt="">
+                <p>Emprendimiento</p>
+                <img src="/icons/right-arrow-menu.svg" alt="">
+            </div>
+        
+            <div id="dropdown-menu">
+
+            </div>
+
+            <div id="dropdown-button">
+                <img src="/icons/leader.svg" alt="">
+                <p>Gestión y liderazgo</p>
+                <img src="/icons/right-arrow-menu.svg" alt="">
+            </div>
+        
+            <div id="dropdown-menu">
+
+            </div>
+
+            <div id="dropdown-button">
+                <img src="/icons/resources.svg" alt="">
+                <p>Recursos humanos</p>
+                <img src="/icons/right-arrow-menu.svg" alt="">
+            </div>
+        
+            <div id="dropdown-menu">
+
+            </div>
+
+            <div id="dropdown-button">
+                <img src="/icons/digital.svg" alt="">
+                <p>Transformación digital</p>
+                <img src="/icons/right-arrow-menu.svg" alt="">
+            </div>
+        
+            <div id="dropdown-menu">
+
+            </div>
+            
+        </div>
+    </div>
+
+    <p class="subtitles">Temas</p>
+
+    <div class="tags-mobile">
+        <div class="tags-up">
+            <p>Créditos</p>
+            <p>Emprendimiento</p>
+            <p>Excel</p>
+        </div>
+        
+        <div class="tags-down">
+            <p>Negocios</p>
+            <p>Redes sociales</p>
+        </div>
+    </div>
+</aside>
+    <!-- Portada de la página -->
+
+<main id="all-off">
+    <section class="cover-page">
+        <div class="nav-crumbs">
+            <img src="/icons/home white.svg" alt="Icono de volver a la pantalla principal">
+            <img src="/icons/right-arrow-white.svg" alt="Icono de flecha derecha">
+            <p>Blog</p>
+            <img src="/icons/right-arrow-white.svg" alt="Icono de flecha derecha">
+			<p>Foro empresario</p>
+        </div>
+
+        <div class="information">        
+             <h1>PREGUNTA EN EL FORO EMPRESARIO</h1>         
+            <p>Puedes encontrar respuestas a tus preguntas de la mano de otras personas
+            </p>
+        </div>
+        <div class="search-button">
+         <label for="search">
+            <input type="text" id="search" name="search" placeholder="Buscar">
+            <img src="/icons/search.svg" alt="">
+        </label>
+        </div>
+    </section>
+
+    <div class="filter" onclick="toggleFilter()">
+        <img src="/icons/filter.svg" alt="">
+        <p>Filtros</p>
+    </div>
+
+    <main id="all-page">
+
+        <section class="right-cards">
+            <section id="filter-desktop">    
+            
+                <p class="subtitles">Explorar</p>
+            
+                <div class="normal-butons">
+                    <img src="/icons/history.svg" alt="">
+                    <p>Más recientes</p>
+                </div>
+            
+                <div class="normal-butons">
+                    <img src="/icons/star-menu.svg" alt="">
+                    <p>Más populares</p>
+                </div>
+            
+                <div class="normal-butons">
+                    <img src="/icons/save.svg" alt="">
+                    <p>Guardados</p>
+                </div>
+            
+                <div class="normal-butons">
+                    <img src="/icons/ask.svg" alt="">
+                    <p>Mis preguntas</p>
+                </div>
+            
+                <p class="subtitles">Categorias</p>
+            
+                <div class="dropdowns">
+                    <div class="dropdowns-container">
+            
+                        <div id="dropdown-button">
+                            <img src="/icons/calculator-menu.svg" alt="">
+                            <p>Contabilidad y finanzas</p>
+                            <img src="/icons/right-arrow-menu.svg" alt="">
+                        </div>
+                    
+                        <div id="dropdown-menu">
+            
+                        </div>
+            
+                        <div id="dropdown-button">
+                            <img src="/icons/marketing.svg" alt="">
+                            <p>Marketing y ventas</p>
+                            <img src="/icons/right-arrow-menu.svg" alt="">
+                        </div>
+                    
+                        <div id="dropdown-menu">
+            
+                        </div>
+            
+                        <div id="dropdown-button">
+                            <img src="/icons/business.svg" alt="">
+                            <p>Emprendimiento</p>
+                            <img src="/icons/right-arrow-menu.svg" alt="">
+                        </div>
+                    
+                        <div id="dropdown-menu">
+            
+                        </div>
+            
+                        <div id="dropdown-button">
+                            <img src="/icons/leader.svg" alt="">
+                            <p>Gestión y liderazgo</p>
+                            <img src="/icons/right-arrow-menu.svg" alt="">
+                        </div>
+                    
+                        <div id="dropdown-menu">
+            
+                        </div>
+            
+                        <div id="dropdown-button">
+                            <img src="/icons/resources.svg" alt="">
+                            <p>Recursos humanos</p>
+                            <img src="/icons/right-arrow-menu.svg" alt="">
+                        </div>
+                    
+                        <div id="dropdown-menu">
+            
+                        </div>
+            
+                        <div id="dropdown-button">
+                            <img src="/icons/digital.svg" alt="">
+                            <p>Transformación digital</p>
+                            <img src="/icons/right-arrow-menu.svg" alt="">
+                        </div>
+                    
+                        <div id="dropdown-menu">
+            
+                        </div>
+                        
+                    </div>
+                </div>
+            
+                <p class="subtitles">Temas</p>
+            
+                <div class="tags-filter">
+                    <div class="tags-up">
+                        <p>Créditos</p>
+                        <p>Emprendimiento</p>
+                        <p>Excel</p>
+                    </div>
+                    
+                    <div class="tags-down">
+                        <p>Negocios</p>
+                        <p>Redes sociales</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards-position2">
+                <div class="cards-container">
+                    <div class="img-options">
+                        <img src="/icons/options.svg" alt="">
+                    </div>
+                    <div class="title-profile">
+                        <img src="/icons/luis.png" alt="">
+                        <p>¿Cómo puedo aprovechar las redes sociales para hacer crecer mi negocio?</p>
+                    </div>
+
+                    <div class="info-tag">
+                        <span>Luis Fernando Rojas</span>
+                        <p>Hace 22 minutos</p>
+                        <p>Marketing y ventas</p>
+                    </div>
+
+                    <img class="audio" src="/icons/audio.svg" alt="">
+
+                    <div class="tags">
+                        <p>Redes sociales</p>
+                        <p>Emprendimiento</p>
+                        <p>Negocios</p>
+                    </div>
+
+                    <div class="answer-msg">
+                        <div class="ans-left">
+                            <img src="/icons/msg.svg" alt="">
+                            <p>6 respuestas</p>
+                        </div>
+
+                        <div class="ans-right">
+                            <img src="/icons/fi_star.svg" alt="">
+                            <p>9 votos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cards-position">
+                <div class="cards-container">
+                    <div class="card-profile">
+                        <p>Agregar una respuesta</p>
+                        <div class="profile-content">
+                            <img src="/icons/mensaje.svg" alt="">
+                            <img src="/icons/jessica perfil.png" alt="">
+                            <input type="text" placeholder="Hola, Jessica! Aquí puedes escribir tu pregunta">
+                        </div>
+
+                        <section class="option-container">
+                            <div class="options"> 
+                                <img src="/icons/picture.svg" alt="">
+                                <img src="/icons/voice.svg" alt="">
+                                <img src="/icons/emoticon.svg" alt="">
+                                <img src="/icons/add.svg" alt="">
+                                <img src="/icons/bar.svg" alt="">
+                            </div>
+                    
+                            <div class="send-button">
+                                <button>
+                                    Enviar
+                                    <img src="/icons/send.svg" alt="">
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+            <div class="order">
+                <div class="lyric">
+                    <p>Ordenar por:</p>
+                    <span>Recientes</span>
+                    <img src="/icons/flecha-down.svg" alt="">
+                </div>
+                <img src="/icons/bar-line-msg.svg" alt="">
+            </div>
+
+            <section class="cards-position2">
+                <div class="cards-container">
+                    <div class="img-options">
+                        <img src="/icons/options.svg" alt="">
+                    </div>
+
+                    <div class="profile">
+                        <img id="profile-isa" src="/icons/isabel.png" alt="">
+                        <div class="name">
+                            <p class="p-name">Isabel Mosquera</p>
+                            <div class="stars">
+                                <p>Hace 22 minutos</p>
+                                <img src="/icons/stars.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="info-lyric">Meta (Facebook, Instagram y Whatsapp) te permiten tener cuenta para negocios, que tienen muy buenas herramientas para ayudar a crecer tu negocio, puedes cambiar tu cuenta a negocio en la configuración de Instagram, saludos.</p>
+
+                    <div class="icons-share">
+                        <div class="msg">
+                            <img src="/icons/msg-rta.svg" alt="">
+                            <p>Comentar</p>
+                        </div>
+
+                        <div class="share">
+                            <img src="/icons/share.svg" alt="">
+                            <p>Compartir</p>
+                        </div>
+
+                        <img src="/icons/options-rta.svg" alt="">
+                    </div>
+
+                    <div class="rtas">
+                        <img src="/icons/last-bar.svg" alt="">
+                        <p>2 respuestas</p>
+                        <img src="/icons/last-bar.svg" alt="">
+                    </div>
+
+                    
+
+                    <div class="profile2">
+                        <img id="profile-isa" src="/icons/catalina.png" alt="">
+                        <div class="name">
+                            <p class="p-name">Catalina Escobar</p>
+                            <div class="stars">
+                                <p>Hace 11 minutos</p>
+                                <img src="/icons/stars.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="info-lyric">En Whatsapp te puedes descargar Whatsapp Business en la AppStore o PlayStore y permite más herramientas para atender tu negocio.</p>
+
+                    <div class="icons-share">
+                        <div class="msg">
+                            <img src="/icons/msg-rta.svg" alt="">
+                            <p>Comentar</p>
+                        </div>
+
+                        <div class="share">
+                            <img src="/icons/share.svg" alt="">
+                            <p>Compartir</p>
+                        </div>
+
+                        <img src="/icons/options-rta.svg" alt="">
+                    </div>
+
+                    <div class="rtas2">
+                        <img src="/icons/last-bar.svg" alt="">
+                        <div class="more-rtas">
+                            <p>Ver más respuestas</p>
+                            <img src="/icons/flecha-down.svg" alt="">
+                        </div>
+                        
+                        <img src="/icons/last-bar.svg" alt="">
+                    </div>
+                    <div class="profile2">
+                        <img id="profile-isa" src="/icons/juan.png" alt="">
+                        <div class="name">
+                            <p class="p-name">Juan David Ocoro</p>
+                            <div class="stars">
+                                <p>Hace 32 minutos</p>
+                                <img src="/icons/stars.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <p class="info-lyric">La idea de las redes sociales es mostrar tu negocio de manera original. Empieza publicando fotos y experimenta con vídeos en formato de Reels para Instagram. Todo es prueba y error.</p>
+            
+                    <div class="icons-share">
+                        <div class="msg">
+                            <img src="/icons/msg-rta.svg" alt="">
+                            <p>Comentar</p>
+                        </div>
+            
+                        <div class="share">
+                            <img src="/icons/share.svg" alt="">
+                            <p>Compartir</p>
+                        </div>
+            
+                        <img src="/icons/options-rta.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+
+    </main>
+    <custom-footer></custom-footer>
+</main>
+
+    <script src="./foro-comentario.js"></script>
+    <script type="module" src="/Navbar/navbar-component.js"></script>
+    <script type="module" src="/Footer/footer-component.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,785 @@
+/* .cover-page img {
+  width: 100%;
+  height: auto;
+} */
+@font-face {
+  font-family: "Geomanist";
+  src: url("../font/Geomanist-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geomanist Book";
+  src: url("../font/Geomanist-Book.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bariol Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/bariol_regular-webfont.ttf") format("woff");
+}
+
+:root {
+  --white: white;
+  --lila-lyrics: #9f66db;
+  --lila-line: #dfccf3;
+  --gray-lyric: #676767;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bariol Regular", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+/* Estilos del menú de navegación */
+
+/* Estilos de la portada de la página */
+
+.desktop-menu {
+  flex-direction: column;
+  width: 100%;
+  display: none;
+}
+
+.cover-page {
+  position: relative;
+  background: url(../img/cvcover.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 435px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #676767;
+}
+
+.information h1 {
+  font-size: 32px;
+  font-family: "Geomanist";
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 6px;
+  padding: 62px 60px 0px 60px;
+}
+
+.information p {
+  font-family: "Bariol Regular";
+  font-size: 13px;
+  text-align: center;
+  padding: 0px 65px 0px 65px;
+  line-height: 16.72px;
+}
+
+/* Estilos de la navegación secundaria */
+
+#marker {
+  position: absolute;
+  left: 10x;
+  height: 5px;
+  width: 0px;
+  background: #ff8833;
+  bottom: 0px;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+#page-switcher li {
+  color: #acacac;
+  cursor: pointer;
+}
+
+#page-switcher li.select {
+  color: #ff8833;
+}
+
+.nav-cover {
+  position: relative;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  background-color: var(--white);
+  width: 366px;
+  height: 42px;
+  box-shadow: 5px 7px 30px rgba(255, 105, 0, 0.18);
+  border-radius: 7px;
+  margin-right: 0px;
+}
+
+.cover-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-cover ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  transform: translate(0%, 0%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-menu li {
+  padding: 0 20px;
+}
+
+.all-menu {
+  position: relative;
+  width: 122px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spins-menu {
+  position: relative;
+  line-height: 12px;
+  border-left: 1px solid #acacac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 122px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.saving-menu {
+  position: relative;
+  border-left: 1px solid #ff8833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 122px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.invert-menu {
+  position: relative;
+  border-left: 1px solid #ff8833;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 122px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.nav-cover a {
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  font-family: "Bariol Regular";
+  pointer-events: none;
+}
+
+a svg {
+  height: 27px;
+}
+
+.nav-cover img {
+  margin-bottom: 3px;
+}
+
+.nav-cover p {
+  text-align: center;
+  width: 122px;
+}
+.caracteristicas {
+  position: relative;
+  background: url(../img/cvcaracteristicas.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 15%;
+  margin-top: 10%;
+  margin-left: 4%;
+}
+.taxi {
+  position: relative;
+  background: url(../img/cvtaxi.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 1%;
+}
+.taxi2 {
+  position: relative;
+  background: url(../img/cvtaxi2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 4%;
+}
+.transportador {
+  position: relative;
+  background: url(../img/cvtransportador.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 0%;
+}
+.independiente {
+  position: relative;
+  background: url(../img/cvindependiente.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 0%;
+}
+.asalariado {
+  position: relative;
+  background: url(../img/cvasalariado.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 0%;
+}
+.pensionado {
+  position: relative;
+  background: url(../img/cvpensionado.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 0%;
+}
+.info {
+  position: relative;
+  background: url(../img/cvinfo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: 0%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.dropdown-btn {
+  background-color: #ff8833;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 10px;
+  margin: 5px 0;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.dropdown-btn.active {
+  padding-bottom: 20px; /* Increased bottom padding to separate button from dropdown text */
+}
+
+.dropdown-container2 {
+  display: none;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: -5px;
+  margin-bottom: 20px; /* Increased bottom margin to separate dropdown text from button below */
+  box-shadow: 0px 8px 16px 0px rgba(255, 136, 51, 0.6); /* Added orange box-shadow to the dropdown text */
+}
+
+.dropdown-container p {
+  margin: 0;
+}
+/* /////solicitud //// */
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.input-container label {
+  margin-bottom: 5px;
+  display: block;
+  color: #ff8833;
+  font-family: "Bariol Regular";
+  font-size: 16px;
+}
+
+.input-container select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: #676767;
+  font-family: "Bariol Regular";
+  font-size: 16px;
+  padding: 10px;
+}
+.input-container input {
+  padding: 10px;
+}
+.card-spin {
+  margin-top: 20px;
+}
+.siguiente-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.siguiente-button {
+  margin-top: 20px;
+  background-color: #ff8833;
+  color: white;
+  padding: 10px 150px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Bariol Regular";
+}
+/* Estilos de para mayor información */
+
+.more-information {
+  width: 100%;
+  height: 120px;
+  background-color: #ff8833;
+}
+
+.more-information p {
+  font-family: "Geomanist";
+  font-size: 14.72px;
+  color: var(--white);
+  padding-top: 31px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 27px;
+  font-size: 10.46px;
+  border-radius: 3.32887px;
+  background: var(--white);
+  color: #ff8833;
+  border: none;
+}
+
+.button--border {
+  border: 0.951104px solid #ffffff;
+  background-color: #ff8833;
+  color: white;
+}
+.data2text {
+  position: relative;
+  background: url(../img/yocofinal.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 95%;
+  height: 90px;
+  margin-bottom: 15%;
+  margin-top: 10%;
+  margin-left: 2%;
+}
+.data2 {
+  display: none;
+}
+
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1440px) {
+  /* Estilos del responsive */
+
+  .nav-cover {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: var(--white);
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+    width: 1300px;
+    height: 50px;
+  }
+
+  .nav-cover a {
+    font-size: 30px;
+  }
+  .nav-cover p {
+    font-size: 30px;
+    width: 433.3px;
+  }
+
+  .nav-cover svg {
+    width: 100%;
+  }
+
+  .all-menu {
+    width: 433.3px;
+    height: 50px;
+  }
+
+  .spins-menu {
+    width: 433.3px;
+    height: 50px;
+  }
+
+  .spins-menu svg {
+    margin-bottom: 10px;
+  }
+
+  .spins-menu p {
+    padding: 0 50px;
+  }
+
+  .saving-menu {
+    width: 433.3px;
+    height: 50px;
+  }
+
+  .invert-menu {
+    width: 433.3px;
+    height: 50px;
+  }
+
+  #marker {
+    height: 5px;
+  }
+
+  .cover-page {
+    position: relative;
+    background: url(../img/cvcoverdesktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+  }
+  .information {
+    display: none;
+  }
+
+  .caracteristicas {
+    position: relative;
+    background: url(../img/cvcaracteristicasdesktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+  .taxi {
+    position: relative;
+    background: url(../img/cvtaxidesktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 4%;
+  }
+  .taxi2 {
+    position: relative;
+    background: url(../img/cvtaxi2desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 4%;
+  }
+  .transportador {
+    position: relative;
+    background: url(../img/cvtransportadordesktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+  .independiente {
+    position: relative;
+    background: url(../img/cvindependientedesktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+  .asalariado {
+    position: relative;
+    background: url(../img/cvasalariadodesktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+  .pensionado {
+    position: relative;
+    background: url(../img/cvpensionadodesktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+  .info {
+    position: relative;
+    background: url(../img/cvinfodesktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 0%;
+    margin-top: 2%;
+    margin-left: 0%;
+  }
+  .dropdown-btn {
+    background-color: #ff8833;
+    color: white;
+    padding: 10px;
+    padding-left: 5%;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    margin: 5px 0;
+    height: 100px;
+    margin-bottom: 50px;
+  }
+
+  .dropdown-btn.active {
+    padding-bottom: 20px; /* Increased bottom padding to separate button from dropdown text */
+  }
+
+  .dropdown-container2 {
+    display: none;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: -5px;
+    margin-bottom: 20px; /* Increased bottom margin to separate dropdown text from button below */
+    box-shadow: 0px 8px 16px 0px rgba(255, 136, 51, 0.6); /* Added orange box-shadow to the dropdown text */
+  }
+  /* Estilos de para mayor información */
+
+  .more-information {
+    width: 100%;
+    height: 200px;
+    background-color: #ff8833;
+  }
+
+  .more-information p {
+    font-family: "Geomanist";
+    font-size: 35px;
+    color: var(--white);
+    padding-top: 31px;
+    text-align: center;
+    padding-bottom: 16px;
+    padding-top: 46px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 47px;
+    font-size: 17.46px;
+    border-radius: 3.32887px;
+    background: var(--white);
+    color: #ff8833;
+    border: none;
+  }
+
+  .button--border {
+    border: 0.951104px solid #ffffff;
+    background-color: #ff8833;
+    color: white;
+  }
+  /* /////solicitud //// */
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 500px;
+    margin-left: 500px;
+  }
+
+  .input-container label {
+    margin-bottom: 5px;
+    display: block;
+    color: #ff8833;
+    font-family: "Bariol Regular";
+    font-size: 26px;
+  }
+
+  .input-container select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    color: #676767;
+    font-family: "Bariol Regular";
+    font-size: 26px;
+    padding: 10px;
+  }
+  .input-container input {
+    padding: 10px;
+  }
+  .card-spin {
+    margin-top: 20px;
+  }
+  .siguiente-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+  .siguiente-button {
+    margin-top: 20px;
+    background-color: #ff8833;
+    color: white;
+    padding: 10px 150px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Bariol Regular";
+  }
+  .data2text {
+    position: relative;
+    background: url(../img/yocofinal.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 45%;
+    height: 250px;
+    margin-bottom: 15%;
+    margin-top: 10%;
+    margin-left: 30%;
+  }
+  .data2 {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 30%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+  @media (max-width: 1024px) {
+    .cover-page {
+      background: url(../img/microcredito.png);
+      background-repeat: no-repeat;
+    }
+
+    .cards-container {
+      max-width: 1280px;
+      margin: 65px auto;
+      margin-bottom: 25px;
+      padding: 2rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .nav-cover {
+      top: 49.5%;
+      left: 50%;
+    }
+    .information h1 {
+      padding: 62px 50px 0px 50px;
+    }
+
+    .information p {
+      padding: 0px 50px 0px 50px;
+    }
+  }
+}

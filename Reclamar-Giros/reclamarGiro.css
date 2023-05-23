@@ -33,10 +33,9 @@
     font-family: "Bariol Regular", sans-serif; 
 }
 
-
-/* Estilos del menú de navegación */
-
-
+a {
+  text-decoration: none;
+}
 
 /* Estilo de miga de pan */
 
@@ -696,7 +695,7 @@
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
     /* Estilos del responsive */
 

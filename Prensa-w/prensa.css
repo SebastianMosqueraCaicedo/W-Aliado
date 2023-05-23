@@ -314,11 +314,10 @@
 #page4 {
     display: none;
 }
-  
-  
+
   /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
   
-  @media (min-width: 1440px) {
+  @media (min-width: 1200px) {
   
     /* Estilos del responsive */
   
