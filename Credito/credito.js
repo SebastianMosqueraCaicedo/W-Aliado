@@ -1,11 +1,25 @@
+// Hide all sections except "all" on page load
+window.onload = function () {
+  boxes.forEach((box) => {
+    if (!box.classList.contains("all")) {
+      box.style.display = "none";
+    } else {
+      box.style.display = "block";
+    }
+  });
+};
+
 const anchors = document.querySelectorAll("ul li");
 const boxes = document.querySelectorAll(".card-template");
+
 anchors.forEach((a) => {
   a.addEventListener("click", () => {
     const filter = a.getAttribute("data-filter");
 
     boxes.forEach((box) => {
-      if (filter === "all" || box.classList.contains(filter)) {
+      if (filter === "all" && box.classList.contains("card-saving1")) {
+        box.style.display = "block";
+      } else if (filter !== "all" && box.classList.contains(filter)) {
         box.style.display = "block";
       } else {
         box.style.display = "none";
@@ -75,3 +89,28 @@ function changeColor(event) {
   var svg = target.querySelector("path");
   svg.setAttribute("fill", "white");
 }
+
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+document.getElementById("siguiente2").addEventListener("click", function () {
+  document.querySelector(".data1").style.display = "none";
+  document.querySelector(".data2").style.display = "block";
+});
+document.getElementById("terminar").addEventListener("click", function () {
+  document.querySelector(".card-saving1").style.display = "block";
+  document.querySelector(".card-saving2").style.display = "none";
+  document.querySelector(".card-cdt").style.display = "none";
+  document.querySelector(".card-spin").style.display = "none";
+});
