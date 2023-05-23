@@ -40,11 +40,6 @@
     font-family: "Bariol Regular", sans-serif; 
 }
 
-
-/* Estilos del menú de navegación */
-
-
-
 /* Estilo de miga de pan */
 
 .nav-crumbs { 
@@ -968,7 +963,7 @@
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
   
   /* Estilos navbar */
