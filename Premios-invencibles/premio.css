@@ -1,0 +1,334 @@
+@font-face {
+    font-family: "Geomanist";
+    src: url("../font/Geomanist-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Geomanist Book";
+    src: url("../font/Geomanist-Book.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Bariol Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/bariol_regular-webfont.ttf") format("woff");
+  }
+  
+  :root {
+    --white: white;
+    --lila-lyrics: #9f66db;
+    --lila-line: #dfccf3;
+    --gray-lyric: #676767;
+    --Acuamarina : #00B1BB;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bariol Regular", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+	/* Estilos del carrusel flickity */
+
+ .hero-slider {
+	 width: 50%;
+	 height: 523px;
+	 overflow: hidden;
+}
+ .hero-slider .carousel-cell {
+	 width: 100%;
+	 height: 100%;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center;
+}
+
+ .hero-slider .flickity-prev-next-button {
+	 width: 80px;
+	 height: 80px;
+	 background: transparent;
+}
+ .hero-slider .flickity-prev-next-button:hover {
+	 background: transparent;
+}
+ .hero-slider .flickity-prev-next-button .arrow {
+	 fill: white;
+}
+ .hero-slider .flickity-page-dots {
+	 bottom: 30px;
+}
+ .hero-slider .flickity-page-dots .dot {
+	 width: 30px;
+	 height: 4px;
+	 opacity: 1;
+	 background: var(--lila-line);
+	 border: 0 solid white;
+	 border-radius: 0;
+}
+ .hero-slider .flickity-page-dots .dot.is-selected {
+	 background: var(--lila-lyrics);
+	 border: 0 solid #f00;
+}
+
+/* Estilos de carrusel y otra parte */
+
+.port-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 3%;
+}
+
+.port-prize {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	height: 523px;
+	background-image: url(../img/portada-premios.jpg);
+	background-repeat: no-repeat;
+}
+
+.port-prize h3 {
+	font-family: "Geomanist";
+	font-size: 44.54px;
+	color: var(--gray-lyric);
+	width: 75%;
+	text-align: center;
+	margin-bottom: 1%;
+}
+
+.port-prize p {
+	font-family: "Bariol Regular";
+	font-size: 22px;
+	color: var(--gray-lyric);
+	width: 60%;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.port-prize button {
+width: 186.29px;
+height: 45.86px;
+background: #9F66DB;
+border-radius: 6.41667px;
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+color: var(--white);
+font-size: 20px;
+border: none;
+}
+
+/* Esitilo de las categorias */
+.categories-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 5%;
+}
+
+.categories-container h4 {
+	font-family: "Geomanist";
+	font-size: 44px;
+	color: var(--gray-lyric);
+	margin-bottom: 3%;
+}
+
+.cards-container,
+.cards-container2 {
+  display: flex;
+  gap: 3.5%;
+}
+
+.info-categories {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info-categories {
+	width: 50%;
+	margin-right: 6%;
+}
+
+.info-categories h4 {
+	line-height: 35.46px;
+	margin-bottom: 6%;
+}
+
+.card-template {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-direction: column;
+	width: 710px;
+	height: 242px;
+	
+}
+
+.card-template h4 {
+	font-family: "Geomanist";
+	font-size: 35px;
+	color: var(--gray-lyric);
+	text-align: center;
+}
+
+.card-template button {
+width: 192.57px;
+height: 44.33px;
+background: #9F66DB;
+border-radius: 6.206px;
+color: var(--white);
+font-size: 19px;
+border: none;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.womens {
+	background-image: url(../img/mujeres.jpg);
+	background-repeat: no-repeat;
+	margin-bottom: 3.5%;
+}
+
+.youngs {
+	background-image: url(../img/jovenes.jpg);
+	background-repeat: no-repeat;
+}
+
+.business {
+	background-image: url(../img/negocios.jpg);
+	background-repeat: no-repeat;
+}
+
+.ambient {
+	background-image: url(../img/ambiente.jpg);
+	background-repeat: no-repeat;
+}
+
+#youn {
+	color: var(--white);
+}
+
+#db {
+	background: #FFA666;
+}
+
+/* Estilo del ultimo carrusel */
+
+.last-carrousel-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: var(--lila-lyrics);
+}
+
+.last-carrousel-container h3{
+	font-family: "Geomanist";
+	font-size: 44px;
+	color: var(--white);
+	margin-top: 80px;
+	margin-bottom: 49px;
+}
+
+.carrousel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5%;
+	margin-bottom: 130px;
+}
+
+#page2,
+#page3,
+#page4 {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .port-container{
+
+    display: flex;
+    flex-direction:column-reverse;
+  
+  }
+  
+  .port-prize{
+    width: 100%;
+  }
+  
+  .hero-slider {
+    width: 100%;
+  }
+  
+  .port-prize h3 {
+    font-family: "Geomanist";
+    font-size: 60px;
+  }
+  
+  .port-prize p {
+    font-family: "Bariol";
+    font-size: 32px;
+  }
+  
+  .cards-container, .cards-container2{
+  
+    display: flex;
+    flex-direction:column;
+  
+  }
+  
+  .cards-container{
+    margin-bottom: 3.5%;
+  }
+  
+  .card-template{
+    width: 907px;
+    height: 334px;
+  }
+  
+  .womens {
+    background-image: url(../img/mujeres2.jpg);
+    background-size: contain;
+  }
+  
+  .youngs {
+    background-image: url(../img/jovenes2.jpg);
+    background-size: contain;
+  }
+  
+  .business {
+    background-image: url(../img/negocios2.jpg);
+    background-size: contain;
+  }
+  
+  .ambient {
+    background-image: url(../img/ambiente2.jpg);
+    background-size: contain;
+  }
+  
+  .carrousel{
+    gap:0px;
+  }
+  
+  .carrousel img{
+    width: 75%;
+  }
+}
+

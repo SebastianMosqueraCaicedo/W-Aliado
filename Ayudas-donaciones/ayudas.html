@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco W</title>
+    <link rel="stylesheet" href="./ayudas.css">
+</head>
+<body>
+<!-- Barra de navegación con logo y menú hamburguesa -->
+<header id="header"></header>
+    <!-- Portada de la página -->
+
+    <section class="cover-page">
+          <div class="nav-crumbs">
+              <img src="../icons/home.svg" alt="Icono de volver a la pantalla principal">
+              <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
+              <p>Blog</p>
+              <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
+              
+          </div>
+          <div class="information">        
+                  <h1>AYUDAS Y DONACIONES</h1>         
+                  <p>En este apartado encontraras información sobre alianzas con fundaciones, como referir a personas y podrás aportar tus datos. 
+                  </p>
+          </div>
+    </section>
+
+<section class="categories-container">
+
+	<div class="cards-container">
+		<div class="card-template refer">
+			<div class="info-categories">
+				<h4>¡Refiere y Gana!</h4>
+				<a href="/Refiere-y-gana/refiere.html">
+					<button id="button-refer">¡Conoce más!</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="card-template foolprint">
+			<div class="info-categories">
+				<h4 id="youn">Datos que dejan huella</h4>
+				<a href="/Datos-que-dejan-huella/huella.html">
+					<button>¡Conoce más!</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="cards-container2">
+		<div class="card-template grow">
+			<div class="info-categories">
+				<h4 id="youn">Datos que te hacen crecer</h4>
+				<a href="/Datos-que-te-hacen-crecer/crecer.html">
+					<button id="db">¡Conoce más!</button>
+				</a>
+			</div>
+		</div>
+
+		<div class="card-template fundation">
+			<div class="info-categories">
+				<h4 id="wwb">Alianza con fundación WWB</h4>
+				<a href="/fundación-wwb/fundacion.html">
+					<button>¡Conoce más!</button>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+    <custom-footer></custom-footer>
+    
+    <script src="./ayudas.js"></script>
+    <script type="module" src="../Navbar/navbar-component.js"></script>
+    <script type="module" src="../Footer/footer-component.js"></script>
+
+</body>
+</html>
