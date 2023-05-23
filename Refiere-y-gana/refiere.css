@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'Geomanist';
+    src: url('/font/Geomanist-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Book';
+    src: url('/font/Geomanist-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bariol Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/bariol_regular-webfont.ttf') format('woff');
+    }
+
+:root {
+    --white: white;
+    --lila-lyrics: #9F66DB;
+    --lila-line: #DFCCF3;
+    --gray-lyric: #676767;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bariol Regular", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Estilo de miga de pan */
+
+.nav-crumbs { 
+    display: flex;
+    align-items: center;
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+.nav-crumbs p {
+    font-family: 'Bariol Regular';
+    font-size: 10px;
+    color: white;
+}
+
+/* Estilos de la portada de la página */
+
+.cover-page {
+    position: relative;
+    background: url(/img/portada-refiere.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 633px;
+}
+
+.information {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   color: var(--white);
+}
+
+.information h1 {
+    font-size: 31px;
+    font-family: 'Geomanist';
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 6px;
+    padding: 25px 65px 0px 65px;
+    line-height: 31px;
+}
+
+.information span {
+   font-weight: 600;
+}
+
+.information p {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 70px 0px 70px;
+    line-height: 150%;
+}
+
+/* Estilo del formulario */
+
+.form-container {
+   padding: 0 12px;
+   position: relative;
+   bottom: 40px;
+   
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   background: #F3F3F3;
+   border-radius: 7px;
+   box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+}
+
+.title {
+   padding: 28px 50px;
+   background-color: #FFA666;
+   width: 100%;
+   text-align: center;
+   border-top-left-radius: 7px;
+   border-top-right-radius: 7px;
+}
+
+.title h4 {
+   font-family: 'Geomanist';
+   color: var(--white);
+   font-size: 31px;
+}
+
+.number-id {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   padding: 25px 23px;
+}
+
+#card-id {
+   margin-bottom: 3%;
+   font-size: 13px;
+   color: #FF8833;
+}
+
+#id-card {
+   width: 320px;
+   height: 36px;
+   background: #FFFFFF;
+   border: 1.9316px solid #CDCDCD;
+   border-radius: 4.50708px;
+   padding-left: 3%;
+}
+
+/* CHECKBOX */
+
+.material-checkbox p span{
+  color: #FFA666;
+}
+
+.material-checkbox p {
+  padding-right: 23px;
+}
+
+.material-checkbox {
+   display: flex;
+   font-size: 16px;
+   color: var(--gray-lyric);
+   cursor: pointer;
+   padding-left: 7%;
+   font-size: 13px;
+ }
+ 
+ .material-checkbox input[type="checkbox"] {
+   position: absolute;
+   opacity: 0;
+   width: 0;
+   height: 0;
+ }
+ 
+ .checkmark {
+   position: relative;
+   display: inline-block;
+   width: 57px;
+   height: 21px;
+   margin-right: 12px;
+   border: 2px solid #ACACAC;
+   border-radius: 4px;
+   transition: all 0.3s;
+ }
+ 
+ .material-checkbox input[type="checkbox"]:checked ~ .checkmark {
+   background-color: #4285f4;
+   border-color: #ACACAC;
+ }
+ 
+ .material-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+   content: "";
+   position: absolute;
+   top: 2px;
+   left: 6px;
+   width: 3px;
+   height: 10px;
+   border: solid white;
+   border-width: 0 2px 2px 0;
+   transform: rotate(45deg);
+ }
+ 
+ .material-checkbox input[type="checkbox"]:focus ~ .checkmark {
+   box-shadow: 0 0 0 2px #ACACAC;
+ }
+ 
+ .material-checkbox:hover input[type="checkbox"] ~ .checkmark {
+   border-color: #ACACAC;
+ }
+ 
+ .material-checkbox input[type="checkbox"]:disabled ~ .checkmark {
+   opacity: 0.5;
+   cursor: not-allowed;
+ }
+ 
+ .material-checkbox input[type="checkbox"]:disabled ~ .checkmark:hover {
+   border-color: #4d4d4d;
+ }
+
+.enter {
+  width: 124px;
+  height: 30.53px;
+  background: #FFA666;
+  border-radius: 4.27119px;
+  border: none;
+  color: var(--white);
+} 
+ 
+.button-enter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  padding-left: 3;
+  margin-bottom: 7%;
+}
+ 
+.bar-line {
+  margin-bottom: 7%;
+  padding: 0 5%;
+}
+
+.number-info {
+  font-size: 13px;
+  padding: 0 3%;
+  color: #FFA666;
+  padding: 0 5%;
+  font-weight: 600;
+}
+
+/* Lista */
+
+li {
+  list-style: none;
+}
+
+.list-container {
+  display: flex;
+  margin-top: 7%;
+  padding-left: 4.5%;
+  gap: 4%;
+}
+
+.list-container li {
+  font-size: 13px;
+  color: var(--gray-lyric);
+  padding-right: 10%;
+}
+
+.list-container li:nth-child(1) {
+  margin-bottom: 7%;
+}
+
+.list-container li:nth-child(2) {
+  margin-bottom: 8%;
+}
+
+.list-container li:nth-child(3) {
+  margin-bottom: 13%;
+}
+
+/* REFERENCIA LISTA NUMERO */
+
+.refer-info {
+  padding: 0 20px;
+}
+
+.refer-info h4{
+  font-size: 20px;
+  color: var(--lila-lyrics);
+  margin-bottom: 5%;
+}
+
+.list-refer {
+  display: flex;
+  gap: 2.5%;
+  margin-bottom: 5%;
+}
+
+.list-refer p{
+  font-size: 13px;
+  color: var(--lila-lyrics);
+}
+
+.list-refer span {
+  font-size: 13px;
+  color: var(--lila-lyrics);
+  font-weight: 600;
+}
+
+/* Estilo del carrusel */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+h3 {
+  font-family: "Geomanist", sans-serif;
+  font-size: 20px;
+  color: var(--gray-lyric);
+  padding-left: 5%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  padding: 0 4%;
+}
+
+.card {
+  flex: 0 0 calc(100% - 10px);
+  margin-right: 10px; /* Add 10px margin-right */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 400px;
+  padding: 20px;
+  border-radius: 10px; /* Add border-radius */
+  box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+  margin-bottom: 5%;
+}
+
+.card-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-family: "Geomanist Bold";
+  font-size: 20px;
+  color: #676767;
+}
+
+.card-text {
+  font-family: "Bariol Regular";
+  font-size: 15px;
+  color: #676767;
+}
+
+.card-button {
+  align-self: flex-end;
+  background-color: white;
+  color: #9f66db;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: white;
+}
+
+.card-button span {
+  font-weight: bold;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1024px) {
+
+  .nav-cover a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--lila-lyrics);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bariol Regular";
+    pointer-events: none;
+  }
+
+  .nav-crumbs {
+    display: none;
+  }
+  
+  .cover-page {
+    position: relative;
+    background: url(/img/portada-refiere-desktop.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 479px;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 59%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    /* margin-left: -149px; */
+    /* padding: 115px 0px 0px 500px; */
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    /* padding: 0px 0px 0px 530px; */
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+ 
+
