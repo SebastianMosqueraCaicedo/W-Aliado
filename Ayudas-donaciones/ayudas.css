@@ -163,6 +163,14 @@ a{
     border: none;
  }
 
+ a {
+   cursor: pointer;
+ }
+
+ button {
+   cursor: pointer;
+ }
+
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
 @media (min-width: 1024px) {
