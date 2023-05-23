@@ -1,0 +1,862 @@
+@font-face {
+    font-family: "Geomanist Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Geomanist Bold"),
+        url("/fonts/Geomanist-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Geomanist Book";
+    src: url("/fonts/Geomanist-Book.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bariol Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bariol Regular"),
+        url("/fonts/bariol_regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bariol Regular Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bariol Regular Italic"),
+        url("/fonts/bariol_regular_italic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bariol Thin Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bariol Thin Italic"),
+        url("/fonts/bariol_thin_italic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bariol Thin";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bariol Thin"),
+        url("/font/bariol_thin-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bariol Light";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bariol Light"),
+        url("/fonts/bariol_light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bariol Light Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bariol Light Italic"),
+        url("/fonts/bariol_light_italic-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bariol Bold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bariol Bold"),
+        url("/fonts/bariol_bold-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Bariol Bold Italic";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bariol Bold Italic"),
+        url("/fonts/bariol_bold_italic-webfont.woff") format("woff");
+}
+
+/* Estilos generales para la página */
+body {
+    margin: 0;
+    width: auto;
+    font-family: "Bariol Regular", sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+    padding: 10px;
+    position: relative;
+    z-index: 5;
+}
+
+.navbar img {
+    padding: 2%;
+}
+
+/* Estilos para el menú hamburguesa */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.material-icons {
+    color: #00a2af;
+}
+
+/* Estilos para el ícono del menú hamburguesa */
+.hamburger-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* Estilos para el menú hamburguesa desplegado */
+.hamburger-menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #ffffff;
+    z-index: 10;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
+}
+
+/* Estilos para botones naranjas del menú hamburguesa */
+.menu-button {
+    background-color: #ff8833;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.menu-button img {
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+}
+
+.li-menu-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/* Estilos para titulos naranjas menú hamburguesa */
+.dropdown-title {
+    position: relative;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.dropdown-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 10px;
+    border-bottom: 1px solid #ffe1cc;
+}
+
+.arrow-down {
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+.dropdown-title:hover {
+    cursor: pointer;
+}
+
+.hamburger-menu-container ul li .dropdown-title {
+    color: #ff8833;
+}
+
+.hamburger-menu-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hamburger-menu-container ul li a {
+    display: block;
+    color: #676767;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.hamburger-menu-container a.menu-button {
+    color: white;
+}
+
+.hamburger-menu-container ul li .dropdown {
+    display: none;
+    position: relative;
+}
+
+.hamburger-menu-container ul li .dropdown ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 250px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a {
+    padding: 5px 16px;
+}
+
+.hamburger-menu-container ul li .dropdown ul li a:hover {
+    background-color: #666;
+}
+
+.hamburger-menu-container ul li a:hover,
+.hamburger-menu-container ul li:hover>.dropdown {
+    cursor: pointer;
+}
+
+/*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Estilos para el botón "Atrás" */
+.back-button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    color: #676767;
+    font-family: "Bariol Regular", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#user-account-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cover {
+    width: 100%;
+}
+
+
+
+#tool-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+    gap: 20px;
+}
+
+.icons {
+    width: 25px;
+}
+
+@media (min-width: 901px) {
+    #tool-bar {
+        position: absolute;
+        top: 17%;
+        right: 0;
+
+    }
+}
+
+@media (max-width: 900px) {
+    #tool-bar {
+        position: absolute;
+        top: 12%;
+        right: 0;
+
+    }
+}
+
+#option-island {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 8px;
+
+    background: white;
+    filter: drop-shadow(1.95455px 2.73636px 11.7273px rgba(255, 105, 0, 0.15));
+
+
+
+    margin-top: -50px;
+}
+
+.bar-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FF8833;
+    inline-size: 100px;
+
+    word-wrap: normal;
+
+    font-size: 14px;
+}
+
+.vertical-line {
+    border: 1px solid #FF8833;
+    height: 50px;
+}
+
+.option-bar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 2% 2% 2%;
+}
+
+#username-container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    gap: 8px;
+    color: #ACACAC;
+
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+#username {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: 'Geomanist';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #ACACAC;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    margin-top: 40px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 40px
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 4.77828px 6.68959px 28.6697px rgba(159, 102, 219, 0.18);
+    border-radius: 5.73393px;
+}
+
+
+h1 {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+
+    /* Acuamarina/500 */
+
+    color: #00B1BB;
+}
+
+h2 {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16.4871px;
+    line-height: 150%;
+
+    color: #ACACAC;
+
+}
+
+h3 {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.4235px;
+    line-height: 150%;
+
+    color: #ACACAC;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.text-groups {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.action-side {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+
+    background: #00B1BB;
+    border-radius: 0px 0px 5.73393px 5.73393px;
+    transform: rotate(0.02deg);
+}
+
+.action-button {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.7392px;
+    line-height: 150%;
+    /* or 21px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    gap: 20px;
+}
+
+.profile-info-comment {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.comment-profile-picture {
+    width: 50px;
+    height: 50px;
+}
+
+.highlight-text-green {
+    color: #00B1BB;
+}
+
+.user-comment-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+p {
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: #676767;
+}
+
+.comment-icon-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.comment-reaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #00B1BB;
+    border-radius: 8px;
+    border: 0px;
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    width: 100px;
+    height: 40px;
+
+    color: #FFFFFF;
+}
+
+.reaction-pub-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.my-products {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.my-products-icon {
+    padding: 20px;
+    background: #FF8833;
+    border-radius: 5.73393px 0px 0px 5.73393px;
+}
+
+.my-products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.saldo-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.saldo-disponible {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.my-movements {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.line-movement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movement-img {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    line-height: 0%;
+    border-spacing: 0px;
+}
+
+.balance-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.line-balance-title {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.line-balance {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.highlighted-value {
+    font-weight: 700;
+}
+
+.green-card {
+    background: #00B1BB;
+}
+
+.green-text-variation {
+    color: white;
+}
+
+.remember-payment {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.line-payment {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.green-card-button {
+    background: #FFFFFF;
+    color: #00B1BB;
+    ;
+}
+
+.mini-icons {
+    width: 20px;
+}
+
+.title-line-payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column-payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.consulta-pagos {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.line-pagos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.columns-green {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.green-card-pagos {
+    background: #00B1BB;
+    box-shadow: 4.77828px 6.68959px 28.6697px rgba(159, 102, 219, 0.18);
+    border-radius: 5.73393px;
+
+    width: 100px;
+    padding: 8px;
+
+    gap: 10px;
+}
+
+.avance-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.line-deuda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #FF8833;
+    border-radius: 2.98932px;
+    width: 20px;
+    height: 20px;
+}
+
+.number-text {
+    color: white;
+}
+
+.line-schedule {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+.next-meeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    gap: 10px;
+}
+
+.dropdown-cita {
+    border: 0px;
+    border-bottom: 1px solid #ACACAC;
+    padding-bottom: 2px;
+
+    font-family: 'Bariol';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.3128px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    /* gris/3 */
+    color: #ACACAC;
+}
+
+
+.inputs-cita {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.meeting-button {
+    width: 100%;
+}
+
+#home-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#productos-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#productos-profile-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#pagos-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#pagos-profile-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#citas-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#comentarios-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+hr {
+    border: 1px solid #00B1BB;
+}
+
+.selected-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 2% 2% 2%;
+    background-color: #FF8833;
+    color: white;
+}
+
+.images {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .big-columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner-columns{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 801px) {
+    .big-columns{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .inner-columns{
+        display: flex;
+        flex-direction: column;
+    }
+}

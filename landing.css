@@ -227,6 +227,22 @@ body {
 .button-image {
   width: 50%;
 }
+.user-data {
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 5%;
+  margin-top: -30px;
+  display: flex;
+  flex-direction: column;
+}
+.user-data h4 {
+  padding: 0%;
+  margin-bottom: 2%;
+  margin-top: 0%;
+  color: #676767;
+  font-family: "Geomanist Bold";
+  font-size: 20px;
+}
 /* seccion de recomendaciones */
 .recomendaciones-responsive {
   display: none;
@@ -350,10 +366,16 @@ h3 {
   font-size: 20px;
   color: #ff6900;
   padding-left: 5%;
-  margin-top: 7%;
-  margin-bottom: 7%;
+  margin-top: 1%;
+  margin-bottom: 10%;
 }
-
+/* .jessica {
+  margin-top: 10%;
+  margin-left: 5%;
+  font-family: "Geomanist Bold";
+  color: #676767;
+  font-size: 25px;
+} */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -624,7 +646,7 @@ a:active {
   }
   /* Create a pseudo-element to display the new image */
   .hero-img::before {
-    content: url("img/hero_responsive.svg");
+    content: url("img/hero_landing.svg");
     display: block;
     position: relative;
     width: 100%;
@@ -1023,9 +1045,10 @@ a:active {
       font-size: 20px;
       color: #9f66db;
     }
+
     .user-data {
-      padding-bottom: 100px;
-      padding-left: 5%;
+      padding-bottom: 80px;
+      padding-left: 35px;
       padding-right: 5%;
       margin-top: -70px;
       display: flex;
@@ -1037,7 +1060,7 @@ a:active {
       margin-top: 0%;
       color: #676767;
       font-family: "Geomanist Bold";
-      font-size: 30px;
+      font-size: 35px;
     }
     .user-selector {
       margin-right: 10px;

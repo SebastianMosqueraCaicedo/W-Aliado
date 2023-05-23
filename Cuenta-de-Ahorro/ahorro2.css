@@ -36,6 +36,7 @@
 a {
   text-decoration: none;
 }
+
 /* Estilos del menú de navegación */
 
 /* Estilos para el navbar */
@@ -54,7 +55,6 @@ a {
 }
 
 /* Estilos para el menú hamburguesa */
-
 
 /* Estilo de miga de pan */
 
@@ -341,8 +341,10 @@ a {
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
+=======
+@media (min-width: 1440px) {
   /* Estilos del responsive */
 
   .nav-cover {
@@ -352,7 +354,7 @@ a {
     width: 1262px;
     height: 43px;
   }
-  
+
   #marker {
     bottom: 0px;
     width: 631px;
@@ -362,7 +364,7 @@ a {
     width: 631px;
     height: 43px;
   }
-  
+
   .requirements {
     width: 631px;
     height: 43px;
@@ -383,7 +385,7 @@ a {
   .nav-crumbs {
     display: none;
   }
-  
+
   .cover-page {
     position: relative;
     background: url(../img/portada-ahorro-cuenta-desktop2.jpg);
@@ -391,7 +393,7 @@ a {
     width: 100%;
     height: 479px;
   }
-  
+
   .information {
     display: flex;
     flex-direction: column;
@@ -400,12 +402,12 @@ a {
     padding-top: 11%;
   }
 
-  .information > div{
+  .information > div {
     display: flex;
     flex-direction: column;
     justify-content: start;
   }
-  
+
   .information h1 {
     font-size: 32px;
     font-family: "Geomanist";
@@ -417,7 +419,7 @@ a {
     max-width: 1440px;
     margin-inline: auto;
   }
-  
+
   .information p {
     font-family: "Bariol Regular";
     font-size: 20px;
@@ -436,7 +438,7 @@ a {
     padding-top: 6%;
     margin-top: -69px;
   }
-  
+
   .simulator-button {
     font-size: 13.42px;
     width: 186.29px;
@@ -447,14 +449,14 @@ a {
 
   /* Estilos de la lista */
   .list-characters,
- .info-list,
- .list-characters2,
- .info-list2 {
-  display: none;
- }
+  .info-list,
+  .list-characters2,
+  .info-list2 {
+    display: none;
+  }
 
   .container-characters {
-  display: block;
+    display: block;
   }
 
   .list-container {
@@ -466,10 +468,10 @@ a {
   }
 
   .container-characters {
-  display: flex;
-  justify-content: center;
-  width: 33.33333%;
-  font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 33.33333%;
+    font-size: 20px;
   }
 
   .container-characters li {
@@ -488,41 +490,41 @@ a {
     margin-inline: auto;
   }
 
- /* LISTA1*/
+  /* LISTA1*/
 
-  .list1 li:nth-child(1){
+  .list1 li:nth-child(1) {
     margin-bottom: 13.5%;
   }
 
-  .list1 li:nth-child(2){
+  .list1 li:nth-child(2) {
     margin-bottom: 19.5%;
   }
 
-   /* LISTA2*/
+  /* LISTA2*/
 
-   .list2 li:nth-child(1){
+  .list2 li:nth-child(1) {
     margin-bottom: 13%;
   }
 
-  .list2 li:nth-child(2){
+  .list2 li:nth-child(2) {
     margin-bottom: 25%;
   }
 
-   /* LISTA3*/
+  /* LISTA3*/
 
-   .list3 li:nth-child(1){
+  .list3 li:nth-child(1) {
     margin-bottom: 26%;
   }
 
-   /* LISTA4*/
+  /* LISTA4*/
 
-   .list4 li:nth-child(1){
+  .list4 li:nth-child(1) {
     margin-bottom: 19.5%;
   }
-  
-   /* LISTA5*/
 
-   .list5 li:nth-child(1){
+  /* LISTA5*/
+
+  .list5 li:nth-child(1) {
     margin-bottom: 13.5%;
   }
 
@@ -532,21 +534,19 @@ a {
     width: 100%;
     height: 200px;
   }
-  
+
   .more-information p {
     font-size: 35px;
     color: var(--white);
   }
-  
+
   .button {
     width: 298px;
     height: 45px;
     font-size: 17px;
   }
-
 }
 @media (min-width: 1024px) {
- 
   .cards-container {
     max-width: 1280px;
     margin: 65px auto;
@@ -558,7 +558,6 @@ a {
     background: url(../img/portada-ahorro-cuenta-desktop2.jpg);
   }
 }
-
 
 /* Iphone SE */
 @media (max-width: 375px) {
