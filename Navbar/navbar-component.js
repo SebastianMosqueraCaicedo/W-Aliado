@@ -218,7 +218,7 @@ header.innerHTML = `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     height: 100%;
     padding: 1%;
   }
@@ -412,7 +412,7 @@ header.innerHTML = `
     </div>
     <!-- Contenedor del menú hamburguesa responsive -->
     <div class="desktop-menu">
-      <div class="top-level-items">
+      <div class="top-level-items" >
         <img src="/img/logow.svg" alt="logo">
         <a href="#" class="contactanos-button">
         </a>
@@ -422,6 +422,9 @@ header.innerHTML = `
           <a href="#" class="contactanos-button">Contactanos
           </a>
           <a href="#" class="preguntas-frecuentes-button">Preguntas Frecuentes
+          </a>
+          <a href="#" class="font-button">
+          <img class ="font" src="/img/fontlanding.png">
           </a>
         </div>
         <div class="pago-login">
