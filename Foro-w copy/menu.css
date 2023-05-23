@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Geomanist';
+    src: url('/font/Geomanist-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Book';
+    src: url('/font/Geomanist-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bariol Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/bariol_regular-webfont.ttf') format('woff');
+    }
+
+@font-face {
+    font-family: 'Bariol Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bariol Bold'), url('../font/bariol_bold-webfont.ttf') format('woff');
+    }    
+
+:root {
+    --white: white;
+    --lila-lyrics: #9F66DB;
+    --lila-line: #DFCCF3;
+    --gray-lyric: #676767;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bariol Regular", sans-serif;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+aside {
+    padding: 5%;
+    background-color: #F3F3F3;
+    width: 80%;
+    height: 100%;
+    margin-right: 3%;
+}
+
+.filter {
+    display: flex;
+    margin-top: 6%;
+    justify-content: end;
+}
+
+.subtitles {
+    font-size: 22px;
+    font-family: 'Bariol Bold';
+    color: #00B1BB;
+    margin: 10% 0;
+}
+
+.normal-butons {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.normal-butons p {
+    font-size: 16px;
+    color: var(--gray-lyric);
+}
+
+.normal-butons img {
+    margin-right: 3%;
+}
+
+#dropdown-button {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+#dropdown-button p {
+    width: 45%;
+}
+
+#dropdown-button img:nth-child(1){
+    margin-right: 4%;
+}
+
+#dropdown-button img:nth-child(3){
+    margin-left: 25%;
+}
+
+#dropdown-button {
+    font-size: 16px;
+    color: var(--gray-lyric);
+}
+
+.tags {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 8%;
+}
+
+.tags-up,
+.tags-down {
+    display: flex;
+    width: 100%;
+} 
+
+.tags-up {
+    margin-bottom: 3%;
+}
+
+.tags p{
+    padding: 7px 10px 7px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(103, 103, 103, 0.1);
+    border: 1px solid rgba(103, 103, 103, 0.4);
+    border-radius: 5.68988px;
+    font-size: 13px;
+    color: var(--gray-lyric);
+}
+  
+.tags p:nth-child(2),
+.tags p:nth-child(3) {
+    margin-left: 4%;
+}
