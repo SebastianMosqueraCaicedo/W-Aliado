@@ -285,7 +285,7 @@ body {
 @media (min-width: 901px) {
     #tool-bar {
         position: absolute;
-        top: 17%;
+        top: 22%;
         right: 0;
 
     }
@@ -294,7 +294,7 @@ body {
 @media (max-width: 900px) {
     #tool-bar {
         position: absolute;
-        top: 12%;
+        top: 17%;
         right: 0;
 
     }
