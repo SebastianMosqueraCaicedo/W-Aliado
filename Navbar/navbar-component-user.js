@@ -220,7 +220,7 @@ header.innerHTML = `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
     height: 100%;
     padding: 1%;
   }
@@ -351,7 +351,9 @@ header.innerHTML = `
     <!-- Contenedor del menú hamburguesa desplegado -->
     <div class="hamburger-menu-container" id="hamburgerMenu">
       <ul>
-      <img class="profileimg"src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">
+     <a href="/Cuenta-del-usuario/index.html">
+     <img  class="profileimg" src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">
+     </a> 
       <li class="li-menu-button">
       <a href="#" class="menu-button">
         <img src="/icons/exit.svg" class="exit" alt="Cerrar sesión" >Cerrar sesión</a>
@@ -423,12 +425,17 @@ header.innerHTML = `
           </a>
           <a href="#" class="preguntas-frecuentes-button">Preguntas Frecuentes
           </a>
+          <a href="#" class="font-button">
+          <img class ="font" src="/img/fontlanding.png">
+          </a>
         </div>
         <div class="pago-login">
-          <a href="#" class="menu-button">
+          <a class="menu-button">
             <img src="/img/pse.svg" alt="Pagos en línea" width="16" height="16">Pagos en línea
           </a>
-            <img src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">
+          <a href="/Cuenta-del-usuario/index.html" >
+          <img href="/Cuenta-del-usuario/index.html" src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">          
+          </a>
         </div>
       </div>
       <ul class="category-items">

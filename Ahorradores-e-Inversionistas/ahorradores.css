@@ -37,7 +37,6 @@ a {
 }
 /* Estilos del menú de navegación */
 
-
 /* Estilos de la portada de la página */
 
 .desktop-menu {
@@ -48,7 +47,7 @@ a {
 
 .cover-page {
   position: relative;
-  background: url(../img/portada-ahorro2.svg);
+  background: url(../img/portada-ahorro.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 535px;
@@ -305,12 +304,12 @@ a svg {
   display: none;
 }
 
-
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
 @media (min-width: 1200px) {
 
 
+@media (min-width: 1440px) {
   /* Estilos del responsive */
 
   .nav-cover {
@@ -326,7 +325,7 @@ a svg {
   }
 
   .nav-cover a {
-    font-size: 17px;   
+    font-size: 17px;
   }
 
   .nav-cover svg {
@@ -337,7 +336,7 @@ a svg {
     width: 212.75px;
     height: 114px;
   }
-  
+
   .spins-menu {
     width: 212.75px;
     height: 114px;
@@ -350,12 +349,12 @@ a svg {
   .spins-menu p {
     padding: 0 50px;
   }
-  
+
   .saving-menu {
-    width: 212.75px; 
+    width: 212.75px;
     height: 114px;
   }
-  
+
   .invert-menu {
     width: 212.75px;
     height: 114px;
@@ -372,7 +371,7 @@ a svg {
     width: 100%;
     height: 479px;
   }
-  
+
   .information {
     display: flex;
     /* align-items: flex-end; */
@@ -385,12 +384,12 @@ a svg {
     padding-top: 9%;
   }
 
-  .information > div{
+  .information > div {
     display: flex;
     flex-direction: column;
     justify-content: start;
   }
-  
+
   .information h1 {
     font-size: 32px;
     font-family: "Geomanist";
@@ -402,7 +401,7 @@ a svg {
     /* padding: 115px 0px 0px 500px; */
     padding: 0;
   }
-  
+
   .information p {
     font-family: "Bariol Regular";
     font-size: 20px;
@@ -413,32 +412,32 @@ a svg {
     padding: 0;
   }
 
+  @media (max-width: 1024px) {
+    .cover-page {
+      background: url(../img/portada-ahorro-desktop2.svg);
+      background-repeat: no-repeat;
+    }
 
-@media (max-width: 1024px) {
-  .cover-page {
-    background: url(../img/portada-ahorro-desktop2.svg);
-    background-repeat: no-repeat;
+    .cards-container {
+      max-width: 1280px;
+      margin: 65px auto;
+      margin-bottom: 25px;
+      padding: 2rem;
+    }
   }
 
-  .cards-container {
-    max-width: 1280px;
-    margin: 65px auto;
-    margin-bottom: 25px;
-    padding: 2rem;
-  }
-}
+  @media (max-width: 360px) {
+    .nav-cover {
+      top: 49.5%;
+      left: 50%;
+    }
+    .information h1 {
+      padding: 62px 50px 0px 50px;
+    }
 
-@media (max-width: 360px) {
-  .nav-cover {
-    top: 49.5%;
-    left: 50%;
-  }
-  .information h1 {
-    padding: 62px 50px 0px 50px;
-  }
-
-  .information p {
-    padding: 0px 50px 0px 50px;
+    .information p {
+      padding: 0px 50px 0px 50px;
+    }
   }
 }
 }

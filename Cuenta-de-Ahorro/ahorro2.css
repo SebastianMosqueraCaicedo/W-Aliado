@@ -36,26 +36,6 @@
 a {
   text-decoration: none;
 }
-/* Estilos del menú de navegación */
-
-/* Estilos para el navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffff;
-  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
-  padding: 10px;
-  position: relative;
-  z-index: 5;
-}
-.navbar img {
-  padding: 2%;
-}
-
-/* Estilos para el menú hamburguesa */
-
-
 /* Estilo de miga de pan */
 
 .nav-crumbs {
@@ -341,7 +321,7 @@ a {
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
 
   /* Estilos del responsive */
 

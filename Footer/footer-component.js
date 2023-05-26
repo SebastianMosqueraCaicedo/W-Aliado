@@ -35,7 +35,7 @@ class Footer extends HTMLElement {
       }
 
       .footer-container {
-        padding: 42px 21px 15px 15px;
+        padding: 15px 21px 15px 15px;
         display: flex;
         flex-direction: column;
       }
