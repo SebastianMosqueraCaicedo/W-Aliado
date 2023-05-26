@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco W</title>
+  <link rel="stylesheet" href="./pi.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación con logo y menú hamburguesa -->
+  <header id="header"></header>
+  <!-- Portada de la página -->
+
+  <section class="cover-page">
+    <!-- <img src="/img/microcredito.png"alt=""> -->
+    <div class="information">
+      <h1>INMUEBLE PRODUCTIVO</h1>
+      <p>Crédito con asesoría personalizada donde podrás hacer realidad tu sueño de comprar la casa para que tengas tu
+        negocio.
+      </p>
+    </div>
+
+    <!-- Menú de navegación de la portada de la página -->
+
+    <div class="nav-cover second-menu">
+      <div class="cover-buttons">
+        <ul id="page-switcher">
+          <div id="marker"></div>
+          <li class="all-menu" data-filter="all" onclick="changeColor(event)">
+            <a>
+              <p>Características</p>
+            </a>
+          </li>
+
+          <li class="saving-menu" data-filter="saving" onclick="changeColor(event)">
+            <a>
+              <p>Requisitos</p>
+            </a>
+          </li>
+
+          <li class="invert-menu" data-filter="invert" onclick="changeColor(event)">
+            <a>
+              <p>Trámites</p>
+            </a>
+          </li>
+
+          <li class="spins-menu" data-filter="spin" onclick="changeColor(event)">
+            <a>
+              <p>Solicitud</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="cards-container2">
+    <div class="card-saving1 card-template all">
+      <div class="container">
+        <button class="dropdown-btn">Características
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container2">
+          <div class="caracteristicas"></div>
+        </div>
+        <button class="dropdown-btn">Para tener en cuenta
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container2">
+          <div class="enCuenta"></div>
+        </div>
+      </div>
+      <section class="more-information">
+        <p>Para mayor información</p>
+        <div class="buttons">
+          <a href="/CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
+            <button class="button">Contratos y reglamentos de productos</button>
+          </a>
+          <button class="button button--border">Tasas y tarifas vigentes</button>
+        </div>
+      </section> <!-- Sección de mayor información -->
+
+      <section class="more-information">
+        <p>Para mayor información</p>
+        <div class="buttons">
+          <a href="/CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
+            <button class="button">Contratos y reglamentos de productos</button>
+          </a>
+          <button class="button button--border">Tasas y tarifas vigentes</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="card-saving2 card-template saving">
+      <div class="container">
+        <button class="dropdown-btn">Para el estudio del crédito
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container2">
+          <div class="estudioCredito"></div>
+        </div>
+        <button class="dropdown-btn">Para avalúos comerciales
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container2">
+          <div class="avaluos"></div>
+        </div>
+        <button class="dropdown-btn">Para estudio de títulos
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container2">
+          <div class="estudioTitulos"></div>
+        </div>
+      </div>
+      <section class="more-information">
+        <p>Para mayor información</p>
+        <div class="buttons">
+          <a href="/CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
+            <button class="button">Contratos y reglamentos de productos</button>
+          </a>
+          <button class="button button--border">Tasas y tarifas vigentes</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="card-cdt card-template invert">
+      <div class="container">
+        <button class="dropdown-btn">Tramites de apertura
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container2">
+          <div class="apertura"></div>
+        </div>
+
+      </div>
+      <section class="more-information">
+        <p>Para mayor información</p>
+        <div class="buttons">
+          <a href="/CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
+            <button class="button">Contratos y reglamentos de productos</button>
+          </a>
+          <button class="button button--border">Tasas y tarifas vigentes</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="card-spin card-template spin">
+      <div class="data1">
+        <div class="input-container">
+          <label for="monto">Antiguedad</label>
+          <input type="text" id="monto" name="monto" />
+        </div>
+        <div class="input-container">
+          <label for="nombre">Nombres y apellidos:</label>
+          <input type="text" id="nombre" name="nombre" />
+        </div>
+        <div class="input-container">
+          <label for="identificacion">Tipo de identificación:</label>
+          <select id="identificacion" name="identificacion">
+            <option value="cedula">Cédula de ciudadanía</option>
+            <option value="cedula-extranjera">Cédula extranjera</option>
+            <option value="nit">NIT</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="documento">Número de documento:</label>
+          <input type="text" id="documento" name="documento" />
+        </div>
+        <div class="input-container">
+          <label for="celular">Número de celular:</label>
+          <input type="text" id="celular" name="celular" />
+        </div>
+        <div class="input-container">
+          <label for="identificacion">Departamento</label>
+          <select id="identificacion" name="identificacion">
+            <option value="cedula">Amazonas</option>
+            <option value="cedula">Antioquia</option>
+            <option value="cedula">Arauca</option>
+            <option value="cedula">Atlántico</option>
+            <option value="cedula">Bogotá</option>
+            <option value="cedula">Bolívar </option>
+            <option value="cedula">Boyacá</option>
+            <option value="cedula">Caldas</option>
+            <option value="cedula">Caquetá</option>
+            <option value="cedula">Casanare</option>
+            <option value="cedula">Cauca</option>
+            <option value="cedula">Cesar</option>
+            <option value="cedula">Chocó</option>
+            <option value="cedula">Córdoba</option>
+            <option value="cedula">Cundinamarca</option>
+            <option value="cedula">Guainía</option>
+            <option value="cedula">Guaviare</option>
+            <option value="cedula">Huila</option>
+            <option value="cedula">La Guajira </option>
+            <option value="cedula">Magdalena</option>
+            <option value="cedula">Meta</option>
+            <option value="cedula">Nariño</option>
+            <option value="cedula">Norte de Santander </option>
+            <option value="cedula">Putumayo</option>
+            <option value="cedula">Quindío</option>
+            <option value="cedula">Risaralda</option>
+            <option value="cedula">San Andrés y Providencia </option>
+            <option value="cedula">Santander</option>
+            <option value="cedula">Sucre</option>
+            <option value="cedula">Tolima</option>
+            <option value="cedula">Valle del Cauca</option>
+            <option value="cedula">Vaupés</option>
+            <option value="cedula">Vichada</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="identificacion">Ciudad</label>
+          <select id="identificacion" name="identificacion">
+            <option value="cedula">Leticia</option>
+            <option value="cedula">Medellín</option>
+            <option value="cedula">Arauca</option>
+            <option value="cedula">Barranquilla</option>
+            <option value="cedula">Bogotá</option>
+            <option value="cedula">Cartagena </option>
+            <option value="cedula">Tunja</option>
+            <option value="cedula">Manizales</option>
+            <option value="cedula">Florencia</option>
+            <option value="cedula">Yopal</option>
+            <option value="cedula">Popayán</option>
+            <option value="cedula">Valledupar</option>
+            <option value="cedula">Quibdó</option>
+            <option value="cedula">Montería</option>
+            <option value="cedula">Bogotá</option>
+            <option value="cedula">Inírida</option>
+            <option value="cedula">San José del Guaviare </option>
+            <option value="cedula">Neiva</option>
+            <option value="cedula">Riohacha </option>
+            <option value="cedula">Santa Marta </option>
+            <option value="cedula">Villavicencio</option>
+            <option value="cedula">Pasto</option>
+            <option value="cedula">Cucuta</option>
+            <option value="cedula">Mocoa</option>
+            <option value="cedula">Armenia</option>
+            <option value="cedula">Pereira</option>
+            <option value="cedula">San Andrés </option>
+            <option value="cedula">Bucaramanga</option>
+            <option value="cedula">Sincelejo</option>
+            <option value="cedula">Ibague</option>
+            <option value="cedula">Cali</option>
+            <option value="cedula">Mitu</option>
+            <option value="cedula">Puerto Careno</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="celular">Barrio</label>
+          <input type="text" id="barrio" name="barrio" />
+        </div>
+        <div class="siguiente-button-container">
+          <button class="siguiente-button" id="siguiente2">Enviar</button>
+        </div>
+      </div>
+      <div class="data2">
+        <div class="data2text"></div>
+        <div class="siguiente-button-container">
+          <button class="siguiente-button" id="terminar">Terminar</button>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+
+  </section>
+
+  <custom-footer></custom-footer>
+
+  <script src="./pi.js"></script>
+  <script type="module" src="../Navbar/navbar-component.js"></script>
+  <script type="module" src="../Footer/footer-component.js"></script>
+
+</body>
+
+</html>
