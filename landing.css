@@ -375,6 +375,13 @@ a:hover {
 a:active {
   color: #9f66db;
 }
+
+.temas-de-interes {
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
 /* /////////////////////////// Estilos para la sección de recomendaciones en pantallas md ///////////////////////////  */
 /* Media query para pantallas con ancho mínimo de 640px */
 @media screen and (min-width: 641px) and (max-width: 1007px) {
