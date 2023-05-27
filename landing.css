@@ -148,7 +148,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 3%;
+  padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
   border-radius: 5px 0px 0px 5px;
@@ -170,7 +170,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 3%;
+  padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
   border-radius: 0px 0px 0px 0px;
@@ -213,7 +213,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 3%;
+  padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
   border-radius: 0px 5px 5px 0px;
@@ -226,6 +226,7 @@ body {
 }
 .button-image {
   width: 30px;
+  padding-bottom: 8px;
 }
 .user-data {
   padding-bottom: 40px;
@@ -356,7 +357,7 @@ h3 {
 .subscribe img {
   width: 100%;
   position: relative;
-  padding: 5%;
+  padding: 10%;
 }
 
 a {
@@ -385,17 +386,29 @@ a:active {
 /* /////////////////////////// Estilos para la sección de recomendaciones en pantallas md ///////////////////////////  */
 /* Media query para pantallas con ancho mínimo de 640px */
 @media screen and (min-width: 641px) and (max-width: 1007px) {
+  h3 {
+    font-family: "Geomanist Bold";
+    font-size: 30px;
+    color: #ff6900;
+    padding-bottom: 5%;
+  }
+  .recomendaciones {
+    margin-top: -5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
   .recomendacion {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .recomendacion img {
-    width: 90%;
+    width: 100%;
   }
   .hero-options {
-    height: 92px;
-    width: 90px;
+    height: 100px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -412,12 +425,12 @@ a:active {
     background-color: white;
     color: #9f66db;
     font-family: "Bariol Regular";
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .hero-options-middle {
-    height: 92px;
-    width: 90px;
+    height: 100px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -434,11 +447,11 @@ a:active {
     background-color: white;
     color: #9f66db;
     font-family: "Bariol Regular";
-    font-size: 15px;
+    font-size: 20px;
   }
   .hero-options-middle2 {
-    height: 92px;
-    width: 90px;
+    height: 100px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -455,12 +468,12 @@ a:active {
     background-color: white;
     color: #9f66db;
     font-family: "Bariol Regular";
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .hero-options-last {
-    height: 92px;
-    width: 90px;
+    height: 100px;
+    width: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -474,11 +487,22 @@ a:active {
     background-color: white;
     color: #9f66db;
     font-family: "Bariol Regular";
-    font-size: 15px;
+    font-size: 20px;
   }
   .button-image {
     width: 30px;
     padding-bottom: 8px;
+  }
+  .temas-de-interes {
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+  .subscribe img {
+    width: 100%;
+    position: relative;
+    padding: 10%;
   }
 }
 
