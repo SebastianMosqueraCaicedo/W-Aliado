@@ -6,8 +6,6 @@ const botonChatFull = document.createElement('div');
 // funciones circumstanciales
 // opaca el fondo y abre los botones. Cierra el chat si esta abierto
 function toggleExtraButtons(){
-	let wW = window.innerWidth;
-	console.log(wW);
 	for (let j = 0; j < buttsExtra.length; j++){
 		if(buttsExtra[j].style.display === "flex"){
 			buttsExtra[j].style.display = "none";
@@ -21,6 +19,25 @@ function toggleExtraButtons(){
 		}
 	}
 }
+
+// agrega una funcion a todo el documento. Si se clickea fuera del boton, sale
+// basado en: https://www.w3docs.com/snippets/javascript/how-to-detect-a-click-outside-an-element.html
+document.addEventListener("click", function(evt) {
+	  targetEl = evt.target; // clicked element
+	do {
+	  if(targetEl == botonFull) {
+		  console.log(targetEl);
+	    return;
+	  }
+	  targetEl = targetEl.parentNode;
+	} while (targetEl);
+	for (let j = 0; j < buttsExtra.length; j++){
+		buttsExtra[j].style.display = "none";
+		mobilePipe.style.display = "none";
+		botonOpac.style.display = "none";
+		botonChat.style.display = "none";
+	}
+});
 
 // muestra el chat
 function toggleBotonChat(){
