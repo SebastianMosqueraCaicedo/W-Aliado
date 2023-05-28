@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personas con Negocio</title>
+  <link rel="stylesheet" href="./pn.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación con logo y menú hamburguesa -->
+  <header id="header"></header>
+  <!-- Portada de la página -->
+
+  <section class="cover">
+    <div class="cover-page">
+      <img src="/img/pn-mobile.png" alt="">
+    </div>
+    <div class="cover-page2">
+      <img src="/img/pn-desktop.png" alt="">
+    </div>
+
+    <!-- Menú de navegación de la portada de la página -->
+
+    <div class="nav-cover second-menu">
+      <div class="cover-buttons">
+        <ul id="page-switcher">
+          <div id="marker"></div>
+          <li class="all-menu" data-filter="all" onclick="changeColor(event)">
+            <a>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M22 9.67015C21.9368 9.48723 21.822 9.32657 21.6693 9.20765C21.5167 9.08872 21.3328 9.01664 21.14 9.00014L15.45 8.17015L12.9 3.00015C12.8181 2.83107 12.6902 2.68849 12.5311 2.58872C12.3719 2.48895 12.1878 2.43604 12 2.43604C11.8121 2.43604 11.6281 2.48895 11.4689 2.58872C11.3097 2.68849 11.1819 2.83107 11.1 3.00015L8.54998 8.16014L2.85998 9.00014C2.6749 9.02645 2.5009 9.10411 2.35773 9.2243C2.21455 9.3445 2.10794 9.50242 2.04998 9.68015C1.99692 9.85382 1.99216 10.0387 2.03621 10.2148C2.08025 10.391 2.17144 10.5519 2.29998 10.6801L6.42998 14.6801L5.42998 20.3601C5.39428 20.5476 5.41297 20.7414 5.48385 20.9186C5.55473 21.0958 5.67483 21.249 5.82998 21.3601C5.98119 21.4683 6.15955 21.5321 6.34503 21.5444C6.5305 21.5568 6.71575 21.5172 6.87998 21.4301L12 18.7601L17.1 21.4401C17.2403 21.5193 17.3988 21.5607 17.56 21.5601C17.7718 21.5609 17.9784 21.4944 18.15 21.3701C18.3051 21.259 18.4252 21.1058 18.4961 20.9286C18.567 20.7514 18.5857 20.5576 18.55 20.3701L17.55 14.6901L21.68 10.6901C21.8244 10.5678 21.9311 10.407 21.9877 10.2265C22.0444 10.0459 22.0486 9.85302 22 9.67015ZM15.85 13.6701C15.7327 13.7836 15.645 13.924 15.5944 14.0791C15.5439 14.2343 15.532 14.3994 15.56 14.5601L16.28 18.7501L12.52 16.7501C12.3753 16.6731 12.2139 16.6328 12.05 16.6328C11.8861 16.6328 11.7247 16.6731 11.58 16.7501L7.81998 18.7501L8.53998 14.5601C8.56791 14.3994 8.55609 14.2343 8.50554 14.0791C8.45499 13.924 8.36725 13.7836 8.24998 13.6701L5.24998 10.6701L9.45998 10.0601C9.62198 10.0376 9.77598 9.97569 9.90848 9.8798C10.041 9.78391 10.1479 9.65698 10.22 9.51015L12 5.70015L13.88 9.52015C13.952 9.66698 14.059 9.79391 14.1915 9.8898C14.324 9.98569 14.478 10.0476 14.64 10.0701L18.85 10.6801L15.85 13.6701Z"
+                  fill="#FF8833" />
+              </svg>
+              <p>Todas</p>
+            </a>
+          </li>
+
+          <li class="saving-menu" data-filter="saving" onclick="changeColor(event)">
+            <a>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14 11H13V7H15C15.2652 7 15.5196 7.10536 15.7071 7.29289C15.8946 7.48043 16 7.73478 16 8C16 8.26522 16.1054 8.51957 16.2929 8.70711C16.4804 8.89464 16.7348 9 17 9C17.2652 9 17.5196 8.89464 17.7071 8.70711C17.8946 8.51957 18 8.26522 18 8C18 7.20435 17.6839 6.44129 17.1213 5.87868C16.5587 5.31607 15.7956 5 15 5H13V3C13 2.73478 12.8946 2.48043 12.7071 2.29289C12.5196 2.10536 12.2652 2 12 2C11.7348 2 11.4804 2.10536 11.2929 2.29289C11.1054 2.48043 11 2.73478 11 3V5H10C8.93913 5 7.92172 5.42143 7.17157 6.17157C6.42143 6.92172 6 7.93913 6 9C6 10.0609 6.42143 11.0783 7.17157 11.8284C7.92172 12.5786 8.93913 13 10 13H11V17H9C8.73478 17 8.48043 16.8946 8.29289 16.7071C8.10536 16.5196 8 16.2652 8 16C8 15.7348 7.89464 15.4804 7.70711 15.2929C7.51957 15.1054 7.26522 15 7 15C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.7956 6.31607 17.5587 6.87868 18.1213C7.44129 18.6839 8.20435 19 9 19H11V21C11 21.2652 11.1054 21.5196 11.2929 21.7071C11.4804 21.8946 11.7348 22 12 22C12.2652 22 12.5196 21.8946 12.7071 21.7071C12.8946 21.5196 13 21.2652 13 21V19H14C15.0609 19 16.0783 18.5786 16.8284 17.8284C17.5786 17.0783 18 16.0609 18 15C18 13.9391 17.5786 12.9217 16.8284 12.1716C16.0783 11.4214 15.0609 11 14 11ZM11 11H10C9.46957 11 8.96086 10.7893 8.58579 10.4142C8.21071 10.0391 8 9.53043 8 9C8 8.46957 8.21071 7.96086 8.58579 7.58579C8.96086 7.21071 9.46957 7 10 7H11V11ZM14 17H13V13H14C14.5304 13 15.0391 13.2107 15.4142 13.5858C15.7893 13.9609 16 14.4696 16 15C16 15.5304 15.7893 16.0391 15.4142 16.4142C15.0391 16.7893 14.5304 17 14 17Z"
+                  fill="#FFA666" />
+              </svg>
+
+              <p>Créditos</p>
+            </a>
+          </li>
+
+          <li class="invert-menu" data-filter="invert" onclick="changeColor(event)">
+            <a>
+              <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M21 16H1C0.734784 16 0.48043 16.1054 0.292893 16.2929C0.105357 16.4804 0 16.7348 0 17C0 17.2652 0.105357 17.5196 0.292893 17.7071C0.48043 17.8946 0.734784 18 1 18H21C21.2652 18 21.5196 17.8946 21.7071 17.7071C21.8946 17.5196 22 17.2652 22 17C22 16.7348 21.8946 16.4804 21.7071 16.2929C21.5196 16.1054 21.2652 16 21 16ZM21 20H1C0.734784 20 0.48043 20.1054 0.292893 20.2929C0.105357 20.4804 0 20.7348 0 21C0 21.2652 0.105357 21.5196 0.292893 21.7071C0.48043 21.8946 0.734784 22 1 22H21C21.2652 22 21.5196 21.8946 21.7071 21.7071C21.8946 21.5196 22 21.2652 22 21C22 20.7348 21.8946 20.4804 21.7071 20.2929C21.5196 20.1054 21.2652 20 21 20ZM5 6C4.80222 6 4.60888 6.05865 4.44443 6.16853C4.27998 6.27841 4.15181 6.43459 4.07612 6.61732C4.00043 6.80004 3.98063 7.00111 4.01921 7.19509C4.0578 7.38907 4.15304 7.56725 4.29289 7.70711C4.43275 7.84696 4.61093 7.9422 4.80491 7.98079C4.99889 8.01937 5.19996 7.99957 5.38268 7.92388C5.56541 7.84819 5.72159 7.72002 5.83147 7.55557C5.94135 7.39112 6 7.19778 6 7C6 6.73478 5.89464 6.48043 5.70711 6.29289C5.51957 6.10536 5.26522 6 5 6ZM19 0H3C2.20435 0 1.44129 0.31607 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3V11C0 11.7956 0.31607 12.5587 0.87868 13.1213C1.44129 13.6839 2.20435 14 3 14H19C19.7956 14 20.5587 13.6839 21.1213 13.1213C21.6839 12.5587 22 11.7956 22 11V3C22 2.20435 21.6839 1.44129 21.1213 0.87868C20.5587 0.31607 19.7956 0 19 0V0ZM20 11C20 11.2652 19.8946 11.5196 19.7071 11.7071C19.5196 11.8946 19.2652 12 19 12H3C2.73478 12 2.48043 11.8946 2.29289 11.7071C2.10536 11.5196 2 11.2652 2 11V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V11ZM11 4C10.4067 4 9.82664 4.17595 9.33329 4.50559C8.83994 4.83524 8.45542 5.30377 8.22836 5.85195C8.0013 6.40013 7.94189 7.00333 8.05764 7.58527C8.1734 8.16721 8.45912 8.70176 8.87868 9.12132C9.29824 9.54088 9.83279 9.8266 10.4147 9.94236C10.9967 10.0581 11.5999 9.9987 12.1481 9.77164C12.6962 9.54458 13.1648 9.16006 13.4944 8.66671C13.8241 8.17336 14 7.59334 14 7C14 6.20435 13.6839 5.44129 13.1213 4.87868C12.5587 4.31607 11.7956 4 11 4ZM11 8C10.8022 8 10.6089 7.94135 10.4444 7.83147C10.28 7.72159 10.1518 7.56541 10.0761 7.38268C10.0004 7.19996 9.98063 6.99889 10.0192 6.80491C10.0578 6.61093 10.153 6.43275 10.2929 6.29289C10.4327 6.15304 10.6109 6.0578 10.8049 6.01921C10.9989 5.98063 11.2 6.00043 11.3827 6.07612C11.5654 6.15181 11.7216 6.27998 11.8315 6.44443C11.9414 6.60888 12 6.80222 12 7C12 7.26522 11.8946 7.51957 11.7071 7.70711C11.5196 7.89464 11.2652 8 11 8ZM17 6C16.8022 6 16.6089 6.05865 16.4444 6.16853C16.28 6.27841 16.1518 6.43459 16.0761 6.61732C16.0004 6.80004 15.9806 7.00111 16.0192 7.19509C16.0578 7.38907 16.153 7.56725 16.2929 7.70711C16.4327 7.84696 16.6109 7.9422 16.8049 7.98079C16.9989 8.01937 17.2 7.99957 17.3827 7.92388C17.5654 7.84819 17.7216 7.72002 17.8315 7.55557C17.9414 7.39112 18 7.19778 18 7C18 6.73478 17.8946 6.48043 17.7071 6.29289C17.5196 6.10536 17.2652 6 17 6Z"
+                  fill="#FFA666" />
+              </svg>
+              <p>Invertir</p>
+            </a>
+          </li>
+
+          <li class="spins-menu" data-filter="spin" onclick="changeColor(event)">
+            <a>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23 20.9999V18.9999C22.9993 18.1136 22.7044 17.2527 22.1614 16.5522C21.6184 15.8517 20.8581 15.3515 20 15.1299"
+                  stroke="#FFA666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                  stroke="#FFA666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M16 3.12988C16.8604 3.35018 17.623 3.85058 18.1676 4.55219C18.7122 5.2538 19.0078 6.11671 19.0078 7.00488C19.0078 7.89305 18.7122 8.75596 18.1676 9.45757C17.623 10.1592 16.8604 10.6596 16 10.8799"
+                  stroke="#FFA666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                  stroke="#FFA666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+              <p>Seguros</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards-container">
+    <div class="card-saving1 card-template saving">
+      <img src="../img/micro.png" alt="Imagen de cuenta de ahorro">
+      <h5>Microcrédito</h5>
+      <p>Crédito con asesoría personalizada que te permitirá fortalecer y hacer crecer tu negocio.</p>
+      <div class="simulation">
+        <a href="/Cuenta-de-Ahorro/ahorro2.html">
+          <button class="button-primary">¡Conoce más!</button>
+        </a>
+        <a href="/Simulador-de-Ahorro/simulador-ahorro.html">
+          <button class="simulation-button">Simular</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card-saving2 card-template saving">
+      <img src="../img/gota.png" alt="Imagen de cuenta de ahorro">
+      <h5>Gotahorro</h5>
+      <p>Crédito con asesoría personalizada que te brinda acceder fácilmente a préstamos para que impulses tu negocio.
+      </p>
+      <a href="../Deposito-de-Bajo-Monto/deposito.html">
+        <button class="button-primary">¡Abre tu cuenta!</button>
+      </a>
+    </div>
+
+    <div class="card-cdt card-template saving">
+      <img src="../img/yoco.png" alt="Imagen de CDT">
+      <h5>Yo construyo</h5>
+      <p>Crédito con asesoría personalizada para remodelar o restaurar tu negocio.</p>
+      <div class="simulation">
+        <a href="../CDT/cdt.html">
+          <button class="button-primary">¡Conoce más!</button>
+        </a>
+        <a href="/Simulador-CDT/index.html">
+          <button class="simulation-button">Simular</button>
+        </a>
+      </div>
+    </div>
+
+    <div class="card-spin card-template saving">
+      <img src="../img/inmueble.png" alt="Imagen de CDT">
+      <h5>Inmueble productivo</h5>
+      <p>Crédito con asesoría personalizada donde podrás hacer realidad tu sueño de comprar la casa para que tengas tu
+        negocio.</p>
+      <a href="../Envia-Giros/enviarGiro.html">
+        <button class="button-primary">¡Conoce más!</button>
+      </a>
+    </div>
+
+    <div class="card-spin2 card-template saving">
+      <img src="../img/vehi.png" alt="Imagen de CDT">
+      <h5>Crédito de vehículo</h5>
+      <p>Crédito con asesoría personalizada con Alianza clave 2000, que te permitirá comprar el vehículo para generar
+        tus propios ingresos.p>
+        <a href="../Reclamar-Giros/reclamarGiro.html">
+          <button class="button-primary">¡Conoce más!</button>
+        </a>
+    </div>
+
+    <div class="card-spin3 card-template spin">
+      <img src="../img/caho.png" alt="Imagen de CDT">
+      <h5>Cuenta de ahorro</h5>
+      <p>Ahorra fácil y gratis para que cumplas tus proyectos y tus propósitos personales como familiares.</p>
+      <button class="button-primary">¡Conoce más!</button>
+    </div>
+
+    <div class="card-spin3 card-template spin">
+      <img src="../img/bajo.png" alt="Imagen de CDT">
+      <h5>Depósito de bajo monto
+      </h5>
+      <p>Sin salir de tu casa puedes obtener tu cuenta de ahorros en pocos minutos a cero costo y sin mayor
+        documentación.
+      </p>
+      <button class="button-primary">¡Conoce más!</button>
+    </div>
+
+    <div class="card-spin3 card-template invert">
+      <img src="../img/cdtt.png" alt="Imagen de CDT">
+      <h5>CDT</h5>
+      <p>Haz tu inversión de manera segura, fácil y rentable a través de nuestros CDTs</p>
+      <button class="button-primary">¡Conoce más!</button>
+    </div>
+
+    <div class="card-spin3 card-template spin">
+      <img src="../img/giross.png" alt="Imagen de CDT">
+      <h5>Enviar giros</h5>
+      <p>Envía de forma segura a tus seres queridos en otros países, la plata que te mantiene más cerca de ellos.</p>
+      <button class="button-primary">¡Conoce más!</button>
+    </div>
+
+    <div class="card-spin3 card-template spin">
+      <img src="../img/caho.png" alt="Imagen de CDT">
+      <h5>Cuenta de ahorro</h5>
+      <p>Ahorra fácil y gratis para que cumplas tus proyectos y tus propósitos personales como familiares.</p>
+      <button class="button-primary">¡Conoce más!</button>
+    </div>
+
+    <div class="card-spin3 card-template spin">
+      <img src="../img/reguross.png" alt="Imagen de CDT">
+      <h5>Seguros</h5>
+      <p>Queremos que estés preparado ante cualquier calamidad, por eso tenemos para ti seguros voluntarios y seguros
+        deudores.</p>
+      <button class="button-primary">¡Conoce más!</button>
+    </div>
+  </section>
+
+  <custom-footer></custom-footer>
+
+  <script src="./pn.js"></script>
+  <script type="module" src="../Navbar/navbar-component.js"></script>
+  <script type="module" src="../Footer/footer-component.js"></script>
+
+</body>
+
+</html>
