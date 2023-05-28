@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/img/logoW.png">
+    <title>Banco W | Simulador CDT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -16,42 +17,41 @@
     <header id="header"></header>
     <!-- Botón "Atrás" -->
     <a href="/Simuladores-VTU/vtu.html" class="back-button" onclick="goBack()">
-        < Atrás</a>
-            <section id="ingresar-datos">
-                <div id="simulador-cdt">
+        < Atrás</a> <section id="ingresar-datos">
+            <div id="simulador-cdt">
+            </div>
+            <picture>
+                <source media="(max-width: 700px)" srcset="./assets/simulador-cdt_4x.webp" class="images">
+                <source media="(min-width: 701px)" srcset="./assets/web-simulador-cdt_4x.webp" class="images">
+                <img src="./assets/simulador-cdt_4x.webp" alt="" class="images">
+            </picture>
+            <div id="cdt-type">
+                <h2>Tipo de CDT</h2>
+                <select name="" id="tipo-de-cdt">
+                    <option value="Escoge tu CDT">Escoge tu CDT</option>
+                    <option value="CDT al vencimiento">CDT al vencimiento</option>
+                    <option value="CDT al mensual">CDT al mensual</option>
+                </select>
+            </div>
+            <section id="inputs-cdt">
+                <div>
+                    <h2>Monto</h2>
+                    <input type="number" min="0" max="250000000" step="500000" id="monto">
                 </div>
-                <picture>
-                    <source media="(max-width: 700px)" srcset="./assets/simulador-cdt_4x.webp" class="images">
-                    <source media="(min-width: 701px)" srcset="./assets/web-simulador-cdt_4x.webp" class="images">
-                    <img src="./assets/simulador-cdt_4x.webp" alt="" class="images">
-                </picture>
-                <div id="cdt-type">
-                    <h2>Tipo de CDT</h2>
-                    <select name="" id="tipo-de-cdt">
-                        <option value="Escoge tu CDT">Escoge tu CDT</option>
-                        <option value="CDT al vencimiento">CDT al vencimiento</option>
-                        <option value="CDT al mensual">CDT al mensual</option>
+                <div>
+                    <h2>Plazo en días</h2>
+                    <select name="" id="plazo">
+                        <option value="60">60</option>
+                        <option value="90">90</option>
+                        <option value="120">120</option>
+                        <option value="180">180</option>
+                        <option value="360">360</option>
                     </select>
+                    <p>Desde 60 a 360 días</p>
                 </div>
-                <section id="inputs-cdt">
-                    <div>
-                        <h2>Monto</h2>
-                        <input type="number" min="0" max="250000000" step="500000" id="monto">
-                    </div>
-                    <div>
-                        <h2>Plazo en días</h2>
-                        <select name="" id="plazo">
-                            <option value="60">60</option>
-                            <option value="90">90</option>
-                            <option value="120">120</option>
-                            <option value="180">180</option>
-                            <option value="360">360</option>
-                        </select>
-                        <p>Desde 60 a 360 días</p>
-                    </div>
-                    <button id="simular">Simular</button>
+                <button id="simular">Simular</button>
 
-                </section>
+            </section>
             </section>
             <div id="resultado"></div>
             <script src="index.js"></script>
