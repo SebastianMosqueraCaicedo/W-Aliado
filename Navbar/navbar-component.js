@@ -46,6 +46,7 @@ header.innerHTML = `
 
 .navbar img {
   padding: 2%;
+  width: 100px;
 }
 
 /* Estilos para el menú hamburguesa */
@@ -196,7 +197,7 @@ header.innerHTML = `
 }
 
 /*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1330px) {
 
   /* Estilos navbar */
   .hamburger-menu {
@@ -245,6 +246,7 @@ header.innerHTML = `
   .top-level-items img {
     display: block;
     padding: 0%;
+    width: 100%;
   }
 
   .contact-preguntas a {
@@ -341,7 +343,9 @@ header.innerHTML = `
 }
 </style>
 <nav class="navbar">
-    <img src="/img/logow.svg" alt="logo">
+<a href="/index.html">
+<img src="/img/logow.png" alt="logo">
+</a>
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" >
       <span class="material-icons" id="toggleHamburgerMenu">menu</span>
@@ -410,10 +414,14 @@ header.innerHTML = `
         </li>
       </ul>
     </div>
+
+
     <!-- Contenedor del menú hamburguesa responsive -->
     <div class="desktop-menu">
       <div class="top-level-items" >
-        <img src="/img/logow.svg" alt="logo">
+      <a href="/index.html">
+      <img src="/img/logow.svg" alt="logo">
+      </a>
         <a href="#" class="contactanos-button">
         </a>
         <a href="#" class="contactanos-button">

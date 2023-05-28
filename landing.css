@@ -110,6 +110,7 @@ body {
 .hero img {
   width: 100%;
   position: relative;
+  display: block;
 }
 
 .hero-title {
@@ -148,7 +149,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 3%;
+  padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
   border-radius: 5px 0px 0px 5px;
@@ -170,7 +171,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 3%;
+  padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
   border-radius: 0px 0px 0px 0px;
@@ -213,7 +214,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 3%;
+  padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
   border-radius: 0px 5px 5px 0px;
@@ -225,7 +226,8 @@ body {
   font-size: 15px;
 }
 .button-image {
-  width: 50%;
+  width: 30px;
+  padding-bottom: 8px;
 }
 .user-data {
   padding-bottom: 40px;
@@ -236,127 +238,34 @@ body {
   flex-direction: column;
 }
 .user-data h4 {
-  padding: 0%;
+  padding-left: 5%;
+  padding-bottom: 5%;
   margin-bottom: 2%;
   margin-top: 0%;
   color: #676767;
   font-family: "Geomanist Bold";
-  font-size: 20px;
+  font-size: 25px;
 }
 /* seccion de recomendaciones */
 .recomendaciones-responsive {
   display: none;
 }
 .recomendaciones {
-  margin-top: -20%;
-  padding-left: 0%;
-  padding-right: 0%;
+  margin-top: -10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
 }
-
-.recomendaciones h2 {
-  font-family: "Geomanist Bold";
-  font-size: 20px;
-  color: #ff6900;
-  padding-bottom: 5%;
-}
-
-.imagenes-recomendaciones img {
-  padding-bottom: 3%;
+.recomendacion img {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  display: block;
 }
-
-.recomendacion-1-title {
-  position: absolute;
-  transform: translate(145%, -130%);
-  text-align: left;
-  margin-left: 4%;
-}
-
-.recomendacion-1-title h1 {
-  font-family: "Geomanist Bold";
-  font-size: 16px;
-  color: #efefef;
-  margin-bottom: 2%;
-}
-
-.recomendacion-1-title p {
-  font-family: "Bariol Regular";
-  font-size: 10px;
-  color: #efefef;
-  margin-top: 2%;
+.recomendacion2 img {
+  display: flex;
   width: 100%;
+  display: none;
 }
-
-.recomendacion-1-button {
-  background-color: #ffa666;
-  border-width: 0cm;
-  border-radius: 5px;
-  padding: 4%;
-  padding-left: 15%;
-  padding-right: 15%;
-  color: white;
-  font-family: "Bariol Regular";
-  font-size: 12px;
-  margin-top: 5%;
-}
-
-.recomendacion-2-title {
-  position: absolute;
-  transform: translate(150%, -130%);
-  text-align: left;
-}
-
-.recomendacion-2-title h1 {
-  font-family: "Geomanist Bold";
-  font-size: 16px;
-  color: #676767;
-  margin-bottom: 2%;
-}
-
-.recomendacion-2-title p {
-  font-family: "Bariol Regular";
-  font-size: 10px;
-  color: #676767;
-  margin-top: 2%;
-}
-
-.recomendacion-2-button {
-  background-color: #9f66db;
-  border-width: 0cm;
-  border-radius: 5px;
-  padding: 4%;
-  padding-left: 15%;
-  padding-right: 15%;
-  color: white;
-  font-family: "Bariol Regular";
-  font-size: 12px;
-  margin-top: 5%;
-}
-
-.recomendacion-3-title {
-  position: absolute;
-  transform: translate(150%, -150%);
-  text-align: left;
-}
-
-.recomendacion-3-title h1 {
-  font-family: "Geomanist Bold";
-  font-size: 16px;
-  color: #efefef;
-  margin-bottom: 2%;
-}
-
-.recomendacion-3-title p {
-  font-family: "Bariol Regular";
-  font-size: 10px;
-  color: #efefef;
-  margin-top: 2%;
-}
-
 /*Card slider*/
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -365,9 +274,7 @@ h3 {
   font-family: "Geomanist Bold";
   font-size: 20px;
   color: #ff6900;
-  padding-left: 5%;
-  margin-top: 1%;
-  margin-bottom: 10%;
+  padding-bottom: 5%;
 }
 /* .jessica {
   margin-top: 10%;
@@ -420,7 +327,7 @@ h3 {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card-title {
@@ -455,172 +362,18 @@ h3 {
   font-weight: bold;
 }
 
-.subscribe {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.subscribe h1 {
-  font-family: "Geomanist Bold";
-  font-size: 20px;
-  color: white;
-  margin-bottom: 2%;
-}
-
-.subscribe p {
-  font-family: "Bariol Regular", sans serif;
-  font-size: 13px;
-  color: white;
-  margin-top: 2%;
-}
-
 .subscribe img {
   width: 100%;
   position: relative;
-  padding: 4%;
-}
-
-.subscribe-title {
-  position: absolute;
-  transform: translate(33%, -130%);
-  text-align: center;
-}
-@media screen and (min-width: 428px) {
-  .subscribe-title {
-    position: absolute;
-    transform: translate(40%, -145%);
-    text-align: center;
-  }
-}
-.input-placeholder {
-  padding: 5%;
-  width: 100%;
-}
-
-input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  background-image: url("img/icono-correo.svg");
-  /* Replace this with the path to your email icon */
-  background-repeat: no-repeat;
-  background-size: 24px;
-  background-position: 10px center;
-  text-indent: 40px;
-}
-
-.subscribe-button {
-  background-color: #ffa666;
-  border-width: 0cm;
-  border-radius: 5px;
-  padding: 4%;
-  padding-left: 15%;
-  padding-right: 15%;
-  color: white;
-  font-family: "Bariol Regular";
-  font-size: 20px;
-}
-
-/* /////////////////////////// Estilos del footer ///////////////////////////  */
-
-#dropdown-footer,
-#dropdown-footer2,
-#dropdown-footer3,
-#dropdown-footer4 {
-  display: none;
-}
-
-#dropdown-footer.vision,
-#dropdown-footer2.vision,
-#dropdown-footer3.vision,
-#dropdown-footer4.vision {
+  padding: 10%;
   display: block;
 }
-
-footer {
+.subscribe2 img {
   width: 100%;
-  height: 100%;
-  background-color: #efefef;
+  position: relative;
+  padding: 10%;
+  display: none;
 }
-
-.footer-container {
-  padding: 42px 21px 35px 15px;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-button {
-  font-family: "Bariol Regular", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 11px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid orange;
-  color: #ff8833;
-  font-size: 16px;
-}
-
-.footer-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 11px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ffc499;
-}
-
-.social-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-list,
-.footer-list2 {
-  font-family: "Bariol Regular", sans-serif;
-  padding: 0px 21px 0px 0px;
-  color: #676767;
-  font-size: 14px;
-}
-
-.footer-list li,
-.footer-list2 li {
-  list-style: none;
-  margin-bottom: 19px;
-}
-
-.footer-list ul li:nth-child(4) {
-  margin-bottom: 27px;
-}
-
-.footer-list2 ul li:nth-child(5) {
-  margin-bottom: 27px;
-}
-
-.last-footer {
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 21px;
-  color: #676767;
-  font-size: 10px;
-  font-family: "Bariol Regular", sans-serif;
-}
-
-.boton-noticia {
-  display: flex;
-  justify-content: end;
-}
-
 a {
   text-decoration: none;
   color: #9f66db;
@@ -638,53 +391,200 @@ a:active {
   color: #9f66db;
 }
 
-/* /////////////////////////// Estilos para la sección de recomendaciones en pantallas grandes ///////////////////////////  */
-/* Media query para pantallas con ancho mínimo de 1200px */
-@media screen and (min-width: 1200px) {
-  .hero-image {
+.temas-de-interes {
+  margin-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+}
+.hero2 img {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+/* /////////////////////////// Estilos para la sección de recomendaciones en pantallas md ///////////////////////////  */
+/* Media query para pantallas con ancho mínimo de 640px */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .recomendacion2 img {
+    display: flex;
+    width: 100%;
     display: none;
   }
-  /* Create a pseudo-element to display the new image */
-  .hero-img::before {
-    content: url("img/hero_landing.svg");
-    display: block;
-    position: relative;
+  .recomendacion img {
+    display: flex;
     width: 100%;
-    padding-bottom: 10%;
+    display: block;
   }
-  .hero-3-buttons {
-    transform: translate(0%, -230%);
+  .hero img {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  h3 {
+    font-family: "Geomanist Bold";
+    font-size: 30px;
+    color: #ff6900;
+    padding-bottom: 5%;
+  }
+  .recomendaciones {
+    margin-top: -5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+  }
+  .recomendacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .recomendacion img {
+    width: 100%;
   }
   .hero-options {
-    padding-top: 1%;
+    height: 100px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right: 1px solid #dfccf3;
+    background-color: white;
+    color: #9f66db;
+    font-family: "Bariol Regular";
+    font-size: 20px;
   }
+
   .hero-options-middle {
-    padding-top: 1%;
+    height: 100px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right: 1px solid #dfccf3;
+    background-color: white;
+    color: #9f66db;
+    font-family: "Bariol Regular";
+    font-size: 20px;
   }
+  .hero-options-middle2 {
+    height: 100px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right: 1px solid #dfccf3;
+    background-color: white;
+    color: #9f66db;
+    font-family: "Bariol Regular";
+    font-size: 20px;
+  }
+
   .hero-options-last {
-    padding-top: 1%;
+    height: 100px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 10px 10px rgba(159, 102, 219, 0.18);
+    border-width: 0px;
+    background-color: white;
+    color: #9f66db;
+    font-family: "Bariol Regular";
+    font-size: 20px;
   }
-  /* Estilos titulos */
-  .hero-title {
-    transform: translate(-10%, -40%);
+  .button-image {
+    width: 30px;
+    padding-bottom: 8px;
   }
-  .hero-title h1 {
-    font-size: 52px;
+  .temas-de-interes {
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
   }
-  .hero-title p {
-    font-size: 32px;
+  .subscribe img {
+    width: 100%;
+    position: relative;
+    padding: 10%;
+    display: block;
   }
-  .hero-button {
-    width: auto;
-    font-size: 22px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
+  .subscribe2 img {
+    width: 100%;
+    position: relative;
+    padding: 10%;
+    display: none;
+  }
+  .hero2 img {
+    width: 100%;
+    position: relative;
+    display: none;
+  }
+}
+
+/* /////////////////////////// Estilos para la sección de recomendaciones en pantallas grandes ///////////////////////////  */
+/* Media query para pantallas con ancho mínimo de 1200px */
+@media screen and (min-width: 1008px) {
+  .recomendacion img {
+    display: flex;
+    width: 100%;
+    display: none;
+  }
+  .recomendacion2 img {
+    display: flex;
+    width: 100%;
+    display: block;
+  }
+  .hero img {
+    width: 100%;
+    position: relative;
+    display: none;
+  }
+  .hero2 img {
+    width: 100%;
+    position: relative;
+    display: block;
+  }
+  .hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 20px;
   }
 
   .hero-3-buttons {
-    transform: translate(0%, -190%);
+    transform: translate(0%, -50%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -692,13 +592,13 @@ a:active {
   }
 
   .hero-options {
-    height: 120px;
-    width: 250px;
+    height: 80px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 2%;
+    padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 5px 0px 0px 5px;
@@ -714,13 +614,13 @@ a:active {
   }
 
   .hero-options-middle {
-    height: 120px;
-    width: 250px;
+    height: 80px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 2%;
+    padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 0px 0px 0px 0px;
@@ -735,13 +635,13 @@ a:active {
     font-size: 15px;
   }
   .hero-options-middle2 {
-    height: 120px;
-    width: 250px;
+    height: 80px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 2%;
+    padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 0px 0px 0px 0px;
@@ -756,13 +656,13 @@ a:active {
     font-size: 15px;
   }
   .hero-options-last {
-    height: 120px;
-    width: 250px;
+    height: 80px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 2%;
+    padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
     border-radius: 0px 5px 5px 0px;
@@ -773,8 +673,9 @@ a:active {
     font-family: "Bariol Regular";
     font-size: 15px;
   }
-  .button-image img {
-    width: 100%;
+  .button-image {
+    width: 30px;
+    padding-bottom: 0;
   }
   .hero-options a {
     text-decoration: none;
@@ -809,91 +710,22 @@ a:active {
     font-family: "Geomanist Bold";
     font-size: 30px;
     color: #ff6900;
-    padding-left: 5%;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    padding-left: 0%;
+    margin-top: 5%;
+    margin-bottom: 1%;
   }
   /* Estilos para recomendaciones en pantallas grandes */
   .recomendaciones {
     padding-top: 4%;
     width: 100%;
   }
-  .imagenes-recomendaciones {
-    height: 100%;
-    display: none;
-  }
-  .recomendaciones-responsive {
-    display: flex;
-  }
-  .recomendacion-1-title {
-    transform: translate(-10%, -50%);
-  }
-  .recomendacion-1-title h1 {
-    font-size: 40px;
-  }
-  .recomendacion-1-title p {
-    font-size: 20px;
-    text-align: center;
-  }
-  .recomendacion-1-button {
-    transform: translate(20%, 500%);
-    font-size: 22px;
-  }
-  .recomendacion-2-title {
-    transform: translate(125%, -120%);
-  }
-  .recomendacion-2-title h1 {
-    font-size: 40px;
-    text-align: center;
-  }
-  .recomendacion-2-title p {
-    font-size: 20px;
-    text-align: center;
-  }
-  .recomendacion-2-button {
-    transform: translate(20%, 20%);
-    font-size: 22px;
-  }
-  .recomendacion-3-title {
-    transform: translate(135%, -130%);
-  }
-  .recomendacion-3-title h1 {
-    font-size: 40px;
-    text-align: center;
-  }
-  .recomendacion-3-title p {
-    font-size: 20px;
-    text-align: center;
-  }
-  .container1 {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5%;
-  }
-
-  .container-img1,
-  .container-img2 {
-    width: 100%;
-    /* Cambia el valor a continuación si deseas un espacio entre las imágenes */
-    margin-bottom: 0px;
-    padding-bottom: 5%;
-  }
-
-  .container2 {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 5%;
-    padding-right: 5%;
-  }
   /* Estilos para el slider en pantallas grandes */
   .slider-track {
     justify-content: center;
     width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
   }
 
   /* Estilos para las cards */
@@ -912,7 +744,7 @@ a:active {
   }
   .card-title {
     font-family: "Geomanist Bold";
-    font-size: 14px;
+    font-size: 24px;
     color: #676767;
   }
   .card h3 {
@@ -949,313 +781,226 @@ a:active {
   .boton-noticia {
     display: flex;
     justify-content: end;
-    transform: translate(50%, 0%);
+    transform: translate(30%, 0%);
   }
 
-  .subscribe {
-    position: relative;
+  .subscribe img {
     width: 100%;
-    overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 100px;
+    position: relative;
+    padding: 10%;
+    display: none;
+  }
+  .subscribe2 img {
+    width: 100%;
+    position: relative;
+    padding: 10%;
+    display: block;
   }
 
-  .subscribe h1 {
-    font-family: "Geomanist Bold";
-    font-size: 30px;
-    color: white;
-    margin-bottom: 7%;
-  }
-
-  .subscribe p {
-    font-family: "Bariol Regular", sans serif;
-    font-size: 20px;
-    color: white;
-    margin-top: 2%;
-    margin-bottom: 3%;
-  }
-  /* Hide the original image on larger screens */
-  @media (min-width: 1200px) {
-    .subscribe-image {
-      display: none;
-    }
-    .pago-login img {
-      padding-right: 30px;
-    }
-    /* Create a pseudo-element to display the new image */
-    .subscribe-img::before {
-      content: url("img/subscribe-responsive.svg");
-      display: block;
-      position: relative;
-      width: 100%;
-      padding-left: 5%;
-    }
-
-    .subscribe img {
-      width: 1440px;
-      height: 501px;
-      position: relative;
-      padding: 4%;
-    }
-
-    .subscribe-title {
-      position: absolute;
-      transform: translate(150%, -110%);
-      text-align: center;
-    }
-
-    .input-placeholder {
-      padding: 5%;
-      width: 100%;
-    }
-
-    input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      background-color: #fff;
-      background-image: url("img/icono-correo.svg");
-      /* Replace this with the path to your email icon */
-      background-repeat: no-repeat;
-      background-size: 24px;
-      background-position: 10px center;
-      text-indent: 40px;
-      margin-bottom: 7%;
-      font-size: 20px;
-    }
-
-    .subscribe-button {
-      background-color: #ffa666;
-      border-width: 0cm;
-      border-radius: 5px;
-      padding: 4%;
-      padding-left: 15%;
-      padding-right: 15%;
-      color: white;
-      font-family: "Bariol Regular";
-      font-size: 30px;
-    }
-    /******************************** Landing user*/
-    .ver-todos {
-      display: flex;
-      padding-bottom: 2%;
-      justify-content: end;
-      font-family: "Geomanist Bold";
-      font-size: 20px;
-      color: #9f66db;
-    }
-
-    .user-data {
-      padding-bottom: 80px;
-      padding-left: 35px;
-      padding-right: 5%;
-      margin-top: -70px;
-      display: flex;
-      flex-direction: column;
-    }
-    .user-data h4 {
-      padding: 0%;
-      margin-bottom: 2%;
-      margin-top: 0%;
-      color: #676767;
-      font-family: "Geomanist Bold";
-      font-size: 35px;
-    }
-    .user-selector {
-      margin-right: 10px;
-      border-radius: 5px;
-      border-color: #666;
-      border-width: 1px;
-      background-color: #f3f3f3;
-      color: #676767;
-      cursor: pointer;
-      padding: 8px 12px;
-      transition: background-color 0.3s, color 0.3s;
-      font-family: "Bariol Regular";
-      font-size: 15px;
-    }
-
-    .user-selector:focus,
-    .user-selector:active {
-      background-color: #dfccf3;
-      color: #5f259f;
-      outline: none;
-      font-family: "Bariol Regular";
-      font-size: 15px;
-    }
-
-    .mis-productos,
-    .estado-tramite,
-    .acciones-rapidas {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-    .container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 20px;
-      margin-bottom: 10px;
-      box-shadow: 0 4px 6px rgba(159, 102, 219, 0.25);
-    }
-  }
-  .container-info {
+  /******************************** Landing user*/
+  .ver-todos {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  .container-info img {
-    margin-right: 40px;
-  }
-  .container-info .titulo,
-  .container-info .subtitulo {
-    margin: 0;
-  }
-  .titulo {
+    padding-bottom: 2%;
+    justify-content: end;
     font-family: "Geomanist Bold";
-    font-size: 18px;
-    color: #ff8833;
-  }
-  .titulo2 {
-    font-family: "Bariol Regular";
-    font-size: 18px;
-    color: #676767;
-  }
-  .titulo3 {
-    font-family: "Bariol Regular";
-    font-size: 23px;
+    font-size: 20px;
     color: #9f66db;
   }
-  .subtitulo {
-    font-family: "Bariol Light";
-    font-size: 18px;
+
+  .user-data {
+    padding-bottom: 80px;
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+  .user-data h4 {
+    padding: 0%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    margin-top: 0%;
     color: #676767;
+    font-family: "Geomanist Bold";
+    font-size: 35px;
   }
-  .container-info .subtitulo {
-    margin-top: 4px;
-  }
-  .p {
-    padding-left: 800px;
-    color: #ff8833;
-    font-size: 28px;
-  }
-  .p2 {
-    padding-left: 840px;
-    color: #ff8833;
-    font-size: 28px;
-  }
-  .status1 {
-    border-radius: 5px;
-    border-color: #5f259f;
-    border-width: 10px;
-    background-color: #dfccf3;
-    color: #5f259f;
-    cursor: pointer;
-    width: fit-content;
-    margin-top: 10px;
-    padding: 2%;
-  }
-  .status {
+  .user-selector {
+    margin-right: 10px;
     border-radius: 5px;
     border-color: #666;
     border-width: 1px;
-    background-color: #ffe1cc;
-    color: #ff8833;
+    background-color: #f3f3f3;
+    color: #676767;
     cursor: pointer;
-    width: fit-content;
-    margin-top: 10px;
-    padding: 2%;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Bariol Regular";
+    font-size: 15px;
   }
+
+  .user-selector:focus,
+  .user-selector:active {
+    background-color: #dfccf3;
+    color: #5f259f;
+    outline: none;
+    font-family: "Bariol Regular";
+    font-size: 15px;
+  }
+
+  .mis-productos,
+  .estado-tramite,
   .acciones-rapidas {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .acciones-rapidas .container-info {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-    padding: 10px;
+    flex-wrap: wrap;
   }
-
-  .acciones-rapidas .container-info img {
-    margin-bottom: 10px;
-  }
-  .container-info2 {
+  .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(159, 102, 219, 0.25);
   }
-  .container-info2 img {
-    margin-right: 0px;
-  }
-  .container-info2 .titulo,
-  .container-info2 .subtitulo {
-    margin: 0;
-  }
-  .container-info2 .subtitulo {
-    margin-top: 4px;
-  }
-  .acciones-rapidas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .acciones-rapidas .container-info2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 20px;
-  }
-
-  .acciones-rapidas .container-info2 img {
-    margin-bottom: 10px;
-  }
-  .hidden {
-    display: none;
-  }
-  .imgtext {
-    justify-content: center;
-    align-items: center;
-    display: block;
-    text-align: center;
-    padding: 40px 140px 40px 140px;
-  }
-  .imgtext2 {
-    justify-content: center;
-    align-items: center;
-    display: block;
-    text-align: center;
-    padding: 40px 130px 40px 130px;
-  }
-  .imgtext3 {
-    justify-content: center;
-    align-items: center;
-    display: block;
-    text-align: center;
-    padding: 40px 90px 40px 90px;
-  }
 }
-
-/* =================================================================*/
-.navbar {
+.container-info {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
-  padding: 10px;
-  position: relative;
-  z-index: 5;
+  margin-bottom: 10px;
+}
+.container-info img {
+  margin-right: 40px;
+}
+.container-info .titulo,
+.container-info .subtitulo {
+  margin: 0;
+}
+.titulo {
+  font-family: "Geomanist Bold";
+  font-size: 18px;
+  color: #ff8833;
+}
+.titulo2 {
+  font-family: "Bariol Regular";
+  font-size: 18px;
+  color: #676767;
+}
+.titulo3 {
+  font-family: "Bariol Regular";
+  font-size: 23px;
+  color: #9f66db;
+}
+.subtitulo {
+  font-family: "Bariol Light";
+  font-size: 18px;
+  color: #676767;
+}
+.container-info .subtitulo {
+  margin-top: 4px;
+}
+.p {
+  padding-left: 800px;
+  color: #ff8833;
+  font-size: 28px;
+}
+.p2 {
+  padding-left: 840px;
+  color: #ff8833;
+  font-size: 28px;
+}
+.status1 {
+  border-radius: 5px;
+  border-color: #5f259f;
+  border-width: 10px;
+  background-color: #dfccf3;
+  color: #5f259f;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 2%;
+}
+.status {
+  border-radius: 5px;
+  border-color: #666;
+  border-width: 1px;
+  background-color: #ffe1cc;
+  color: #ff8833;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 10px;
+  padding: 2%;
+}
+.acciones-rapidas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.navbar img {
-  padding: 2%;
+.acciones-rapidas .container-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.acciones-rapidas .container-info img {
+  margin-bottom: 10px;
+}
+.container-info2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 6px rgba(159, 102, 219, 0.25);
+}
+.container-info2 img {
+  margin-right: 0px;
+}
+.container-info2 .titulo,
+.container-info2 .subtitulo {
+  margin: 0;
+}
+.container-info2 .subtitulo {
+  margin-top: 4px;
+}
+.acciones-rapidas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.acciones-rapidas .container-info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.acciones-rapidas .container-info2 img {
+  margin-bottom: 10px;
+}
+.hidden {
+  display: none;
+}
+.imgtext {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  padding: 40px 140px 40px 140px;
+}
+.imgtext2 {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  padding: 40px 130px 40px 130px;
+}
+.imgtext3 {
+  justify-content: center;
+  align-items: center;
+  display: block;
+  text-align: center;
+  padding: 40px 90px 40px 90px;
 }
