@@ -15,7 +15,7 @@ function tipoDeCdt() {
       inputs.style.display = "none";
       break;
     case "CDT al vencimiento":
-      inputs.style.display = "block";
+      inputs.style.display = "flex";
       data[0] = {
         plazo: 60,
         tasa: 1.08,
@@ -48,7 +48,7 @@ function tipoDeCdt() {
       console.log(data);
       break;
     case "CDT al mensual":
-      inputs.style.display = "block";
+      inputs.style.display = "flex";
       data[0] = {
         plazo: 60,
         tasa: 1.04,
@@ -219,17 +219,17 @@ function renderResultado(info) {
 
     botonRegresar.addEventListener("click", () => {
       resultado.innerHTML = "";
-      inputsSimulador.style.display = "block";
+      inputsSimulador.style.display = "flex";
     });
   }
 }
 // Función para mostrar u ocultar el menú hamburguesa
 function toggleHamburgerMenu() {
   const menu = document.querySelector(".hamburger-menu-container");
-  if (menu.style.display === "block") {
+  if (menu.style.display === "flex") {
     menu.style.display = "none";
   } else {
-    menu.style.display = "block";
+    menu.style.display = "flex";
   }
 }
 
