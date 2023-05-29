@@ -248,6 +248,12 @@ body {
 .hero img {
   width: 100%;
   position: relative;
+  display: block;
+}
+.hero2 img {
+  width: 100%;
+  position: relative;
+  display: none;
 }
 
 .hero-icon {
@@ -926,26 +932,17 @@ ul {
     display: none;
   }
   /* Create a pseudo-element to display the new image */
-  .hero::before {
-    content: url("/img/vtu_responsive.svg");
-    display: block;
-    position: relative;
+  .hero img {
     width: 100%;
-    padding: 0%;
+    position: relative;
+    display: none;
   }
-  .hero-icon {
-    width: 8%;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    text-align: center;
+  .hero2 img {
+    width: 100%;
+    position: relative;
+    display: block;
   }
-  .hero-icon h1 {
-    font-size: 44px;
-    width: 500px;
-    transform: translate(-37%, 10%);
-  }
+
   .button-container {
     display: flex;
     flex-direction: column;
