@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Banco W</title>
+	<link rel="icon" type="image/x-icon" href="/img/logoW.png">
+	<title>Banco W | Premio Invencibles</title>
 	<link rel="stylesheet" type="text/css" href="premio.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.css">
 </head>
+
 <body>
-  <!-- Barra de navegación con logo y menú hamburguesa -->
-  <header id="header"></header>
+	<!-- Barra de navegación con logo y menú hamburguesa -->
+	<header id="header"></header>
 
-  <!-- Portada de la página -->
-<section class="port-container">
-	<div class="hero-slider" data-carousel>
-		<div class="carousel-cell" style="background-image: url(../img/carrusel1.jpg);">
+	<!-- Portada de la página -->
+	<section class="port-container">
+		<div class="hero-slider" data-carousel>
+			<div class="carousel-cell" style="background-image: url(../img/carrusel1.jpg);">
+			</div>
+
+			<div class="carousel-cell" style="background-image: url(../img/carrusel2.jpg);">
+			</div>
 		</div>
 
-		<div class="carousel-cell" style="background-image: url(../img/carrusel2.jpg);">
-		</div>
-	</div>
-
-	<section class="port-prize">
-		<h3>PREMIOS INVENCIBLES</h3>
-		<p>Sección dedicada a esas personas cuyo esfuerzo y dedicación por lo que hacen es reconocida por el banco W.</p>
-		<button>¡Postula a Alguien!</button>
+		<section class="port-prize">
+			<h3>PREMIOS INVENCIBLES</h3>
+			<p>Sección dedicada a esas personas cuyo esfuerzo y dedicación por lo que hacen es reconocida por el banco
+				W.</p>
+			<button>¡Postula a Alguien!</button>
+		</section>
 	</section>
-</section>
 
-<section class="categories-container">
-	<h4>Categorías</h4>
+	<section class="categories-container">
+		<h4>Categorías</h4>
 
-	<div class="cards-container">
-		<div class="card-template womens">
-			<div class="info-categories">
-				<h4>Mujeres Emprendedoras</h4>
-				<button>¡Conoce más!</button>
+		<div class="cards-container">
+			<div class="card-template womens">
+				<div class="info-categories">
+					<h4>Mujeres Emprendedoras</h4>
+					<button>¡Conoce más!</button>
+				</div>
+			</div>
+
+			<div class="card-template youngs">
+				<div class="info-categories">
+					<h4 id="youn">Jovenes emprendedores</h4>
+					<button>¡Conoce más!</button>
+				</div>
 			</div>
 		</div>
 
-		<div class="card-template youngs">
-			<div class="info-categories">
-				<h4 id="youn">Jovenes emprendedores</h4>
-				<button>¡Conoce más!</button>
+		<div class="cards-container2">
+			<div class="card-template business">
+				<div class="info-categories">
+					<h4 id="youn">Personas con Negocios</h4>
+					<button id="db">¡Conoce más!</button>
+				</div>
+			</div>
+
+			<div class="card-template ambient">
+				<div class="info-categories">
+					<h4>Negocio ambiental sostenible</h4>
+					<button>¡Conoce más!</button>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="cards-container2">
-		<div class="card-template business">
-			<div class="info-categories">
-				<h4 id="youn">Personas con Negocios</h4>
-				<button id="db">¡Conoce más!</button>
-			</div>
+	<section class="last-carrousel-container">
+		<h3>¡REVIVE EL EVENTO!</h3>
+		<div class="carrousel">
+			<img src="../icons/izquierda carrusel.svg" alt="">
+			<img src="../img/carrusel-evento.png" alt="">
+			<img src="../icons/derecha-carrusel.svg" alt="">
 		</div>
+	</section>
 
-		<div class="card-template ambient">
-			<div class="info-categories">
-				<h4>Negocio ambiental sostenible</h4>
-				<button>¡Conoce más!</button>
-			</div>
-		</div>
-	</div>
-</section>
+	<custom-footer></custom-footer>
 
-<section class="last-carrousel-container">
-	<h3>¡REVIVE EL EVENTO!</h3>
-	<div class="carrousel">
-		<img src="../icons/izquierda carrusel.svg" alt="">
-		<img src="../img/carrusel-evento.png" alt="">
-		<img src="../icons/derecha-carrusel.svg" alt="">
-	</div>
-</section>
-
-<custom-footer></custom-footer>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
-<script type="text/javascript" src="premio.js"></script>
-<script type="module" src="../Navbar/navbar-component.js"></script>
-<script type="module" src="../Footer/footer-component.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js">
+	</script>
+	<script type="text/javascript" src="premio.js"></script>
+	<script type="module" src="../Navbar/navbar-component.js"></script>
+	<script type="module" src="../Footer/footer-component.js"></script>
 </body>
+
 </html>
