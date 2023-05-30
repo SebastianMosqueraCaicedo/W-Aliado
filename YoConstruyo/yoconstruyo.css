@@ -402,7 +402,7 @@ a svg {
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
-@media (min-width: 720px) {
+@media (min-width: 1440px) {
   /* Estilos del responsive */
 
   .nav-cover {
