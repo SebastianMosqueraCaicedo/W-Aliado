@@ -234,7 +234,7 @@ body {
 }
 
 .hamburger-menu-container ul li a:hover,
-.hamburger-menu-container ul li:hover > .dropdown {
+.hamburger-menu-container ul li:hover>.dropdown {
   cursor: pointer;
 }
 
@@ -277,7 +277,7 @@ body {
 }
 
 .icons {
-  width: 25px;
+  width: 20px;
 }
 
 @media (min-width: 901px) {
@@ -301,6 +301,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 
   border-radius: 8px;
 
@@ -344,7 +345,7 @@ body {
   color: #acacac;
 
   margin-top: 20px;
-  margin-left: 120px;
+  padding-left: 10%;
 }
 
 #username {
@@ -484,6 +485,7 @@ h3 {
 .user-comment-component {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
@@ -522,10 +524,10 @@ button {
   background: #00b1bb;
   border-radius: 8px;
   border: 0px;
-  font-family: "Bariol", sans-serif;
+  font-family: 'Bariol', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -646,6 +648,9 @@ button {
 .green-card-button {
   background: #ffffff;
   color: #00b1bb;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 150px;
 }
 
 .mini-icons {
@@ -688,7 +693,7 @@ button {
   box-shadow: 4.77828px 6.68959px 28.6697px rgba(159, 102, 219, 0.18);
   border-radius: 5.73393px;
 
-  width: 100px;
+  width: 120px;
   padding: 8px;
 
   gap: 10px;
@@ -823,6 +828,15 @@ hr {
 
 .images {
   width: 100%;
+}
+
+#ver-publicacion {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.reaction {
+  color: #00B1BB;
 }
 
 @media (max-width: 800px) {
