@@ -40,6 +40,10 @@
     font-family: "Bariol Regular", sans-serif; 
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Estilo de miga de pan */
 
 .nav-crumbs { 
@@ -66,7 +70,7 @@
 
 .cover-page {
     position: relative;
-    background: url(../img/portada-cdt-desktop.jpg);
+    background: url(../img/portada-cdt.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 501px;
@@ -95,6 +99,7 @@
     text-align: center;
     padding: 0px 70px 0px 70px;
     line-height: 150%;
+    max-width: 500px;
 }
 
 .simulator {
@@ -230,11 +235,18 @@
     text-align: center;
 }
 
+.page3-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .info-drop1{
     position: relative;
     bottom: 35px;
     width: 366px;
-    height: 140px;
+    height: 167px;
     background: #FFFFFF;
     box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
     border-radius: 7px;  
@@ -246,7 +258,7 @@
     position: relative;
     bottom: 35px;
     width: 366px;
-    height: 380px;
+    height: 391px;
     background: #FFFFFF;
     box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
     border-radius: 7px;
@@ -351,6 +363,10 @@
     margin-bottom: 28px;
 }
 
+.drop1 {
+  margin-top: 10%;
+}
+
 .drop1,
 .drop2,
 .drop3,
@@ -370,8 +386,6 @@
     z-index: 2;
 }
 
-
-
 .drop1 p,
 .drop2 p,
 .drop3 p,
@@ -384,48 +398,33 @@
     padding-right: 80px
 }
 
-.text1,
-.text2,
-.text3 {
-  width: 90%;
-  height: auto;
-  margin-bottom: 5%;
-  margin-top: 10%;
-  margin-left: 4%;
-  user-select: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.last-info {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    color: var(--gray-lyric);
+    padding: 0 20px;
 }
 
-.text3-color {
-  width: 100%;
-  height: auto;
-  user-select: none;
-  max-width: 400px;
+.buttonn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
-.text3-container {
-  width: 100%;
-  height: auto;
-  background-color: var(--lila-lyrics);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.text1 img,
-.text2 img,
-.text3 img,
-.text3-color img {
-  width: 100%;
-  user-select: none;
-  pointer-events: none;
-  max-width: 400px;
-}
-
-#desktop {
-  display: none;
+.button-tramits {
+    font-family: 'Bariol Regular';
+    font-size: 15.83px;
+    text-align: center;
+    width: 167px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9F66DB;
+    border-radius: 5.03716px;
+    color: var(--white);
+    border: none;
 }
 
 /* Estilos de para mayor información */
@@ -522,176 +521,281 @@
     display: block;
   }
 
-   /* ///////////////////////////////// 📱 TABLET //////////////////////// */
-
-@media (min-width: 600px) {  
-
-  .cover-page {
-    background: url(../img/portada-reclamar-tablet.jpg);
-    background-repeat: no-repeat;
-    height: 553px;
-  }
-
-  .nav-cover {
-    top: max(72.5%);
-  }
-
-  .nav-cover {
-    width: 558px;
-  }
-
-  .characters {
-    width: 139px;
-  }
-  
-  .tramits {
-    width: 139px;
-  }
-
-  .benefits {
-    width: 139px;
-  }
-
-  .devolutions {
-    width: 139px;
-  }
-
-  #marker {
-    width: 139px;
-  }
-
-  #desktop {
-    display: none;
-  }
-
-  .nav-cover a {
-    font-size: 18px;
-  }
-
-  .information h1 {
-    font-size: 38px;
-    padding: 30px 20px 0px 20px;
-  }
-  
-  .information p {
-    font-size: 16px;
+  .text1,
+.text2,
+.text3 {
+  width: 90%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-left: 4%;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-  .text3-color {
-  max-width: 600px;
-  }
+.text3-color {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  max-width: 400px;
+}
 
-  .text1 img,
-  .text2 img,
-  .text3 img,
-  .text3-color img {
+.text3-container {
+  width: 100%;
+  height: auto;
+  background-color: var(--lila-lyrics);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text1 img,
+.text2 img,
+.text3 img,
+.text3-color img {
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+  max-width: 400px;
+}
+
+#desktop {
+  display: none;
+}
+
+
+  /* ///////////////////////////////// 📱 TABLET //////////////////////// */
+
+  @media (min-width: 600px) {  
+
+    .cover-page {
+      background: url(../img/portada-cdt-tablet.jpg);
+      background-repeat: no-repeat;
+      height: 553px;
+    }
+  
+    .nav-cover {
+      top: max(56.5%);
+    }
+  
+    .nav-cover {
+      width: 558px;
+    }
+  
+    .characters {
+      width: 139px;
+    }
+    
+    .tramits {
+      width: 139px;
+    }
+  
+    .benefits {
+      width: 139px;
+    }
+  
+    .devolutions {
+      width: 139px;
+    }
+  
+    #marker {
+      width: 139px;
+    }
+  
+    #desktop {
+      display: none;
+    }
+  
+    .nav-cover a {
+      font-size: 18px;
+    }
+  
+    .information h1 {
+      font-size: 38px;
+      padding: 30px 20px 0px 20px;
+    }
+    
+    .information p {
+      font-size: 16px;
+  }
+  
+    .text3-color {
     max-width: 600px;
-  }
+    }
+  
+    .text1 img,
+    .text2 img,
+    .text3 img,
+    .text3-color img {
+      max-width: 600px;
+    }
 
-  .drop1,
-.drop2 {
+    .info-drop1{
+      width: 560px;
+      height: 241px;
+    }
+    
+    .info-drop2{
+      width: 560px;
+      height: 604px;
+    }
+
+    .info-drop3 {
+      width: 560px;
+      height: 288px;
+    }
+
+    .info-drop4 {
+      width: 560px;
+      height: 475px;
+    }
+
+    .info-drop5 {
+      width: 560px;
+      height: 373px;
+    }
+
+    .info-drop6 {
+      width: 560px;
+      height: 425px;
+    }
+  
+    .drop1,
+.drop2,
+.drop3,
+.drop4,
+.drop5,
+.drop6 {
     width: 560px;
     height: 80px;
 }
-
-.info-drop1{
-  width: 560px;
-  height: 645px;
-}
-
-.info-drop2{
-  width: 560px;
-  height: 1161px;
-}
-
-.drop1 p,
-.drop2 p{
-    font-size: 18px;
-}
-}
-
-
-@media (min-width: 850px) { 
-  .nav-cover {
-    top: 40.5%;
-  }
-
-  .information-container {
-    max-width: 850px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   
-  .information {
-    width: 39%;
-    margin-left: 60%;
-    padding-top: 20%;
-  }
 
-  .information > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-  
-  .information h1 {
-    font-size: 40px;
-    font-family: "Geomanist";
-    line-height: 40.54px;
-    text-align: left;
-    width: 100%;
-    margin-bottom: 6px;
-    padding: 0;
-  }
-  
-  .information p {
-    font-family: "Bariol Regular";
-    font-size: 20px;
-    text-align: start;
-    /* padding: 0px 0px 0px 530px; */
-    line-height: 25px;
-    width: 100%;
-    padding: 0;
-  }
-
-  .simulator {
-    margin-top: 21px;
-    margin-left: 34%;
-  }
-  
-  .simulator-button {
-    font-size: 16.42px;
-    width: 160px;
-    height: 40.53px;
-  }
-
-  #desktop {
-    display: none;
-  }
-
-  .drop1,
-  .drop2 {
-      width: 560px;
-      height: 80px;
-  }
-  
-  .info-drop1{
-    width: 560px;
-    height: 645px;
-  }
-  
-  .info-drop2{
-    width: 560px;
-    height: 1161px;
-  }
-  
   .drop1 p,
-  .drop2 p{
+  .drop2 p,
+  .drop3 p,
+  .drop4 p,
+  .drop5 p,
+  .drop6 p{
       font-size: 18px;
   }
 }
+  
+  @media (min-width: 850px) { 
+    .nav-cover {
+      top: 28%;
+    }
+  
+    .information-container {
+      max-width: 850px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .information {
+      width: 45%;
+      margin-left: 50%;
+      padding-top: 20%;
+    }
+  
+    .information > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .information h1 {
+      font-size: 40px;
+      font-family: "Geomanist";
+      line-height: 40.54px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 0;
+    }
+    
+    .information p {
+      font-family: "Bariol Regular";
+      font-size: 20px;
+      text-align: start;
+      /* padding: 0px 0px 0px 530px; */
+      line-height: 25px;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .simulator {
+      margin-top: 21px;
+      margin-left: 25%;
+    }
+    
+    .simulator-button {
+      font-size: 16.42px;
+      width: 160px;
+      height: 40.53px;
+    }
+  
+    .drop1,
+    .drop2 {
+        width: 560px;
+        height: 80px;
+    }
+    
+    .info-drop1{
+      width: 560px;
+      height: 645px;
+    }
+    
+    .info-drop2{
+      width: 560px;
+      height: 1161px;
+    }
+    
+    .drop1 p,
+    .drop2 p{
+        font-size: 18px;
+    }
+
+    #desktop {
+      display: none;
+    }
+
+    .text1, .text2, .text3 {
+      width: 70%;
+      height: auto;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      margin-left: 17%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #text-drop {
+      width: 95%;
+      margin-left: 4%;
+    }
+
+    .text3-color {
+      max-width: 1080px;
+    }
+
+    .text3-color {
+      width: 100%;
+    }
+    
+      .text1 img,
+      .text2 img,
+      .text3 img,
+      .text3-color img {
+        max-width: 1024px;
+      }
+  }
+  
 
 
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
@@ -702,34 +806,34 @@
       position: absolute;
       top: 91%;
       transform: translate(-50%, 50%);
-      width: 1262px;
+      width: 970px;
       height: 43px;
     }
     
     #marker {
       bottom: 0px;
-      width: 315.5px;
+      width: 242px;
     }
   
     .characters {
-        width: 315.5px;
-        height: 43px; 
+      width: 242px;
+      height: 43px; 
     }
     
     .devolutions {
-        width: 315.5px;
-        height: 43px; 
+      width: 242px;
+      height: 43px;  
       border-left: 1px solid var(--lila-line);
     }
   
     .benefits {
-        width: 315.5px;
-        height: 43px; 
+      width: 242px;
+      height: 43px; 
       border-right: 1px solid var(--lila-line);
   }
 
   .tramits {
-    width: 315.5px;
+    width: 242px;
     height: 43px; 
   }
   
@@ -758,9 +862,9 @@
     .information {
       display: flex;
       flex-direction: column;
-      width: 25%;
-      margin-left: 61%;
-      padding-top: 12%;
+      width: 35%;
+      margin-left: 106%;
+      padding-top: 18%;
     }
   
     .information > div{
@@ -788,8 +892,19 @@
       padding: 0;
     }
 
+    .simulator {
+      margin-top: 21px;
+      margin-left: 34%;
+    }
+    
+    .simulator-button {
+      font-size: 16.42px;
+      width: 160px;
+      height: 40.53px;
+    }
+
     .info-drop1{
-      width: 1260px;
+      width: 970px;
       max-width: 1440px;
       height: 112px;
     }
@@ -797,13 +912,13 @@
   .info-drop2{
     position: relative;
     bottom: 40px;
-    width: 1260px;
+    width: 970px;
     max-width: 1440px;
     height: 320px;
 }
 
     .info-drop3{
-      width: 1260px;
+      width: 970px;
       max-width: 1440px;
       height: 112px;
     }
@@ -811,21 +926,21 @@
   .info-drop4{
     position: relative;
     bottom: 40px;
-    width: 1260px;
+    width: 970px;
     max-width: 1440px;
     height: 285px;
 }
   .info-drop5{
     position: relative;
     bottom: 40px;
-    width: 1260px;
+    width: 970px;
     max-width: 1440px;
     height: 340px;
 }
   .info-drop6{
     position: relative;
     bottom: 40px;
-    width: 1260px;
+    width: 970px;
     max-width: 1440px;
     height: 340px;
 }
@@ -836,10 +951,11 @@
   .drop4,
   .drop5,
   .drop6 {
-      width: 1260px;
+      width: 970px;
       max-width: 1440PX;
       height: 94px;
       cursor: pointer;
+      margin-top: 1%;
   }
 
   .drop1 p,
@@ -851,6 +967,44 @@
     font-size: 20px;
 }
 
+#desktop {
+  display: block;
+}
+
+#mobile {
+  display: none;
+}
+
+.text1, .text2, .text3 {
+  width: 90%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-drop {
+  width: 95%;
+  margin-left: 4%;
+}
+
+.text3-color {
+  max-width: 1080px;
+}
+
+.text3-color {
+  width: 100%;
+}
+
+  .text1 img,
+  .text2 img,
+  .text3 img,
+  .text3-color img {
+    max-width: 1024px;
+  }
 
     /* Estilo de más informacion */
   
@@ -884,9 +1038,9 @@
     .simulator {
       display: flex;
       flex-direction: column;
-      margin-left: 35%;
+      margin-left: 94%;
       padding-top: 6%;
-      margin-top: -69px;
+      margin-top: -30px;
     }
     
     .simulator-button {
@@ -900,10 +1054,9 @@
     
   }
 
+ /* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
 
-   /* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
-
-@media (min-width: 1440px) {
+ @media (min-width: 1440px) {
   .information-container {
     max-width: 1440px;
   }
@@ -951,7 +1104,7 @@
   }
 
   .cover-page {
-    background: url(../img/portada-reclamar-desktop-large.jpg);
+    background: url(../img/portada-cdt-desktop.jpg);
   }
   
   .information {
@@ -1018,19 +1171,46 @@
   .info-drop1{
     width: 1262px;
     max-width: 1440px;
-    height: 550px;
+    height: 160px;
 }
 
 .info-drop2{
-  position: relative;
-  bottom: 40px;
   width: 1262px;
   max-width: 1440px;
-  height: 950px;
+  height: 385px;
 }
 
+.info-drop3{
+  width: 1262px;
+  max-width: 1440px;
+  height: 165px;
+}
+
+.info-drop4{
+  width: 1262px;
+  max-width: 1440px;
+  height: 312px;
+}
+
+.info-drop5{
+  width: 1262px;
+  max-width: 1440px;
+  height: 377px;
+}
+
+.info-drop6{
+  width: 1262px;
+  max-width: 1440px;
+  height: 377px;
+}
+
+
 .drop1,
-.drop2 {
+.drop2, 
+.drop3,
+.drop4,
+.drop5,
+.drop6 {
     width: 1260px;
     max-width: 1440PX;
     width: 1262px;
@@ -1047,6 +1227,6 @@
   }
 }
 
-
-
+  
+ 
 
