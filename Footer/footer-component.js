@@ -109,6 +109,10 @@ class Footer extends HTMLElement {
         overflow-x: auto;
       }
 
+      .bancow {
+        margin-right: 7%;
+      }
+
           /*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
           @media screen and (min-width: 1200px) {
 
@@ -148,10 +152,13 @@ class Footer extends HTMLElement {
         height: 100%;
         background-color: white;
         display: flex;
-        justify-content: start;
-        gap: 550px;
+        justify-content: space-between;
         align-items: center;
         overflow-x: auto;
+      }
+
+      .bancow {
+        margin-right: 2%;
       }
           }
         </style>
@@ -226,7 +233,7 @@ class Footer extends HTMLElement {
           </div>
           <div class="last-footer">
           <img src="../icons/logoFull.png" alt="">
-          <p>Copyright © 2023 Banco W</p>
+          <p class="bancow">Copyright © 2023 Banco W</p>
         </div>
         </footer>
       `;
