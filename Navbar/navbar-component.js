@@ -344,7 +344,7 @@ header.innerHTML = `
 </style>
 <nav class="navbar">
 <a href="/index.html">
-<img src="/img/logow.png" alt="logo">
+<img src="/img/logoW.png" alt="logo">
 </a>
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" >
