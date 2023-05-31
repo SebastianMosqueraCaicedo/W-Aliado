@@ -333,7 +333,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2% 2% 2% 2%;
+  padding: auto;
 }
 
 #username-container {
@@ -565,11 +565,24 @@ button {
   width: 100%;
   padding-right: 20px;
 }
-swiper-container{
+
+swiper-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 100%;
+  height: 250px;
 }
 
-.card-small{
+swiper-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+
+.card-small {
   display: flex;
   flex-direction: column;
   width: 270px;
@@ -577,22 +590,34 @@ swiper-container{
   padding: 20px;
 
   background: #FF8833;
-box-shadow: 3.39902px 4.75863px 20.3941px rgba(159, 102, 219, 0.18);
-border-radius: 4.07883px;
+  box-shadow: 10px 10px 30px rgba(159, 102, 219, 0.18);
+  border-radius: 4.07883px;
 }
 
-.card-orange-text{
+.card-small-white {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  align-items: center;
+  padding: 20px;
+
+  background: #ffffff;
+  box-shadow: 10px 10px 30px rgba(159, 102, 219, 0.18);
+  border-radius: 4.07883px;
+}
+
+.card-orange-text {
   color: white;
 }
 
-.columns{
+.columns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
-.icons-big{
+.icons-big {
   width: 50px;
 }
 
@@ -839,43 +864,44 @@ border-radius: 4.07883px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #productos-profile {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #productos-profile-2 {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #pagos-profile {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #pagos-profile-2 {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #citas-profile {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
-#comentarios-profile {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
 
 hr {
   border: 1px solid #00b1bb;
@@ -903,11 +929,11 @@ hr {
   color: #00B1BB;
 }
 
-.card-orange{
+.card-orange {
   background-color: #FF8833;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   .big-columns {
     display: flex;
     flex-direction: column;
@@ -917,9 +943,25 @@ hr {
     display: flex;
     flex-direction: column;
   }
+
+  #home-user-account{
+    display: none;
+  }
+  
+  #products-user-account{
+    display: none;
+  }
+  
+  #payments-user-account{
+    display: none;
+  }
+  
+  #meetings-user-account{
+    display: none;
+  }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 701px) {
   .big-columns {
     display: flex;
     flex-direction: row;
@@ -928,5 +970,73 @@ hr {
   .inner-columns {
     display: flex;
     flex-direction: column;
+  }
+
+  #home-user-account{
+    display: block;
+  }
+  
+  #products-user-account{
+    display: block;
+  }
+  
+  #payments-user-account{
+    display: block;
+  }
+  
+  #meetings-user-account{
+    display: block;
+  }
+
+  .icons{
+    width: 30px;
+  }
+
+  .bar-label{
+    font-size: 16px;
+  }
+  .option-bar-item{
+    padding: auto;
+  }
+}
+
+@media (min-width: 1007px) {
+  .big-columns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inner-columns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #home-user-account{
+    display: block;
+  }
+  
+  #products-user-account{
+    display: block;
+  }
+  
+  #payments-user-account{
+    display: block;
+  }
+  
+  #meetings-user-account{
+    display: block;
+  }
+
+  .icons{
+    width: 40px;
+  }
+  .bar-label{
+    font-size: 20px;
+  }
+  .option-bar-item{
+    padding: auto;
+  }
+  #option-island{
+    width: 400px;
   }
 }
