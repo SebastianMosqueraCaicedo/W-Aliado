@@ -46,7 +46,8 @@ header.innerHTML = `
 
 .navbar img {
   padding: 2%;
-  width: 100px;
+  width: 40%;
+  height: 50%;
 }
 
 /* Estilos para el menú hamburguesa */
@@ -344,7 +345,7 @@ header.innerHTML = `
 </style>
 <nav class="navbar">
 <a href="/index.html">
-<img src="/img/logow.png" alt="logo">
+<img src="/img/logoW.png" alt="logo">
 </a>
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" >
@@ -369,7 +370,7 @@ header.innerHTML = `
             <span class="arrow-down">&#9662;</span>
           </span>
           <ul class="submenu">
-            <li><a href="#">Personas con negocio</a></li>
+            <li><a href="/Personas-con-negocio/pn.html">Personas con negocio</a></li>
             <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
             <li><a href="#">Pensionados y maestros</a></li>
             <li><a href="#">Colombianos en el exterior</a></li>
@@ -420,7 +421,7 @@ header.innerHTML = `
     <div class="desktop-menu">
       <div class="top-level-items" >
       <a href="/index.html">
-      <img src="/img/logow.svg" alt="logo">
+      <img src="/img/logoW.svg" alt="logo">
       </a>
         <a href="#" class="contactanos-button">
         </a>
@@ -452,7 +453,7 @@ header.innerHTML = `
               <span class="arrow-down">&#9662;</span>
             </span>
             <ul class="submenu">
-              <li><a href="#">Personas con negocio</a></li>
+            <li><a href="/Personas-con-negocio/pn.html">Personas con negocio</a></li>
               <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
               <li><a href="#">Pensionados y maestros</a></li>
               <li><a href="#">Colombianos en el exterior</a></li>
@@ -480,7 +481,6 @@ header.innerHTML = `
               <li><a href="#">Consumidor financiero</a></li>
               <li><a href="#">Seguridad bancaria</a></li>
               <li><a href="#">Revista</a></li>
-              <li><a href="/Comparador-inversion/comparador-inversion.html">Tu mejor opción</a></li>
             </ul>
           </li>
           <li class="dropdown dropdown-container">

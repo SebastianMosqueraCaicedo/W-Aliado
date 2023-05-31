@@ -234,7 +234,7 @@ body {
 }
 
 .hamburger-menu-container ul li a:hover,
-.hamburger-menu-container ul li:hover > .dropdown {
+.hamburger-menu-container ul li:hover>.dropdown {
   cursor: pointer;
 }
 
@@ -277,7 +277,7 @@ body {
 }
 
 .icons {
-  width: 25px;
+  width: 20px;
 }
 
 @media (min-width: 901px) {
@@ -301,6 +301,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 
   border-radius: 8px;
 
@@ -332,7 +333,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2% 2% 2% 2%;
+  padding: auto;
 }
 
 #username-container {
@@ -344,7 +345,7 @@ body {
   color: #acacac;
 
   margin-top: 20px;
-  margin-left: 120px;
+  padding-left: 10%;
 }
 
 #username {
@@ -398,7 +399,7 @@ h2 {
   font-family: "Bariol", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16.4871px;
+  font-size: 16px;
   line-height: 150%;
 
   color: #acacac;
@@ -484,6 +485,7 @@ h3 {
 .user-comment-component {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
@@ -522,10 +524,10 @@ button {
   background: #00b1bb;
   border-radius: 8px;
   border: 0px;
-  font-family: "Bariol", sans-serif;
+  font-family: 'Bariol', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -564,9 +566,65 @@ button {
   padding-right: 20px;
 }
 
+swiper-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+
+swiper-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+}
+
+.card-small {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  align-items: center;
+  padding: 20px;
+
+  background: #FF8833;
+  box-shadow: 10px 10px 30px rgba(159, 102, 219, 0.18);
+  border-radius: 4.07883px;
+}
+
+.card-small-white {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  align-items: center;
+  padding: 20px;
+
+  background: #ffffff;
+  box-shadow: 10px 10px 30px rgba(159, 102, 219, 0.18);
+  border-radius: 4.07883px;
+}
+
+.card-orange-text {
+  color: white;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icons-big {
+  width: 50px;
+}
+
 .saldo-container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   padding: 20px;
 }
 
@@ -643,9 +701,18 @@ button {
   width: 100%;
 }
 
+#pagar-ahora {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 120px;
+}
+
 .green-card-button {
   background: #ffffff;
   color: #00b1bb;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 150px;
 }
 
 .mini-icons {
@@ -688,7 +755,7 @@ button {
   box-shadow: 4.77828px 6.68959px 28.6697px rgba(159, 102, 219, 0.18);
   border-radius: 5.73393px;
 
-  width: 100px;
+  width: 120px;
   padding: 8px;
 
   gap: 10px;
@@ -739,10 +806,37 @@ button {
   gap: 10px;
 }
 
+.input-cita {
+  background: #FFFFFF;
+  /* gris/3 */
+
+  border: 1.17576px solid #ACACAC;
+  border-radius: 3px;
+  height: 40px;
+  padding-left: 10px;
+
+  font-family: "Bariol", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.3128px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+
+  /* gris/3 */
+  color: #acacac;
+}
+
 .dropdown-cita {
-  border: 0px;
-  border-bottom: 1px solid #acacac;
+  background: #FFFFFF;
+  /* gris/3 */
+
+  border: 1.17576px solid #ACACAC;
+  border-radius: 3px;
   padding-bottom: 2px;
+  padding-left: 10px;
+
+  height: 40px;
 
   font-family: "Bariol", sans-serif;
   font-style: normal;
@@ -770,43 +864,44 @@ button {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #productos-profile {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #productos-profile-2 {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #pagos-profile {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #pagos-profile-2 {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
 #citas-profile {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 100%;
 }
 
-#comentarios-profile {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
 
 hr {
   border: 1px solid #00b1bb;
@@ -825,7 +920,20 @@ hr {
   width: 100%;
 }
 
-@media (max-width: 800px) {
+#ver-publicacion {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.reaction {
+  color: #00B1BB;
+}
+
+.card-orange {
+  background-color: #FF8833;
+}
+
+@media (max-width: 700px) {
   .big-columns {
     display: flex;
     flex-direction: column;
@@ -835,9 +943,25 @@ hr {
     display: flex;
     flex-direction: column;
   }
+
+  #home-user-account{
+    display: none;
+  }
+  
+  #products-user-account{
+    display: none;
+  }
+  
+  #payments-user-account{
+    display: none;
+  }
+  
+  #meetings-user-account{
+    display: none;
+  }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 701px) {
   .big-columns {
     display: flex;
     flex-direction: row;
@@ -846,5 +970,73 @@ hr {
   .inner-columns {
     display: flex;
     flex-direction: column;
+  }
+
+  #home-user-account{
+    display: block;
+  }
+  
+  #products-user-account{
+    display: block;
+  }
+  
+  #payments-user-account{
+    display: block;
+  }
+  
+  #meetings-user-account{
+    display: block;
+  }
+
+  .icons{
+    width: 30px;
+  }
+
+  .bar-label{
+    font-size: 16px;
+  }
+  .option-bar-item{
+    padding: auto;
+  }
+}
+
+@media (min-width: 1007px) {
+  .big-columns {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .inner-columns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #home-user-account{
+    display: block;
+  }
+  
+  #products-user-account{
+    display: block;
+  }
+  
+  #payments-user-account{
+    display: block;
+  }
+  
+  #meetings-user-account{
+    display: block;
+  }
+
+  .icons{
+    width: 40px;
+  }
+  .bar-label{
+    font-size: 20px;
+  }
+  .option-bar-item{
+    padding: auto;
+  }
+  #option-island{
+    width: 400px;
   }
 }

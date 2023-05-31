@@ -46,7 +46,8 @@ header.innerHTML = `
 
 .navbar img {
   padding: 2%;
-  width: 100px;
+  width: 40%;
+  height: 50%;
 }
 
 /* Estilos para el menú hamburguesa */
@@ -55,9 +56,20 @@ header.innerHTML = `
 .material-icons {
   color: #00a2af;
 }
-.profileimg{
-  margin-left: 100px;
+.profile img{
+  width: 40%;
+  height: 50%;
+  margin-left: 30%;
 }
+@media (min-width: 750px) {
+  .profile img{
+    width: 25%;
+    height: 50%;
+    margin-left: 38%;
+  }
+  
+}
+
 
 /* Estilos para el ícono del menú hamburguesa */
 .hamburger-menu {
@@ -346,7 +358,7 @@ header.innerHTML = `
 </style>
 <nav class="navbar">
 <a href="/Landing-user/landing-user.html">
-<img src="/img/logow.png" alt="logo">
+<img src="/img/logoW.png" alt="logo">
 </a>
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" >
@@ -355,7 +367,7 @@ header.innerHTML = `
     <!-- Contenedor del menú hamburguesa desplegado -->
     <div class="hamburger-menu-container" id="hamburgerMenu">
       <ul>
-     <a href="/Cuenta-del-usuario/index.html">
+     <a class="profile" href="/Cuenta-del-usuario/index.html">
      <img  class="profileimg" src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">
      </a> 
       <li class="li-menu-button">
@@ -371,8 +383,8 @@ header.innerHTML = `
             <span class="arrow-down">&#9662;</span>
           </span>
           <ul class="submenu">
-            <li><a href="#">Personas con negocio</a></li>
-            <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
+          <li><a href="/Personas-con-negocio/pn.html">Personas con negocio</a></li>
+          <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
             <li><a href="#">Pensionados y maestros</a></li>
             <li><a href="#">Colombianos en el exterior</a></li>
           </ul>
@@ -399,7 +411,6 @@ header.innerHTML = `
             <li><a href="#">Consumidor financiero</a></li>
             <li><a href="#">Seguridad bancaria</a></li>
             <li><a href="#">Revista</a></li>
-            <li><a href="/Comparador-inversion/comparador-inversion.html">Tu mejor opción</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -422,7 +433,7 @@ header.innerHTML = `
     <div class="desktop-menu">
       <div class="top-level-items">
       <a href="/Landing-user/landing-user.html">
-      <img src="/img/logow.svg" alt="logo">
+      <img src="/img/logoW.svg" alt="logo">
       </a>
         <a href="#" class="contactanos-button">
         </a>
@@ -454,7 +465,7 @@ header.innerHTML = `
               <span class="arrow-down">&#9662;</span>
             </span>
             <ul class="submenu">
-              <li><a href="#">Personas con negocio</a></li>
+            <li><a href="/Personas-con-negocio/pn.html">Personas con negocio</a></li>
               <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
               <li><a href="#">Pensionados y maestros</a></li>
               <li><a href="#">Colombianos en el exterior</a></li>
@@ -482,7 +493,6 @@ header.innerHTML = `
               <li><a href="#">Consumidor financiero</a></li>
               <li><a href="#">Seguridad bancaria</a></li>
               <li><a href="#">Revista</a></li>
-              <li><a href="/Comparador-inversion/comparador-inversion.html">Tu mejor opción</a></li>
             </ul>
           </li>
           <li class="dropdown dropdown-container">
