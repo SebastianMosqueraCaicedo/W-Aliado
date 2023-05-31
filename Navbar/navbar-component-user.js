@@ -46,7 +46,8 @@ header.innerHTML = `
 
 .navbar img {
   padding: 2%;
-  width: 100px;
+  width: 40%;
+  height: 50%;
 }
 
 /* Estilos para el menú hamburguesa */
@@ -55,8 +56,10 @@ header.innerHTML = `
 .material-icons {
   color: #00a2af;
 }
-.profileimg{
-  margin-left: 100px;
+.profile img{
+  width: 40%;
+  height: 50%;
+  margin-left: 30%;
 }
 
 /* Estilos para el ícono del menú hamburguesa */
@@ -346,7 +349,7 @@ header.innerHTML = `
 </style>
 <nav class="navbar">
 <a href="/Landing-user/landing-user.html">
-<img src="/img/logow.png" alt="logo">
+<img src="/img/logoW.png" alt="logo">
 </a>
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" >
@@ -355,7 +358,7 @@ header.innerHTML = `
     <!-- Contenedor del menú hamburguesa desplegado -->
     <div class="hamburger-menu-container" id="hamburgerMenu">
       <ul>
-     <a href="/Cuenta-del-usuario/index.html">
+     <a class="profile" href="/Cuenta-del-usuario/index.html">
      <img  class="profileimg" src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">
      </a> 
       <li class="li-menu-button">
@@ -399,7 +402,6 @@ header.innerHTML = `
             <li><a href="#">Consumidor financiero</a></li>
             <li><a href="#">Seguridad bancaria</a></li>
             <li><a href="#">Revista</a></li>
-            <li><a href="/Comparador-inversion/comparador-inversion.html">Tu mejor opción</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -482,7 +484,6 @@ header.innerHTML = `
               <li><a href="#">Consumidor financiero</a></li>
               <li><a href="#">Seguridad bancaria</a></li>
               <li><a href="#">Revista</a></li>
-              <li><a href="/Comparador-inversion/comparador-inversion.html">Tu mejor opción</a></li>
             </ul>
           </li>
           <li class="dropdown dropdown-container">
