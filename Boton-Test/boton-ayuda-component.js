@@ -6,8 +6,6 @@ const botonChatFull = document.createElement('div');
 // funciones circumstanciales
 // opaca el fondo y abre los botones. Cierra el chat si esta abierto
 function toggleExtraButtons(){
-	let wW = window.innerWidth;
-	console.log(wW);
 	for (let j = 0; j < buttsExtra.length; j++){
 		if(buttsExtra[j].style.display === "flex"){
 			buttsExtra[j].style.display = "none";
@@ -20,6 +18,53 @@ function toggleExtraButtons(){
 			mobilePipe.style.display = "block";
 		}
 	}
+}
+
+// agrega una funcion a todo el documento. Si se clickea fuera del boton, sale
+// basado en: https://www.w3docs.com/snippets/javascript/how-to-detect-a-click-outside-an-element.html
+document.addEventListener("click", function(evt) {
+	  targetEl = evt.target; // clicked element
+	do {
+	  if(targetEl == botonFull) {
+		  console.log(targetEl);
+	    return;
+	  }
+	  targetEl = targetEl.parentNode;
+	} while (targetEl);
+	for (let j = 0; j < buttsExtra.length; j++){
+		buttsExtra[j].style.display = "none";
+		mobilePipe.style.display = "none";
+		botonOpac.style.display = "none";
+		botonChat.style.display = "none";
+	}
+});
+// cuando entra el mouse al div, cambia el icono de la imagen
+function chatOff(div){
+	div.children[0].src="/icons/chat-boton.svg";
+}
+function chatOn(div){
+	div.children[0].src="/icons/chat-boton-act.svg";
+}
+
+function tutoOff(div){
+	div.children[0].children[0].src="/icons/tutoriales-boton.svg";
+}
+function tutoOn(div){
+	div.children[0].children[0].src="/icons/tutoriales-boton-act.svg";
+}
+
+function ayudaOff(div){
+	div.children[0].children[0].src="/icons/asesoria-boton.svg";
+}
+function ayudaOn(div){
+	div.children[0].children[0].src="/icons/asesoria-boton-act.svg";
+}
+
+function pqrsOff(div){
+	div.children[0].children[0].src="/icons/pqrs-boton.svg";
+}
+function pqrsOn(div){
+	div.children[0].children[0].src="/icons/pqrs-boton-act.svg";
 }
 
 // muestra el chat
@@ -49,6 +94,7 @@ botonFull.innerHTML = `
 /* Modo estandar */
 
 .boton-asesoria {
+	cursor: pointer;
 	right: 85px;
 	top: -65px;
 }
@@ -60,11 +106,13 @@ botonFull.innerHTML = `
 }
 
 .boton-pqrs {
+	cursor: pointer;
 	right: 100px;
 	top: 100px;
 }
 
 .boton-tutoriales {
+	cursor: pointer;
 	right: 125px;
 	top: 12px;
 }
@@ -92,6 +140,34 @@ botonFull.innerHTML = `
 	justify-content: center;
 	position: absolute;
 	display: none;
+}
+
+.botones-all:hover {
+	background-color: #FF8833;
+}
+
+/* responsive */
+
+.react-botones {
+	height: 30px;
+	background-color: #FF8833;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 75px;
+	top: 15px;
+	padding: 0 20px;
+}
+
+.react-chat {
+	right: 55px;
+	top: -30px;
+}
+
+.react-botones p{
+	color: #FFFFFF;
 }
 
 /* chat */
@@ -132,32 +208,32 @@ botonFull.innerHTML = `
 	.mobile-pipe {
 		position: absolute;
 		width: 50px;
-		height: 170px;
+		height: 195px;
 		background-color: white;
-		border-radius: 20%;
-		top: -180px;
+		border-radius: 30px;
+		top: -205px;
 		right: 5px;
 	}
 		
 	.boton-asesoria {
-		right: 15px;
-		top: -170px;
+		right: 10px;
+		top: -195px;
 	}
 
 	.boton-chat {
 		cursor: pointer;
-		right: 15px;
-		top: -90px;
+		right: 10px;
+		top: -105px;
 	}
 
 	.boton-pqrs {
-		right: 15px;
-		top: -50px;
+		right: 10px;
+		top: -60px;
 	}
 
 	.boton-tutoriales {
-		right: 15px;
-		top: -130px;
+		right: 10px;
+		top: -150px;
 	}
 
 	.boton-ayuda {
@@ -173,16 +249,36 @@ botonFull.innerHTML = `
 	}
 
 	.botones-all {
-		width: 30px;
-		height: 30px;
+		width: 40px;
+		height: 40px;
 		background-color: #FFFFFF;
-		border-radius: 100%;
+		border-radius: 30px;
 		box-shadow: 0px 0px 9px 10px rgba(25,100,50,0.04);
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: absolute;
 		display: none;
+	}
+
+	/* responsive */
+
+	.react-botones {
+		height: 30px;
+		background-color: unset;
+		border-radius: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		right: 60px;
+		top: 0px;
+		padding: 0 20px;
+	}
+
+	.react-chat {
+		right: 60px;
+		top: 0px;
 	}
 
 	/* chat */
@@ -203,7 +299,7 @@ botonFull.innerHTML = `
 		left: 0px;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.3));
+		background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.4));
 	}
 
 
@@ -216,21 +312,37 @@ botonFull.innerHTML = `
 
 		  <div class="boton-asesoria botones-all" id="boton-asesoria">
 			  <a href="/Boton-Asesor/asesor.html">
-				  <img src="/icons/asesoria-boton.svg" alt=""></img>
+				  <img src="/icons/asesoria-boton.svg" alt=""
+				  id="img-asesoria"></img>
 			  </a>
+			  <div class="react-asesoria react-botones" id="react-asesoria">
+				<p>Asesorias</p>
+			  </div>
 		  </div>
 		  <div class="boton-chat botones-all" id="boton-chat">
-			  <img src="/icons/chat-boton.svg" alt=""></img>
+			  <img src="/icons/chat-boton.svg" alt=""
+			  id="img-chat"></img>
+			  <div class="react-chat react-botones" id="react-chat">
+				<p>Chat</p>
+			  </div>
 		  </div>
 		  <div class="boton-pqrs botones-all" id="boton-pqrs">
 			  <a href="/Boton-PQRS/pqrs.html">
-				  <img src="/icons/pqrs-boton.svg" alt=""></img>
+				  <img src="/icons/pqrs-boton.svg" alt=""
+				  id="img-pqrs"></img>
 			  </a>
+			  <div class="react-PQRS react-botones" id="react-PQRS">
+				<p>PQRS</p>
+			  </div>
 		  </div>
 		  <div class="boton-tutoriales botones-all" id="boton-tutoriales">
 			  <a href="/Boton-Tutoriales/tutoriales.html">
-				  <img src="/icons/tutoriales-boton.svg" alt=""></img>
+				  <img src="/icons/tutoriales-boton.svg" alt=""
+				  id="img-tutoriales"></img>
 			  </a>
+			  <div class="react-tutoriales react-botones" id="react-tutoriales">
+				<p>Tutoriales</p>
+			  </div>
 		  </div>
 	  </img>
 `
@@ -262,3 +374,14 @@ const botonOpac = document.getElementById('boton-opacar');
 botonAyuda.addEventListener('click', toggleExtraButtons);
 
 buttsExtra[1].addEventListener('click', toggleBotonChat);
+
+// hovers
+buttsExtra[0].setAttribute('onmouseenter', 'ayudaOn(this)');
+buttsExtra[2].setAttribute('onmouseenter', 'pqrsOn(this)');
+buttsExtra[3].setAttribute('onmouseenter', 'tutoOn(this)');
+buttsExtra[1].setAttribute('onmouseenter', 'chatOn(this)');
+
+buttsExtra[0].setAttribute('onmouseleave', 'ayudaOff(this)');
+buttsExtra[2].setAttribute('onmouseleave', 'pqrsOff(this)');
+buttsExtra[3].setAttribute('onmouseleave', 'tutoOff(this)');
+buttsExtra[1].setAttribute('onmouseleave', 'chatOff(this)');
