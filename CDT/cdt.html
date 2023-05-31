@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/img/logoW.png">
-    <title>Banco W | CDT</title>
+    <title>Banco W</title>
     <link rel="stylesheet" href="./cdt.css">
 </head>
 
 <body>
 
-    <!-- Barra de navegación con logo y menú hamburguesa -->
-    <header id="header"></header>
+   <!-- Barra de navegación con logo y menú hamburguesa -->
+   <header id="header"></header>
 
     <!-- Portada de la página -->
 
@@ -25,6 +24,7 @@
             <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
 
         </div>
+        <div class="information-container">
         <div class="information">
             <h1>CDT</h1>
             <p>Haz tu inversión de manera segura, fácil y rentable a través de nuestros CDTs</p>
@@ -32,7 +32,8 @@
         <div class="simulator">
             <a href="/Simulador-CDT/index.html">
                 <button class="simulator-button">Simula tu CDT</button>
-            </a>
+            </a>  
+        </div>
         </div>
 
         <!-- Menú de navegación de la portada de la página -->
@@ -43,7 +44,7 @@
                     <div id="marker"></div>
                     <li class="characters" data-target="page1">
                         <a>
-                            <p id="lyric">Características</p>
+                            <p class="lyric">Características</p>
                         </a>
                     </li>
 
@@ -73,56 +74,11 @@
 
     <section id="pages">
         <section id="page1">
-            <p class="info-characters">Los CDT en el Banco W tienen características flexibles que se adaptan a las
-                necesidades de cada uno de nuestros clientes, quienes pueden escoger entre estas alternativas</p>
-            <p class="info-characters2">Modalidades de pago de intereses para el CDT Físico:</p>
-            <section class="list-container">
-                <div class="list-characters">
-                    <img src="../list-img/list-caracteristicas-cdt.svg" alt="Lista iconos">
-                </div>
 
-                <!-- Lista de carácteristicas y beneficios DESKTOP -->
-
-                <div class="container-characters1">
-
-                    <div class="list-characters-desktop">
-                        <img src="../list-img/list-caracteristicas-cdt-desktop.svg" alt="Lista iconos">
-                    </div>
-
-                    <div class="info-list-desktop list1">
-                        <ul>
-                            <li><span>CDT Capitalizable: </span>en esta modalidad, al vencimiento de un CDT si el
-                                titular no
-                                solicita su cancelación, el CDT se prorroga por valor del capital más los intereses y
-                                sobre
-                                este valor el banco liquidará los intereses del nuevo periodo.</li>
-                            <li><span>CDT Rentabilidad:</span> en esta modalidad, al vencimiento de un CDT si el titular
-                                no
-                                solicita su cancelación, el CDT se prorroga solo por el valor del capital inicial, los
-                                intereses generados quedarán en una cuenta por pagar a favor del titular para ser
-                                reclamados
-                                en el momento que el cliente lo determine sin generar rendimiento alguno durante este
-                                periodo.</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <!-- Lista de carácteristicas y beneficios MOBIL -->
-
-                <div class="info-list">
-                    <ul class="list-characters">
-                        <li><span>CDT Capitalizable: </span>en esta modalidad, al vencimiento de un CDT si el titular no
-                            solicita su cancelación, el CDT se prorroga por valor del capital más los intereses y sobre
-                            este valor el banco liquidará los intereses del nuevo periodo.</li>
-                        <li><span>CDT Rentabilidad:</span> en esta modalidad, al vencimiento de un CDT si el titular no
-                            solicita su cancelación, el CDT se prorroga solo por el valor del capital inicial, los
-                            intereses generados quedarán en una cuenta por pagar a favor del titular para ser reclamados
-                            en el momento que el cliente lo determine sin generar rendimiento alguno durante este
-                            periodo.</li>
-                    </ul>
-                </div>
-            </section>
+            <div class="text1">
+                <img id="mobile" src="/img/cdt-caracteristicas1.png" alt="">
+                <img id="desktop" src="/img/reclamar-caracteristicas-desktop.png" alt="">
+              </div>
 
             <div class="page3-container">
                 <div class="page1-drop">
@@ -133,10 +89,7 @@
                 </div>
 
                 <section id="dropdown-menu" class="info-drop1">
-                    <p class="info-tramits">Los CDT desmaterializados no tendrán renovación automática, por lo tanto,
-                        los recursos del cliente quedarán a la vista sin generar rendimientos adicionales a los términos
-                        inicialmente pactados. Si desea realizar el proceso de renovación, deberá contactar al personal
-                        comercial del Banco W.</p>
+              
                 </section>
 
 
@@ -148,186 +101,13 @@
                 </div>
 
                 <section id="dropdown-menu2" class="info-drop2">
-                    <p class="info-tramits2">Puedes aperturar tu CDT a nombre de un solo titular o de varios de acuerdo
-                        a las siguientes opciones:</p>
-                    <section class="list-container4">
-
-
-                        <!-- Lista de carácteristicas y beneficios DESKTOP -->
-
-                        <div class="container-characters">
-
-                            <div class="list-characters-desktop">
-                                <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
-                            </div>
-
-                            <div class="info-list-desktop list">
-                                <ul>
-                                    <li>CDT Individual: se expide a nombre de una sola persona natural o jurídica, quien
-                                        es la autorizada para el manejo del título.</li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="container-characters">
-
-                            <div class="list-characters-desktop">
-                                <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
-                            </div>
-
-                            <div class="info-list-desktop list3">
-                                <ul>
-                                    <li>CDT Conjunto: se expide a nombre de dos (2) o más personas naturales, cuyos
-                                        nombres estarán unidos por la conjunción “y”, siendo necesario la firma de cada
-                                        uno de los titulares o de cada uno de los representantes para el manejo del
-                                        título.</li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-
-
-                        <div class="container-characters">
-
-                            <div class="list-characters-desktop">
-                                <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
-                            </div>
-
-                            <div class="info-list-desktop list4">
-                                <ul>
-                                    <li>CDT Alternativo: se expide a nombre de dos (2) o más personas naturales, cuyos
-                                        nombres estarán unidos por la conjunción “o” e independiente cualquiera de los
-                                        titulares podrá disponer del título.</li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <!-- Lista de carácteristicas y beneficios MOBIL -->
-
-                        <div class="list-characters">
-                            <img src="../list-img/list-caracteristicas2-cdt.svg" alt="Lista iconos">
-                        </div>
-
-                        <div class="info-list2">
-                            <ul class="list-characters2">
-                                <li>CDT Individual: se expide a nombre de una sola persona natural o jurídica, quien es
-                                    la autorizada para el manejo del título.</li>
-                                <li>CDT Conjunto: se expide a nombre de dos (2) o más personas naturales, cuyos nombres
-                                    estarán unidos por la conjunción “y”, siendo necesario la firma de cada uno de los
-                                    titulares o de cada uno de los representantes para el manejo del título.</li>
-                                <li>CDT Alternativo: se expide a nombre de dos (2) o más personas naturales, cuyos
-                                    nombres estarán unidos por la conjunción “o” e independiente cualquiera de los
-                                    titulares podrá disponer del título.</li>
-                            </ul>
-                        </div>
-                    </section>
+                    
                 </section>
             </div>
-
-            <section class="more-information">
-                <p>Para mayor información</p>
-                <div class="buttons">
-                    <a href="../CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
-                        <button>Contratos y reglamentos de productos</button>
-                    </a>
-                    <button>Tasas y tarifas vigentes</button>
-                </div>
-            </section>
         </section>
 
         <section id="page2">
-            <section class="list-container2">
-
-
-                <!-- Lista de carácteristicas y beneficios DESKTOP -->
-
-                <div class="container-characters">
-
-                    <div class="list-characters-desktop">
-                        <img src="../list-img/list-beneficios-cdt-desktop.svg" alt="Lista iconos">
-                    </div>
-
-                    <div class="info-list-desktop list5">
-                        <ul>
-                            <li>Asesoría personalizada</li>
-                            <li>Amplias alternativas de plazos y montos</li>
-                            <li>Posibilidad de convenir la periodicidad para el pago de intereses de acuerdo a la
-                                necesidad del cliente: mensual, bimensual, trimestral, semestral o al vencimiento.</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="container-characters">
-
-                    <div class="list-characters-desktop">
-                        <img src="../list-img/list-beneficios-cdt-desktop2.svg" alt="Lista iconos">
-                    </div>
-
-                    <div class="info-list-desktop list6">
-                        <ul>
-                            <li>Facilidad de apertura</li>
-                            <li>Lo puedes usar como garantía en las operaciones de crédito con otras entidades</li>
-                            <li>El gravamen a los movimientos financieros por cancelación de CDT o pago de intereses se
-                                encuentra a cargo del Banco W.</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-
-                <div class="container-characters">
-
-                    <div class="list-characters-desktop">
-                        <img src="../list-img/list-beneficios-cdt-desktop3.svg" alt="Lista iconos">
-                    </div>
-
-                    <div class="info-list-desktop list7">
-                        <ul>
-                            <li>Confianza y respaldo en una entidad sólida con trayectoria</li>
-                            <li>Liquidez inmediata, debido a que todas las modalidades de CDT pueden negociarse antes
-                                del vencimiento en el mercado secundario por medio de Endoso.</li>
-                            <li>Producto amparado por el beneficio de Seguro Depósito de FOGAFIN.</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <!-- Lista de carácteristicas y beneficios MOBIL -->
-                <div class="list-characters2">
-                    <img src="../list-img/list-beneficios-cdt.svg" alt="Lista iconos">
-                </div>
-
-                <div class="info-list2">
-                    <ul class="list-benefits">
-                        <li>Asesoría personalizada</li>
-                        <li>Facilidad de apertura</li>
-                        <li>Confianza y respaldo en una entidad sólida con trayectoria</li>
-                        <li>Amplias alternativas de plazos y montos</li>
-                        <li>Lo puedes usar como garantía en las operaciones de crédito con otras entidades</li>
-                        <li>Liquidez inmediata, debido a que todas las modalidades de CDT pueden negociarse antes del
-                            vencimiento en el mercado secundario por medio de Endoso.</li>
-                        <li>Posibilidad de convenir la periodicidad para el pago de intereses de acuerdo a la necesidad
-                            del cliente: mensual, bimensual, trimestral, semestral o al vencimiento.</li>
-                        <li>El gravamen a los movimientos financieros por cancelación de CDT o pago de intereses se
-                            encuentra a cargo del Banco W.</li>
-                        <li>Producto amparado por el beneficio de Seguro Depósito de FOGAFIN.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="more-information">
-                <p>Para mayor información</p>
-                <div class="buttons">
-                    <a href="../CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
-                        <button>Contratos y reglamentos de productos</button>
-                    </a>
-                    <button>Tasas y tarifas vigentes</button>
-                </div>
-            </section>
+      
         </section>
 
         <section id="page3">
@@ -340,56 +120,7 @@
                 </div>
 
                 <section id="dropdown-menu3" class="info-drop3">
-                    <section class="list-container4">
 
-                        <!-- Lista de carácteristicas y beneficios DESKTOP -->
-
-                        <div class="container-characters5">
-
-                            <div class="list-characters-desktop">
-                                <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
-                            </div>
-
-                            <div class="info-list-desktop list8">
-                                <ul>
-                                    <li>Fotocopia ampliada al 150% del documento de identificación (con firma y huella)
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="container-characters5">
-
-                            <div class="list-characters-desktop">
-                                <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
-                            </div>
-
-                            <div class="info-list-desktop list9">
-                                <ul>
-                                    <li>Documentos soporte de la actividad económica y declaración de origen de fondos.
-                                        Clic aquí para conocer más.</li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <!-- Lista de carácteristicas y beneficios MOBIL -->
-
-                        <div class="list-characters2">
-                            <img src="../list-img/list-apertura-cdt.svg" alt="Lista iconos">
-                        </div>
-
-                        <div class="info-list4">
-                            <ul class="list-opening">
-                                <li>Fotocopia ampliada al 150% del documento de identificación (con firma y huella)</li>
-                                <li>Documentos soporte de la actividad económica y declaración de origen de fondos. Clic
-                                    aquí para conocer más.</li>
-                            </ul>
-                        </div>
-                    </section>
                 </section>
 
 
@@ -401,87 +132,9 @@
                 </div>
 
                 <section id="dropdown-menu4" class="info-drop4">
-                    <section class="list-container4">
-
-                        <!-- Lista de carácteristicas y beneficios DESKTOP -->
-
-                        <div class="container-characters">
-
-                            <div class="list-characters-desktop">
-                                <img src="../list-img/list-apertura-cdt-desktop.svg" alt="Lista iconos">
-                            </div>
-
-                            <div class="info-list-desktop list10">
-                                <ul>
-                                    <li>Certificado de Cámara de Comercio o certificado de existencia y representación
-                                        legal, expedido por autoridad competente vigente, no mayor a 30 días.</li>
-                                    <li>Declaración de renta del último periodo gravable.</li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="container-characters">
-
-                            <div class="list-characters-desktop">
-                                <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
-                            </div>
-
-                            <div class="info-list-desktop list">
-                                <ul>
-                                    <li>Fotocopia del RUT.</li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                        <div class="container-characters">
-
-                            <div class="list-characters-desktop">
-                                <img src="../list-img/list-beneficios-ahorro-desktop3.svg" alt="Lista iconos">
-                            </div>
-
-                            <div class="info-list-desktop list4">
-                                <ul>
-                                    <li>Fotocopia ampliada al 150% del documento de identidad del representante legal y
-                                        de las personas autorizadas en el manejo de la inversión con firma y huella.
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-
-                        <!-- Lista de carácteristicas y beneficios MOBIL -->
-
-                        <div class="list-characters2">
-                            <img src="../list-img/list-apertura-cdt2.svg" alt="Lista iconos">
-                        </div>
-
-                        <div class="info-list5">
-                            <ul class="list-opening2">
-                                <li>Certificado de Cámara de Comercio o certificado de existencia y representación
-                                    legal, expedido por autoridad competente vigente, no mayor a 30 días.</li>
-                                <li>Fotocopia del RUT.</li>
-                                <li>Fotocopia ampliada al 150% del documento de identidad del representante legal y de
-                                    las personas autorizadas en el manejo de la inversión con firma y huella.</li>
-                                <li>Declaración de renta del último periodo gravable.</li>
-                            </ul>
-                        </div>
-                    </section>
+         
                 </section>
             </div>
-
-            <section class="more-information">
-                <p>Para mayor información</p>
-                <div class="buttons">
-                    <a href="../CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
-                        <button>Contratos y reglamentos de productos</button>
-                    </a>
-                    <button>Tasas y tarifas vigentes</button>
-                </div>
-            </section>
-        </section>
 
 
         <section id="page4">
@@ -494,56 +147,7 @@
                 </div>
 
                 <section id="dropdown-menu5" class="info-drop5">
-                    <section class="list-container5">
 
-                        <!-- Lista de carácteristicas y beneficios DESKTOP -->
-
-                        <div class="info-numbers">
-                            <div class="up-numbers">
-                                <div class="one">
-                                    <img src="../img/1-cancel.png" alt="">
-                                    <p class="noa">Dirígete a la oficina de radicación del CDT.</p>
-                                </div>
-                                <div class="two">
-                                    <img src="../img/2-cancel.png" alt="">
-                                    <p class="noa">Entrega el CDT original y presenta documento de identidad.</p>
-                                </div>
-                            </div>
-                            <div class="down-numbers">
-                                <div class="three">
-                                    <img src="../img/3-cancel.png" alt="">
-                                    <p class="noa">El Banco constata la validez de la titularidad y realiza el pago de
-                                        acuerdo a la forma en la que lo requieras.</p>
-                                </div>
-                                <div class="four">
-                                    <img src="../img/4-cancel.png" alt="">
-                                    <p class="noa">Recibe los recursos monetarios.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Lista de carácteristicas y beneficios MOBIL -->
-
-                        <div class="list-characters3">
-                            <ul>
-                                <li>1.</li>
-                                <li>2.</li>
-                                <li>3.</li>
-                                <li id="n-list">4.</li>
-                            </ul>
-                        </div>
-
-                        <div class="info-list6">
-                            <ul class="list-cancelation">
-                                <li>Dirígete a la oficina de radicación del CDT.</li>
-                                <li>Entrega el CDT original y presenta documento de identidad.</li>
-                                <li>El Banco constata la validez de la titularidad y realiza el pago de acuerdo a la
-                                    forma en la que lo requieras.</li>
-                                <li>Recibe los recursos monetarios.</li>
-                            </ul>
-                        </div>
-                    </section>
                 </section>
 
                 <div class="page6-drop">
@@ -554,63 +158,13 @@
                 </div>
 
                 <section id="dropdown-menu6" class="info-drop6">
-                    <section class="list-container6">
 
-                        <!-- Lista de carácteristicas y beneficios DESKTOP -->
-
-                        <div class="info-numbers">
-                            <div class="up-numbers">
-                                <div class="one">
-                                    <img src="../img/1-cancel.png" alt="">
-                                    <p class="noa">Dirígete a la oficina de tu preferencia o contacta a tu ejecutivo de
-                                        captación</p>
-                                </div>
-                                <div class="two">
-                                    <img src="../img/2-cancel.png" alt="">
-                                    <p class="noa">Diligencia la carta de instrucciones para redimir tu título y
-                                        presenta tu documento de identidad.</p>
-                                </div>
-                            </div>
-                            <div class="down-numbers">
-                                <div class="three">
-                                    <img src="../img/3-cancel.png" alt="">
-                                    <p class="noa">El Banco constata la validez de la titularidad y realiza el pago de
-                                        acuerdo a la forma en la que lo requieras.</p>
-                                </div>
-                                <div class="four">
-                                    <img src="../img/4-cancel.png" alt="">
-                                    <p class="noa">Recibe los recursos monetarios.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Lista de carácteristicas y beneficios MOBIL -->
-                        <div class="list-characters6">
-                            <ul>
-                                <li>1.</li>
-                                <li>2.</li>
-                                <li>3.</li>
-                                <li id="n-list2">4.</li>
-                            </ul>
-                        </div>
-
-                        <div class="info-list7">
-                            <ul class="list-cancelation2">
-                                <li>Dirígete a la oficina de tu preferencia o contacta a tu ejecutivo de captación</li>
-                                <li>Diligencia la carta de instrucciones para redimir tu título y presenta tu documento
-                                    de identidad.</li>
-                                <li>El Banco constata la validez de la titularidad y realiza el pago de acuerdo a la
-                                    forma en la que lo requieras.</li>
-                                <li>Recibe los recursos monetarios.</li>
-                            </ul>
-                        </div>
-                    </section>
                 </section>
             </div>
+        </section>
+    </section>
 
-
-            <section class="more-information">
+    <section class="more-information">
                 <p>Para mayor información</p>
                 <div class="buttons">
                     <a href="../CDT-Contratos-y-Reglamentos-de-productos/contrato.html">
@@ -619,8 +173,6 @@
                     <button>Tasas y tarifas vigentes</button>
                 </div>
             </section>
-        </section>
-    </section>
 
     <custom-footer></custom-footer>
 
