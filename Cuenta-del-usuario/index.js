@@ -20,61 +20,122 @@ pagos2.style.display = 'none'
 citas.style.display = 'none'
 
 
-products.addEventListener('click', () => {
-    home.style.display = 'none'
-    productos1.style.display = 'flex'
-    productos2.style.display = 'none'
-    pagos1.style.display = 'none'
-    pagos2.style.display = 'none'
-    citas.style.display = 'none'
-})
-
-payments.addEventListener('click', () => {
-    home.style.display = 'none'
-    productos1.style.display = 'none'
-    productos2.style.display = 'none'
-    pagos1.style.display = 'flex'
-    pagos2.style.display = 'none'
-    citas.style.display = 'none'
-})
-
-meetings.addEventListener('click', () => {
-    home.style.display = 'none'
-    productos1.style.display = 'none'
-    productos2.style.display = 'none'
-    pagos1.style.display = 'none'
-    pagos2.style.display = 'none'
-    citas.style.display = 'flex'
-})
-
 const toProducto2 = document.getElementsByClassName('producto-de-ahorro')
 const toPagos2 = document.getElementsByClassName('pagos-2')
 
 console.log(toProducto2)
 
-window.onload = function () {
 
-    for (let i = 0; i < toProducto2.length; i++) {
-        const element = toProducto2[i];
-        element.addEventListener('click', () => {
-            home.style.display = 'none'
-            productos1.style.display = 'none'
-            productos2.style.display = 'flex'
-            pagos1.style.display = 'none'
-            pagos2.style.display = 'none'
-            citas.style.display = 'none'
-        })
-    }
 
-    for (let i = 0; i < toPagos2.length; i++) {
-        const element = toPagos2[i];
-        element.addEventListener('click', () => {
-            home.style.display = 'none'
-            productos1.style.display = 'none'
-            productos2.style.display = 'none'
-            pagos1.style.display = 'none'
-            pagos2.style.display = 'flex'
-            citas.style.display = 'none'
-        })
-    }
-};
+if (window.innerWidth < 700) {
+    products.addEventListener('click', () => {
+        home.style.display = 'none'
+        productos1.style.display = 'flex'
+        productos2.style.display = 'none'
+        pagos1.style.display = 'none'
+        pagos2.style.display = 'none'
+        citas.style.display = 'none'
+    })
+
+    payments.addEventListener('click', () => {
+        home.style.display = 'none'
+        productos1.style.display = 'none'
+        productos2.style.display = 'none'
+        pagos1.style.display = 'flex'
+        pagos2.style.display = 'none'
+        citas.style.display = 'none'
+    })
+
+    meetings.addEventListener('click', () => {
+        home.style.display = 'none'
+        productos1.style.display = 'none'
+        productos2.style.display = 'none'
+        pagos1.style.display = 'none'
+        pagos2.style.display = 'none'
+        citas.style.display = 'flex'
+    })
+
+    window.onload = function () {
+
+        for (let i = 0; i < toProducto2.length; i++) {
+            const element = toProducto2[i];
+            element.addEventListener('click', () => {
+                home.style.display = 'none'
+                productos1.style.display = 'none'
+                productos2.style.display = 'flex'
+                pagos1.style.display = 'none'
+                pagos2.style.display = 'none'
+                citas.style.display = 'none'
+            })
+        }
+
+        for (let i = 0; i < toPagos2.length; i++) {
+            const element = toPagos2[i];
+            element.addEventListener('click', () => {
+                home.style.display = 'none'
+                productos1.style.display = 'none'
+                productos2.style.display = 'none'
+                pagos1.style.display = 'none'
+                pagos2.style.display = 'flex'
+                citas.style.display = 'none'
+            })
+        }
+    };
+
+
+}
+if (window.innerWidth >= 701) {
+    products.addEventListener('click', () => {
+        home.style.display = 'none'
+        productos1.style.display = 'flex'
+        productos2.style.display = 'flex'
+        pagos1.style.display = 'none'
+        pagos2.style.display = 'none'
+        citas.style.display = 'none'
+    })
+
+    payments.addEventListener('click', () => {
+        home.style.display = 'none'
+        productos1.style.display = 'none'
+        productos2.style.display = 'none'
+        pagos1.style.display = 'flex'
+        pagos2.style.display = 'flex'
+        citas.style.display = 'none'
+    })
+
+    meetings.addEventListener('click', () => {
+        home.style.display = 'none'
+        productos1.style.display = 'none'
+        productos2.style.display = 'none'
+        pagos1.style.display = 'none'
+        pagos2.style.display = 'none'
+        citas.style.display = 'flex'
+    })
+
+    window.onload = function () {
+
+        for (let i = 0; i < toProducto2.length; i++) {
+            const element = toProducto2[i];
+            element.addEventListener('click', () => {
+                home.style.display = 'none'
+                productos1.style.display = 'flex'
+                productos2.style.display = 'flex'
+                pagos1.style.display = 'none'
+                pagos2.style.display = 'none'
+                citas.style.display = 'none'
+            })
+        }
+
+        for (let i = 0; i < toPagos2.length; i++) {
+            const element = toPagos2[i];
+            element.addEventListener('click', () => {
+                home.style.display = 'none'
+                productos1.style.display = 'none'
+                productos2.style.display = 'none'
+                pagos1.style.display = 'flex'
+                pagos2.style.display = 'flex'
+                citas.style.display = 'none'
+            })
+        }
+    };
+}
