@@ -72,9 +72,9 @@ const comparison = document.getElementById("comparison");
 
 comparedButton.addEventListener("click", () => {
   if (creditSection.style.display === "block") {
-    comparison.src = "./assets/compared-credito.png";
+    comparison.src = "./assets/compared-credito_4x.webp";
   } else {
-    comparison.src = "./assets/compared-ahorro.png";
+    comparison.src = "./assets/compared-ahorro_4x.webp";
   }
   comparison.style.display = "block";
   filterContainer.style.display = "none";

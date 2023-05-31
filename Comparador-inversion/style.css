@@ -263,16 +263,6 @@ body {
   text-decoration: none;
 }
 
-/* Estilos del menú de navegación */
-
-nav {
-  background-color: var(--white);
-  padding: 10px 17px;
-  height: 73px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 /* Estilo de miga de pan */
 
