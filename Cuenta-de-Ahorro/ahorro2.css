@@ -56,7 +56,7 @@ a {
 
 .cover-page {
   position: relative;
-  background: url(../img/portada-ahorroCuenta.svg);
+  background: url(../img/portada-ahorro-cuenta.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 481px;
@@ -141,6 +141,15 @@ a {
   z-index: 1;
 }
 
+#page-switcher li {
+  color: var(--gray-lyric);
+  cursor: pointer;
+}
+
+#page-switcher li.select {
+  color: var(--lila-lyrics);
+}
+
 .nav-cover ul {
   position: relative;
   list-style: none;
@@ -177,7 +186,6 @@ a {
 .nav-cover a {
   text-decoration: none;
   font-size: 13px;
-  color: var(--lila-lyrics);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,88 +195,6 @@ a {
 
 .nav-cover p {
   text-align: center;
-}
-
-/* Estilos de la lista */
-
-.container-characters {
-  display: none;
-}
-
-.list-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 45px;
-  padding: 0 20px;
-  margin-bottom: 33px;
-}
-
-.info-list,
-.info-list2 {
-  margin-left: 7px;
-}
-
-.info-list li,
-.info-list2 li {
-  font-family: "Bariol Regular";
-  list-style: none;
-  width: 328px;
-  height: 100%;
-  font-size: 13px;
-  color: var(--gray-lyric);
-  line-height: 150%;
-  cursor: pointer;
-  line-height: 19.63px;
-}
-
-.info-list ul li:nth-child(1) {
-  margin-bottom: 20px;
-}
-
-.info-list ul li:nth-child(2) {
-  margin-bottom: 20px;
-}
-
-.info-list ul li:nth-child(3) {
-  margin-bottom: 19px;
-}
-
-.info-list ul li:nth-child(4) {
-  margin-bottom: 20px;
-}
-
-.info-list ul li:nth-child(5) {
-  margin-bottom: 18px;
-}
-
-.info-list ul li:nth-child(6) {
-  margin-bottom: 20px;
-}
-
-.info-list ul li:nth-child(7) {
-  margin-bottom: 19px;
-}
-
-/* Estilos para requisitos de la lista */
-
-.info-list2 ul li:nth-child(1) {
-  margin-bottom: 25px;
-}
-
-.info-list2 ul li:nth-child(2) {
-  margin-bottom: 28px;
-}
-
-.info-list2 ul li:nth-child(3) {
-  margin-bottom: 28px;
-}
-
-.info-list2 ul li:nth-child(4) {
-  margin-bottom: 25px;
-}
-
-.info-list2 ul li:nth-child(5) {
-  margin-bottom: 10px;
 }
 
 /* Estilos de para mayor información */
@@ -319,9 +245,150 @@ a {
   display: none;
 }
 
+.text1,
+.text2 {
+  width: 90%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 11%;
+  margin-left: 4%;
+  user-select: none;
+}
+
+.text1 img,
+.text2 img {
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+#desktop {
+  display: none;
+}
+
+ /* ///////////////////////////////// 📱 TABLET //////////////////////// */
+
+ @media (min-width: 600px) {  
+
+
+  .cover-page {
+    background: url(../img/portada-ahorro-cuenta-tablet.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .nav-cover {
+    top: 91%;
+  }
+
+  .nav-cover {
+    width: 558px;
+  }
+
+  .characters {
+    width: 279px;
+  }
+  
+  .requirements {
+    width: 279px;
+  }
+
+  #marker {
+    width: 279px;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .nav-cover a {
+    font-size: 19px;
+  }
+
+  .information h1 {
+    font-size: 40px;
+
+  }
+  
+  .information p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 850px) { 
+
+  .information-container {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .information {
+    width: 43%;
+    margin-left: 59%;
+    padding-top: 9%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 40px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    /* margin-left: -149px; */
+    /* padding: 115px 0px 0px 500px; */
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    /* padding: 0px 0px 0px 530px; */
+    line-height: 25px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .simulator {
+    margin-top: 21px;
+    margin-left: 34%;
+  }
+  
+  .simulator-button {
+    font-size: 16.42px;
+    width: 160px;
+    height: 40.53px;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .text1,
+  .text2 {
+    width: 64%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
   /* Estilos del responsive */
 
@@ -329,30 +396,28 @@ a {
     position: absolute;
     top: 91%;
     transform: translate(-50%, 50%);
-    width: 1262px;
+    width: 970px;
     height: 43px;
   }
   
   #marker {
-    bottom: 0px;
-    width: 631px;
+    width: 485px;
   }
 
   .characters {
-    width: 631px;
-    height: 43px;
+    width: 485px;
+    height: 43.5px;
   }
   
   .requirements {
-    width: 631px;
-    height: 43px;
+    width: 485px;
+    height: 43.5px;
     border-left: 1px solid var(--lila-line);
   }
 
   .nav-cover a {
     text-decoration: none;
     font-size: 20px;
-    color: var(--lila-lyrics);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -371,12 +436,16 @@ a {
     width: 100%;
     height: 479px;
   }
+
+  .information-container {
+    max-width: 1024px;
+  }
   
   .information {
     display: flex;
     flex-direction: column;
-    width: 25%;
-    margin-left: 60%;
+    width: 20%;
+    margin-left: 75%;
     padding-top: 11%;
   }
 
@@ -410,9 +479,176 @@ a {
   }
 
   .simulator {
+    margin-left: 73%;
+    padding-top: 8%;
+    margin-top: -69px;
+  }
+  
+  .simulator-button {
+    font-size: 13.42px;
+    width: 186.29px;
+    height: 45.86px;
+    border-radius: 4.27119px;
+    font-size: 20.17px;
+  }
+
+  #desktop {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  .text1,
+  .text2 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .nav-cover {
+    position: absolute;
+    top: 91%;
+    transform: translate(-50%, 50%);
+    width: 1262px;
+    height: 43px;
+  }
+  
+  #marker {
+    bottom: 0px;
+    width: 631px;
+  }
+
+  .characters {
+    width: 631px;
+    height: 43px;
+  }
+  
+  .requirements {
+    width: 631px;
+    height: 43px;
+    border-left: 1px solid var(--lila-line);
+  }
+  .information-container {
+    max-width: 1200px;
+  }
+  
+  .information {
     display: flex;
     flex-direction: column;
-    margin-left: 32%;
+    width: 30%;
+    margin-left: 67%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  .simulator {
+    margin-left: 52%;
+    padding-top: 8%;
+    margin-top: -69px;
+  }
+  
+  .simulator-button {
+    font-size: 13.42px;
+    width: 186.29px;
+    height: 45.86px;
+    border-radius: 4.27119px;
+    font-size: 20.17px;
+  }
+
+  #desktop {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+}
+
+
+/* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
+
+@media (min-width: 1440px) {
+  .information-container {
+    max-width: 1440px;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    margin-left: 50%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+  .simulator {
+    margin-left: 36%;
     padding-top: 6%;
     margin-top: -69px;
   }
@@ -425,155 +661,13 @@ a {
     font-size: 20.17px;
   }
 
-  /* Estilos de la lista */
-  .list-characters,
- .info-list,
- .list-characters2,
- .info-list2 {
-  display: none;
- }
-
-  .container-characters {
-  display: block;
+  #desktop {
+    display: block;
   }
 
-  .list-container {
-    width: 100%;
+  #mobile {
+    display: none;
   }
-
-  .info-list-desktop {
-    padding-left: 3%;
-  }
-
-  .container-characters {
-  display: flex;
-  justify-content: center;
-  width: 33.33333%;
-  font-size: 20px;
-  }
-
-  .container-characters li {
-    list-style: none;
-    padding-right: 20%;
-    color: var(--gray-lyric);
-  }
-
-  .list-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 60px;
-    padding: 0px 0px 0px 7%;
-    margin-bottom: 33px;
-    max-width: 1440px;
-    margin-inline: auto;
-  }
-
- /* LISTA1*/
-
-  .list1 li:nth-child(1){
-    margin-bottom: 13.5%;
-  }
-
-  .list1 li:nth-child(2){
-    margin-bottom: 19.5%;
-  }
-
-   /* LISTA2*/
-
-   .list2 li:nth-child(1){
-    margin-bottom: 13%;
-  }
-
-  .list2 li:nth-child(2){
-    margin-bottom: 25%;
-  }
-
-   /* LISTA3*/
-
-   .list3 li:nth-child(1){
-    margin-bottom: 26%;
-  }
-
-   /* LISTA4*/
-
-   .list4 li:nth-child(1){
-    margin-bottom: 19.5%;
-  }
-  
-   /* LISTA5*/
-
-   .list5 li:nth-child(1){
-    margin-bottom: 13.5%;
-  }
-
-  /* Estilo de más informacion */
-
-  .more-information {
-    width: 100%;
-    height: 200px;
-  }
-  
-  .more-information p {
-    font-size: 35px;
-    color: var(--white);
-  }
-  
-  .button {
-    width: 298px;
-    height: 45px;
-    font-size: 17px;
-  }
-
-}
-@media (min-width: 1024px) {
- 
-  .cards-container {
-    max-width: 1280px;
-    margin: 65px auto;
-    margin-bottom: 25px;
-    padding: 2rem;
-  }
-
-  .cover-page {
-    background: url(../img/portada-ahorro-cuenta-desktop2.jpg);
-  }
-}
+} 
 
 
-/* Iphone SE */
-@media (max-width: 375px) {
-  .nav-cover {
-    top: 43.7%;
-    left: 50%;
-  }
-
-  .information h1 {
-    padding: 50px 30px 0px 30px;
-  }
-}
-
-/* Samsung Galaxy 8+ */
-@media screen and (max-width: 360px) {
-  .nav-cover {
-    top: 51%;
-    left: 50%;
-  }
-  .information h1 {
-    padding: 40px 30px 0px 30px;
-  }
-  .information p {
-    padding: 0px 40px 0px 40px;
-  }
-  .info-list li {
-    padding-right: 24px;
-  }
-  .info-list2 li {
-    padding-right: 20px;
-  }
-  #list1 {
-    content: url(../list-img/list-caracteristica-ahorroV2.svg);
-  }
-  .info-list ul li:nth-child(6) {
-    margin-bottom: 15px;
-  }
-}
