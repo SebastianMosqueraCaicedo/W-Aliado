@@ -383,8 +383,8 @@ header.innerHTML = `
             <span class="arrow-down">&#9662;</span>
           </span>
           <ul class="submenu">
-            <li><a href="#">Personas con negocio</a></li>
-            <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
+          <li><a href="/Personas-con-negocio/pn.html">Personas con negocio</a></li>
+          <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
             <li><a href="#">Pensionados y maestros</a></li>
             <li><a href="#">Colombianos en el exterior</a></li>
           </ul>
