@@ -46,7 +46,8 @@ header.innerHTML = `
 
 .navbar img {
   padding: 2%;
-  width: 100px;
+  width: 40%;
+  height: 50%;
 }
 
 /* Estilos para el menú hamburguesa */
@@ -344,7 +345,7 @@ header.innerHTML = `
 </style>
 <nav class="navbar">
 <a href="/index.html">
-<img src="/img/logoW.png" alt="logo">
+<img src="/img/logow.png" alt="logo">
 </a>
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" >
@@ -452,7 +453,7 @@ header.innerHTML = `
               <span class="arrow-down">&#9662;</span>
             </span>
             <ul class="submenu">
-              <li><a href="#">Personas con negocio</a></li>
+            <li><a href="/Personas-con-negocio/pn.html">Personas con negocio</a></li>
               <li><a href="/Ahorradores-e-Inversionistas/ahorradores.html">Ahorradores e inversionistas</a></li>
               <li><a href="#">Pensionados y maestros</a></li>
               <li><a href="#">Colombianos en el exterior</a></li>
