@@ -326,12 +326,6 @@ body {
   border-radius: 7px;
 }
 
-.cover-buttons {
-  position: absolute;
-  top: 34%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-}
 
 .nav-cover ul {
   list-style: none;
@@ -339,17 +333,7 @@ body {
   cursor: pointer;
 }
 
-.characters {
-  position: relative;
-  width: 50%;
-  right: 40px;
-}
 
-.requirements {
-  position: relative;
-  left: 50px;
-  width: 50%;
-}
 
 h3 {
   font-family: "Bariol Regular", sans-serif;
@@ -450,12 +434,6 @@ button:hover{
   margin-top: -30px;
 }
 
-.cover-buttons {
-  position: absolute;
-  top: 34%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-}
 
 .nav-cover ul {
   list-style: none;
@@ -463,17 +441,7 @@ button:hover{
   cursor: pointer;
 }
 
-.characters {
-  position: relative;
-  width: 50%;
-  right: 40px;
-}
 
-.requirements {
-  position: relative;
-  left: 50px;
-  width: 50%;
-}
 
 #lyric {
   width: 140px;
@@ -672,5 +640,81 @@ footer {
   color: #676767;
   font-size: 10px;
   font-family: "Bariol Regular", sans-serif;
+}
+/* Barra de en medio, estilos */
+#marker {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 183px;
+  background: #FF8833;;
+  bottom: -2px;
+  transition: 0.5s;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+#page-switcher li {
+  color: #FF8833;;
+  cursor: pointer;
+}
+
+#page-switcher li.select {
+  color: #FF8833;;
+}
+
+.nav-cover ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  transform: translate(0%, -0%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.nav-cover li {
+  position: relative;
+}
+
+.characters {
+  width: 183px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.requirements {
+  width: 183px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-cover a {
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bariol Regular";
+  pointer-events: none;
+}
+
+.nav-cover p {
+  text-align: center;
+}
+
+.cover-buttons {
+  transform: translate(0%, -0%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
