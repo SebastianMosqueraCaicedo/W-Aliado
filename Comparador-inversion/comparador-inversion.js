@@ -65,7 +65,7 @@ creditButton.addEventListener("click", () => {
   filterContainer.style.display = "flex";
   creditSection.style.display = "block";
 });
-/*
+
 const comparedButton = document.getElementById("compared");
 console.log(comparedButton);
 const comparison = document.getElementById("comparison");
@@ -81,10 +81,10 @@ comparedButton.addEventListener("click", () => {
   console.log("click");
 });
 
-const ahorroButton = document.getElementById("ahorro-switcher");
-const creditoButton = document.getElementById("credito-switcher");
+const ahorroButton = document.getElementsByClassName('characters');
+const creditoButton = document.getElementsByClassName('requirements');
 
-ahorroButton.addEventListener("click", () => {
+ahorroButton[0].addEventListener("click", () => {
   coverPage.style.display = "none";
   bgImage.src = "./assets/ahorro_4x.webp";
   comparator.style.display = "block";
@@ -94,7 +94,7 @@ ahorroButton.addEventListener("click", () => {
   comparison.style.display = "none";
 });
 
-creditoButton.addEventListener("click", () => {
+creditoButton[0].addEventListener("click", () => {
   coverPage.style.display = "none";
   bgImage.src = "./assets/credito_4x.webp";
   comparator.style.display = "block";
@@ -103,7 +103,7 @@ creditoButton.addEventListener("click", () => {
   creditSection.style.display = "block";
   comparison.style.display = "none";
 });
-
+/*
 const switcher = document.getElementById("page-switcher");
 const pages = document.getElementById("pages").children;
 
@@ -118,8 +118,8 @@ switcher.addEventListener("click", (event) => {
       }
     }
   }
-});
-*/
+});*/
+
 //// Menu slider
 
 var marker = document.querySelector('#marker');
