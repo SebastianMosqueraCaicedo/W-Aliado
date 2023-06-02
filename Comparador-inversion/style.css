@@ -412,6 +412,20 @@ button {
   border: 0px;
 }
 
+button:hover{
+  background-color: white;
+  border: 2px solid #FFA666;
+  color: #FFA666;
+}
+#savings-button:hover{
+  background: #FFE1CC;
+}
+#compared:hover{
+  background-color: white;
+  border: 2px solid #FFA666;
+  color: #FFA666;
+}
+
 #comparador {
   background-repeat: no-repeat;
   width: 100%;
@@ -659,3 +673,4 @@ footer {
   font-size: 10px;
   font-family: "Bariol Regular", sans-serif;
 }
+

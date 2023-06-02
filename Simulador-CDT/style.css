@@ -5,6 +5,7 @@
   src: local("Geomanist Bold"),
     url("/fonts/Geomanist-Bold.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Geomanist Book";
   src: url("/fonts/Geomanist-Book.ttf");
@@ -94,15 +95,18 @@ body {
   position: relative;
   z-index: 5;
 }
+
 .navbar img {
   padding: 2%;
 }
+
 /* Estilos para el menú hamburguesa */
 
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .material-icons {
   color: #00a2af;
 }
+
 /* Estilos para el ícono del menú hamburguesa */
 .hamburger-menu {
   display: flex;
@@ -110,12 +114,15 @@ body {
   align-items: center;
   cursor: pointer;
 }
+
 .submenu {
   display: none;
 }
+
 .show {
   display: block;
 }
+
 /* Estilos para el menú hamburguesa desplegado */
 .hamburger-menu-container {
   display: none;
@@ -128,6 +135,7 @@ body {
   width: 100%;
   box-shadow: 0px 10px 10px rgba(0, 177, 187, 0.1);
 }
+
 /* Estilos para botones naranjas del menú hamburguesa */
 .menu-button {
   background-color: #ff8833;
@@ -146,11 +154,13 @@ body {
   width: 24px;
   height: 24px;
 }
+
 .li-menu-button {
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
 }
+
 /* Estilos para titulos naranjas menú hamburguesa */
 .dropdown-title {
   position: relative;
@@ -160,6 +170,7 @@ body {
   margin-bottom: 5px;
   margin-left: 10px;
 }
+
 .dropdown-title::after {
   content: "";
   position: absolute;
@@ -168,6 +179,7 @@ body {
   right: 10px;
   border-bottom: 1px solid #ffe1cc;
 }
+
 .arrow-down {
   font-size: 0.8em;
   margin-right: 10px;
@@ -180,6 +192,7 @@ body {
 .hamburger-menu-container ul li .dropdown-title {
   color: #ff8833;
 }
+
 .hamburger-menu-container ul {
   list-style-type: none;
   padding: 0;
@@ -191,9 +204,11 @@ body {
   padding: 8px 16px;
   text-decoration: none;
 }
+
 .hamburger-menu-container a.menu-button {
   color: white;
 }
+
 .hamburger-menu-container ul li .dropdown {
   display: none;
   position: relative;
@@ -218,9 +233,10 @@ body {
 }
 
 .hamburger-menu-container ul li a:hover,
-.hamburger-menu-container ul li:hover > .dropdown {
+.hamburger-menu-container ul li:hover>.dropdown {
   cursor: pointer;
 }
+
 /*/ //////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* Estilos para el botón "Atrás" */
@@ -277,21 +293,24 @@ h2 {
 }
 
 @media (max-width: 700px) {
-  #cdt-type{
+  #cdt-type {
     width: 100%;
   }
+
   input {
     width: 100%;
   }
+
   #inputs-cdt {
     width: 100%;
   }
 }
 
 @media (min-width: 701px) {
-  #cdt-type{
+  #cdt-type {
     width: 50%;
   }
+
   input {
     width: 100%;
   }
@@ -354,6 +373,11 @@ button {
 
   color: #ffffff;
   font-family: "Bariol Regular", sans-serif;
+}
+
+button:hover {
+  background: #FFE1CC;
+  color: #FFA666;
 }
 
 #inputs-cdt {
@@ -475,9 +499,9 @@ h6 {
 }
 
 @media (max-width: 700px) {
-  #solicitar-cdt{
+  #solicitar-cdt {
     width: 100%;
-    }
+  }
 }
 
 @media (min-width: 701px) {
@@ -485,17 +509,21 @@ h6 {
     width: 300px;
     height: 150px;
   }
+
   h5 {
     font-size: 30px;
   }
-  #monto-cdt{
+
+  #monto-cdt {
     width: 50%;
   }
-  #resultados-tabla{
+
+  #resultados-tabla {
     width: 50%;
   }
-  #solicitar-cdt{
-  width: 50%;
+
+  #solicitar-cdt {
+    width: 50%;
   }
 }
 
@@ -518,10 +546,18 @@ h6 {
   border-radius: 7px;
 
   background: white;
+  box-shadow: 5px 7px 30px rgba(255, 105, 0, 0.15);
+  border-radius: 7px;
 
   border: 4px;
   border-color: #676767;
   color: #676767;
+  margin-bottom: 40px;
+}
+
+#regresar:hover {
+  border: 2px solid #FFA666;
+  color: #FFA666;
 }
 
 a {
