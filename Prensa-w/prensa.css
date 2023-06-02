@@ -72,28 +72,15 @@
     padding: 0px 65px 0px 65px;
     line-height: 16.72px;
     color: var(--gray-lyric);
+    max-width: 396px;
   }
   
   
   /* Estilos de la navegación secundaria */
 
-
- .container-characters,
- .container-characters,
- .container-characters2,
- .container-characters3,
- .container-characters4,
- .container-characters5 {
-  display: none;
-  }
-
-  .rest-info-desktop {
-    display: none;
-  }
-
 .nav-cover {
     position: relative;
-    top: 61.5%; 
+    top: 68.5%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     background-color: var(--white);
@@ -121,6 +108,15 @@
     transition: 0.5s;
     border-radius: 4px;
     z-index: 1;
+  }
+
+  #page-switcher li {
+    color: var(--gray-lyric);
+    cursor: pointer;
+  }
+  
+  #page-switcher li.select {
+    color: var(--lila-lyrics);
   }
   
   .nav-cover ul {
@@ -177,14 +173,10 @@
     cursor: pointer;
 }
 
-#lyric {
-    width: 140px;
-}
 
 .nav-cover a {
     text-decoration: none;
     font-size: 13px;
-    color: var(--lila-lyrics);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -199,9 +191,9 @@
   /* Estilo de las cards */
   
   .cards-container {
-    margin-top: 1%;
     display: grid;
     place-items: center;
+    margin-top: 5%;
     gap: 2rem;
     padding: 1rem;
     grid-auto-rows: 26rem;
@@ -240,7 +232,6 @@
     font-family: "Geomanist Book";
     color: var(--gray-lyric);
     font-size: 13px;
-    width: 300px;
     margin-bottom: 20px;
     line-height: 19.5px;
   }
@@ -315,9 +306,123 @@
     display: none;
 }
 
+
+   /* ///////////////////////////////// 📱 TABLET //////////////////////// */
+
+   @media (min-width: 600px) {  
+
+    .cover-page {
+      background: url(../img/portada-prensa-tablet.jpg);
+      background-repeat: no-repeat;
+    }
+  
+    .nav-cover {
+      top: max(67.5%);
+    }
+  
+    .nav-cover {
+      width: 558px;
+    }
+
+    .characters {
+      width: 139px;
+    }
+    
+    .tramits {
+      width: 139px;
+    }
+  
+    .benefits {
+      width: 139px;
+    }
+
+    .benefits p,
+    .tramits p {
+      line-height: 80%;
+    } 
+  
+    .devolutions {
+      width: 139px;
+    }
+  
+    #marker {
+      width: 139px;
+    }
+  
+  
+    #desktop {
+      display: none;
+    }
+  
+    .nav-cover a {
+      font-size: 18px;
+    }
+  
+    .information h1 {
+      font-size: 38px;
+  
+    }
+    
+    .information p {
+      font-size: 16px;
+  }
+  
+  }
+  
+  @media (min-width: 850px) { 
+    .nav-cover {
+      top: 43.5%;
+    }
+  
+    .information-container {
+      max-width: 850px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .information {
+      width: 39%;
+      margin-left: 62%;
+      padding-top: 18%;
+    }
+  
+    .information > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .information h1 {
+      font-size: 40px;
+      font-family: "Geomanist";
+      line-height: 40.54px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 0;
+    }
+    
+    .information p {
+      font-family: "Bariol Regular";
+      font-size: 20px;
+      text-align: start;
+      /* padding: 0px 0px 0px 530px; */
+      line-height: 25px;
+      width: 100%;
+      padding: 0;
+    }
+  
+    #desktop {
+      display: none;
+    }
+  }
+  
+
   /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
   
-  @media (min-width: 1200px) {
+  @media (min-width: 1024px) {
   
     /* Estilos del responsive */
   
@@ -325,7 +430,7 @@
         position: absolute;
         top: 91%;
         transform: translate(-50%, 50%);
-        width: 1262px;
+        width: 970px;
         height: 43px;
       }
       
@@ -335,31 +440,30 @@
       }
     
       .characters {
-          width: 315.5px;
+          width: 242px;
           height: 43px; 
       }
       
       .devolutions {
-          width: 315.5px;
+          width: 242px;
           height: 43px; 
         border-left: 1px solid var(--lila-line);
       }
     
       .benefits {
-          width: 315.5px;
+          width: 242px;
           height: 43px; 
         border-right: 1px solid var(--lila-line);
     }
   
     .tramits {
-      width: 315.5px;
+      width: 242px;
       height: 43px; 
     }
     
       .nav-cover a {
         text-decoration: none;
         font-size: 20px;
-        color: var(--lila-lyrics);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -385,11 +489,11 @@
       /* align-items: flex-end; */
       flex-direction: column;
       color: white;
-      width: 25%;
+      width: 38%;
       /* position: relative; */
       /* left: 315px; */
-      margin-left: 58%;
-      padding-top: 9%;
+      margin-left: 125%;
+      padding-top: 17%;
     }
   
     .information > div{
@@ -419,13 +523,7 @@
       width: 100%;
       padding: 0;
     }
-  
-  @media (max-width: 1024px) {
-    .cover-page {
-      background: url(../imgs2/backgroundimgresponsive.png);
-      background-repeat: no-repeat;
-    }
-  
+
     .cards-container {
       max-width: 1280px;
       margin: 65px auto;
@@ -434,18 +532,177 @@
       
     }
   }
-  
-  @media (max-width: 360px) {
-    .nav-cover {
-      top: 49.5%;
-      left: 50%;
-    }
-    .information h1 {
-      padding: 62px 50px 0px 50px;
-    }
-  
-    .information p {
-      padding: 0px 50px 0px 50px;
-    }
+
+  /* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
+
+ @media (min-width: 1440px) {
+  .information-container {
+    max-width: 1440px;
   }
+
+  .nav-cover {
+    width: 1262px;
+    height: 43px;
   }
+
+  #marker {
+    bottom: 0px;
+    width: 315.5px;
+  }
+
+  .characters {
+    width: 315.5px;
+    height: 43px;
+  }
+  
+  .tramits {
+    width: 315.5px;
+    height: 43px;
+    border-left: 1px solid var(--lila-line);
+  }
+
+  .benefits {
+    width: 315.5px;
+    height: 43px; 
+    border-right: 1px solid var(--lila-line);
+}
+
+  .devolutions {
+    width: 315.5px;
+    height: 43px; 
+}
+
+  .nav-cover a {
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bariol Regular";
+    pointer-events: none;
+  }
+
+  .cover-page {
+    background: url(../img/portada-prensa-desktop.jpg);
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 50%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .simulator {
+    margin-left: 36%;
+    padding-top: 6%;
+    margin-top: -69px;
+  }
+  
+  .simulator-button {
+    font-size: 13.42px;
+    width: 186.29px;
+    height: 45.86px;
+    border-radius: 4.27119px;
+    font-size: 20.17px;
+  }
+
+  .text1 img,
+  .text2 img,
+  .text3 img {
+    max-width: 1440px;
+  }
+
+  .text3-color {
+    max-width: 1440px;
+  }
+
+  .text3-color img{
+    max-width: 1440px;
+  }
+
+  .info-drop1{
+    width: 1262px;
+    max-width: 1440px;
+    height: 160px;
+}
+
+.info-drop2{
+  width: 1262px;
+  max-width: 1440px;
+  height: 385px;
+}
+
+.info-drop3{
+  width: 1262px;
+  max-width: 1440px;
+  height: 165px;
+}
+
+.info-drop4{
+  width: 1262px;
+  max-width: 1440px;
+  height: 312px;
+}
+
+.info-drop5{
+  width: 1262px;
+  max-width: 1440px;
+  height: 377px;
+}
+
+.info-drop6{
+  width: 1262px;
+  max-width: 1440px;
+  height: 377px;
+}
+
+
+.drop1,
+.drop2, 
+.drop3,
+.drop4,
+.drop5,
+.drop6 {
+    width: 1260px;
+    max-width: 1440PX;
+    width: 1262px;
+    height: 94px;
+    cursor: pointer;
+}
+
+  #desktop {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+}
+
