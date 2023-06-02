@@ -176,7 +176,6 @@ border: none;
 	flex-direction: column;
 	width: 710px;
 	height: 242px;
-	
 }
 
 .card-template h4 {
@@ -261,7 +260,9 @@ text-align: center;
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 1023px) {
   .port-container{
 
     display: flex;
@@ -331,4 +332,9 @@ text-align: center;
     width: 75%;
   }
 }
+
+
+@media screen and (max-width: 1023px) {
+}
+
 

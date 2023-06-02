@@ -41,7 +41,7 @@
   
   .cover-page {
     position: relative;
-    background: url(../img/portada-blog.jpg);
+    background: url(../img/portada-historias.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 535px;
@@ -74,88 +74,18 @@
     color: var(--gray-lyric);
   }
   
-  /* Estilos de la navegación secundaria */
-  
-.nav-cover {
-    position: relative;
-    top: 53.5%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    background-color: var(--white);
-    width: 366px;
-    height: 37px; 
-    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
-    border-radius: 7px
-}
 
-.cover-buttons {
-    transform: translate(0%, 100%);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-#marker {
-    position: absolute;
-    left: 0;
-    height: 4px;
-    width: 91.5px;
-    background: var(--lila-lyrics);
-    bottom: -2px;
-    transition: 0.5s;
-    border-radius: 4px;
-    z-index: 1;
-  }
-  
-  .nav-cover ul {
-    position: relative;
-      list-style: none;
-      display: flex;
-      transform: translate(0%, -100%);
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      z-index: 2;
-  }
-  
-  .nav-cover li {
-    position: relative;
-  }
-
-
-#lyric {
-    width: 140px;
-}
-
-.nav-cover a {
-    text-decoration: none;
-    font-size: 13px;
-    color: var(--lila-lyrics);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Bariol Regular';
-    pointer-events: none;
-}
-
-.nav-cover p {
-    text-align: center;
-}
-  
   /* Estilo de las cards */
   
   .cards-container {
-    margin-top: -85px;
     display: grid;
     place-items: center;
     gap: 2rem;
     padding: 1rem;
+    margin-top: 40px;
     grid-auto-rows: 23rem;
     margin-bottom: 25px;
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
-    position: relative;
-    z-index: 1;
   }
   
   .card-template {
@@ -249,20 +179,8 @@
 @media (min-width: 600px) {  
 
   .cover-page {
-    background: url(../img/portada-blog-tablet.jpg);
+    background: url(../img/portada-historias-tablet.jpg);
     background-repeat: no-repeat;
-  }
-
-  .nav-cover {
-    top: max(63.5%);
-  }
-
-  .nav-cover {
-    width: 558px;
-  }
-
-  #desktop {
-    display: none;
   }
 
   .nav-cover a {
@@ -280,13 +198,6 @@
 
 }
 
-@media (min-width: 727px) {  
-
-  .nav-cover {
-    top: max(62%);
-  }
-  
-}
 @media (min-width: 850px) { 
   .nav-cover {
     top: 32%;
@@ -343,62 +254,9 @@
   @media (min-width: 1024px) {
 
     /* Estilos del responsive */
-  
-    .nav-cover {
-      position: absolute;
-      top: 76%;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      background-color: var(--white);
-      box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
-      border-radius: 7px;
-      width: 851px;
-      height: 114px;
-    }
-  
-    .nav-cover a {
-      font-size: 17px;   
-    }
-  
-    .nav-cover svg {
-      width: 100%;
-    }
-  
-    .all-menu {
-      width: 212.75px;
-      height: 114px;
-    }
-    
-    .spins-menu {
-      width: 212.75px;
-      height: 114px;
-    }
-  
-    .spins-menu svg {
-      margin-bottom: 10px;
-    }
-  
-    .spins-menu p {
-      padding: 0 50px;
-    }
-    
-    .saving-menu {
-      width: 212.75px; 
-      height: 114px;
-    }
-    
-    .invert-menu {
-      width: 212.75px;
-      height: 114px;
-    }
-  
-    #marker {
-      height: 114px;
-    }
-  
+
     .cover-page {
-      position: relative;
-      background: url(../img/portada-blog-desktop.jpg);
+      background: url(../img/portada-historias-desktop.jpg);
       background-repeat: no-repeat;
       width: 100%;
       height: 479px;
@@ -449,7 +307,6 @@
       margin: 0 auto;
       margin-bottom: 25px;
       padding: 2rem;
-      margin-top: -85px;
   }
 }
   
@@ -461,45 +318,8 @@
     max-width: 1440px;
   }
 
-  .nav-cover {
-    width: 1262px;
-    height: 43px;
-  }
-
-  #marker {
-    bottom: 0px;
-    width: 420px;
-  }
-
-  .characters {
-    width: 420px;
-    height: 43px;
-  }
-  
-  .requirements {
-    width: 420px;
-    height: 43px;
-    border-left: 1px solid var(--lila-line);
-  }
-
-  .benefits {
-    width: 420px;
-    height: 43px; 
-    border-right: 1px solid var(--lila-line);
-}
-
-  .nav-cover a {
-    text-decoration: none;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Bariol Regular";
-    pointer-events: none;
-  }
-
   .cover-page {
-    background: url(../img/portada-blog-desktop.jpg);
+    background: url(../img/portada-historias-desktop.jpg);
   }
   
   .information {
