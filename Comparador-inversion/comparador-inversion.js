@@ -52,7 +52,7 @@ const creditSection = document.getElementById("credit-section");
 console.log(bgImage);
 savingsButton.addEventListener("click", () => {
   coverPage.style.display = "none";
-  bgImage.src = "./assets/ahorro.png";
+  bgImage.src = "./assets/ahorro._4x.webp";
   comparator.style.display = "block";
   filterContainer.style.display = "flex";
   savingSection.style.display = "block";
@@ -60,7 +60,7 @@ savingsButton.addEventListener("click", () => {
 
 creditButton.addEventListener("click", () => {
   coverPage.style.display = "none";
-  bgImage.src = "./assets/credito.png";
+  bgImage.src = "./assets/credito_4x.webp";
   comparator.style.display = "block";
   filterContainer.style.display = "flex";
   creditSection.style.display = "block";
@@ -86,7 +86,7 @@ const creditoButton = document.getElementById("credito-switcher");
 
 ahorroButton.addEventListener("click", () => {
   coverPage.style.display = "none";
-  bgImage.src = "./assets/ahorro.png";
+  bgImage.src = "./assets/ahorro_4x.webp";
   comparator.style.display = "block";
   filterContainer.style.display = "flex";
   savingSection.style.display = "block";
@@ -96,39 +96,10 @@ ahorroButton.addEventListener("click", () => {
 
 creditoButton.addEventListener("click", () => {
   coverPage.style.display = "none";
-  bgImage.src = "./assets/credito.png";
+  bgImage.src = "./assets/credito_4x.webp";
   comparator.style.display = "block";
   filterContainer.style.display = "flex";
   savingSection.style.display = "none";
   creditSection.style.display = "block";
   comparison.style.display = "none";
-});
-///////////⬇️ Código del footer
-
-var dropdownButtonFooter = document.getElementById("dropdown-button-footer");
-var dropdownFooter = document.getElementById("dropdown-footer");
-
-dropdownButtonFooter.addEventListener("click", function () {
-  dropdownFooter.classList.toggle("vision");
-});
-
-var dropdownButtonFooter2 = document.getElementById("dropdown-button-footer2");
-var dropdownFooter2 = document.getElementById("dropdown-footer2");
-
-dropdownButtonFooter2.addEventListener("click", function () {
-  dropdownFooter2.classList.toggle("vision");
-});
-
-var dropdownButtonFooter3 = document.getElementById("dropdown-button-footer3");
-var dropdownFooter3 = document.getElementById("dropdown-footer3");
-
-dropdownButtonFooter3.addEventListener("click", function () {
-  dropdownFooter3.classList.toggle("vision");
-});
-
-var dropdownButtonFooter4 = document.getElementById("dropdown-button-footer4");
-var dropdownFooter4 = document.getElementById("dropdown-footer4");
-
-dropdownButtonFooter4.addEventListener("click", function () {
-  dropdownFooter4.classList.toggle("vision");
 });
