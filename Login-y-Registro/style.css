@@ -405,8 +405,25 @@ embed {
   color: #ffffff;
 }
 
+button{
+  width: 100%;
+}
+
+button:hover{
+  border: 2px solid #00B1BB;
+  color: #00B1BB;
+  background-color: white;
+}
+
 a {
   text-decoration: none;
+}
+
+#login-a{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }
 
 .text-sign-up {
