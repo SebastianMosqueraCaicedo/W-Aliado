@@ -1040,3 +1040,124 @@ hr {
     width: 400px;
   }
 }
+
+
+#marker {
+  position: absolute;
+  left: 0;
+  height: 92px;
+  width: 0;
+  background: white;
+  bottom: 0px;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+#page-switcher li {
+  color: white;
+  cursor: pointer;
+}
+
+#page-switcher li.select {
+  color: white;
+}
+
+.nav-cover {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  background-color: var(--white);
+  width: 366px;
+  height: 92px;
+  box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+  border-radius: 7px;
+}
+
+.cover-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-cover ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  transform: translate(0%, 0%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-menu li {
+  padding: 0 20px;
+}
+
+.all-menu {
+  position: relative;
+  width: 91.5px;
+  height: 92px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spins-menu {
+  position: relative;
+  line-height: 12px;
+  border-left: 1px solid var(--lila-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 91.5px;
+  height: 92px;
+  cursor: pointer;
+}
+
+.saving-menu {
+  position: relative;
+  border-left: 1px solid var(--lila-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 91.5px;
+  height: 92px;
+  cursor: pointer;
+}
+
+.invert-menu {
+  position: relative;
+  border-left: 1px solid var(--lila-line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 91.5px;
+  height: 92px;
+  cursor: pointer;
+}
+
+.nav-cover a {
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  font-family: "Bariol Regular";
+  pointer-events: none;
+}
+
+a svg {
+  height: 27px;
+}
+
+.nav-cover img {
+  margin-bottom: 3px;
+}
+
+.nav-cover p {
+  text-align: center;
+}
