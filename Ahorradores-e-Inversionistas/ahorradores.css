@@ -46,7 +46,7 @@ a {
 
 .cover-page {
   position: relative;
-  background: url(../img/portada-ahorro2.jpg);
+  background: url(../img/portada-ahorro.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 535px;
@@ -140,6 +140,7 @@ a {
   align-items: center;
   justify-content: center;
 }
+
 
 .spins-menu {
   position: relative;
@@ -269,6 +270,14 @@ a svg {
   cursor: pointer;
 }
 
+.button-primary:hover {
+  color:var(--lila-lyrics);
+  border: none;
+  background-color: #DFCCF3;
+  border-radius: 4.06px;
+  cursor: pointer;
+}
+
 .simulation-button {
   font-family: "Bariol Regular";
   width: 102.66px;
@@ -279,6 +288,13 @@ a svg {
   color: var(--lila-lyrics);
   margin-left: 14.34px;
   cursor: pointer;
+}
+
+.simulation-button:hover {
+  border: none;
+  border-radius: 4.06px;
+  background: #DFCCF3;
+  color: var(--lila-lyrics);
 }
 
 .card-saving2 button {

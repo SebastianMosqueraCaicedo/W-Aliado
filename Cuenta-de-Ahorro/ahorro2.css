@@ -105,6 +105,15 @@ a {
   border-radius: 4.27119px;
   text-align: center;
   border: none;
+  cursor: pointer;
+}
+
+.simulator-button:hover {
+  color: var(--lila-lyrics);
+  border: 2px solid var(--lila-lyrics);
+  background: var(--white);
+  border-radius: 4.27119px;
+  text-align: center;
 }
 
 /* Estilos de la navegación secundaria */
@@ -233,12 +242,28 @@ a {
   background: var(--white);
   color: var(--lila-lyrics);
   border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #DFCCF3;
+  color: var(--lila-lyrics);
+  border: none;
+  cursor: pointer;
 }
 
 .button--border {
   border: 0.951104px solid #ffffff;
   background-color: var(--lila-lyrics);
   color: white;
+  cursor: pointer;
+}
+
+.button--border:hover {
+  border: none;
+  background-color:var(--white);
+  color: var(--lila-lyrics);
+  cursor: pointer;
 }
 
 #page2 {
@@ -510,6 +535,31 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* Estilo de más informacion */
+
+  .more-information {
+    width: 100%;
+    height: 200px;
+    display: block;
+  }
+  
+  .more-information p {
+    font-size: 35px;
+    color: var(--white);
+  }
+  
+  .buttons button:nth-child(1) {
+    width: 298.52px;
+    height: 44.78px;
+    font-size: 17.35px;
+  }
+  
+  .buttons button:nth-child(2) {
+    width: 298.52px;
+    height: 44.78px;
+    font-size: 17.35px;
   }
 }
 
