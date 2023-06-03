@@ -3,9 +3,18 @@
 	background-color: #1acbd4;
 }
 
-.datos-personales {
-	margin-top: 150px;
-}
 .input-container label{
 	color: gray;
+}
+
+.hero2 img {
+	display: block;
+}
+
+.nav-cover {
+	width: 425px;
+}
+
+#page-switcher a{
+	color: white;
 }
