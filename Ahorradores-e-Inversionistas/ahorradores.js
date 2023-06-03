@@ -20,16 +20,6 @@ anchors.forEach((a) => {
 });
 
 
-// Función para dropdown menu
-function toggleDropdown(event) {
-  const dropdownTitle = event.target;
-  const dropdownMenu = dropdownTitle.nextElementSibling;
-
-  if (dropdownMenu.classList.contains("submenu")) {
-    dropdownMenu.classList.toggle("watch");
-  }
-}
-
 //// Menu slider
 
 var marker = document.querySelector('#marker');
