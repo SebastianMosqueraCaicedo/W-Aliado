@@ -104,3 +104,28 @@
 .siguiente-button {
 	margin-bottom: 50px;
 }
+
+@media screen and (max-width: 1008px){
+
+	.hero2 img{
+		content: url(/img/fondo-PQRS-mobi.png);
+	}
+	/* status */
+
+	.status-bloque{
+		width: 90%;
+	}
+
+	.status-boton{
+		height: 80px;
+	}
+
+	/* opciones*/
+	.opciones-bloque {
+		width: 300px;
+	}
+
+	.opcion-pqrs label{
+		max-width: 240px;
+	}
+}

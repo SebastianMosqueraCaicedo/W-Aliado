@@ -89,6 +89,7 @@ botonFull.innerHTML = `
 	position: fixed;
 	bottom: 90px;
 	right: 40px;
+	z-index: 200;
 }
 
 /* Modo estandar */
