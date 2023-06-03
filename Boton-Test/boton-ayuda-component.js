@@ -196,7 +196,7 @@ botonFull.innerHTML = `
 	display: none;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1008px){
 
 	.boton-div {
 		position: fixed;
@@ -306,6 +306,12 @@ botonFull.innerHTML = `
 
 }
 
+/* boton */
+	.boton-chat-ex {
+		width: 600px;
+		height: 550px;
+	}
+
 </style>
 	  <img src="../icons/boton-ayuda.svg" alt="" class="boton-ayuda" id="boton-ayuda">
 
@@ -352,7 +358,70 @@ document.body.appendChild(botonFull);
 botonChatFull.setAttribute('class','boton-chat-ex');
 botonChatFull.setAttribute('id','boton-chat-ex');
 botonChatFull.innerHTML = `
-<img src="/icons/chat-boton-soporte.svg" alt="" class="boton-chatex" id="boton-chat-ex"></img>
+<style>
+
+	.chat-header {
+		background-color: #00b1bb;
+		padding: 30px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.chat-header h3 {
+		color: white;
+		margin: 0;
+		padding: 0;
+	}
+
+	.chat-header p {
+		height: fit-content;
+		color: white;
+		font-size: 30px;
+	}
+
+	.chat-body {
+		background-color: #f3f3f3;
+		padding: 30px;
+	}
+
+	.chat-body p {
+		color: white;
+	}
+
+	.chat-msg {
+		background-color: #acacac;
+		width: fit-content;
+		padding: 5px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+
+	.chat-rsp {
+		background-color: #00a2af;
+		width: fit-content;
+		padding: 5px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+</style>
+<div class="chat-header">
+	<h3>Chat de soporte</h3>
+	<div id="close-chat">
+		<p>X</p>
+	</div>
+</div>
+
+<div class="chat-body">
+	<div class="chat-msg">
+		<p>Tengo una pregunta sobre los creditos para emprendedores</p>
+	</div>
+	<div class="chat-rsp">
+		<p>Claro, con gusto</p>
+	</div>
+	<div class="chat-bar">
+		<input type="textInput" id="chat-bar" placeholder="..." />
+	<div>
+</div>
 `
 document.body.appendChild(botonChatFull);
 
