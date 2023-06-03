@@ -1,6 +1,6 @@
 .siguiente-button {
 	margin-bottom: 20px;
-	background-color: #1acbd4;
+	background-color: #1ba9b1;
 }
 
 .input-container label{
@@ -17,4 +17,57 @@
 
 #page-switcher a{
 	color: white;
+}
+
+.input-container label {
+	color: black;
+}
+
+/* Progreso de estado*/
+
+.status-pqrs{
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	z-index: 2;
+	margin-bottom: 40px;
+}
+
+.status-bloque{
+	display: flex;
+	width: 70%;
+	justify-content: space-evenly;
+	box-shadow: 0px 0px 15px 15px rgba(25,100,50,0.04);
+}
+
+.status-act{
+}
+
+.status-boton{
+	width: 50%;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100px;
+	justify-content: center;
+	margin-top: -50px;
+}
+
+.status-izquierdo{
+	background-color: #1ba9b1;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.status-izquierdo p{
+	color: white;
+}
+
+.status-derecho{
+	background-color: white;
+	border-radius: 0px 15px 15px 0px;
+}
+
+.status-derecho p{
+	color: #1ba9b1;
 }
