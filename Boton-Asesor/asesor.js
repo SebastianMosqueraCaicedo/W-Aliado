@@ -24,6 +24,9 @@ const agendaCita2 = document.getElementById('agenda2');
 const atras2 = document.getElementById('atras2');
 const sgte2 = document.getElementById('sgte2');
 
+const agendaCita3 = document.getElementById('agenda3');
+const botonRegresa2 = document.getElementById('regresa2');
+
 let isMenu = false;
 let time = 0;
 
@@ -61,6 +64,11 @@ function openHorarios2(){
 	window.scrollTo(0,0);
 }
 
+function openHorarios3() {
+	agendaCita2.style.display = "none";
+	agendaCita3.style.display = "flex";
+}
+
 function atrasHor1(){
 	agendaCita1.style.display = "none";
 	menuDiv.style.display = "flex";
@@ -91,3 +99,6 @@ atras1.addEventListener('click', atrasHor1);
 sgte1.addEventListener('click', openHorarios2);
 
 atras2.addEventListener('click', atrasHor2);
+sgte2.addEventListener('click', openHorarios3);
+
+botonRegresa2.addEventListener('click', cuelga);
