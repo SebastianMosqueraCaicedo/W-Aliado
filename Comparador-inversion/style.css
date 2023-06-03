@@ -404,7 +404,7 @@ button:hover{
 #savings-button:hover{
   background: #FFE1CC;
 }
-#compared:hover{
+button:hover{
   background-color: white;
   border: 2px solid #FFA666;
   color: #FFA666;
@@ -528,7 +528,7 @@ ul {
   width: 100%;
 }
 
-#compared {
+button {
   background: #ff8833;
   border-radius: 5.70103px;
   padding-top: 15px;
@@ -548,10 +548,6 @@ ul {
   color: #ffffff;
 }
 
-#comparison {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 /* Estilos del footer */
 
 #dropdown-footer,
@@ -716,5 +712,115 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+#compared-section{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#comparar-otro{
+  background: #ff8833;
+  border-radius: 5.70103px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-family: "Bariol Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+
+#portada{
+  width: 100%;
+}
+
+@media screen and (max-width: 700px){
+  #portada{
+    content: url(./assets/portada-300_4x.webp);
+  }
+  #credito{
+    content: url(./assets/credito-300_4x.webp);
+  }
+
+  #ahorro{
+    content: url(./assets/ahorro-300_4x.webp);
+  }
+
+  #comparison-ahorro {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    content: url(./assets/compared-ahorro_4x.webp);
+  }
+
+  #comparison-credito {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    content: url(./assets/compared-credito_4x.webp);
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1007px){
+  #portada{
+    content: url(./assets/portada-1007_4x.webp);
+  }
+  #credito{
+    content: url(./assets/credito-1007_4x.webp);
+  }
+  #ahorro{
+    content: url(./assets/ahorro-1007_4x.webp);
+  }
+  #filter-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  
+    background: #ffffff;
+    /* shadow 3 */
+  }
+}
+
+
+@media screen and (min-width: 1008px){
+  #portada{
+    content: url(./assets/portada-1920_4x.webp);
+  }
+  #credito{
+    content: url(./assets/credito-1920_4x.webp);
+  }
+  #ahorro{
+    content: url(./assets/ahorro-1920_4x.webp);
+  }
+  #filter-container {
+    margin-left: 200px;
+    margin-right: 200px;
+  
+    background: #ffffff;
+    /* shadow 3 */
+  }
+}
+
+#credito{
+  width: 100%;
+}
+
+#ahorro{
+  width: 100%;
+}
+
+#comparison{
+  margin-top: 70px;
+  width: 80%;
 }
 
