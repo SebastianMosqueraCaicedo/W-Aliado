@@ -104,3 +104,39 @@ h2 {
 		margin-top: -8%;
 	}
 }
+
+/* MENU */
+.asesor-menu {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+.asesor-menu h3, h2 {
+	color: #00a2af;
+	margin-top: 25px;
+	padding: 0;
+	max-width: 550px;
+}
+
+.asesor-menu h2 {
+	margin-bottom: 1%;
+}
+
+.title-menu {
+	margin-top: 5%;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.asesor-opciones {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	margin-bottom: 5%;
+}
+
+.asesor-opciones .siguiente-button {
+	padding: 10px;
+}

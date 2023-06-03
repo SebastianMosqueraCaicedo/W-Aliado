@@ -1,5 +1,9 @@
 const llamadaDiv = document.getElementById('llamada');
 const llamandoDiv = document.getElementById('llamando');
+const menuDiv = document.getElementById('asesor-menu');
+
+const footer = document.getElementById('asesor-footer');
+footer.style.display = "none";
 
 const cancelaBoton = document.getElementById('cancel');
 const cuelgaBoton = document.getElementById('cuelga');
@@ -22,6 +26,8 @@ function llama() {
 function cancela() {
 	isMenu = true;
 	llamandoDiv.style.display = "none";
+	menuDiv.style.display = "flex";
+	footer.style.display = "block";
 }
 
 setInterval(llama, 1500);
