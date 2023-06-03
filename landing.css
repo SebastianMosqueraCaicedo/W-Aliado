@@ -362,18 +362,6 @@ h3 {
   font-weight: bold;
 }
 
-.subscribe img {
-  width: 100%;
-  position: relative;
-  padding: 10%;
-  display: block;
-}
-.subscribe2 img {
-  width: 100%;
-  position: relative;
-  padding: 10%;
-  display: none;
-}
 a {
   text-decoration: none;
   color: #9f66db;
@@ -401,6 +389,68 @@ a:active {
   width: 100%;
   position: relative;
   display: none;
+}
+
+.subscription-section {
+  background-image: url("./img/subscribe2.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  color: white;
+  height: 400px;
+  margin: 5%;
+  border-radius: 15px;
+}
+
+.subscription-section h1,
+.subscription-section p {
+  margin: 0 0 20px 0;
+  font-family: geomanist, sans-serif;
+}
+
+.subscription-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscription-section input[type="email"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  border-width: 1px;
+  color: #676767;
+}
+
+.subscription-section input[type="submit"] {
+  padding: 15px 45px;
+  cursor: pointer;
+  font-size: large;
+  background-color: #ffa666;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.subscription-section input[type="submit"]:hover {
+  background-color: #f3934f;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .subscription-section {
+    padding: 20px;
+  }
+
+  .subscription-section input[type="email"] {
+    margin-bottom: 10px;
+  }
 }
 /* /////////////////////////// Estilos para la sección de recomendaciones en pantallas md ///////////////////////////  */
 /* Media query para pantallas con ancho mínimo de 640px */
@@ -533,18 +583,7 @@ a:active {
     padding-right: 5%;
     width: 100%;
   }
-  .subscribe img {
-    width: 100%;
-    position: relative;
-    padding: 10%;
-    display: block;
-  }
-  .subscribe2 img {
-    width: 100%;
-    position: relative;
-    padding: 10%;
-    display: none;
-  }
+
   .hero2 img {
     width: 100%;
     position: relative;
@@ -574,6 +613,7 @@ a:active {
     width: 100%;
     position: relative;
     display: block;
+    margin-top: -20px;
   }
   .hero {
     position: relative;
@@ -782,19 +822,6 @@ a:active {
     display: flex;
     justify-content: end;
     transform: translate(30%, 0%);
-  }
-
-  .subscribe img {
-    width: 100%;
-    position: relative;
-    padding: 10%;
-    display: none;
-  }
-  .subscribe2 img {
-    width: 100%;
-    position: relative;
-    padding: 10%;
-    display: block;
   }
 
   /******************************** Landing user*/
