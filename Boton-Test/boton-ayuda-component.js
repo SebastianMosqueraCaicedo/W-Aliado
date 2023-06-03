@@ -11,7 +11,6 @@ function toggleExtraButtons(){
 			buttsExtra[j].style.display = "none";
 			mobilePipe.style.display = "none";
 			botonOpac.style.display = "none";
-			botonChat.style.display = "none";
 		} else {
 			buttsExtra[j].style.display = "flex";
 			botonOpac.style.display = "block";
@@ -72,6 +71,7 @@ function toggleBotonChat(){
 		botonChat.style.display = "none";
 	} else {
 		botonChat.style.display = "block";
+		toggleExtraButtons();
 	}
 }
 
@@ -176,8 +176,9 @@ botonFull.innerHTML = `
 	display: none;
 	position: fixed;
 	bottom: -5px;
-	right: 375px;
+	right: 185px;
 	z-index: 199;
+	box-shadow: 0px 8px 15px 15px rgba(0,0,0,0.2);
 }
 
 /* opacar */
@@ -312,6 +313,18 @@ botonFull.innerHTML = `
 		height: 500px;
 	}
 
+	@media (max-width: 822px){
+
+		.boton-chat-ex {
+			width: 76%;
+			height: 100%;
+			right: 24%;
+		}
+
+		.chat-send-div {
+			margin: 2px;
+		}
+	}
 </style>
 	  <img src="../icons/boton-ayuda.svg" alt="" class="boton-ayuda" id="boton-ayuda">
 
@@ -434,9 +447,18 @@ botonChatFull.innerHTML = `
 		cursor:pointer;
 	}
 
+	.chat-send-div:hover > svg path{
+		fill: #ff8833;
+	}
+
 	#close-chat {
 		cursor:pointer;
 	}
+
+	#close-chat:hover > svg path{
+		fill: red;
+	}
+
 </style>
 <div class="chat-header">
 	<h3>Chat de soporte</h3>
