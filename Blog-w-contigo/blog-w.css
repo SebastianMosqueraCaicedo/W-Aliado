@@ -41,7 +41,7 @@
   
   .cover-page {
     position: relative;
-    background: url(../img/backgroundimg.jpg);
+    background: url(../img/portada-blog.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 535px;
@@ -76,28 +76,6 @@
   
   /* Estilos de la navegación secundaria */
   
-  /* Estilos de la navegación secundaria */
-
-
- .container-characters,
- .container-characters,
- .container-characters2,
- .container-characters3,
- .container-characters4,
- .container-characters5 {
-  display: none;
-  }
-
-  .rest-info-desktop {
-    display: none;
-  }
-
-  .desktop-menu {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-  }
-
 .nav-cover {
     position: relative;
     top: 53.5%; 
@@ -145,44 +123,6 @@
     position: relative;
   }
 
-.characters {
-    width: 91.5px;
-    height: 37px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid var(--lila-line);
-    cursor: pointer;
-}
-
-.benefits {
-    width: 91.5px;
-    height: 37px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid var(--lila-line);
-    cursor: pointer;
-}
-
-.tramits {
-    width: 91.5px;
-    height: 37px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid var(--lila-line);
-    cursor: pointer;
-}
-
-.devolutions {
-    width: 91.5px;
-    height: 37px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
 
 #lyric {
     width: 140px;
@@ -206,7 +146,7 @@
   /* Estilo de las cards */
   
   .cards-container {
-    margin-top: -129px;
+    margin-top: -85px;
     display: grid;
     place-items: center;
     gap: 2rem;
@@ -303,10 +243,104 @@
   .show {
     display: block;
   }
+
+   /* ///////////////////////////////// 📱 TABLET //////////////////////// */
+
+@media (min-width: 600px) {  
+
+  .cover-page {
+    background: url(../img/portada-blog-tablet.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .nav-cover {
+    top: max(63.5%);
+  }
+
+  .nav-cover {
+    width: 558px;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  .nav-cover a {
+    font-size: 18px;
+  }
+
+  .information h1 {
+    font-size: 38px;
+
+  }
+  
+  .information p {
+    font-size: 16px;
+}
+
+}
+
+@media (min-width: 727px) {  
+
+  .nav-cover {
+    top: max(62%);
+  }
+  
+}
+@media (min-width: 850px) { 
+  .nav-cover {
+    top: 32%;
+  }
+
+  .information-container {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .information {
+    width: 39%;
+    margin-left: 62%;
+    padding-top: 18%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 40px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    /* padding: 0px 0px 0px 530px; */
+    line-height: 25px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #desktop {
+    display: none;
+  }
+}
+
   
   /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
   
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
 
     /* Estilos del responsive */
   
@@ -364,15 +398,10 @@
   
     .cover-page {
       position: relative;
-      background: url(../img/backgroundimgresponsive.png);
+      background: url(../img/portada-blog-desktop.jpg);
       background-repeat: no-repeat;
       width: 100%;
       height: 479px;
-    }
-
-    .cards-container {
-        display: flex;
-        align-items: center;
     }
     
     .information {
@@ -380,11 +409,11 @@
       /* align-items: flex-end; */
       flex-direction: column;
       color: white;
-      width: 25%;
+      width: 30%;
       /* position: relative; */
       /* left: 315px; */
-      margin-left: 58%;
-      padding-top: 9%;
+      margin-left: 109%;
+      padding-top: 17%;
     }
   
     .information > div{
@@ -414,33 +443,105 @@
       width: 100%;
       padding: 0;
     }
-  
-  @media (max-width: 1024px) {
-    .cover-page {
-      background: url(../imgs2/backgroundimgresponsive.png);
-      background-repeat: no-repeat;
-    }
-  
+
     .cards-container {
       max-width: 1280px;
-      margin: 65px auto;
+      margin: 0 auto;
       margin-bottom: 25px;
       padding: 2rem;
-      
-    }
+      margin-top: -85px;
+  }
+}
+  
+
+  /* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
+
+@media (min-width: 1440px) {
+  .information-container {
+    max-width: 1440px;
+  }
+
+  .nav-cover {
+    width: 1262px;
+    height: 43px;
+  }
+
+  #marker {
+    bottom: 0px;
+    width: 420px;
+  }
+
+  .characters {
+    width: 420px;
+    height: 43px;
   }
   
-  @media (max-width: 360px) {
-    .nav-cover {
-      top: 49.5%;
-      left: 50%;
-    }
-    .information h1 {
-      padding: 62px 50px 0px 50px;
-    }
+  .requirements {
+    width: 420px;
+    height: 43px;
+    border-left: 1px solid var(--lila-line);
+  }
+
+  .benefits {
+    width: 420px;
+    height: 43px; 
+    border-right: 1px solid var(--lila-line);
+}
+
+  .nav-cover a {
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bariol Regular";
+    pointer-events: none;
+  }
+
+  .cover-page {
+    background: url(../img/portada-blog-desktop.jpg);
+  }
   
-    .information p {
-      padding: 0px 50px 0px 50px;
-    }
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 50%;
+    padding-top: 11%;
   }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
   }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #desktop {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+
+} 
