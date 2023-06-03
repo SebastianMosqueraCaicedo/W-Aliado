@@ -326,12 +326,6 @@ body {
   border-radius: 7px;
 }
 
-.cover-buttons {
-  position: absolute;
-  top: 34%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-}
 
 .nav-cover ul {
   list-style: none;
@@ -339,17 +333,7 @@ body {
   cursor: pointer;
 }
 
-.characters {
-  position: relative;
-  width: 50%;
-  right: 40px;
-}
 
-.requirements {
-  position: relative;
-  left: 50px;
-  width: 50%;
-}
 
 h3 {
   font-family: "Bariol Regular", sans-serif;
@@ -420,7 +404,7 @@ button:hover{
 #savings-button:hover{
   background: #FFE1CC;
 }
-#compared:hover{
+button:hover{
   background-color: white;
   border: 2px solid #FFA666;
   color: #FFA666;
@@ -450,12 +434,6 @@ button:hover{
   margin-top: -30px;
 }
 
-.cover-buttons {
-  position: absolute;
-  top: 34%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-}
 
 .nav-cover ul {
   list-style: none;
@@ -463,17 +441,7 @@ button:hover{
   cursor: pointer;
 }
 
-.characters {
-  position: relative;
-  width: 50%;
-  right: 40px;
-}
 
-.requirements {
-  position: relative;
-  left: 50px;
-  width: 50%;
-}
 
 #lyric {
   width: 140px;
@@ -560,7 +528,7 @@ ul {
   width: 100%;
 }
 
-#compared {
+button {
   background: #ff8833;
   border-radius: 5.70103px;
   padding-top: 15px;
@@ -580,10 +548,6 @@ ul {
   color: #ffffff;
 }
 
-#comparison {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 /* Estilos del footer */
 
 #dropdown-footer,
@@ -672,5 +636,191 @@ footer {
   color: #676767;
   font-size: 10px;
   font-family: "Bariol Regular", sans-serif;
+}
+/* Barra de en medio, estilos */
+#marker {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 183px;
+  background: #FF8833;;
+  bottom: -2px;
+  transition: 0.5s;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+#page-switcher li {
+  color: #FF8833;;
+  cursor: pointer;
+}
+
+#page-switcher li.select {
+  color: #FF8833;;
+}
+
+.nav-cover ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  transform: translate(0%, -0%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.nav-cover li {
+  position: relative;
+}
+
+.characters {
+  width: 183px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.requirements {
+  width: 183px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-cover a {
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bariol Regular";
+  pointer-events: none;
+}
+
+.nav-cover p {
+  text-align: center;
+}
+
+.cover-buttons {
+  transform: translate(0%, -0%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#compared-section{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#comparar-otro{
+  background: #ff8833;
+  border-radius: 5.70103px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-family: "Bariol Regular", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+
+#portada{
+  width: 100%;
+}
+
+@media screen and (max-width: 700px){
+  #portada{
+    content: url(./assets/portada-300_4x.webp);
+  }
+  #credito{
+    content: url(./assets/credito-300_4x.webp);
+  }
+
+  #ahorro{
+    content: url(./assets/ahorro-300_4x.webp);
+  }
+
+  #comparison-ahorro {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    content: url(./assets/compared-ahorro_4x.webp);
+  }
+
+  #comparison-credito {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    content: url(./assets/compared-credito_4x.webp);
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1007px){
+  #portada{
+    content: url(./assets/portada-1007_4x.webp);
+  }
+  #credito{
+    content: url(./assets/credito-1007_4x.webp);
+  }
+  #ahorro{
+    content: url(./assets/ahorro-1007_4x.webp);
+  }
+  #filter-container {
+    margin-left: 100px;
+    margin-right: 100px;
+  
+    background: #ffffff;
+    /* shadow 3 */
+  }
+}
+
+
+@media screen and (min-width: 1008px){
+  #portada{
+    content: url(./assets/portada-1920_4x.webp);
+  }
+  #credito{
+    content: url(./assets/credito-1920_4x.webp);
+  }
+  #ahorro{
+    content: url(./assets/ahorro-1920_4x.webp);
+  }
+  #filter-container {
+    margin-left: 200px;
+    margin-right: 200px;
+  
+    background: #ffffff;
+    /* shadow 3 */
+  }
+}
+
+#credito{
+  width: 100%;
+}
+
+#ahorro{
+  width: 100%;
+}
+
+#comparison{
+  margin-top: 70px;
+  width: 80%;
 }
 

@@ -1,0 +1,142 @@
+.siguiente-button {
+	margin-bottom: 20px;
+	background-color: #1ba9b1;
+}
+
+.input-container label{
+	color: gray;
+}
+
+.hero2 img {
+	display: block;
+}
+
+.nav-cover {
+	width: 425px;
+}
+
+#page-switcher a{
+	color: white;
+}
+
+.input-container label {
+	color: black;
+}
+
+/* Progreso de estado*/
+
+.status-pqrs{
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	z-index: 2;
+	margin-bottom: 40px;
+}
+
+.status-bloque{
+	display: flex;
+	width: 70%;
+	justify-content: space-evenly;
+	box-shadow: 0px 0px 15px 15px rgba(25,100,50,0.04);
+}
+
+.status-boton{
+	width: 50%;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100px;
+	justify-content: center;
+	margin-top: -50px;
+}
+
+.status-izquierdo{
+	background-color: #1ba9b1;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.status-izquierdo p{
+	color: white;
+}
+
+.status-derecho{
+	background-color: white;
+	border-radius: 0px 15px 15px 0px;
+}
+
+.status-derecho p{
+	color: #1ba9b1;
+}
+
+/* opciones */
+
+.opciones-pqrs{
+	display: flex;
+	justify-content: center;
+}
+
+.opciones-bloque{
+	width: 38%;
+	margin-bottom: 50px;
+}
+
+.opcion-pqrs{
+	display: flex;
+	margin-top: 10px;
+}
+
+.opcion-pqrs label{
+	color: gray;
+	margin-left: 5px;
+	max-width: 400px;
+}
+
+.opcion-pqrs input{
+	width: 30px;
+	height: 30px;
+}
+
+/* sgte boton*/
+.siguiente-button {
+	margin-bottom: 50px;
+}
+
+/* ejemplo output*/
+.ejemplo-output{
+	display: flex;
+	justify-content: center;
+}
+.ejemplo-output img {
+	width: 60%;
+}
+
+@media screen and (max-width: 1008px){
+
+	.hero2 img{
+		content: url(/img/fondo-PQRS-mobi.png);
+	}
+
+	.ejemplo-output img{
+		content: url(/img/pqrs-segundo-mobi.png);
+		width: 90%;
+	}
+	/* status */
+
+	.status-bloque{
+		width: 90%;
+	}
+
+	.status-boton{
+		height: 80px;
+	}
+
+	/* opciones*/
+	.opciones-bloque {
+		width: 300px;
+	}
+
+	.opcion-pqrs label{
+		max-width: 240px;
+	}
+}
