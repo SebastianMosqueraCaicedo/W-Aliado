@@ -85,9 +85,9 @@ comparedButton.addEventListener("click", () => {
   }
   if (creditSection.style.display === 'block') {
     if (window.innerWidth <= 700) {
-      comparison.src = './assets/compared-ahorro_4x.webp'
+      comparison.src = './assets/compared-credito_4x.webp'
     } else {
-      comparison.src = './assets/web-ahorro_4x.webp'
+      comparison.src = './assets/web-credito_4x.webp'
     }
   }
   comparedSection.style.display = "flex";
