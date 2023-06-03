@@ -143,8 +143,8 @@ body {
 }
 
 .hero-options {
-  height: 92px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,8 +165,8 @@ body {
 }
 
 .hero-options-middle {
-  height: 92px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,8 +186,8 @@ body {
   font-size: 15px;
 }
 .hero-options-middle2 {
-  height: 92px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,8 +208,8 @@ body {
 }
 
 .hero-options-last {
-  height: 92px;
-  width: 90px;
+  height: 100px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,7 +308,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  height: 400px;
+  /* height: 400px; */
   padding: 20px;
   border-radius: 10px;
   /* Add border-radius */
@@ -492,7 +492,7 @@ a:active {
   }
   .hero-options {
     height: 100px;
-    width: 120px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -514,7 +514,7 @@ a:active {
 
   .hero-options-middle {
     height: 100px;
-    width: 120px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -535,7 +535,7 @@ a:active {
   }
   .hero-options-middle2 {
     height: 100px;
-    width: 120px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -557,7 +557,7 @@ a:active {
 
   .hero-options-last {
     height: 100px;
-    width: 120px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -632,7 +632,7 @@ a:active {
   }
 
   .hero-options {
-    height: 80px;
+    height: 100px;
     width: 180px;
     display: flex;
     flex-direction: column;
@@ -654,7 +654,7 @@ a:active {
   }
 
   .hero-options-middle {
-    height: 80px;
+    height: 100px;
     width: 180px;
     display: flex;
     flex-direction: column;
@@ -675,7 +675,7 @@ a:active {
     font-size: 15px;
   }
   .hero-options-middle2 {
-    height: 80px;
+    height: 100px;
     width: 180px;
     display: flex;
     flex-direction: column;
@@ -696,7 +696,7 @@ a:active {
     font-size: 15px;
   }
   .hero-options-last {
-    height: 80px;
+    height: 100px;
     width: 180px;
     display: flex;
     flex-direction: column;
