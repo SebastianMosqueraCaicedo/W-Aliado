@@ -1,0 +1,11 @@
+.siguiente-button {
+	margin-bottom: 20px;
+	background-color: #1acbd4;
+}
+
+.datos-personales {
+	margin-top: 150px;
+}
+.input-container label{
+	color: gray;
+}

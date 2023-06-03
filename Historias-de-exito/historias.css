@@ -1,0 +1,367 @@
+@font-face {
+    font-family: "Geomanist";
+    src: url("../font/Geomanist-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Geomanist Book";
+    src: url("../font/Geomanist-Book.ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Bariol Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/bariol_regular-webfont.ttf") format("woff");
+  }
+  
+  :root {
+    --white: white;
+    --lila-lyrics: #9f66db;
+    --lila-line: #dfccf3;
+    --gray-lyric: #676767;
+    --Acuamarina : #00B1BB;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bariol Regular", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  /* Estilos de la portada de la página */
+  
+  .cover-page {
+    position: relative;
+    background: url(../img/portada-historias.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 535px;
+    ;
+  }
+  
+  .information {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 6px;
+    padding: 62px 60px 0px 60px;
+    color: var(--gray-lyric);
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 13px;
+    text-align: center;
+    padding: 0px 65px 0px 65px;
+    line-height: 16.72px;
+    color: var(--gray-lyric);
+  }
+  
+
+  /* Estilo de las cards */
+  
+  .cards-container {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 40px;
+    grid-auto-rows: 23rem;
+    margin-bottom: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+  }
+  
+  .card-template {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 17px 14px;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+  }
+  
+  .card-template.card-saving2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 17px 14px;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+  }
+  
+  .card-template img {
+    margin-bottom: 12px;
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .card-template h5 {
+    font-family: "Geomanist";
+    color: var(--gray-lyric);
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .card-template p {
+    font-family: "Geomanist Book";
+    color: var(--gray-lyric);
+    font-size: 13px;
+    margin-bottom: 12px;
+    line-height: 19.5px;
+  }
+  
+  .button-primary {
+    font-family: "Bariol Regular";
+    padding: 0px;
+    width: 102.66px;
+    height: 29px;
+    color: var(--white);
+    border: none;
+    background-color: var(--Acuamarina);
+    border-radius: 4.06px;
+    cursor: pointer;
+  }
+  
+  .simulation-button {
+    font-family: "Bariol Regular";
+    width: 102.66px;
+    height: 29px;
+    border: 1.16px solid #9f66db;
+    border-radius: 4.06px;
+    background: #ffffff;
+    color: var(--lila-lyrics);
+    margin-left: 14.34px;
+  }
+  
+  .card-saving2 button {
+    font-family: "Bariol Regular";
+    padding: 0px;
+    width: 102.66px;
+    height: 29px;
+    color: var(--white);
+    border: none;
+    background-color: var(--Acuamarina);
+    border-radius: 4.06px;
+    cursor: pointer;
+  }
+  
+  .show {
+    display: block;
+  }
+
+   /* ///////////////////////////////// 📱 TABLET //////////////////////// */
+
+@media (min-width: 600px) {  
+
+  .cover-page {
+    background: url(../img/portada-historias-tablet.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .nav-cover a {
+    font-size: 18px;
+  }
+
+  .information h1 {
+    font-size: 38px;
+
+  }
+  
+  .information p {
+    font-size: 16px;
+}
+
+}
+
+@media (min-width: 850px) { 
+  .nav-cover {
+    top: 32%;
+  }
+
+  .information-container {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .information {
+    width: 39%;
+    margin-left: 62%;
+    padding-top: 18%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 40px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    /* padding: 0px 0px 0px 530px; */
+    line-height: 25px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #desktop {
+    display: none;
+  }
+}
+
+  
+  /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+  
+  @media (min-width: 1024px) {
+
+    /* Estilos del responsive */
+
+    .cover-page {
+      background: url(../img/portada-historias-desktop.jpg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 479px;
+    }
+    
+    .information {
+      display: flex;
+      /* align-items: flex-end; */
+      flex-direction: column;
+      color: white;
+      width: 30%;
+      /* position: relative; */
+      /* left: 315px; */
+      margin-left: 109%;
+      padding-top: 17%;
+    }
+  
+    .information > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .information h1 {
+      font-size: 32px;
+      font-family: "Geomanist";
+      line-height: 40.54px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 6px;
+      /* margin-left: -149px; */
+      /* padding: 115px 0px 0px 500px; */
+      padding: 0;
+    }
+    
+    .information p {
+      font-family: "Bariol Regular";
+      font-size: 20px;
+      text-align: start;
+      /* padding: 0px 0px 0px 530px; */
+      line-height: 20.72px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .cards-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      padding: 2rem;
+  }
+}
+  
+
+  /* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
+
+@media (min-width: 1440px) {
+  .information-container {
+    max-width: 1440px;
+  }
+
+  .cover-page {
+    background: url(../img/portada-historias-desktop.jpg);
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 50%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #desktop {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+
+} 

@@ -41,3 +41,21 @@ items.forEach((item) => {
     indicator(e.target);
   });
 });
+
+//Función para cambiar de color la letra
+
+const lista = document.getElementById("page-switcher");
+const elementos = lista.getElementsByTagName("li");
+
+for (let i = 0; i < elementos.length; i++) {
+  elementos[i].addEventListener("click", function () {
+    const seleccionado = lista.getElementsByClassName("select");
+    if (seleccionado.length > 0) {
+      seleccionado[0].className = seleccionado[0].className.replace(
+        " select",
+        ""
+      );
+    }
+    this.className += " select";
+  });
+}
