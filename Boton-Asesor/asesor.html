@@ -74,12 +74,110 @@
 
 		  <div class="agenda-form">
 			<div class="input-container">
+			  <label for="identificacion">Departamento</label>
+			  <select id="identificacion" name="identificacion">
+			    <option value="cedula">Amazonas</option>
+			    <option value="cedula">Antioquia</option>
+			    <option value="cedula">Arauca</option>
+			    <option value="cedula">Atlántico</option>
+			    <option value="cedula">Bogotá</option>
+			    <option value="cedula">Bolívar </option>
+			    <option value="cedula">Boyacá</option>
+			    <option value="cedula">Caldas</option>
+			    <option value="cedula">Caquetá</option>
+			    <option value="cedula">Casanare</option>
+			    <option value="cedula">Cauca</option>
+			    <option value="cedula">Cesar</option>
+			    <option value="cedula">Chocó</option>
+			    <option value="cedula">Córdoba</option>
+			    <option value="cedula">Cundinamarca</option>
+			    <option value="cedula">Guainía</option>
+			    <option value="cedula">Guaviare</option>
+			    <option value="cedula">Huila</option>
+			    <option value="cedula">La Guajira </option>
+			    <option value="cedula">Magdalena</option>
+			    <option value="cedula">Meta</option>
+			    <option value="cedula">Nariño</option>
+			    <option value="cedula">Norte de Santander </option>
+			    <option value="cedula">Putumayo</option>
+			    <option value="cedula">Quindío</option>
+			    <option value="cedula">Risaralda</option>
+			    <option value="cedula">San Andrés y Providencia </option>
+			    <option value="cedula">Santander</option>
+			    <option value="cedula">Sucre</option>
+			    <option value="cedula">Tolima</option>
+			    <option value="cedula">Valle del Cauca</option>
+			    <option value="cedula">Vaupés</option>
+			    <option value="cedula">Vichada</option>
+			  </select>
+			</div>
+			<div class="input-container">
+			  <label for="identificacion">Ciudad</label>
+			  <select id="identificacion" name="identificacion">
+			    <option value="cedula">Leticia</option>
+			    <option value="cedula">Medellín</option>
+			    <option value="cedula">Arauca</option>
+			    <option value="cedula">Barranquilla</option>
+			    <option value="cedula">Bogotá</option>
+			    <option value="cedula">Cartagena </option>
+			    <option value="cedula">Tunja</option>
+			    <option value="cedula">Manizales</option>
+			    <option value="cedula">Florencia</option>
+			    <option value="cedula">Yopal</option>
+			    <option value="cedula">Popayán</option>
+			    <option value="cedula">Valledupar</option>
+			    <option value="cedula">Quibdó</option>
+			    <option value="cedula">Montería</option>
+			    <option value="cedula">Bogotá</option>
+			    <option value="cedula">Inírida</option>
+			    <option value="cedula">San José del Guaviare </option>
+			    <option value="cedula">Neiva</option>
+			    <option value="cedula">Riohacha </option>
+			    <option value="cedula">Santa Marta </option>
+			    <option value="cedula">Villavicencio</option>
+			    <option value="cedula">Pasto</option>
+			    <option value="cedula">Cucuta</option>
+			    <option value="cedula">Mocoa</option>
+			    <option value="cedula">Armenia</option>
+			    <option value="cedula">Pereira</option>
+			    <option value="cedula">San Andrés </option>
+			    <option value="cedula">Bucaramanga</option>
+			    <option value="cedula">Sincelejo</option>
+			    <option value="cedula">Ibague</option>
+			    <option value="cedula">Cali</option>
+			    <option value="cedula">Mitu</option>
+			    <option value="cedula">Puerto Careno</option>
+			  </select>
+			</div>
+			<button class="siguiente-button" id="sgte1">Siguiente</button>
+		  </div>
+	  </div>
+  </div>
+
+  <div class="agenda-cita2" id="agenda2">
+	  <div class="agenda-content">
+		  <div class="agenda-title">
+			  <div id="atras2">
+				  <a>< Atras</a>
+			  </div>
+			  <h3>Agenda tu cita</h3>
+			  <p>Escoge una fecha</p>
+			  <img src="/img/agenda-2-calendario.png">
+		  </div>
+
+
+		  <div class="agenda-form">
+			<div class="input-container">
 				<label for="na">Nombres y apellidos *</label>
 				<input type="text" id="na" name="na" />
 			</div>
 			<div class="input-container">
-				<label for="ti">Tipo de identificacion *</label>
-				<input type="text" id="ti" name="ti" />
+				<label for="identificacion">Tipo de identificación:</label>
+				<select id="identificacion" name="identificacion">
+					<option value="cedula">Cédula de ciudadanía</option>
+					<option value="cedula-extranjera">Cédula extranjera</option>
+					<option value="nit">NIT</option>
+				</select>
 			</div>
 			<div class="input-container">
 				<label for="ce">Numero de identificacion</label>
@@ -89,8 +187,17 @@
 				<label for="co">Correo electronico</label>
 				<input type="text" id="co" name="co" />
 			</div>
-			<button class="siguiente-button" id="sgte1">Siguiente</button>
+			<button class="siguiente-button" id="sgte2">Siguiente</button>
 		  </div>
+	  </div>
+  </div>
+  <div class="asesor-menu" id="agenda3">
+	  <div class="title-menu">
+		  <h3>¡Cita agendada con éxito!</h3>
+		  <h2>Te enviaremos un mensaje a tu correo con la confirmacion</h2>
+	  </div>
+	  <div class="asesor-opciones">
+		<button class="siguiente-button" id="regresa2">Regresar al sitio</button>
 	  </div>
   </div>
   <custom-footer id="asesor-footer"></custom-footer>
