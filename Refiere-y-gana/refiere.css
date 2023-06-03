@@ -223,6 +223,13 @@ form {
   border-radius: 4.27119px;
   border: none;
   color: var(--white);
+  cursor: pointer;
+}
+
+.enter:hover {
+  background: var(--white);
+  border: 2px solid  #FFA666;
+  color: #FFA666;
 } 
  
 .button-enter{

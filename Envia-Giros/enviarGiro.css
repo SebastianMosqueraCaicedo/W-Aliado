@@ -272,10 +272,24 @@ a {
   border: none;
 }
 
+.button:hover {
+  background: #DFCCF3;
+  color: var(--lila-lyrics);
+  border: none;
+  cursor: pointer;
+}
+
 .button--border {
   border: 0.951104px solid #ffffff;
   background-color: var(--lila-lyrics);
   color: white;
+}
+
+.button--border:hover {
+  border: none;
+  background-color:var(--white);
+  color: var(--lila-lyrics);
+  cursor: pointer;
 }
 
 .info2,

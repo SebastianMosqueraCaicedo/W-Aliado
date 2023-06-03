@@ -150,6 +150,12 @@ a{
     background: #FFA666;
  }
 
+ #button-refer:hover {
+    background: var(--white);
+    border: 2px solid #FFA666;
+    color: #FFA666;
+ }
+
  #wwb {
     color: var(--gray-lyric);
  }
@@ -158,9 +164,17 @@ a{
     width: 100px;
     height: 22.75px;
     background: #9F66DB;
-    border-radius: 3.18514px;
+    border-radius:5px;
     color: var(--white);
     border: none;
+ }
+
+ .info-categories button:hover {
+    background: var(--white);
+    border-radius: 3.18514px;
+    color: var(--lila-lyrics);
+    border: 2px solid var(--lila-lyrics);
+    border-radius:  5px;;
  }
 
  a {
@@ -280,6 +294,11 @@ a{
  .info-categories {
     width: 41%;
  }
+
+ .info-categories button {
+   font-size: 20px;
+}
+
 
 }
 
