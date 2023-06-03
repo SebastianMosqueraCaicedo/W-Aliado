@@ -1,0 +1,642 @@
+@font-face {
+  font-family: "Geomanist";
+  src: url("../font/Geomanist-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geomanist Book";
+  src: url("../font/Geomanist-Book.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bariol Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/bariol_regular-webfont.ttf") format("woff");
+}
+
+:root {
+  --white: white;
+  --lila-lyrics: #9f66db;
+  --lila-line: #dfccf3;
+  --gray-lyric: #676767;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bariol Regular", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/* Estilo de miga de pan */
+
+.nav-crumbs {
+  display: flex;
+  align-items: center;
+  padding-top: 9px;
+  padding-left: 10px;
+}
+
+.nav-crumbs p {
+  font-family: "Bariol Regular";
+  font-size: 10px;
+  color: rgba(103, 103, 103, 0.36);
+}
+
+/* /////////////////////// fILTRO /////////////// */
+aside {
+  position: fixed;
+  background-image: url(../img/fondo-filtro.jpg);
+  background-repeat: no-repeat;
+  inset: 0;
+  top: 0;
+  z-index: 10;
+  max-width: 390px;
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+  gap: 10px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50%;
+}
+
+.filter-container h4 {
+  font-family: "Geomanist";
+  font-size: 28px;
+  width: 283px;
+  color: var(--gray-lyric);
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+input {
+  width: 283px;
+  height: 29px;
+  border: 1px solid var(--gray-lyric);
+  border-radius: 5px;
+}
+
+::placeholder {
+  font-family: "Bariol Regular";
+  font-size: 16px;
+  color: var(--gray-lyric);
+  padding-left: 8px;
+}
+
+.state {
+  margin-bottom: 5%;
+}
+
+.state,
+.city {
+  display: flex;
+  flex-direction: column;
+  color: #00B1BB;
+}
+
+.state p,
+.city p{
+  margin-bottom: 10px;
+}
+
+.state img,
+.city img{
+  position: absolute;
+  right: 55px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos de la portada de la página */
+
+.cover-page {
+  position: relative;
+  background: url(../img/portada-cursos.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 481px;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--gray-lyric);
+}
+
+.information h1 {
+  font-size: 31px;
+  font-family: "Geomanist";
+  line-height: 34px;
+  text-align: center;
+  margin-bottom: 6px;
+  padding: 50px 46px 0px 46px;
+}
+
+.information p {
+  font-family: "Bariol Regular";
+  font-size: 13px;
+  text-align: center;
+  padding: 0px 52px 0px 52px;
+}
+
+.simulator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 21px;
+}
+
+.simulator-button {
+  font-family: "Bariol Regular";
+  font-size: 13.42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  width: 124px;
+  height: 30.53px;
+  background: #9f66db;
+  border-radius: 4.27119px;
+  text-align: center;
+  border: none;
+}
+
+/* Estilos de la navegación secundaria */
+
+.nav-cover {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, 45%);
+  background-color: var(--white);
+  width: 366px;
+  height: 37px;
+  box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+  border-radius: 7px;
+}
+
+.cover-buttons {
+  transform: translate(0%, -0%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#marker {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 183px;
+  background: var(--lila-lyrics);
+  bottom: -2px;
+  transition: 0.5s;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+#page-switcher li {
+  color: var(--gray-lyric);
+  cursor: pointer;
+}
+
+#page-switcher li.select {
+  color: var(--lila-lyrics);
+}
+
+.nav-cover ul {
+  position: relative;
+  list-style: none;
+  display: flex;
+  transform: translate(0%, -0%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.nav-cover li {
+  position: relative;
+}
+
+.characters {
+  width: 183px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.requirements {
+  width: 183px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nav-cover a {
+  text-decoration: none;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bariol Regular";
+  pointer-events: none;
+}
+
+.nav-cover p {
+  text-align: center;
+}
+
+/* Estilo de las cards */
+
+.cards-container {
+  margin-top: 40px;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  grid-auto-rows: 7rem;
+  margin-bottom: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+}
+
+.card-template {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  box-shadow: 5px 5px 29px rgba(0, 177, 187, 0.1);
+  border-radius: 5px;
+}
+
+.card-template img {
+  width: 45%;
+  height: 100%;
+}
+
+.info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2%;
+}
+
+.info-right h5 {
+  color: #ACACAC;
+  font-size: 16px;
+  font-family: "Geomanist";
+}
+
+.info-right p {
+  color: #ACACAC;
+  font-size: 13px;
+  font-family: "Bariol Regular";
+}
+
+#page2,
+#page3,
+#page4 {
+  display: none;
+}
+
+/* FIltro */
+
+.filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 6%;
+  margin-top: 10%;
+  gap: 3%;
+}
+
+
+ /* ///////////////////////////////// 📱 TABLET //////////////////////// */
+
+ @media (min-width: 600px) {  
+
+
+  .cover-page {
+    background: url(../img/portada-cursos-tablet.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .nav-cover {
+    top: 91%;
+  }
+
+  .nav-cover {
+    width: 558px;
+  }
+
+  .characters {
+    width: 279px;
+  }
+  
+  .requirements {
+    width: 279px;
+  }
+
+  #marker {
+    width: 279px;
+  }
+
+  .nav-cover a {
+    font-size: 19px;
+  }
+
+  .information h1 {
+    font-size: 40px;
+
+  }
+  
+  .information p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 850px) { 
+
+  .cover-page {
+    background: url(../img/portada-cursos-tablet2.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .information-container {
+    max-width: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .information {
+    width: 43%;
+    margin-left: 59%;
+    padding-top: 9%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 40px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    /* margin-left: -149px; */
+    /* padding: 115px 0px 0px 500px; */
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    /* padding: 0px 0px 0px 530px; */
+    line-height: 25px;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1024px) {
+
+  /* Estilos del responsive */
+
+  .nav-cover {
+    position: absolute;
+    top: 91%;
+    transform: translate(-50%, 50%);
+    width: 970px;
+    height: 43px;
+  }
+  
+  #marker {
+    width: 485px;
+  }
+
+  .characters {
+    width: 485px;
+    height: 43.5px;
+  }
+  
+  .requirements {
+    width: 485px;
+    height: 43.5px;
+    border-left: 1px solid var(--lila-line);
+  }
+
+  .nav-cover a {
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bariol Regular";
+    pointer-events: none;
+  }
+
+  .nav-crumbs {
+    display: none;
+  }
+  
+  .cover-page {
+    position: relative;
+    background: url(../img/portada-cursos-desktop.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 479px;
+  }
+
+  .information-container {
+    max-width: 1024px;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-left: 75%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .nav-cover {
+    position: absolute;
+    top: 91%;
+    transform: translate(-50%, 50%);
+    width: 1262px;
+    height: 43px;
+  }
+  
+  #marker {
+    bottom: 0px;
+    width: 631px;
+  }
+
+  .characters {
+    width: 631px;
+    height: 43px;
+  }
+  
+  .requirements {
+    width: 631px;
+    height: 43px;
+    border-left: 1px solid var(--lila-line);
+  }
+  .information-container {
+    max-width: 1200px;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 67%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+}
+
+
+/* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
+
+@media (min-width: 1440px) {
+  .information-container {
+    max-width: 1440px;
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    margin-left: 50%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
+
+} 
+
+

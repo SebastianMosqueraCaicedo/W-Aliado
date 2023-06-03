@@ -1,0 +1,1440 @@
+@font-face {
+    font-family: 'Geomanist';
+    src: url('../font/Geomanist-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geomanist Book';
+    src: url('../font/Geomanist-Book.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bariol Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/bariol_regular-webfont.ttf') format('woff');
+    }
+ 
+@font-face {
+    font-family: 'Bariol Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Bariol Bold'), url('../font/bariol_bold-webfont.ttf') format('woff');
+    }
+
+:root {
+    --white: white;
+    --lila-lyrics: #9F66DB;
+    --lila-line: #DFCCF3;
+    --gray-lyric: #676767;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Bariol Regular", sans-serif; 
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilo de miga de pan */
+
+.nav-crumbs { 
+    display: flex;
+    align-items: center;
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+.nav-crumbs p {
+    font-family: 'Bariol Regular';
+    font-size: 10px;
+    color: #BFC0C0;
+}
+
+.desktop-menu {
+  flex-direction: column;
+  width: 100%;
+  display: none;
+}
+
+/* Estilos de la portada de la página */
+
+.cover-page {
+    position: relative;
+    background: url(../img/portada-curso-ejemplo.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 501px;
+}
+
+
+/* Estilos de la navegación secundaria */
+
+.nav-cover {
+    position: relative;
+    top: 85.5%; 
+    left: 50%; 
+    transform: translate(-50%, 50%); 
+    background-color: var(--white);
+    width: 366px;
+    height: 37px; 
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px
+}
+
+.cover-buttons {
+    transform: translate(0%, 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#marker {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    width: 91.5px;
+    background: #00B1BB;
+    bottom: -2px;
+    transition: 0.5s;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  #page-switcher li {
+    color: var(--gray-lyric);
+    cursor: pointer;
+  }
+  
+  #page-switcher li.select {
+    color: #00B1BB;
+  }
+  
+  .nav-cover ul {
+    position: relative;
+      list-style: none;
+      display: flex;
+      transform: translate(0%, -100%);
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+  }
+  
+  .nav-cover li {
+    position: relative;
+  }
+
+.characters {
+    width: 91.5px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--lila-line);
+    cursor: pointer;
+}
+
+.benefits {
+    width: 91.5px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--lila-line);
+    cursor: pointer;
+}
+
+.tramits {
+    width: 91.5px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--lila-line);
+    cursor: pointer;
+}
+
+.devolutions {
+    width: 91.5px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-cover a {
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bariol Regular';
+    pointer-events: none;
+}
+
+.nav-cover p {
+    text-align: center;
+}
+
+.page3-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-drop1{
+    position: relative;
+    bottom: 35px;
+    width: 366px;
+    height: 113px;
+    background: #FFFFFF;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;  
+    line-height: 19.5px;
+    z-index: 1;
+}
+
+.info-drop2{
+    position: relative;
+    bottom: 35px;
+    width: 366px;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+    z-index: 1;
+}
+
+.info-drop3{
+    position: relative;
+    bottom: 40px;
+    width: 366px;
+    height: 185px;
+    background: #FFFFFF;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;  
+    line-height: 19.5px;
+    z-index: 1;
+}
+
+.info-drop4{
+    position: relative;
+    bottom: 40px;
+    width: 366px;
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px; 
+    line-height: 19.5px;
+    z-index: 1;
+}
+
+.info-drop5{
+    position: relative;
+    bottom: 40px;
+    width: 366px;
+    height: 235px;
+    background: #FFFFFF;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;  
+    line-height: 19.5px;
+    z-index: 1;
+}
+
+.info-drop6{
+    position: relative;
+    bottom: 40px;
+    width: 366px;
+    height: 270px;
+    background: #FFFFFF;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+    line-height: 19.5px;
+    z-index: 1;
+}
+
+.page1-drop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.page2-drop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.page3-drop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.page4-drop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.page5-drop {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.page6-drop {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.drop1 {
+  margin-top: 10%;
+}
+
+.drop1,
+.drop2,
+.drop3,
+.drop4,
+.drop5,
+.drop6 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; 
+    width: 366px;
+    height: 65px;
+    background-color: #00B1BB;
+    box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+    border-radius: 7px;
+    z-index: 2;
+}
+
+.drop1 p,
+.drop2 p,
+.drop3 p,
+.drop4 p,
+.drop5 p,
+.drop6 p{
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    color: var(--white);
+    padding-right: 80px
+}
+
+.last-info {
+    font-family: 'Bariol Regular';
+    font-size: 13px;
+    color: var(--gray-lyric);
+    padding: 0 20px;
+}
+
+.buttonn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.button-tramits {
+    font-family: 'Bariol Regular';
+    font-size: 15.83px;
+    text-align: center;
+    width: 167px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9F66DB;
+    border-radius: 5.03716px;
+    color: var(--white);
+    border: none;
+}
+
+
+#page2,
+#page3,
+#page4 {
+    display: none;
+}
+
+#dropdown-menu,
+#dropdown-menu2,
+#dropdown-menu3,
+#dropdown-menu4,
+#dropdown-menu5,
+#dropdown-menu6 {
+    display: none;
+  }
+  
+  #dropdown-menu.show {
+    display: block;
+  }
+
+  #dropdown-menu2.view {
+    display: block;
+  }
+
+  #dropdown-menu3.view2 {
+    display: block;
+  }
+
+  #dropdown-menu4.view3 {
+    display: block;
+  }
+
+  #dropdown-menu5.view4 {
+    display: block;
+  }
+
+  #dropdown-menu6.view5 {
+    display: block;
+  }
+
+
+  /* text */
+  .text1,
+.text2,
+.text3 {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text3 {
+  margin-bottom: 10%;
+}
+
+
+.text2 {
+  width: 90%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-left: 4%;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text3-color {
+  width: 100%;
+  height: auto;
+  user-select: none;
+  max-width: 400px;
+}
+
+.text3-container {
+  width: 100%;
+  height: auto;
+  background-color: var(--lila-lyrics);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text1 img,
+.text2 img,
+.text3 img,
+.text3-color img {
+  width: 100%;
+  user-select: none;
+  pointer-events: none;
+  max-width: 400px;
+}
+
+#desktop {
+  display: none;
+}
+
+/* ESTILO DEL MOBILE NUEVO */
+
+.first-part {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  padding: 0 5%;
+}
+
+.first-part h5{
+  font-family: 'Geomanist';
+  font-size: 16px;
+  color: var(--gray-lyric);
+  margin-bottom: 2%;
+}
+
+.first-part p{
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #00B1BB;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5%;
+}
+
+.register-container img {
+  width: 55%;
+}
+
+.register-container button:nth-child(1) {
+  width: 145px;
+  height: 43px;
+  background: #00B1BB;
+  border: 1px solid #00B1BB;
+  border-radius: 7px;
+  color: var(--white);
+  margin-bottom: 8%;
+}
+
+.register-container button:nth-child(2) {
+  width: 145px;
+  height: 43px;
+  border: 1px solid #00B1BB;
+  background: white;
+  border-radius: 7px;
+  color: #00B1BB;
+}
+
+.cards-container {
+  margin-top: 65px;
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  grid-auto-rows: 23rem;
+  margin-bottom: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+}
+
+.card-template {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 17px 14px;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
+  border-radius: 7px;
+}
+
+.button-primary {
+  font-family: "Bariol Regular";
+  padding: 0px;
+  width: 102.66px;
+  height: 29px;
+  color: var(--white);
+  border: none;
+  background-color: #00B1BB;
+  border-radius: 4.06px;
+  cursor: pointer;
+}
+
+.card-template img {
+  margin-bottom: 12px;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.card-template h5 {
+  font-family: "Geomanist";
+  color: var(--gray-lyric);
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.card-template p {
+  font-family: "Geomanist Book";
+  color: var(--gray-lyric);
+  font-size: 13px;
+  margin-bottom: 12px;
+  line-height: 19.5px;
+}
+
+/* Estilo de los comentarios */
+
+
+.comment {
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  margin: 0 5% 0 5%;
+}
+
+.comment img{
+  width: 15%;
+}
+
+.profile img {
+  width: 13%;
+}
+
+.comment input {
+  width: 100%;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1.9316px solid #CDCDCD;
+  border-radius: 4.50708px;
+  padding-left: 5%;
+}
+
+.comment input[type='text'] {
+  background-image: url(/img/send.svg);
+  background-repeat: no-repeat;
+  background-position: 97%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+
+  margin-top: 7%;
+  gap: 5%;
+
+}
+.profile p{
+  font-size: 13px;
+  color: #00B1BB;
+}
+
+.profile span {
+  font-size: 13px;
+  color: #ACACAC;
+}
+
+.letter {
+  font-size: 13px;
+  margin: 0 5% 0 5%;
+  color: var(--gray-lyric);
+  margin-top: 5%;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  margin: 5% 0 0 5%;
+  gap: 10%;
+}
+
+.likes div {
+  display: flex;
+  gap: 10%;
+}
+
+.likes div p {
+  color: var(--gray-lyric);
+  font-size: 13px;
+}
+
+.more-comments {
+  display: flex;
+  align-items: center;
+  margin: 5% 0 20% 5%;
+}
+
+.more-comments p{
+  color: #00B1BB;
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 16px;
+  color: var(--gray-lyric);
+  margin: 10% 0 5% 5%;
+}
+
+
+
+
+  /* ///////////////////////////////// 📱 TABLET //////////////////////// */
+
+  @media (min-width: 600px) {  
+
+    .cover-page {
+      background: url(../img/portada-curso-ejemplo-tablet.jpg);
+      background-repeat: no-repeat;
+      height: 553px;
+    }
+  
+    .nav-cover {
+      top: max(84.5%);
+    }
+  
+    .nav-cover {
+      width: 558px;
+    }
+  
+    .characters {
+      width: 139px;
+    }
+    
+    .tramits {
+      width: 139px;
+    }
+  
+    .benefits {
+      width: 139px;
+    }
+  
+    .devolutions {
+      width: 139px;
+    }
+  
+    #marker {
+      width: 139px;
+    }
+  
+    #desktop {
+      display: none;
+    }
+  
+    .nav-cover a {
+      font-size: 18px;
+    }
+  
+    .information h1 {
+      font-size: 38px;
+      padding: 30px 20px 0px 20px;
+    }
+    
+    .information p {
+      font-size: 16px;
+  }
+  
+    .text3-color {
+    max-width: 600px;
+    }
+  
+    .text1 img,
+    .text2 img,
+    .text3 img,
+    .text3-color img {
+      max-width: 600px;
+    }
+
+    .info-drop1{
+      width: 560px;
+      height: 241px;
+    }
+    
+    .info-drop2{
+      width: 560px;
+      height: 604px;
+    }
+
+    .info-drop3 {
+      width: 560px;
+      height: 288px;
+    }
+
+    .info-drop4 {
+      width: 560px;
+      height: 475px;
+    }
+  
+    .drop1,
+.drop2,
+.drop3,
+.drop4
+ {
+    width: 560px;
+    height: 80px;
+}
+  
+
+  .drop1 p,
+  .drop2 p,
+  .drop3 p,
+  .drop4 p
+ {
+      font-size: 18px;
+  }
+
+  
+  .register-container img {
+    width: 60%;
+  }
+  
+  .register-container button:nth-child(1) {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+  
+  .register-container button:nth-child(2) {
+    width: 200px;
+    height: 60px;
+    font-size: 20px;
+  }
+  
+  .first-part h5{
+    margin-bottom: 2%;
+  }
+  
+  .first-part p{
+    font-size: 18px;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+  }
+
+}
+  
+  @media (min-width: 850px) { 
+    .nav-cover {
+      top: 84.5%;
+    }
+  
+    .information-container {
+      max-width: 850px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .information {
+      width: 45%;
+      margin-left: 50%;
+      padding-top: 20%;
+    }
+  
+    .information > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .information h1 {
+      font-size: 40px;
+      font-family: "Geomanist";
+      line-height: 40.54px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 0;
+    }
+    
+    .information p {
+      font-family: "Bariol Regular";
+      font-size: 20px;
+      text-align: start;
+      /* padding: 0px 0px 0px 530px; */
+      line-height: 25px;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .drop1,
+    .drop2 {
+        width: 560px;
+        height: 80px;
+    }
+    
+    .info-drop1{
+      width: 560px;
+      height: 645px;
+    }
+    
+    .info-drop2{
+      width: 560px;
+      height: 1161px;
+    }
+    
+    .drop1 p,
+    .drop2 p{
+        font-size: 18px;
+    }
+
+    #desktop {
+      display: none;
+    }
+
+    .text1, .text2, .text3 {
+      width: 70%;
+      height: auto;
+      margin-left: 17%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #text-drop {
+      width: 95%;
+      margin-left: 4%;
+    }
+
+    .text3-color {
+      max-width: 1080px;
+    }
+
+    .text3-color {
+      width: 100%;
+    }
+    
+      .text1 img,
+      .text2 img,
+      .text3 img,
+      .text3-color img {
+        max-width: 1024px;
+      }
+
+  }
+  
+/* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
+
+@media (min-width: 1024px) {
+  
+    .nav-cover {
+      position: absolute;
+      top: 93%;
+      transform: translate(-50%, 50%);
+      width: 970px;
+      height: 43px;
+    }
+    
+    #marker {
+      bottom: 0px;
+      width: 242px;
+    }
+  
+    .characters {
+      width: 242px;
+      height: 43px; 
+    }
+    
+    .devolutions {
+      width: 242px;
+      height: 43px;  
+      border-left: 1px solid var(--lila-line);
+    }
+  
+    .benefits {
+      width: 242px;
+      height: 43px; 
+      border-right: 1px solid var(--lila-line);
+  }
+
+  .tramits {
+    width: 242px;
+    height: 43px; 
+  }
+  
+    .nav-cover a {
+      text-decoration: none;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: "Bariol Regular";
+      pointer-events: none;
+    }
+  
+    .nav-crumbs {
+      display: none;
+    }
+    
+    .cover-page {
+      position: relative;
+      background: url(../img/portada-curso-ejemplo-desktop.jpg);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 627px;
+    }
+    
+    .information {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      margin-left: 106%;
+      padding-top: 18%;
+    }
+  
+    .information > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+    
+    .information h1 {
+      font-size: 32px;
+      font-family: "Geomanist";
+      line-height: 40.54px;
+      text-align: left;
+      width: 100%;
+      margin-bottom: 6px;
+      padding: 0;
+    }
+    
+    .information p {
+      font-family: "Bariol Regular";
+      font-size: 20px;
+      text-align: start;
+      line-height: 23.72px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .info-drop1{
+      width: 970px;
+      max-width: 1440px;
+      height: 144px;
+    }
+
+  .info-drop2{
+    position: relative;
+    bottom: 40px;
+    width: 970px;
+    max-width: 1440px;
+    height: 197px;
+}
+
+    .info-drop3{
+      width: 970px;
+      max-width: 1440px;
+      height: 228px;
+    }
+
+  .info-drop4{
+    position: relative;
+    bottom: 40px;
+    width: 970px;
+    max-width: 1440px;
+    height: 160px;
+}
+
+  .drop1,
+  .drop2,
+  .drop3,
+  .drop4
+ {
+      width: 970px;
+      max-width: 1440PX;
+      height: 94px;
+      cursor: pointer;
+      margin-top: 1%;
+  }
+
+  .drop1 p,
+  .drop2 p,
+  .drop3 p,
+  .drop4 p {
+    font-size: 20px;
+}
+
+#desktop {
+  display: block;
+}
+
+#mobile {
+  display: none;
+}
+
+.text1, .text2, .text3 {
+  width: 90%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-drop {
+  width: 95%;
+  margin-left: 4%;
+}
+
+.text3-color {
+  max-width: 1080px;
+}
+
+.text3-color {
+  width: 100%;
+}
+
+  .text1 img,
+  .text2 img,
+  .text3 img,
+  .text3-color img {
+    max-width: 1024px;
+  }
+  .buttons-register {
+    display: flex;
+    gap: 5%;
+  }
+
+  .register-container img {
+    width: 40%;
+    margin-left: 5%;
+  }
+  
+  .register-container button:nth-child(1) {
+    width: 287px;
+    height: 60px;
+    font-size: 20px;
+  }
+  
+  .register-container button:nth-child(2) {
+    width: 287px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .text2 {
+    height: auto;
+  }
+
+  .cards-positiom {
+    display: flex;
+  }
+
+  #none {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  #none1 {
+    margin-top: 0;
+    margin-left: 2%;
+  }
+
+  .first-part h5{
+    font-size: 30px;
+  }
+  
+  .first-part p{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #00B1BB;
+  }
+
+  .first-part {
+    margin-top: 5%;
+
+  }
+
+  /* Estilo de los comentarios */
+
+
+.comment {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  margin: 0 5% 0 5%;
+}
+
+.comment img{
+  width: 6%;
+}
+
+.profile img {
+  width: 6%;
+}
+
+.comment input {
+  width: 500px;
+  height: 60px;
+  font-size: 20px;
+}
+
+.comment input[type='text'] {
+  background-image: url(/img/send.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: 97%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  margin-top: 5%;
+  gap: 3%;
+
+}
+.profile p{
+  font-size: 22px;
+  color: #00B1BB;
+}
+
+.profile span {
+  font-size: 22px;
+  color: #ACACAC;
+}
+
+.letter {
+  font-size: 26px;
+  margin: 0 5% 0 5%;
+  color: var(--gray-lyric);
+  margin-top: 2%;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  margin: 2% 0 0 5%;
+  gap: 10%;
+}
+
+.likes img {
+  width: 50px;
+}
+
+.likes div {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+
+.likes div p {
+  color: var(--gray-lyric);
+  font-size: 25px;
+}
+
+.more-comments {
+  display: flex;
+  align-items: center;
+  margin: 5% 0 10% 5%;
+}
+
+.more-comments p{
+  color: #00B1BB;
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 30px;
+  color: var(--gray-lyric);
+  margin: 2% 0 5% 5%;
+}
+
+
+    
+  }
+
+ /* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
+
+ @media (min-width: 1440px) {
+  .information-container {
+    max-width: 1440px;
+  }
+
+  .nav-cover {
+    width: 1262px;
+    height: 43px;
+  }
+
+  #marker {
+    bottom: 0px;
+    width: 315.5px;
+  }
+
+  .characters {
+    width: 315.5px;
+    height: 43px;
+  }
+  
+  .tramits {
+    width: 315.5px;
+    height: 43px;
+    border-left: 1px solid var(--lila-line);
+  }
+
+  .benefits {
+    width: 315.5px;
+    height: 43px; 
+    border-right: 1px solid var(--lila-line);
+}
+
+  .devolutions {
+    width: 315.5px;
+    height: 43px; 
+}
+
+  .nav-cover a {
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bariol Regular";
+    pointer-events: none;
+  }
+
+  .cover-page {
+    background: url(../img/portada-curso-ejemplo-desktop.jpg);
+  }
+  
+  .information {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 50%;
+    padding-top: 11%;
+  }
+
+  .information > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  
+  .information h1 {
+    font-size: 32px;
+    font-family: "Geomanist";
+    line-height: 40.54px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 6px;
+    padding: 0;
+  }
+  
+  .information p {
+    font-family: "Bariol Regular";
+    font-size: 20px;
+    text-align: start;
+    line-height: 23.72px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .simulator {
+    margin-left: 36%;
+    padding-top: 6%;
+    margin-top: -69px;
+  }
+  
+  .simulator-button {
+    font-size: 13.42px;
+    width: 186.29px;
+    height: 45.86px;
+    border-radius: 4.27119px;
+    font-size: 20.17px;
+  }
+
+  .text1 img,
+  .text2 img,
+  .text3 img {
+    max-width: 1440px;
+  }
+
+  .text3-color {
+    max-width: 1440px;
+  }
+
+  .text3-color img{
+    max-width: 1440px;
+  }
+
+  .info-drop1{
+    width: 1262px;
+    max-width: 1440px;
+    height: 196px;
+}
+
+.info-drop2{
+  width: 1262px;
+  max-width: 1440px;
+  height: 250px;
+}
+
+.info-drop3{
+  width: 1262px;
+  max-width: 1440px;
+  height: 300px;
+}
+
+.info-drop4{
+  width: 1262px;
+  max-width: 1440px;
+  height: 170px;
+}
+
+.info-drop5{
+  width: 1262px;
+  max-width: 1440px;
+  height: 37px;
+}
+
+.info-drop6{
+  width: 1262px;
+  max-width: 1440px;
+  height: 377px;
+}
+
+
+.drop1,
+.drop2, 
+.drop3,
+.drop4,
+.drop5,
+.drop6 {
+    width: 1260px;
+    max-width: 1440PX;
+    width: 1262px;
+    height: 94px;
+    cursor: pointer;
+}
+
+  #desktop {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+}
+
+  
+ 
+
