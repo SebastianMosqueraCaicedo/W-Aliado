@@ -43,40 +43,54 @@ const creditButton = document.getElementById("credit-button");
 const coverPage = document.getElementById("cover-page");
 const comparator = document.getElementById("comparador");
 
-const bgImage = document.getElementById("cover-image");
 
 const filterContainer = document.getElementById("filter-container");
+const savingCover = document.getElementById('comparador-ahorro')
+const creditCover = document.getElementById('comparador-credito')
 const savingSection = document.getElementById("savings-section");
 const creditSection = document.getElementById("credit-section");
 
-console.log(bgImage);
+
 savingsButton.addEventListener("click", () => {
   coverPage.style.display = "none";
-  bgImage.src = "./assets/ahorro._4x.webp";
   comparator.style.display = "block";
   filterContainer.style.display = "flex";
   savingSection.style.display = "block";
+  savingCover.style.display = 'block'
+  creditCover.style.display = 'none'
 });
 
 creditButton.addEventListener("click", () => {
   coverPage.style.display = "none";
-  bgImage.src = "./assets/credito_4x.webp";
   comparator.style.display = "block";
   filterContainer.style.display = "flex";
   creditSection.style.display = "block";
+  savingCover.style.display = 'none'
+  creditCover.style.display = 'block'
 });
 
 const comparedButton = document.getElementById("compared");
 console.log(comparedButton);
+const comparedSection = document.getElementById('compared-section')
 const comparison = document.getElementById("comparison");
+console.log(comparison)
 
 comparedButton.addEventListener("click", () => {
-  if (creditSection.style.display === "block") {
-    comparison.src = "./assets/compared-credito_4x.webp";
-  } else {
-    comparison.src = "./assets/compared-ahorro_4x.webp";
+  if (savingSection.style.display === 'block') {
+    if (window.innerWidth <= 700) {
+      comparison.src = './assets/compared-ahorro_4x.webp'
+    } else {
+      comparison.src = './assets/web-ahorro_4x.webp'
+    }
   }
-  comparison.style.display = "block";
+  if (creditSection.style.display === 'block') {
+    if (window.innerWidth <= 700) {
+      comparison.src = './assets/compared-credito_4x.webp'
+    } else {
+      comparison.src = './assets/web-credito_4x.webp'
+    }
+  }
+  comparedSection.style.display = "flex";
   filterContainer.style.display = "none";
   console.log("click");
 });
@@ -86,23 +100,38 @@ const creditoButton = document.getElementsByClassName('requirements');
 
 ahorroButton[0].addEventListener("click", () => {
   coverPage.style.display = "none";
-  bgImage.src = "./assets/ahorro_4x.webp";
   comparator.style.display = "block";
   filterContainer.style.display = "flex";
   savingSection.style.display = "block";
   creditSection.style.display = "none";
-  comparison.style.display = "none";
+  comparedSection.style.display = "none";
+  savingCover.style.display = 'block'
+  creditCover.style.display = 'none'
 });
 
 creditoButton[0].addEventListener("click", () => {
   coverPage.style.display = "none";
-  bgImage.src = "./assets/credito_4x.webp";
   comparator.style.display = "block";
   filterContainer.style.display = "flex";
   savingSection.style.display = "none";
   creditSection.style.display = "block";
-  comparison.style.display = "none";
+  comparedSection.style.display = "none";
+  savingCover.style.display = 'none'
+  creditCover.style.display = 'block'
 });
+
+const compararOtro = document.getElementById('comparar-otro')
+
+compararOtro.addEventListener('click', () => {
+  coverPage.style.display = "none";
+  comparator.style.display = "block";
+  filterContainer.style.display = "flex";
+  savingSection.style.display = "none";
+  creditSection.style.display = "block";
+  comparedSection.style.display = "none";
+  savingCover.style.display = 'block'
+  creditCover.style.display = 'none'
+})
 /*
 const switcher = document.getElementById("page-switcher");
 const pages = document.getElementById("pages").children;

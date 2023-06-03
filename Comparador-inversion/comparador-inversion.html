@@ -19,21 +19,7 @@
     <a href="/Simuladores-VTU/vtu.html" class="back-button" onclick="goBack()"> </a>
 
     <section id="cover-page">
-        <div class="nav-crumbs">
-            <img src="../icons/home.svg" alt="Icono de volver a la pantalla principal">
-            <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
-            <p>Personas con negocios</p>
-            <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
-            <p>Tu mejor opción</p>
-
-        </div>
-        <div class="information">
-            <h1>CONOCE TU MEJOR OPCIÓN</h1>
-            <p>¿Ya viste tus posibilidades de crédito o ahorro y aún no te decides? Mira aquí la clasificación que
-                más se ajusta a ti.
-            </p>
-            <h3>Escoge la opción que quieres comparar</h3>
-        </div>
+        <img src="./assets/portada-300_4x.webp" id="portada" alt="">
 
         <!-- Menú de navegación de la portada de la página -->
 
@@ -47,25 +33,19 @@
                 <p id="credito-text">Créditos</p>
             </button>
         </div>
-        <img class="images" src="./assets/mask_group_4x.webp" alt="">
 
     </section>
 
     <section id="comparador" style="display: none;">
-        <div class="nav-crumbs">
-            <img src="../icons/home.svg" alt="Icono de volver a la pantalla principal">
-            <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
-            <p>Personas con negocios</p>
-            <img src="../icons/right-arrow.svg" alt="Icono de flecha derecha">
-            <p>Tu mejor opción</p>
-        </div>
-        <div class="information">
-            <h1>CONOCE TU MEJOR OPCIÓN</h1>
-            <p>¿Ya viste tus posibilidades de crédito o ahorro y aún no te decides? Mira aquí la clasificación que
-                más se ajusta a ti.
-            </p>
-            <img src="./assets/credito_4x.webp" class="images image-resize" id="cover-image" alt="">
-        </div>
+        
+        <section id="comparador-ahorro" style="display: none;">
+            <img src="./assets/ahorro-300_4x.webp" id="ahorro" alt="">
+        </section>
+
+        <section id="comparador-credito" style="display: none;">
+            <img src="./assets/credito-300_4x.webp" id="credito" alt="">
+        </section>
+        
 
         <div class="nav-cover second-menu">
             <div class="cover-buttons">
@@ -109,7 +89,7 @@
             <div id="filter-title-container">
                 <h4 id="filter-title">Selecciona los productos a comparar</h4>
             </div>
-            <div class="parameters-section" id="savings-section" style="display: none;">
+            <div class="parameters-section comparador-ahorro" id="savings-section" style="display: none;">
                 <ul>
                     <li class="filter-item">
                         <p class="item-text">Cuenta de Ahorro</p>
@@ -133,7 +113,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="parameters-section" id="credit-section" style="display:none;">
+            <div class="parameters-section comparador-credito" id="credit-section" style="display:none;">
                 <ul>
                     <li class="filter-item">
                         <p class="item-text">Microcrédito</p>
@@ -159,7 +139,10 @@
             </div>
             <button id="compared">Comparar</button>
         </div>
-        <img src="./assets/compared-ahorro_4x.webp" style="display: none;" class="images" id="comparison" alt="">
+        <div id="compared-section">
+            <img src="./assets/compared-ahorro_4x.webp" class="images" id="comparison" alt="">
+            <button id="comparar-otro">Comparar otro</button>
+        </div>
 
     </section>
     <!-- Estructura del footer -->
