@@ -71,3 +71,36 @@
 .status-derecho p{
 	color: #1ba9b1;
 }
+
+/* opciones */
+
+.opciones-pqrs{
+	display: flex;
+	justify-content: center;
+}
+
+.opciones-bloque{
+	width: 38%;
+	margin-bottom: 50px;
+}
+
+.opcion-pqrs{
+	display: flex;
+	margin-top: 10px;
+}
+
+.opcion-pqrs label{
+	color: gray;
+	margin-left: 5px;
+	max-width: 400px;
+}
+
+.opcion-pqrs input{
+	width: 30px;
+	height: 30px;
+}
+
+/* sgte boton*/
+.siguiente-button {
+	margin-bottom: 50px;
+}

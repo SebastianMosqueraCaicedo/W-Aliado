@@ -1,2 +1,2 @@
 const boton = document.getElementById("siguiente")
-boton.addEventListener("click", changeColor(event));
+//boton.addEventListener("click", changeColor(event));
