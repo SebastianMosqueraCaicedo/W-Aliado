@@ -144,3 +144,51 @@ h2 {
 #regresa {
 	background-color: #00a2af;
 }
+
+/* AGENDAR  */
+
+.agenda-cita1 {
+	padding: 0 50px;
+	display: none;
+}
+
+.agenda-title h3 {
+	padding: 0;
+}
+
+.agenda-content {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.agenda-form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+	padding-top:10%;
+}
+
+.agenda-form input {
+	height: 40px;
+}
+
+.agenda-form .input-container {
+	padding: 0;
+}
+
+.agenda-form .input-container label{
+	color: #00a2af;
+}
+
+#sgte1 {
+	background-color: #00a2af;
+}
+
+#atras1 a {
+	cursor: pointer;
+}
+
+
