@@ -421,7 +421,7 @@ header.innerHTML = `
     <div class="desktop-menu">
       <div class="top-level-items" >
       <a href="/index.html">
-      <img src="/img/logoW.svg" alt="logo">
+      <img src="/img/logow.svg" alt="logo">
       </a>
         <a href="#" class="contactanos-button">
         </a>
