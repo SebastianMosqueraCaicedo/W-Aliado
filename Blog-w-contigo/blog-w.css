@@ -216,6 +216,14 @@
     border-radius: 4.06px;
     cursor: pointer;
   }
+
+  .button-primary:hover {
+    color: var(--Acuamarina);
+    border: 2px solid var(--Acuamarina);
+    background-color:var(--white);
+    border-radius: 4.06px;
+    cursor: pointer;
+  }
   
   .simulation-button {
     font-family: "Bariol Regular";
