@@ -356,7 +356,9 @@ botonFull.innerHTML = `
 			  </div>
 		  </div>
 		  <div class="boton-tutoriales botones-all" id="boton-tutoriales">
-			  <a href="/Boton-Tutoriales/tutoriales.html">
+			  <!--<a href="/Boton-Tutoriales/tutoriales.html">-->
+
+			  <a href="#">
 				  <img src="/icons/tutoriales-boton.svg" alt=""
 				  id="img-tutoriales"></img>
 			  </a>

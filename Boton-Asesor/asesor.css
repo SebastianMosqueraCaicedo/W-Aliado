@@ -1,0 +1,194 @@
+.llamando {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title-llamando {
+	margin-top: 15%;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.llamando h3, h2 {
+	color: #00a2af;
+	margin-top: 25px;
+	padding: 0;
+	max-width: 400px;
+}
+
+h2 {
+	margin-bottom: 15%;
+	text-align: center;
+}
+
+.cancela-llamando {
+	margin-bottom: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cancela-boton {
+	background-color: #ff8833;
+	padding: 24px;
+	width: fit-content;
+	border-radius: 100%;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.cancela-boton:hover {
+	background-color: #ff6d05;
+}
+
+.llamada {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+
+.llamada img {
+	width: 50%;
+}
+
+.cuelga-boton {
+	background-color: #f53a3a;
+	padding: 22px;
+	z-index: 2;
+	border-radius: 100%;
+	margin-bottom: 10px;
+	padding-top: 32px;
+	cursor: pointer;
+	margin-top: -9%;
+
+}
+
+.cuelga-boton:hover {
+	background-color: #f71515;
+}
+
+@media (max-width: 600px) {
+	.llamada img {
+		width: 99%;
+	}
+
+	.llamada svg {
+		width: 33px;
+		height: 16px;
+	}
+
+	.cuelga-boton {
+		padding: 7px;
+		padding-top: 13px;
+		margin-top: -16%;
+	}
+}
+
+@media (max-width: 1008px) and (min-width: 601px){
+	.llamada img {
+		width: 59%;
+	}
+
+	.llamada svg {
+		width: 33px;
+		height: 16px;
+	}
+
+	.cuelga-boton {
+		padding: 7px;
+		padding-top: 13px;
+		margin-top: -8%;
+	}
+}
+
+/* MENU */
+.asesor-menu {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+.asesor-menu h3, h2 {
+	color: #00a2af;
+	margin-top: 25px;
+	padding: 0;
+	max-width: 550px;
+}
+
+.asesor-menu h2 {
+	margin-bottom: 1%;
+}
+
+.title-menu {
+	margin-top: 5%;
+	margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.asesor-opciones {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	margin-bottom: 5%;
+}
+
+.asesor-opciones .siguiente-button {
+	padding: 10px;
+}
+
+#regresa {
+	background-color: #00a2af;
+}
+
+/* AGENDAR  */
+
+.agenda-cita1 {
+	padding: 0 50px;
+	display: none;
+}
+
+.agenda-title h3 {
+	padding: 0;
+}
+
+.agenda-content {
+	margin-top: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.agenda-form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 100px;
+	padding-top:10%;
+}
+
+.agenda-form input {
+	height: 40px;
+}
+
+.agenda-form .input-container {
+	padding: 0;
+}
+
+.agenda-form .input-container label{
+	color: #00a2af;
+}
+
+#sgte1 {
+	background-color: #00a2af;
+}
+
+#atras1 a {
+	cursor: pointer;
+}
+
+
