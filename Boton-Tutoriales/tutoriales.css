@@ -1,3 +1,4 @@
+
 #tut-main {
 	display: flex;
 	flex-direction: column;
@@ -18,6 +19,15 @@
 	margin-top: -360px;
 	z-index: 3;
 	background-color: white;
+	cursor: pointer;
+}
+
+.tut-destacado-div img{
+	width: 30%;
+}
+
+.tut-destacado-div:hover img{
+	filter: brightness(0.8);
 }
 
 .tut-destacado-contenido {
@@ -85,6 +95,10 @@
 	align-items: stretch;
 }
 
+.tut-main-contenido img {
+	width: 30%;
+}
+
 .tut-main-izq {
 	display: flex;
 	width: 40%;
@@ -130,6 +144,14 @@
 	gap: 50px;
 	background-color: white;
 }
+
+/*
+.tut-cont-vid:hover img{
+	filter: brightness(0.8);
+	cursor: pointer;
+}
+*/
+
 /* Main derecho */
 
 .tut-main-der {
@@ -138,6 +160,10 @@
 	gap: 30px;
 	flex-direction: column;
 	align-items: flex-start;
+}
+
+.tut-main-der img{
+	width: 100px;
 }
 
 	/* articulos */
