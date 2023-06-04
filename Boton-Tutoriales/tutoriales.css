@@ -182,3 +182,55 @@
 	padding: 0 30px;
 	gap: 50px;
 }
+
+
+/* pagina 2*/
+
+
+#tut-main {
+	display: none;
+}
+
+#tut-vid-ej {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 100px;
+	margin-bottom: 100px;
+	padding: 0 5%;
+	padding-top: 100px;
+}
+
+/* barra video */
+#tut-vid-ej .tut-search-div {
+	width: 100%;
+}
+
+/* video */
+#tut-vid-ej .tut-vid-hero{
+	box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.1);
+	width: 90%;
+}
+
+#tut-vid-ej .tut-vid-desc p {
+	height: auto;
+	overflow: unset;
+	text-overflow: unset;
+}
+
+#tut-vid-ej .tut-desc-titulo {
+	font-size: 50px;
+}
+
+.tut-desc-titulo {
+	margin-bottom: 50px;
+}
+
+/* contenido */
+#tut-vid-ej .tut-cont-head h4{
+	color: #FF6900;
+}
+
+#tut-vid-ej .tut-main-izq {
+	width: 100%
+}
