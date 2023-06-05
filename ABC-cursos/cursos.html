@@ -16,32 +16,41 @@
   <!-- Barra de navegación con logo y menú hamburguesa -->
   <header id="header"></header>
 
-  <aside id="clasifieds" style="display: none;">
-    <div class="close" onclick="toggleFilter()">
-        <img src="../icons/close.svg" alt="">
-        <p>Cerrar</p>
-    </div>
+  <section class="no-effect"  id="clasifieds" style="display: none;">
+    <aside>
+      <div class="close" onclick="toggleFilter()">
+          <img src="../icons/close.svg" alt="">
+          <p>Cerrar</p>
+      </div>
 
-    <section class="filter-container"> 
-        <h4>¿DONDE TE ENCUENTRAS?</h4>
-        <div class="state">
-            <p>Departamento</p>
-            <label for="filter-input">
-                <input type="text" name="" id="" placeholder="Ej: Valle del Cauca">
-                <img src="../icons/outline-rigth.png" alt="">
-            </label>
-        </div>
+      <section class="filter-container"> 
+          <h4>Categorías</h4>
+          <div class="state">
+              <label for="filter-input">
+                  <input type="text" name="" id="" placeholder="Finanzas para no financieros">
+              </label>
+          </div>
 
-        <div class="city">
-            <p>Ciudad</p>
-            <label for="filter-input">
-                <input type="text" name="" id="" placeholder="Cali">
-                <img src="../icons/outline-rigth.png" alt="">
-            </label>
-        </div>
-    </section>
-</aside>
+          <div class="city">
+              <label for="filter-input">
+                  <input type="text" name="" id="" placeholder="Finanzas personales">
+              </label>
+          </div>
 
+          <div class="city">
+              <label for="filter-input">
+                  <input type="text" name="" id="" placeholder="Finanzas corporativas">
+              </label>
+          </div>
+
+          <div class="city">
+              <label for="filter-input">
+                  <input type="text" name="" id="" placeholder="Finanzas internacionales">
+              </label>
+          </div>
+      </section>
+  </aside>
+</section>
 
   <!-- Portada de la página -->
 
@@ -60,8 +69,6 @@
         de nuestra comunidad para más tips y ayudas.</p>
     </div>
   </div>
-
-  
 
     <!-- Menú de navegación de la portada de la página -->
 
@@ -85,13 +92,12 @@
     </div>
   </section>
 
-
-
   <!-- Lista de carácteristicas y beneficios desktop-->
 
   <section id="pages">
     <section id="page1">
-
+    
+      <main class="toogle-mobile">
       <section class="cards-container">
         <div class="card-template">
             <img src="/img/informe.jpg" alt="">
@@ -126,8 +132,40 @@
             <p>Banco W</p>
           </div>
         </div>
-  
       </section>
+    </main>
+
+      <main class="toogle-desktop">
+      <section class="cards-container2">
+        <div class="card-saving1 card-template2 saving">
+          <img src="../img/abc1.png" alt="Imagen de cuenta de ahorro">
+          <h5>Cómo leer un informe de crédito</h5>
+          <p>Por Carlos Núñez</p>
+              <button class="button-primary">¡Inscríbete gratis!</button>
+        </div>
+  
+        <div class="card-saving2 card-template2 saving">
+          <img src="../img/abc2.png" alt="Imagen de cuenta de ahorro">
+          <h5>Cómo administrar tus finanzas personales</h5>
+          <p>Por María Rozo</p>
+            <button class="button-primary">¡Inscríbete gratis!</button>
+        </div>
+  
+        <div class="card-cdt card-template2 invert">
+          <img src="../img/abc3.png" alt="Imagen de CDT">
+          <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
+          <p>Por Claudia Campos</p>
+              <button class="button-primary">¡Inscríbete gratis!</button>   
+        </div>
+  
+        <div class="card-spin card-template2 spin">
+          <img src="../img/abc4.png" alt="Imagen de CDT">
+          <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
+          <p>Por Adriana Gonzalez</p>
+            <button class="button-primary" onclick="window.location.href = '/ABC-cursos-ejemplo/abc-cursos.html'">¡Inscríbete gratis!</button>
+        </div>
+      </section>
+      </main>
 
     </section>
     <!-- Lista de carácteristicas y beneficios desktop-->
@@ -138,8 +176,20 @@
         <img src="../icons/filter.svg" alt="" onclick="toggleFilter()">
         <p>Categorías</p>
       </div> 
+
+        <!-- FILTRO DESKTOP -->
+      <section class="position-filter">
+        <div class="filter-desktop">
+          <button class="select-buttons blue">Todos</button>
+          <button class="select-buttons large">Finanzas para no financieros</button>
+          <button class="select-buttons">Finanzas personales</button>
+          <button class="select-buttons">Finanzas corporativas</button>
+          <button class="select-buttons">Finanzas internacionales</button>
+        </div>
+      </section>
       
-      <section class="cards-container">
+      <main class="toogle-mobile">
+      <section class="cards-container" id="mobile">
         <div class="card-template">
             <img src="/img/informe.jpg" alt="">
           <div class="info-right">
@@ -205,9 +255,69 @@
             <p>Banco W</p>
           </div>
         </div>
-
       </section>
-      
+    </main>
+
+      <main class="toogle-desktop">
+        <section class="cards-container2">
+          <div class="card-saving1 card-template2 saving">
+            <img src="../img/abc1.png" alt="Imagen de cuenta de ahorro">
+            <h5>Cómo leer un informe de crédito</h5>
+            <p>Por Carlos Núñez</p>
+                <button class="button-primary">¡Inscríbete gratis!</button>
+          </div>
+    
+          <div class="card-saving2 card-template2 saving">
+            <img src="../img/abc2.png" alt="Imagen de cuenta de ahorro">
+            <h5>Cómo administrar tus finanzas personales</h5>
+            <p>Por María Rozo</p>
+              <button class="button-primary">¡Inscríbete gratis!</button>
+          </div>
+    
+          <div class="card-cdt card-template2 invert">
+            <img src="../img/abc3.png" alt="Imagen de CDT">
+            <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
+            <p>Por Claudia Campos</p>
+                <button class="button-primary">¡Inscríbete gratis!</button>   
+          </div>
+    
+          <div class="card-spin card-template2 spin">
+            <img src="../img/abc4.png" alt="Imagen de CDT">
+            <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
+            <p>Por Adriana Gonzalez</p>
+              <button class="button-primary" onclick="window.location.href = '/ABC-cursos-ejemplo/abc-cursos.html'">¡Inscríbete gratis!</button>
+          </div>
+  
+          <div class="card-spin card-template2 spin">
+            <img src="../img/abc5.png" alt="Imagen de CDT">
+            <h5>Cómo elaborar un presupuesto personal y controlar tus gastos</h5>
+            <p>Por Carolina Navarro</p>
+              <button class="button-primary">¡Inscríbete gratis!</button>
+          </div>
+  
+          <div class="card-spin card-template2 spin">
+            <img src="../img/abc6.png" alt="Imagen de CDT">
+            <h5>Cómo hacer un análisis financiero de rentabilidad de una empresa</h5>
+            <p>Por Nicolás López</p>
+              <button class="button-primary" >¡Inscríbete gratis!</button>
+          </div>
+  
+          <div class="card-spin card-template2 spin">
+            <img src="../img/abc7.png" alt="Imagen de CDT">
+            <h5>Cómo analizar el impacto de eventos geopolíticos en los mercados financiero</h5>
+            <p>Por Gabriel Santiago</p>
+              <button class="button-primary">¡Inscríbete gratis!</button>
+          </div>
+  
+          <div class="card-spin card-template2 spin">
+            <img src="../img/abc8.png" alt="Imagen de CDT">
+            <h5>Cómo evaluar y mitigar riesgos en transacciones internacionales</h5>
+            <p>Por Inés Quintero</p>
+              <button class="button-primary">¡Inscríbete gratis!</button>
+          </div>
+        </section>
+        </main>
+
     </section>
     </section>
 
