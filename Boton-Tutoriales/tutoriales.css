@@ -283,3 +283,142 @@
 .tut-com-xtra img {
 	margin-right: 25px;
 }
+
+@media (max-width: 1100px) {
+	/* primera pagina */
+	#tut-main {
+		gap: 50px;
+	}
+
+	.tut-hero {
+		content: url(/img/tuto-hero-mobi.png);
+	}
+
+	.tut-destacado-div {
+		width: 350px;
+		padding: 15px;
+		gap: 25px;
+		box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.1);
+		margin-top: -150px;
+	}
+
+	.tut-art-p {
+		font-size: 11px;
+		height: 40px;
+		line-height: 13px;
+	}
+
+	.tut-art-pre {
+		font-size: 11px;
+	}
+
+	.tut-art-titulo {
+		font-size: 14px;
+	}
+
+	/* barra */
+	.tut-search-div input {
+		height: 45px;
+	}
+
+	.tut-search-linea {
+		border: 0.2px solid #ACACAC;
+	}
+
+	/* contenido */
+	.tut-main-contenido {
+		gap: 50px;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.tut-main-izq {
+		gap: 15px;
+		width: 90%;
+		align-items: center;
+	}
+
+	.tut-cont-head h4 {
+		font-size: 24px;
+	}
+
+	.tut-cont-vid {
+		padding: 15px;
+		gap: 25px;
+	}
+
+	.tut-main-der {
+		gap: 15px;
+		width: 90%;
+		align-items: center;
+	}
+
+	.tut-art-div {
+		padding: 20px 0;
+	}
+
+	.tut-cont-art {
+		gap: 25px;
+		padding: 10px 30px;
+	}
+
+
+	/* pagina ejemplo */
+
+
+	#tut-vid-ej {
+		gap: 50px;
+		padding-top: 50px;
+	}
+	#tut-vid-ej .tut-vid-hero {
+		width: 100%;
+		box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.1);
+	}
+
+	#tut-vid-ej .tut-desc-titulo {
+		margin-bottom: 20px;
+	}
+
+	#tut-vid-ej .tut-cont-vid img {
+		width: 150px;
+	}
+
+	/* comentarios */
+
+	.tut-com-envia {
+		gap: 15px;
+		padding: 20px;
+	}
+
+	.tut-com-input {
+		height: 30px;
+		margin: 0px;
+	}
+
+	.tut-com-button {
+		align-self: center;
+		width: 150px;
+	}
+
+	.tut-com-head img {
+		width: 45px;
+	}
+
+	.tut-com-xtra img {
+		width: 80px;
+	}
+
+	#tut-vid-ej .tut-com p {
+		height: 40px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	#tut-vid-ej .tut-com-head p {
+		height: auto;
+	}
+
+	.tut-com {
+		gap: 10px;
+	}
+}
