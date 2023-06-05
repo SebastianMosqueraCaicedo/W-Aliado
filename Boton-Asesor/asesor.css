@@ -145,7 +145,7 @@ h2 {
 	background-color: #00a2af;
 }
 
-/* AGENDAR  */
+/* AGENDAR 1 */
 
 .agenda-cita1 {
 	padding: 0 50px;
@@ -171,7 +171,7 @@ h2 {
 	padding-top:10%;
 }
 
-.agenda-form input {
+.agenda-form input, select {
 	height: 40px;
 }
 
@@ -191,4 +191,33 @@ h2 {
 	cursor: pointer;
 }
 
+/* AGENDA 2 */
 
+#sgte2 {
+	background-color: #00a2af;
+}
+
+#atras2 a {
+	cursor: pointer;
+}
+
+.agenda-cita2 {
+	padding: 0 50px;
+	display: none;
+}
+
+@media (max-width: 1100px) {
+	.agenda-content {
+		flex-direction: column;
+	}
+	.agenda-title h3, p {
+		width: fit-content;
+	}
+	.agenda-title img {
+		width: 100%;
+		margin-top: 25px;
+	}
+	.agenda-form {
+		margin-left: 0;
+	}
+}

@@ -127,6 +127,7 @@ botonFull.innerHTML = `
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .botones-all {
@@ -239,6 +240,8 @@ botonFull.innerHTML = `
 	}
 
 	.boton-ayuda {
+		box-shadow: none;
+		box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.2);
 		cursor: pointer;
 		width: 60px;
 		height: 60px;
