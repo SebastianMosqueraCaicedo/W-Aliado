@@ -196,9 +196,20 @@
     margin-top: 5%;
     gap: 2rem;
     padding: 1rem;
-    grid-auto-rows: 26rem;
+    grid-auto-rows: 28rem;
     margin-bottom: 25px;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  }
+
+  .cards-container2 {
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+    gap: 2rem;
+    padding: 1rem;
+    grid-auto-rows: 23rem;
+    margin-bottom: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 3fr));
   }
   
   .card-template {
@@ -538,7 +549,13 @@
       margin: 65px auto;
       margin-bottom: 25px;
       padding: 2rem;
-      
+    }
+
+    .cards-container2 {
+      max-width: 1280px;
+      margin: 65px auto;
+      margin-bottom: 25px;
+      padding: 2rem;
     }
   }
 
