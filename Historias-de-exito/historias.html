@@ -15,6 +15,42 @@
 
   <!-- Barra de navegación con logo y menú hamburguesa -->
   <header id="header"></header>
+
+  <!-- FILTRO MOBILE -->
+<section class="no-effect"  id="clasifieds" style="display: none;">
+    <aside>
+      <div class="close" onclick="toggleFilter()">
+          <img src="../icons/close.svg" alt="">
+          <p>Cerrar</p>
+      </div>
+
+      <section class="filter-container"> 
+          <h4>Categorías</h4>
+          <div class="state">
+              <p>Departamento</p>
+              <label for="filter-input">
+                  <input type="text" name="" id="" placeholder="Ej: Valle del Cauca">
+              </label>
+          </div>
+
+          <div class="city">
+              <p>Formato</p>
+              <label for="filter-input">
+                  <input type="text" name="" id="" placeholder="Revista, articulo, etc.">
+              </label>
+          </div>
+
+          <div class="city">
+              <p>Producto</p>
+              <label for="filter-input">
+                  <input type="text" name="" id="" placeholder="Producto">
+              </label>
+          </div>
+      </section>
+  </aside>
+</section>
+
+<main id="all-off">
   <!-- Portada de la página -->
 
   <section class="cover-page">
@@ -26,13 +62,36 @@
     </div>
   </section> 
 
-  
+  <div class="filter">
+    <img src="../icons/filter.svg" alt="" onclick="toggleFilter()">
+    <p>Filtros</p>
+  </div> 
+
+  <!-- FILTRO DESKTOP -->
+<section class="position-filter">
+  <div class="filter-desktop">
+    <button class="select-buttons blue">
+      <p>Departamento</p>
+      <img src="/img/Outline down.svg" alt="">
+    </button>
+    <button class="select-buttons">
+      <p>Formato</p>
+      <img src="/img/Outline down.svg" alt="">
+    </button>
+    </button>
+    <button class="select-buttons">
+      <p>Producto</p>
+      <img src="/img/Outline down.svg" alt="">
+    </button>
+    </button>
+  </div>
+</section>
 
   <section class="cards-container">
     <div class="card-saving1 card-template saving">
       <img src="../img/raul.png" alt="Imagen de cuenta de ahorro">
       <h5>W al Día: Raul Virgüez</h5>
-      <p>Raúl se decidió a crear su estudio de tatuajes y de intervenciones artísticas y convirtió Black Indian Tatoo en una meta conquistada que rompe paradigmas con la reivindicación del tatuaje...</p>
+      <p>Raúl se decidió a crear su estudio de tatuajes y de intervenciones artísticas y convirtió Black Indian Tatoo en una meta conquistada que rompe paradigmas...</p>
       <div class="simulation">
         <a href="#">
           <button class="button-primary">Ver video</button>
@@ -112,9 +171,10 @@
   </section>
 
   <custom-footer></custom-footer>
+</main>
+
 
   <script src="./historias.js"></script>
-
   <script type="module" src="../Navbar/navbar-component.js"></script>
   <script type="module" src="../Footer/footer-component.js"></script>
   <script src="/Boton-Test/boton-ayuda-component.js"></script>
