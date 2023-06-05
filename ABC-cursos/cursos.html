@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banco W</title>
   <link rel="stylesheet" href="./cursos.css">
   <link rel="icon" type="image/x-icon" href="/img/logoW.png">
     <title>Banco W | ABC de las finanzas</title>
@@ -15,6 +14,40 @@
 
   <!-- Barra de navegación con logo y menú hamburguesa -->
   <header id="header"></header>
+
+  <!-- MODAL-->
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="closed">Cerrar
+        <img src="/img/close.svg" alt="">
+      </span>
+      <img src="/img/modal-mobile.png" alt="">
+        <div class="modal-info">
+          <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
+          <span>Por Carlos Núñez</span>
+          <div class="icons-container">
+            <div class="icons">
+              <img id="max" src="/img/clock.svg" alt="">
+              <p>30m 12s</p>
+            </div>
+            <div class="icons">
+              <img class="user" src="/img/users.svg" alt="">
+              <p>28</p>
+            </div>
+            <div class="icons">
+              <img id="max" src="/img/level.svg" alt="">
+              <p>Nivel Básico</p>
+            </div>
+          </div>
+          <p class="text">El curso brinda una guía detallada sobre cómo elaborar un presupuesto empresarial efectivo y controlar los costos, lo que puede ayudar a los participantes a tomar decisiones financieras informadas y maximizar los beneficios de sus negocios.</p>
+          <button onclick="window.location.href = '/ABC-cursos-ejemplo/abc-cursos.html'"">Continuar viendo</button>
+      </div>
+    </div>
+</div>
+
+<div id="modalOverlay" class="modal-overlay"></div>
+
 
   <section class="no-effect"  id="clasifieds" style="display: none;">
     <aside>
@@ -115,8 +148,7 @@
           </div>
         </div>
 
-        <a href="/ABC-cursos-ejemplo/abc-cursos.html">
-        <div class="card-template">
+        <div id="openModalBtn" class="card-template">
             <img src="/img/curosos3.jpg" alt="">
           <div class="info-right">
             <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
@@ -153,7 +185,7 @@
   
         <div class="card-cdt card-template2 invert">
           <img src="../img/abc3.png" alt="Imagen de CDT">
-          <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
+          <h5>Cómo invertir en el mercado de valores como un particular</h5>
           <p>Por Claudia Campos</p>
               <button class="button-primary">¡Inscríbete gratis!</button>   
         </div>
@@ -162,7 +194,7 @@
           <img src="../img/abc4.png" alt="Imagen de CDT">
           <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
           <p>Por Adriana Gonzalez</p>
-            <button class="button-primary" onclick="window.location.href = '/ABC-cursos-ejemplo/abc-cursos.html'">¡Inscríbete gratis!</button>
+            <button class="button-primary pop">¡Inscríbete gratis!</button>
         </div>
       </section>
       </main>
@@ -285,7 +317,7 @@
             <img src="../img/abc4.png" alt="Imagen de CDT">
             <h5>Cómo elaborar un presupuesto empresarial y controlar los costos</h5>
             <p>Por Adriana Gonzalez</p>
-              <button class="button-primary" onclick="window.location.href = '/ABC-cursos-ejemplo/abc-cursos.html'">¡Inscríbete gratis!</button>
+              <button id="openModalBtn" class="button-primary">¡Inscríbete gratis!</button>
           </div>
   
           <div class="card-spin card-template2 spin">

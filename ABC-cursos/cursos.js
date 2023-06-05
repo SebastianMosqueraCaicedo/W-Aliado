@@ -62,3 +62,29 @@ function toggleFilter() {
   }
 }
 
+/////////////Modal
+
+const openModalBtn = document.getElementById('openModalBtn');
+const modal = document.getElementById('modal');
+const modalOverlay = document.getElementById('modalOverlay');
+const closeBtn = document.getElementsByClassName('closed')[0];
+const openPopUp = document.querySelector('.pop')
+
+openModalBtn.addEventListener('click', function() {
+  modal.style.display = 'block';
+  modalOverlay.style.display = 'block';
+  document.body.style.overflow = 'hidden'; 
+});
+
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+  modalOverlay.style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+
+openPopUp.addEventListener('click' , function() {
+  modal.style.display = 'block';
+  modalOverlay.style.display = 'block';
+  document.body.style.overflow = 'hidden'; 
+})
+
