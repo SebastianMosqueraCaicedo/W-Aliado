@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="icon" type="image/x-icon" href="/img/logoW.png">
   <title>Banco W | W Aliado</title>
-  <style>
+  <!-- <style>
     html,
     body {
       position: relative;
@@ -26,27 +26,25 @@
     }
 
     .swiper {
-      height: 100%;
+      height: 100vh;
     }
 
     .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
-
+      background: #fff;
     }
+
 
     .swiper-slide img {
-      width: 100%;
-      position: relative;
       display: block;
-      object-fit: cover;
-
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      margin: auto;
     }
-  </style>
+  </style> -->
 </head>
 
 <body>
@@ -161,6 +159,20 @@
         clickable: true,
       },
     });
+    window.onload = function () {
+      adjustSwiperSize();
+
+      window.addEventListener("resize", adjustSwiperSize);
+    };
+
+    function adjustSwiperSize() {
+      let swiper = document.querySelector(".mySwiper");
+      let img = swiper.querySelector(".swiper-slide:first-child img");
+
+      swiper.style.height = `${img.offsetHeight}px`;
+      swiper.style.width = `${img.offsetWidth}px`;
+    }
+
   </script>
 </body>
 
