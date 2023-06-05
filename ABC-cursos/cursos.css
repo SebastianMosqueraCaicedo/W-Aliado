@@ -637,6 +637,10 @@ label {
   .information p {
     font-size: 18px;
   }
+
+  .modal-content {
+    margin: 1% auto;
+  }
 }
 
 @media (min-width: 850px) { 
@@ -686,6 +690,10 @@ label {
     line-height: 25px;
     width: 100%;
     padding: 0;
+  }
+
+  .modal-content {
+    margin: 0% auto;
   }
 }
 
@@ -912,6 +920,10 @@ label {
     padding: 0;
     max-width: 1440px;
     margin-inline: auto;
+  }
+
+  .modal-content {
+    margin: 1% auto;
   }
 
 
