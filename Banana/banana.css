@@ -470,4 +470,16 @@
 	.tut-main-der {
 		grid-template-columns: 48% 48%;
 	}
+	
+	.tut-com-xtra img {
+		width: 20%;
+	}
+	
+	.tut-com-head img {
+		width: 10%;	
+	}
+	
+	.tut-com-head div img {
+		width: 50%;
+	}
 }
