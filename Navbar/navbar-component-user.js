@@ -371,7 +371,7 @@ header.innerHTML = `
      <img  class="profileimg" src="/img/profile.svg" alt="Iniciar sesión" width="180" height="70">
      </a> 
       <li class="li-menu-button">
-      <a href="#" class="menu-button">
+      <a href="/index.html" class="menu-button">
         <img src="/icons/exit.svg" class="exit" alt="Cerrar sesión" >Cerrar sesión</a>
       </a>
     </li>
@@ -397,7 +397,7 @@ header.innerHTML = `
           <ul class="submenu">
             <li><a href="#">Créditos</a></li>
             <li><a href="/Cuenta-de-Ahorro/ahorro2.html">Cuentas de ahorro e inversión</a></li>
-            <li><a href="#">Giros internacionales</a></li>
+            <li><a href="/Envia-Giros/enviarGiro.html">Giros internacionales</a></li>
             <li><a href="#">Seguros</a></li>
           </ul>
         </li>
@@ -407,7 +407,7 @@ header.innerHTML = `
             <span class="arrow-down">&#9662;</span>
           </span>
           <ul class="submenu">
-            <li><a href="#">Educación financiera</a></li>
+            <li><a href="/ABC-cursos/cursos.html">Educación financiera</a></li>
             <li><a href="#">Consumidor financiero</a></li>
             <li><a href="#">Seguridad bancaria</a></li>
             <li><a href="#">Revista</a></li>
@@ -422,7 +422,7 @@ header.innerHTML = `
             <li><a href="#">Quiénes somos</a></li>
             <li><a href="#">Opción transaccional</a></li>
             <li><a href="#">Línea telefónica</a></li>
-            <li><a href="#">PQRS</a></li>
+            <li><a href="/Boton-PQRS/pqrs.html">PQRS</a></li>
           </ul>
         </li>
       </ul>
@@ -479,7 +479,7 @@ header.innerHTML = `
             <ul class="submenu">
               <li><a href="#">Créditos</a></li>
               <li><a href="/Cuenta-de-Ahorro/ahorro2.html">Cuentas de ahorro e inversión</a></li>
-              <li><a href="#">Giros internacionales</a></li>
+              <li><a href="/Envia-Giros/enviarGiro.html">Giros internacionales</a></li>
               <li><a href="#">Seguros</a></li>
             </ul>
           </li>
@@ -489,7 +489,7 @@ header.innerHTML = `
               <span class="arrow-down">&#9662;</span>
             </span>
             <ul class="submenu">
-              <li><a href="#">Educación financiera</a></li>
+            <li><a href="/ABC-cursos/cursos.html">Educación financiera</a></li>
               <li><a href="#">Consumidor financiero</a></li>
               <li><a href="#">Seguridad bancaria</a></li>
               <li><a href="#">Revista</a></li>
@@ -504,8 +504,8 @@ header.innerHTML = `
               <li><a href="#">Quiénes somos</a></li>
               <li><a href="#">Opción transaccional</a></li>
               <li><a href="#">Línea telefónica</a></li>
-              <li><a href="#">PQRS</a></li>
-            </ul>
+              <li><a href="/Boton-PQRS/pqrs.html">PQRS</a></li>
+              </ul>
           </li>
         </ul>
       </ul>

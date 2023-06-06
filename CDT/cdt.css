@@ -124,6 +124,15 @@ a {
     border: none;
   }
 
+  .simulator-button:hover {
+    color: var(--lila-lyrics);
+    border: 2px solid var(--lila-lyrics);
+    background: var(--white);
+    border-radius: 4.27119px;
+    text-align: center;
+  }
+  
+
 /* Estilos de la navegación secundaria */
 
 .nav-cover {
@@ -452,33 +461,40 @@ a {
     gap: 6px;
 }
 
-.buttons button:nth-child(1) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 27px;
-    background: var(--white);
-    border-radius: 3.32887px;
-    color: var(--lila-lyrics);
-    font-size: 10.46px;
-    border: none;
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 27px;
+  font-size: 10.46px;
+  border-radius: 3.32887px;
+  background: var(--white);
+  color: var(--lila-lyrics);
+  border: none;
+  cursor: pointer;
 }
 
-.buttons button:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 7.60884px 24px;
-    width: 180px;
-    height: 27px;
-    border: 0.951104px solid #FFFFFF;
-    border-radius: 3.32887px;
-    background-color: var(--lila-lyrics);
-    color: white;
-    font-size: 10.4621px;
+.button:hover {
+  background: #DFCCF3;
+  color: var(--lila-lyrics);
+  border: none;
+  cursor: pointer;
+}
+
+.button--border {
+  border: 0.951104px solid #ffffff;
+  background-color: var(--lila-lyrics);
+  color: white;
+  cursor: pointer;
+}
+
+.button--border:hover {
+  border: none;
+  background-color:var(--white);
+  color: var(--lila-lyrics);
+  cursor: pointer;
 }
 
 

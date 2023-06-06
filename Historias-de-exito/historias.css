@@ -36,7 +36,158 @@
   a {
     text-decoration: none;
   }
-  
+
+  /* /////////////////////// fILTRO /////////////// */
+aside {
+  position: fixed;
+  background-image: url(../img/fondo-filtro.jpg);
+  background-repeat: no-repeat;
+  inset: 0;
+  top: 0;
+  z-index: 10;
+  max-width: 390px;
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+  padding: 15px;
+  gap: 10px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50%;
+}
+
+.filter-container h4 {
+  font-family: "Geomanist";
+  font-size: 28px;
+  width: 283px;
+  color: var(--gray-lyric);
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+input {
+  width: 283px;
+  height: 29px;
+  border: 1px solid var(--gray-lyric);
+  border-radius: 5px;
+}
+
+
+input[type='text'] {
+  background-image: url(/icons/outline-rigth.png);
+  background-repeat: no-repeat;
+  background-position: 98%;
+}
+
+::placeholder {
+  font-family: "Bariol Regular";
+  font-size: 16px;
+  color: var(--gray-lyric);
+  padding-left: 8px;
+}
+
+.state {
+  margin-bottom: 5%;
+}
+
+.city {
+  margin-bottom: 5%;
+}
+
+.state,
+.city {
+  display: flex;
+  flex-direction: column;
+  color: #00B1BB;
+}
+
+.state p,
+.city p{
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FIltro */
+
+.filter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 6%;
+  margin-top: 10%;
+  gap: 3%;
+}
+
+.filter-desktop {
+  display: flex;
+  align-items: center;
+  margin-top: 4%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  gap: 2%;
+}
+
+.select-buttons {
+  width: 100%;
+  max-width: 250px;
+  height: 38px;
+  background: #FFFFFF;
+  box-shadow: 5px 7px 30px rgba(0, 177, 187, 0.15);
+  border-radius: 19px;
+  border: none;
+  font-size: 20px;
+  color: var(--gray-lyric);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1.5%;
+  font-size: 18px;
+  color: #ACACAC;
+}
+
+.select-buttons:hover {
+  background: var(--Acuamarina);
+  color: var(--white);
+}
+
+#format {
+  margin-right: 45%;
+}
+
+.select-buttons img {
+  margin-left: 52%;
+}
+
+.blue img{
+  margin-left: 33%;
+}
+
+.select-buttons p:hover {
+  color: var(--Acuamarina);
+}
+
+.large {
+  height: 100%;
+  padding: 10px 0;
+}
+
+.position-filter {
+  display: none;
+}
+
+
   /* Estilos de la portada de la página */
   
   .cover-page {
@@ -248,10 +399,21 @@
   }
 }
 
-  
   /* ///////////////////////////////// 🖥️ Desktop //////////////////////// */
   
   @media (min-width: 1024px) {
+
+    .position-filter {
+      display: block;
+    }
+
+    aside {
+      display: none;
+    }
+
+    .filter {
+      display: none;
+    }
 
     /* Estilos del responsive */
 

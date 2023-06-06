@@ -148,6 +148,7 @@ li {
     box-shadow: 5px 7px 30px rgba(159, 102, 219, 0.18);
     border-radius: 7px;
     z-index: 2;
+    cursor: pointer;
 }
 
 .info-drop1{
@@ -191,7 +192,13 @@ button {
   border-radius: 4.27119px;
   border: none;
   color: var(--white);
+}
 
+button:hover {
+  background: var(--white);
+  border-radius: 4.27119px;
+  border: 2px solid #00B1BB;
+  color: #00B1BB;
 }
 
 #dropdown-menu {
