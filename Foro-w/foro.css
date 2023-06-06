@@ -296,6 +296,14 @@ body {
   border-radius: 5.68988px;
   font-size: 10px;
   color: #00B1BB;
+  cursor: pointer;
+}
+
+.tags p:hover{
+  padding: 7px 10px 7px 10px;
+  background: rgba(2, 220, 231, 0.2);
+  border: 0.81284px solid rgba(1, 229, 241, 0.4);
+  cursor: pointer;
 }
 
 .tags p:nth-child(2),
@@ -340,12 +348,11 @@ body {
   width: 80%;
   height: 100%;
   margin-right: 3%;
-  position: sticky;
+  position: fixed;
   left: 0;
   background-repeat: no-repeat;
   inset: 0;
   z-index: 10;
-  overflow: scroll;
   display: none;
 }
 
@@ -359,12 +366,17 @@ body {
   font-size: 22px;
   font-family: 'Bariol Bold';
   color: #00B1BB;
-  margin: 10% 0;
+  margin-top: 10%;
 }
 
 .normal-butons {
   display: flex;
-  margin-bottom: 10%;
+  padding: 5% 0;
+}
+
+.normal-butons:hover {
+  background: white;
+  border-radius: 5px;
 }
 
 .normal-butons p {
@@ -378,7 +390,13 @@ body {
 
 #dropdown-button {
   display: flex;
-  margin-bottom: 10%;
+  padding: 5% 0;
+  cursor: pointer;
+}
+
+#dropdown-button:hover{
+  background: white;
+  border-radius: 7px;
 }
 
 #dropdown-button p {
@@ -606,6 +624,7 @@ body {
   .options {
     display: flex;
     gap: 10%;
+    cursor: pointer;
   }
 
   .options img{
@@ -618,6 +637,11 @@ body {
     height: 33px;
     gap: 10%;
     font-size: 18px;
+    cursor: pointer;
+  }
+
+  .send-button button:hover {
+    background: #00cfda;
   }
 
   .send-button button img{
@@ -754,6 +778,7 @@ body {
   .normal-butons {
     display: flex;
     margin-bottom: 10%;
+    cursor: pointer;
   }
 
   .normal-butons p {

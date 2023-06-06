@@ -216,8 +216,8 @@ class Footer extends HTMLElement {
                   <li>Preguntas frecuentes</li>
                   <li>Tasas y tarifas</li>
                   <li>Información legal</li>
-                  <li onclick="window.location.href = '/Boton-PQRS/pqrs.html'">Comunicados de prensa</li>
-                  <li>PQRS</li>
+                  <li>Comunicados de prensa</li>
+                  <li onclick="window.location.href = '/Boton-PQRS/pqrs.html'">PQRS</li>
                 </ul>
               </div>
             </div>
