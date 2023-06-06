@@ -61,10 +61,12 @@ h2 {
 	z-index: 2;
 	border-radius: 100%;
 	margin-bottom: 10px;
-	padding-top: 32px;
 	cursor: pointer;
 	margin-top: -9%;
+}
 
+.cuelga-boton svg {
+	margin: 10% 0px;
 }
 
 .cuelga-boton:hover {
