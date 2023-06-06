@@ -243,16 +243,21 @@
 }
 
 .tut-com-input {
-    background: #F3F3F3;
-    border-radius: 5px;
-    height: 50px;
-    margin: 0 50px;
-    border: none;
-    padding: 0 20px;
+	background: #F3F3F3;
+	border-radius: 5px;
+	height: 50px;
+	margin: 0 50px;
+	border: none;
+	padding: 0 20px;
 }
 
 .tut-com-button {
-    align-self: end;
+	align-self: end;
+}
+
+.tut-com-button:hover {
+	cursor: pointer;
+	filter: brightness(0.9);
 }
 
 .tut-com {
@@ -303,17 +308,17 @@
 	}
 
 	.tut-art-p {
-		font-size: 11px;
+		font-size: 18px;
 		height: 40px;
-		line-height: 13px;
+		line-height: 20px;
 	}
 
 	.tut-art-pre {
-		font-size: 11px;
+		font-size: 14px;
 	}
 
 	.tut-art-titulo {
-		font-size: 14px;
+		font-size: 17px;
 	}
 
 	/* barra */
@@ -339,7 +344,7 @@
 	}
 
 	.tut-cont-head h4 {
-		font-size: 24px;
+		font-size: 27px;
 	}
 
 	.tut-cont-vid {
@@ -420,5 +425,9 @@
 
 	.tut-com {
 		gap: 10px;
+	}
+
+	.tut-com-xtra img {
+		margin-right: 3px;
 	}
 }

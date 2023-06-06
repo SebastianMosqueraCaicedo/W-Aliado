@@ -69,7 +69,11 @@ header.innerHTML = `
   }
   
 }
-
+ul.submenu :hover {
+  background-color: #c7c7c7;
+  color: white;
+  transition: background-color 0.3s ease;
+}
 
 /* Estilos para el ícono del menú hamburguesa */
 .hamburger-menu {
