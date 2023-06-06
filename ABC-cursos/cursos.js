@@ -62,3 +62,43 @@ function toggleFilter() {
   }
 }
 
+/////////////Modal
+
+const openModalBtn = document.getElementById('openModalBtn');
+const openModalBtn2 = document.getElementById('openModalBtn2');
+const modal = document.getElementById('modal');
+const modalOverlay = document.getElementById('modalOverlay');
+const closeBtn = document.getElementsByClassName('closed')[0];
+const openPopUp = document.querySelector('.pop')
+const openPopUp2 = document.querySelector('.pop2')
+
+openModalBtn.addEventListener('click', function() {
+  modal.style.display = 'block';
+  modalOverlay.style.display = 'block';
+  document.body.style.overflow = 'hidden'; 
+});
+
+openModalBtn2.addEventListener('click', function() {
+  modal.style.display = 'block';
+  modalOverlay.style.display = 'block';
+  document.body.style.overflow = 'hidden'; 
+});
+
+closeBtn.addEventListener('click', function() {
+  modal.style.display = 'none';
+  modalOverlay.style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+
+openPopUp.addEventListener('click' , function() {
+  modal.style.display = 'block';
+  modalOverlay.style.display = 'block';
+  document.body.style.overflow = 'hidden'; 
+})
+
+openPopUp2.addEventListener('click' , function() {
+  modal.style.display = 'block';
+  modalOverlay.style.display = 'block';
+  document.body.style.overflow = 'hidden'; 
+})
+
