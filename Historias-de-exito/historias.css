@@ -40,7 +40,7 @@
   /* /////////////////////// fILTRO /////////////// */
 aside {
   position: fixed;
-  background-image: url(../img/fondo-filtro.webp);
+  background-image: url(../img/fondo-filtro.jpg);
   background-repeat: no-repeat;
   inset: 0;
   top: 0;
@@ -81,7 +81,7 @@ input {
 
 
 input[type='text'] {
-  background-image: url(/icons/outline-rigth.webp);
+  background-image: url(/icons/outline-rigth.png);
   background-repeat: no-repeat;
   background-position: 98%;
 }
@@ -192,7 +192,7 @@ label {
   
   .cover-page {
     position: relative;
-    background: url(../img/portada-historias.webp);
+    background: url(../img/portada-historias.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 535px;
@@ -330,7 +330,7 @@ label {
 @media (min-width: 600px) {  
 
   .cover-page {
-    background: url(../img/portada-historias-tablet.webp);
+    background: url(../img/portada-historias-tablet.jpg);
     background-repeat: no-repeat;
   }
 
@@ -418,7 +418,7 @@ label {
     /* Estilos del responsive */
 
     .cover-page {
-      background: url(../img/portada-historias-desktop.webp);
+      background: url(../img/portada-historias-desktop.jpg);
       background-repeat: no-repeat;
       width: 100%;
       height: 479px;
@@ -481,7 +481,7 @@ label {
   }
 
   .cover-page {
-    background: url(../img/portada-historias-desktop.webp);
+    background: url(../img/portada-historias-desktop.jpg);
   }
   
   .information {

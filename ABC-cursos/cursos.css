@@ -54,7 +54,7 @@ a {
 /* /////////////////////// fILTRO /////////////// */
 aside {
   position: fixed;
-  background-image: url(../img/fondo-filtro.webp);
+  background-image: url(../img/fondo-filtro.jpg);
   background-repeat: no-repeat;
   inset: 0;
   top: 0;
@@ -95,7 +95,7 @@ input {
 }
 
 input[type='text'] {
-  background-image: url(/icons/outline-rigth.webp);
+  background-image: url(/icons/outline-rigth.png);
   background-repeat: no-repeat;
   background-position: 98%;
 }
@@ -143,7 +143,7 @@ label {
 
 .cover-page {
   position: relative;
-  background: url(../img/portada-cursos.webp);
+  background: url(../img/portada-cursos.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 481px;
@@ -601,7 +601,7 @@ label {
  @media (min-width: 600px) {  
 
   .cover-page {
-    background: url(../img/portada-cursos-tablet.webp);
+    background: url(../img/portada-cursos-tablet.jpg);
     background-repeat: no-repeat;
   }
 
@@ -646,7 +646,7 @@ label {
 @media (min-width: 850px) { 
 
   .cover-page {
-    background: url(../img/portada-cursos-tablet2.webp);
+    background: url(../img/portada-cursos-tablet2.jpg);
     background-repeat: no-repeat;
   }
 
@@ -754,7 +754,7 @@ label {
   
   .cover-page {
     position: relative;
-    background: url(../img/portada-cursos-desktop.webp);
+    background: url(../img/portada-cursos-desktop.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 479px;
