@@ -808,6 +808,13 @@ label {
   .toogle-desktop {
     display: block;
   }
+
+  .cards-container2 {
+    max-width: 1280px;
+    margin: 65px auto;
+    margin-bottom: 25px;
+    padding: 2rem;
+  }
 }
 
 @media (min-width: 1200px) {
