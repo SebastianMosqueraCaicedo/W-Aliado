@@ -302,6 +302,16 @@ header.innerHTML = `
   .dropdown-container {
     margin-right: 150px;
   }
+  ul.submenu :hover {
+    background-color: #c7c7c7;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  .pago-login a:hover{
+    background-color: #ffa666;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
 
   .dropdown-container:last-child {
     margin-right: 0;
