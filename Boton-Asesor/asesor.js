@@ -34,6 +34,10 @@ function cuelga() {
 	window.location = "/index.html";
 }
 
+function openTutorial() {
+	window.location = "/Boton-Tutoriales/tutoriales.html";
+}
+
 function llama() {
 	if (!isMenu && time===1) {
 		llamandoDiv.style.display = "none";
@@ -78,9 +82,6 @@ function atrasHor2(){
 	agendaCita2.style.display = "none";
 	agendaCita1.style.display = "block";
 	window.scrollTo(0,0);
-}
-
-function openTutorial(){
 }
 
 setInterval(llama, 1500);
