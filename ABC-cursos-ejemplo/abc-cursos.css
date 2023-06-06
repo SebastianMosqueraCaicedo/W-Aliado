@@ -379,6 +379,12 @@ a {
 }
 
 
+#none1 {
+  width: 95%;
+  margin-top: 0;
+  margin-left: 5%;
+}
+
 #page2,
 #page3,
 #page4 {
@@ -434,7 +440,6 @@ a {
 .text3 {
   margin-bottom: 10%;
 }
-
 
 .text2 {
   width: 90%;
@@ -572,6 +577,14 @@ a {
   cursor: pointer;
 }
 
+.button-primary:hover {
+  color: #00B1BB;
+  border: 2px solid #00B1BB;
+  background-color:var(--white);
+  border-radius: 4.06px;
+  cursor: pointer;
+}
+
 .card-template img {
   margin-bottom: 12px;
   width: 100%;
@@ -663,6 +676,7 @@ a {
 .likes div {
   display: flex;
   gap: 10%;
+  cursor: pointer;
 }
 
 .likes div p {
@@ -679,6 +693,7 @@ a {
 .more-comments p{
   color: #00B1BB;
   font-size: 13px;
+  cursor: pointer;
 }
 
 h6 {
@@ -1077,11 +1092,22 @@ h6 {
   display: none;
 }
 
-.text1, .text2, .text3 {
+.text1, .text2 {
   width: 90%;
   height: auto;
   margin-bottom: 5%;
   margin-top: 5%;
+  margin-left: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text3 {
+  width: 90%;
+  height: auto;
+  margin-bottom: 5%;
+  margin-top: 2%;
   margin-left: 6%;
   display: flex;
   justify-content: center;
@@ -1165,11 +1191,10 @@ h6 {
 
   /* Estilo de los comentarios */
 
-
 .comment {
   display: flex;
   align-items: center;
-  gap: 3%;
+  gap: 1%;
   margin: 0 5% 0 5%;
 }
 
@@ -1185,6 +1210,7 @@ h6 {
   width: 500px;
   height: 60px;
   font-size: 20px;
+  padding-left: 15px;
 }
 
 .comment input[type='text'] {
@@ -1199,7 +1225,7 @@ h6 {
   align-items: center;
   padding-left: 5%;
   margin-top: 5%;
-  gap: 3%;
+  gap: 1%;
 
 }
 .profile p{
@@ -1213,21 +1239,22 @@ h6 {
 }
 
 .letter {
-  font-size: 26px;
+  font-size: 21px;
   margin: 0 5% 0 5%;
   color: var(--gray-lyric);
-  margin-top: 2%;
+  margin-top: 1%;
+  width: 67%;
 }
 
 .likes {
   display: flex;
   align-items: center;
-  margin: 2% 0 0 5%;
-  gap: 10%;
+  margin: 1% 0 0 5%;
+  gap: 7%;
 }
 
 .likes img {
-  width: 50px;
+  width: 40px;
 }
 
 .likes div {
@@ -1249,18 +1276,99 @@ h6 {
 
 .more-comments p{
   color: #00B1BB;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 h6 {
-  font-size: 30px;
+  font-size: 28px;
   color: var(--gray-lyric);
-  margin: 2% 0 5% 5%;
+  margin: 2% 0 3% 5%;
 }
 
+/*  Estilo del la primera parte */
 
-    
-  }
+ .first-part-desktop {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 10%;
+ }
+
+ .right-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-right: 6%;
+ }
+
+ .left-container {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+ }
+
+ .left-container {
+  margin-left: 5%;
+ }
+
+ .right-container img{
+  width: 100%;
+ }
+
+ .left-container h5{ 
+  font-family: 'Geomanist';
+  font-size: 25px;
+  color: var(--gray-lyric);
+  margin-bottom: 1%;
+ }
+
+ #social {
+  color: #00B1BB;
+  font-size: 20px;
+ }
+
+ .left-container p {
+  color: #00B1BB;
+  font-size: 13px;
+  margin-bottom: 20%;
+ }
+
+ 
+ .buttons-register-desktop {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 18%;
+ }
+
+ .left-button {
+  width: 200px;
+  height: 60px;
+  background: #00B1BB;
+  border-radius: 7px;
+  border: none;
+  color: var(--white);
+  font-size: 18px;
+  cursor: pointer;
+ }
+
+ .left-button:hover {
+  background: #BEFCFF;
+  color: #00B1BB;
+ }
+
+ .right {
+  background: var(--white);
+  border: 2px solid #00B1BB;
+  color: #00B1BB;
+ }
+
+ .right:hover {
+  background: #BEFCFF;
+  border: none;
+  color: #00B1BB;
+ }
+
+}
 
  /* ///////////////////////////////// 🖥️ Desktop Large //////////////////////// */
 
@@ -1432,6 +1540,11 @@ h6 {
 
   #mobile {
     display: none;
+  }
+
+  .cards-container {
+    max-width: 1200px; /* Ajusta este valor según tus necesidades */
+    margin: 0 auto;
   }
 }
 

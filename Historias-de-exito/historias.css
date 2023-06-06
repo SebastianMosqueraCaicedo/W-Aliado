@@ -151,13 +151,31 @@ label {
   color: var(--gray-lyric);
   display: flex;
   align-items: center;
-}
-
-.select-buttons p {
+  cursor: pointer;
+  padding-left: 1.5%;
   font-size: 18px;
   color: #ACACAC;
-  padding-left: 10%;
-  margin-right: 25%;
+}
+
+.select-buttons:hover {
+  background: var(--Acuamarina);
+  color: var(--white);
+}
+
+#format {
+  margin-right: 45%;
+}
+
+.select-buttons img {
+  margin-left: 52%;
+}
+
+.blue img{
+  margin-left: 33%;
+}
+
+.select-buttons p:hover {
+  color: var(--Acuamarina);
 }
 
 .large {

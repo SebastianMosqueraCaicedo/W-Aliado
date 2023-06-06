@@ -58,7 +58,6 @@ class Footer extends HTMLElement {
         align-items: center;
         justify-content: space-between;
         padding-bottom: 11px;
-        margin-bottom: 20px;
         border-bottom: 1px solid #ffc499;
         padding: 0;
       }
@@ -84,11 +83,23 @@ class Footer extends HTMLElement {
       .footer-list li,
       .footer-list2 li {
         list-style: none;
-        margin-bottom: 19px;
+        cursor: pointer;
+        padding-top: 13px;
+        padding-bottom: 13px;
       }
 
-      .footer-list ul li:nth-child(4) {
-        margin-bottom: 27px;
+      .footer-list li:hover{
+        background-color: #c7c7c7;
+        color: white;
+        transition: background-color 0.3s ease;
+        border-radius: 4px;
+      }
+
+      .footer-list2 li:hover{
+        background-color: #c7c7c7;
+        color: white;
+        transition: background-color 0.3s ease;
+        border-radius: 4px;
       }
 
       .footer-list2 ul li:nth-child(5) {
@@ -174,7 +185,7 @@ class Footer extends HTMLElement {
                 <ul>
                   <li>Quienes somos</li>
                   <li>Proveedores</li>
-                  <li>Eduación financiera</li>
+                  <li onclick="window.location.href = '/ABC-cursos/cursos.html'">Eduación financiera</li>
                   <li>Trabaja con nosotros</li>
                 </ul>
               </div>
@@ -202,10 +213,10 @@ class Footer extends HTMLElement {
               </div>
               <div class="footer-list2" id="dropdown-footer3">
                 <ul>
-                  <li>Preguntas frecuentes </li>
+                  <li>Preguntas frecuentes</li>
                   <li>Tasas y tarifas</li>
                   <li>Información legal</li>
-                  <li>Comunicados de prensa</li>
+                  <li onclick="window.location.href = '/Boton-PQRS/pqrs.html'">Comunicados de prensa</li>
                   <li>PQRS</li>
                 </ul>
               </div>
@@ -218,15 +229,15 @@ class Footer extends HTMLElement {
               </div>
               <div class="footer-list3" id="dropdown-footer4">
                 <div class="social-list">
-                  <a href=""><img src="../icons/Facebook.svg" alt=""></a>
+                  <a href="https://www.facebook.com/bancowoficial/?locale=es_LA"><img src="../icons/Facebook.svg" alt=""></a>
 
-                  <a href=""><img src="../icons/Instagram.svg" alt=""></a>
+                  <a href="https://www.instagram.com/bancowoficial/?hl=es-la"><img src="../icons/Instagram.svg" alt=""></a>
 
-                  <a href=""><img src="../icons/Twitter.svg" alt=""></a>
+                  <a href="https://twitter.com/bancowoficial?lang=es"><img src="../icons/Twitter.svg" alt=""></a>
 
                   <a href=""><img src="../icons/TikTok.svg" alt=""></a>
 
-                  <a href=""><img src="../icons/Youtube.svg" alt=""></a>
+                  <a href="https://www.youtube.com/c/bancowoficial"><img src="../icons/Youtube.svg" alt=""></a>
                 </div>
               </div>
             </div>
