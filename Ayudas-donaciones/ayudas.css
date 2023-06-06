@@ -56,7 +56,7 @@ a{
 
 .cover-page {
     position: relative;
-    background: url(../img/portada-ayuda.jpg);
+    background: url(../img/portada-ayuda.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 501px;
@@ -107,25 +107,25 @@ a{
  }
 
  .refer {
-    background-image: url(/img/refiere.jpg);
+    background-image: url(/img/refiere.webp);
     background-repeat: no-repeat;
     margin-bottom: 5%;
  }
 
  .foolprint {
-    background-image: url(/img/huellas.jpg);
+    background-image: url(/img/huellas.webp);
     background-repeat: no-repeat;
     margin-bottom: 5%;
  }
 
  .grow {
-    background-image: url(/img/crecer.jpg);
+    background-image: url(/img/crecer.webp);
     background-repeat: no-repeat;
     margin-bottom: 5%;
  }
 
  .fundation {
-    background-image: url(/img/fundacion.jpg);
+    background-image: url(/img/fundacion.webp);
     background-repeat: no-repeat;
     margin-bottom: 7%;
  }
@@ -206,7 +206,7 @@ a{
   
   .cover-page {
     position: relative;
-    background: url(../img/portada-donaciones.jpg);
+    background: url(../img/portada-donaciones.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 479px;
@@ -262,22 +262,22 @@ a{
  }
 
  .refer {
-    background-image: url(/img/refiere2.jpg);
+    background-image: url(/img/refiere2.webp);
     margin-bottom: 3.5%;
  }
 
  .foolprint {
-    background-image: url(/img/huellas2.jpg);
+    background-image: url(/img/huellas2.webp);
     margin-bottom: 0;
  }
 
  .grow {
-    background-image: url(/img/crecer2.jpg);
+    background-image: url(/img/crecer2.webp);
     margin-bottom: 0;
  }
 
  .fundation {
-    background-image: url(/img/fundacion2.jpg);
+    background-image: url(/img/fundacion2.webp);
     margin-bottom: 5%;
  }
 

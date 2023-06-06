@@ -183,7 +183,7 @@ a svg {
 }
 .text1 {
   position: relative;
-  background: url(../img/gotahorrocaracteristicas.png);
+  background: url(../img/gotahorrocaracteristicas.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -194,7 +194,7 @@ a svg {
 }
 .text2 {
   position: relative;
-  background: url(../img/gotahorrorequisitos.png);
+  background: url(../img/gotahorrorequisitos.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -213,7 +213,7 @@ a svg {
 }
 .cancelacion {
   position: relative;
-  background: url(../img/cancelacion.png);
+  background: url(../img/cancelacion.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -361,7 +361,7 @@ a svg {
 }
 .data2text {
   position: relative;
-  background: url(../img/gotahorrofinal.png);
+  background: url(../img/gotahorrofinal.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 95%;
@@ -443,7 +443,7 @@ a svg {
   }
   .text1 {
     position: relative;
-    background: url(../img/gotahorrocaracteristicasdesktop.png);
+    background: url(../img/gotahorrocaracteristicasdesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -454,7 +454,7 @@ a svg {
   }
   .text2 {
     position: relative;
-    background: url(../img/gotahorrorequisitodesktop.png);
+    background: url(../img/gotahorrorequisitodesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -465,7 +465,7 @@ a svg {
   }
   .apertura {
     position: relative;
-    background: url(../img/gotahorroaperturadesktop.png);
+    background: url(../img/gotahorroaperturadesktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 98%;
@@ -484,7 +484,7 @@ a svg {
   }
   .cancelacion {
     position: relative;
-    background: url(../img/tramites2desktop.png);
+    background: url(../img/tramites2desktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -620,7 +620,7 @@ a svg {
   }
   .data2text {
     position: relative;
-    background: url(../img/gotahorrofinal.png);
+    background: url(../img/gotahorrofinal.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 55%;
@@ -645,7 +645,7 @@ a svg {
 
   @media (max-width: 1024px) {
     .cover-page {
-      background: url(../img/microcredito.png);
+      background: url(../img/microcredito.webp);
       background-repeat: no-repeat;
     }
 

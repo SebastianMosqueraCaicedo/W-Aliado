@@ -70,7 +70,7 @@ a {
 
 .cover-page {
     position: relative;
-    background: url(../img/portada-cdt.jpg);
+    background: url(../img/portada-cdt-jpg.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 501px;
@@ -587,7 +587,7 @@ a {
   @media (min-width: 600px) {  
 
     .cover-page {
-      background: url(../img/portada-cdt-tablet.jpg);
+      background: url(../img/portada-cdt-tablet.webp);
       background-repeat: no-repeat;
       height: 553px;
     }
@@ -869,7 +869,7 @@ a {
     
     .cover-page {
       position: relative;
-      background: url(../img/portada-cdt-desktop.jpg);
+      background: url(../img/portada-cdt-desktop.webp);
       background-repeat: no-repeat;
       width: 100%;
       height: 479px;
@@ -1120,7 +1120,7 @@ a {
   }
 
   .cover-page {
-    background: url(../img/portada-cdt-desktop.jpg);
+    background: url(../img/portada-cdt-desktop.webp);
   }
   
   .information {

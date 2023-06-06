@@ -345,7 +345,7 @@ header.innerHTML = `
 </style>
 <nav class="navbar">
 <a href="/index.html">
-<img src="/img/logoW.png" alt="logo">
+<img src="/img/logoW.webp" alt="logo">
 </a>
     <!-- Ícono del menú hamburguesa -->
     <div class="hamburger-menu" >
@@ -433,7 +433,7 @@ header.innerHTML = `
           <a href="#" class="preguntas-frecuentes-button">Preguntas Frecuentes
           </a>
           <a href="#" class="font-button">
-          <img class ="font" src="/img/fontlanding.png">
+          <img class ="font" src="/img/fontlanding.webp">
           </a>
         </div>
         <div class="pago-login">

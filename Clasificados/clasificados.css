@@ -99,7 +99,7 @@
   /* /////////////////////// fILTRO /////////////// */
   aside {
     position: fixed;
-    background-image: url(../img/fondo-filtro.jpg);
+    background-image: url(../img/fondo-filtro.webp);
     background-repeat: no-repeat;
     inset: 0;
     top: 105px;

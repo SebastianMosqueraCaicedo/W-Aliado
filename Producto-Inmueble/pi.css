@@ -190,7 +190,7 @@ a svg {
 }
 .caracteristicas {
   position: relative;
-  background: url(../img/picaracteristicas.png);
+  background: url(../img/picaracteristicas.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -201,7 +201,7 @@ a svg {
 }
 .enCuenta {
   position: relative;
-  background: url(../img/piencuenta.png);
+  background: url(../img/piencuenta.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -212,7 +212,7 @@ a svg {
 }
 .estudioCredito {
   position: relative;
-  background: url(../img/piestudiocredito.png);
+  background: url(../img/piestudiocredito.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -223,7 +223,7 @@ a svg {
 }
 .avaluos {
   position: relative;
-  background: url(../img/piestudiotitulos.png);
+  background: url(../img/piestudiotitulos.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -234,7 +234,7 @@ a svg {
 }
 .estudioTitulos {
   position: relative;
-  background: url(../img/piavaluos.png);
+  background: url(../img/piavaluos.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -245,7 +245,7 @@ a svg {
 }
 .apertura {
   position: relative;
-  background: url(../img/piapertura.png);
+  background: url(../img/piapertura.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -393,7 +393,7 @@ a svg {
 }
 .data2text {
   position: relative;
-  background: url(../img/yocofinal.png);
+  background: url(../img/yocofinal.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 95%;
@@ -426,7 +426,7 @@ a svg {
 
   .caracteristicas {
     position: relative;
-    background: url(../img/picaracteristicasdesktop.png);
+    background: url(../img/picaracteristicasdesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -437,7 +437,7 @@ a svg {
   }
   .enCuenta {
     position: relative;
-    background: url(../img/piencuentadesktop.png);
+    background: url(../img/piencuentadesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -448,7 +448,7 @@ a svg {
   }
   .estudioCredito {
     position: relative;
-    background: url(../img/piestudiocreditodesktop.png);
+    background: url(../img/piestudiocreditodesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -459,7 +459,7 @@ a svg {
   }
   .avaluos {
     position: relative;
-    background: url(../img/piestudiotitulosdesktop.png);
+    background: url(../img/piestudiotitulosdesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -470,7 +470,7 @@ a svg {
   }
   .estudioTitulos {
     position: relative;
-    background: url(../img/piavaluosdesktop.png);
+    background: url(../img/piavaluosdesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -486,7 +486,7 @@ a svg {
   /* Estilos del responsive */
   .apertura {
     position: relative;
-    background: url(../img/piaperturadesktop.png);
+    background: url(../img/piaperturadesktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -693,7 +693,7 @@ a svg {
   }
   .data2text {
     position: relative;
-    background: url(../img/yocofinal.png);
+    background: url(../img/yocofinal.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 45%;
@@ -718,7 +718,7 @@ a svg {
 
   @media (max-width: 1024px) {
     .cover-page {
-      background: url(../img/microcredito.png);
+      background: url(../img/microcredito.webp);
       background-repeat: no-repeat;
     }
 

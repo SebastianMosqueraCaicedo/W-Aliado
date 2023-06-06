@@ -94,7 +94,7 @@
 	flex-direction: column;
 	width: 50%;
 	height: 523px;
-	background-image: url(../img/portada-premios.jpg);
+	background-image: url(../img/portada-premios-jpg.webp);
 	background-repeat: no-repeat;
 }
 
@@ -208,24 +208,24 @@ cursor: pointer;
 }
 
 .womens {
-	background-image: url(../img/mujeres.jpg);
+	background-image: url(../img/mujeres.webp);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	margin-bottom: 3.5%;
 }
 
 .youngs {
-	background-image: url(../img/jovenes.jpg);
+	background-image: url(../img/jovenes.webp);
 	background-repeat: no-repeat;
 }
 
 .business {
-	background-image: url(../img/negocios.jpg);
+	background-image: url(../img/negocios.webp);
 	background-repeat: no-repeat;
 }
 
 .ambient {
-	background-image: url(../img/ambiente.jpg);
+	background-image: url(../img/ambiente.webp);
 	background-repeat: no-repeat;
 }
 
@@ -314,22 +314,22 @@ cursor: pointer;
   }
   
   .womens {
-    background-image: url(../img/mujeres2.jpg);
+    background-image: url(../img/mujeres2.webp);
     background-size: contain;
   }
   
   .youngs {
-    background-image: url(../img/jovenes2.jpg);
+    background-image: url(../img/jovenes2.webp);
     background-size: contain;
   }
   
   .business {
-    background-image: url(../img/negocios2.jpg);
+    background-image: url(../img/negocios2.webp);
     background-size: contain;
   }
   
   .ambient {
-    background-image: url(../img/ambiente2.jpg);
+    background-image: url(../img/ambiente2.webp);
     background-size: contain;
   }
   
