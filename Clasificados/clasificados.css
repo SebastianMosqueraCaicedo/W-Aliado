@@ -102,7 +102,7 @@
     background-image: url(../img/fondo-filtro.jpg);
     background-repeat: no-repeat;
     inset: 0;
-    top: 105px;
+    top: 0;
     z-index: 10;
     max-width: 390px;
 }
@@ -289,17 +289,10 @@ label {
   /* ///////////////////////////////// 📱 TABLET //////////////////////// */
 
   @media (min-width: 600px) {  
-
-    aside {
-      top: 115px;
-  }
-
 }
   
   @media (min-width: 850px) { 
-    aside {
-      top: 125px;
-  }
+
   }
   
   
