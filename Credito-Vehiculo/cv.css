@@ -185,7 +185,7 @@ a svg {
 }
 .caracteristicas {
   position: relative;
-  background: url(../img/cvcaracteristicas.png);
+  background: url(../img/cvcaracteristicas.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -196,7 +196,7 @@ a svg {
 }
 .taxi {
   position: relative;
-  background: url(../img/cvtaxi.png);
+  background: url(../img/cvtaxi.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -207,7 +207,7 @@ a svg {
 }
 .taxi2 {
   position: relative;
-  background: url(../img/cvtaxi2.png);
+  background: url(../img/cvtaxi2.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -218,7 +218,7 @@ a svg {
 }
 .transportador {
   position: relative;
-  background: url(../img/cvtransportador.png);
+  background: url(../img/cvtransportador.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -229,7 +229,7 @@ a svg {
 }
 .independiente {
   position: relative;
-  background: url(../img/cvindependiente.png);
+  background: url(../img/cvindependiente.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -240,7 +240,7 @@ a svg {
 }
 .asalariado {
   position: relative;
-  background: url(../img/cvasalariado.png);
+  background: url(../img/cvasalariado.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -251,7 +251,7 @@ a svg {
 }
 .pensionado {
   position: relative;
-  background: url(../img/cvpensionado.png);
+  background: url(../img/cvpensionado.webp);
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
@@ -262,7 +262,7 @@ a svg {
 }
 .info {
   position: relative;
-  background: url(../img/cvinfo.png);
+  background: url(../img/cvinfo.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -410,7 +410,7 @@ a svg {
 }
 .data2text {
   position: relative;
-  background: url(../img/yocofinal.png);
+  background: url(../img/yocofinal.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 95%;
@@ -497,7 +497,7 @@ a svg {
 
   .caracteristicas {
     position: relative;
-    background: url(../img/cvcaracteristicasdesktop.png);
+    background: url(../img/cvcaracteristicasdesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -508,7 +508,7 @@ a svg {
   }
   .taxi {
     position: relative;
-    background: url(../img/cvtaxidesktop.png);
+    background: url(../img/cvtaxidesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -519,7 +519,7 @@ a svg {
   }
   .taxi2 {
     position: relative;
-    background: url(../img/cvtaxi2desktop.png);
+    background: url(../img/cvtaxi2desktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -530,7 +530,7 @@ a svg {
   }
   .transportador {
     position: relative;
-    background: url(../img/cvtransportadordesktop.png);
+    background: url(../img/cvtransportadordesktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -541,7 +541,7 @@ a svg {
   }
   .independiente {
     position: relative;
-    background: url(../img/cvindependientedesktop.png);
+    background: url(../img/cvindependientedesktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -552,7 +552,7 @@ a svg {
   }
   .asalariado {
     position: relative;
-    background: url(../img/cvasalariadodesktop.png);
+    background: url(../img/cvasalariadodesktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -563,7 +563,7 @@ a svg {
   }
   .pensionado {
     position: relative;
-    background: url(../img/cvpensionadodesktop.png);
+    background: url(../img/cvpensionadodesktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -574,7 +574,7 @@ a svg {
   }
   .info {
     position: relative;
-    background: url(../img/cvinfodesktop.png);
+    background: url(../img/cvinfodesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -709,7 +709,7 @@ a svg {
   }
   .data2text {
     position: relative;
-    background: url(../img/yocofinal.png);
+    background: url(../img/yocofinal.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 45%;

@@ -46,7 +46,7 @@ a {
 
 .cover-page {
   position: relative;
-  background: url(../img/portada-ahorro.jpg);
+  background: url(../img/portada-ahorro-test.webp);
   background-repeat: no-repeat;
   width: 100%;
   height: 535px;
@@ -324,7 +324,7 @@ a svg {
 
   @media (min-width: 600px) {  
     .cover-page {
-      background: url(../img/portada-ahorro-tablet.jpg);
+      background: url(../img/portada-ahorro-tablet.webp);
       background-repeat: no-repeat;
     }
 
@@ -454,7 +454,7 @@ a svg {
 
   .cover-page {
     position: relative;
-    background: url(../img/portada-ahorro-deskto.jpg);
+    background: url(../img/portada-ahorro-deskto.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 479px;

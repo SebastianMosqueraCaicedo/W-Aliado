@@ -243,7 +243,7 @@ class Footer extends HTMLElement {
             </div>
           </div>
           <div class="last-footer">
-          <img src="../icons/logoFull.png" alt="">
+          <img src="../icons/logoFull.webp" alt="">
           <p class="bancow">Copyright © 2023 Banco W</p>
         </div>
         </footer>

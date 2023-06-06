@@ -69,7 +69,7 @@ a {
 
 .cover-page {
     position: relative;
-    background: url(../img/portada-curso-ejemplo.jpg);
+    background: url(../img/portada-curso-ejemplo.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 501px;
@@ -710,7 +710,7 @@ h6 {
   @media (min-width: 600px) {  
 
     .cover-page {
-      background: url(../img/portada-curso-ejemplo-tablet.jpg);
+      background: url(../img/portada-curso-ejemplo-tablet.webp);
       background-repeat: no-repeat;
       height: 553px;
     }
@@ -998,7 +998,7 @@ h6 {
     
     .cover-page {
       position: relative;
-      background: url(../img/portada-curso-ejemplo-desktop.jpg);
+      background: url(../img/portada-curso-ejemplo-desktop.webp);
       background-repeat: no-repeat;
       width: 100%;
       height: 627px;
@@ -1420,7 +1420,7 @@ h6 {
   }
 
   .cover-page {
-    background: url(../img/portada-curso-ejemplo-desktop.jpg);
+    background: url(../img/portada-curso-ejemplo-desktop.webp);
   }
   
   .information {
