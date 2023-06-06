@@ -57,7 +57,7 @@ a {
 
 .cover-page {
     position: relative;
-    background: url(../img/portada-reclamar.jpg);
+    background: url(../img/portada-reclamar-jpg.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 402px;
@@ -401,7 +401,7 @@ a {
 @media (min-width: 600px) {  
 
   .cover-page {
-    background: url(../img/portada-reclamar-tablet.jpg);
+    background: url(../img/portada-reclamar-tablet.webp);
     background-repeat: no-repeat;
     height: 553px;
   }
@@ -623,7 +623,7 @@ a {
     
     .cover-page {
       position: relative;
-      background: url(../img/portada-reclamar-desktop.jpg);
+      background: url(../img/portada-reclamar-desktop.webp);
       background-repeat: no-repeat;
       width: 100%;
       height: 479px;
@@ -800,7 +800,7 @@ a {
   }
 
   .cover-page {
-    background: url(../img/portada-reclamar-desktop-large.jpg);
+    background: url(../img/portada-reclamar-desktop-large.webp);
   }
   
   .information {

@@ -184,7 +184,7 @@ a svg {
 }
 .text1 {
   position: relative;
-  background: url(../img/yococaracteristicas.png);
+  background: url(../img/yococaracteristicas.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -195,7 +195,7 @@ a svg {
 }
 .text2 {
   position: relative;
-  background: url(../img/yocorequisitos.png);
+  background: url(../img/yocorequisitos.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -206,7 +206,7 @@ a svg {
 }
 .apertura {
   position: relative;
-  background: url(../img/yocoapertura.png);
+  background: url(../img/yocoapertura.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -217,7 +217,7 @@ a svg {
 }
 .cancelacion {
   position: relative;
-  background: url(../img/yococancelacion.png);
+  background: url(../img/yococancelacion.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -365,7 +365,7 @@ a svg {
 }
 .data2text {
   position: relative;
-  background: url(../img/yocofinal.png);
+  background: url(../img/yocofinal.webp);
   background-repeat: no-repeat;
   background-size: cover;
   width: 95%;
@@ -448,7 +448,7 @@ a svg {
 
   .text1 {
     position: relative;
-    background: url(../img/yococardesktop.png);
+    background: url(../img/yococardesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -459,7 +459,7 @@ a svg {
   }
   .text2 {
     position: relative;
-    background: url(../img/yocoreqdesktop.png);
+    background: url(../img/yocoreqdesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -470,7 +470,7 @@ a svg {
   }
   .apertura {
     position: relative;
-    background: url(../img/yocoapdesktop.png);
+    background: url(../img/yocoapdesktop.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 98%;
@@ -481,7 +481,7 @@ a svg {
   }
   .cancelacion {
     position: relative;
-    background: url(../img/yococandesktop.png);
+    background: url(../img/yococandesktop.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -617,7 +617,7 @@ a svg {
   }
   .data2text {
     position: relative;
-    background: url(../img/yocofinal.png);
+    background: url(../img/yocofinal.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 45%;
@@ -642,7 +642,7 @@ a svg {
 
   @media (max-width: 1024px) {
     .cover-page {
-      background: url(../img/microcredito.png);
+      background: url(../img/microcredito.webp);
       background-repeat: no-repeat;
     }
 

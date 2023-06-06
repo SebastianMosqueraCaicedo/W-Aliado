@@ -56,7 +56,7 @@ a{
 
 .cover-page {
     position: relative;
-    background: url(/img/portada-refiere.jpg);
+    background: url(/img/portada-refiere.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 633px;
@@ -431,7 +431,7 @@ h3 {
   
   .cover-page {
     position: relative;
-    background: url(/img/portada-refiere-desktop.jpg);
+    background: url(/img/portada-refiere-desktop.webp);
     background-repeat: no-repeat;
     width: 100%;
     height: 537px;

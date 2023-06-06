@@ -148,7 +148,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
@@ -170,7 +170,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
@@ -191,7 +191,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
@@ -213,7 +213,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding: 1%;
   padding-left: 6%;
   padding-right: 6%;
@@ -392,7 +392,7 @@ a:active {
 }
 
 .subscription-section {
-  background-image: url("./img/subscribe000.png");
+  background-image: url("./img/subscribe000.webp");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -452,6 +452,19 @@ a:active {
     margin-bottom: 10px;
   }
 }
+.button1:hover {
+  background-color: #f5f5f5; /* Change the color to whatever you prefer */
+  transform: scale(1.1); /* This will enlarge the button a bit when hovered */
+  transition: all 0.3s ease; /* This will animate the transformation */
+  cursor: pointer;
+}
+
+.button1 {
+  display: inline-block;
+  text-decoration: none; /* This removes the underline */
+  transition: all 0.3s ease; /* This ensures the button shrinks back smoothly */
+}
+
 /* /////////////////////////// Estilos para la sección de recomendaciones en pantallas md ///////////////////////////  */
 /* Media query para pantallas con ancho mínimo de 640px */
 @media screen and (min-width: 641px) and (max-width: 1007px) {
@@ -496,7 +509,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
@@ -511,6 +524,18 @@ a:active {
     font-family: "Bariol Regular";
     font-size: 20px;
   }
+  .button1:hover {
+    background-color: #f5f5f5; /* Change the color to whatever you prefer */
+    transform: scale(1.1); /* This will enlarge the button a bit when hovered */
+    transition: all 0.3s ease; /* This will animate the transformation */
+    cursor: pointer;
+  }
+
+  .button1 {
+    display: inline-block;
+    text-decoration: none; /* This removes the underline */
+    transition: all 0.3s ease; /* This ensures the button shrinks back smoothly */
+  }
 
   .hero-options-middle {
     height: 100px;
@@ -518,7 +543,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
@@ -539,7 +564,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
@@ -561,7 +586,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
@@ -637,7 +662,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
@@ -659,7 +684,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
@@ -680,7 +705,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
@@ -701,7 +726,7 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1%;
     padding-left: 6%;
     padding-right: 6%;
