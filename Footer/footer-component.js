@@ -41,7 +41,7 @@ class Footer extends HTMLElement {
       }
 
       .footer-button {
-        font-family: "Geomanist";
+        font-family: "Geomanist", sans-serif;
         font-weight: 700;
         display: flex;
         align-items: center;
@@ -249,39 +249,44 @@ class Footer extends HTMLElement {
         </footer>
       `;
 
-      //Footer
+    //Footer
 
-    var dropdownButtonFooter = this.shadowRoot.getElementById('dropdown-button-footer');
-    var dropdownFooter = this.shadowRoot.getElementById('dropdown-footer');
+    var dropdownButtonFooter = this.shadowRoot.getElementById(
+      "dropdown-button-footer"
+    );
+    var dropdownFooter = this.shadowRoot.getElementById("dropdown-footer");
 
-    dropdownButtonFooter.addEventListener('click', function() {
-      dropdownFooter.classList.toggle('vision');
+    dropdownButtonFooter.addEventListener("click", function () {
+      dropdownFooter.classList.toggle("vision");
     });
 
-    var dropdownButtonFooter2 = this.shadowRoot.getElementById('dropdown-button-footer2');
-    var dropdownFooter2 = this.shadowRoot.getElementById('dropdown-footer2');
+    var dropdownButtonFooter2 = this.shadowRoot.getElementById(
+      "dropdown-button-footer2"
+    );
+    var dropdownFooter2 = this.shadowRoot.getElementById("dropdown-footer2");
 
-    dropdownButtonFooter2.addEventListener('click', function() {
-      dropdownFooter2.classList.toggle('vision');
+    dropdownButtonFooter2.addEventListener("click", function () {
+      dropdownFooter2.classList.toggle("vision");
     });
 
-    var dropdownButtonFooter3 = this.shadowRoot.getElementById('dropdown-button-footer3');
-    var dropdownFooter3 = this.shadowRoot.getElementById('dropdown-footer3');
+    var dropdownButtonFooter3 = this.shadowRoot.getElementById(
+      "dropdown-button-footer3"
+    );
+    var dropdownFooter3 = this.shadowRoot.getElementById("dropdown-footer3");
 
-    dropdownButtonFooter3.addEventListener('click', function() {
-      dropdownFooter3.classList.toggle('vision');
+    dropdownButtonFooter3.addEventListener("click", function () {
+      dropdownFooter3.classList.toggle("vision");
     });
 
-    var dropdownButtonFooter4 = this.shadowRoot.getElementById('dropdown-button-footer4');
-    var dropdownFooter4 = this.shadowRoot.getElementById('dropdown-footer4');
+    var dropdownButtonFooter4 = this.shadowRoot.getElementById(
+      "dropdown-button-footer4"
+    );
+    var dropdownFooter4 = this.shadowRoot.getElementById("dropdown-footer4");
 
-    dropdownButtonFooter4.addEventListener('click', function() {
-      dropdownFooter4.classList.toggle('vision');
+    dropdownButtonFooter4.addEventListener("click", function () {
+      dropdownFooter4.classList.toggle("vision");
     });
-
-
   }
 }
 
 customElements.define("custom-footer", Footer);
-

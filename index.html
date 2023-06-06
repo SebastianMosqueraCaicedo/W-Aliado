@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <link rel="icon" type="image/x-icon" href="/img/logoW.png">
   <title>Banco W | W Aliado</title>
   <!-- <style>
@@ -60,10 +60,10 @@
     <div class="swiper-pagination"></div>
   </div> -->
   <div class="hero">
-    <img src="img/hero-mobile.png" alt="Imagen del hero" class="hero-image">
+    <img src="img/landingmobilefinal.png" alt="Imagen del hero" class="hero-image">
   </div>
   <div class="hero2">
-    <img src="img/hero2.png" alt="Imagen del hero" class="hero-image">
+    <img src="img/landingfinal.png" alt="Imagen del hero" class="hero-image">
   </div>
   <div class="hero-3-buttons">
 
@@ -78,19 +78,19 @@
         <img class="button-image" src="icons/blog.svg" alt="Blog">
         Blog
       </button>
-      <a />
-      <a href="/Comparador-inversion/comparador-inversion.html" class="button1">
-        <button class="hero-options-middle2">
-          <img class="button-image" src="../img/comparador.svg" alt="Blog">
-          Comparador financiero
-        </button>
-        <a />
-        <a href="../Simuladores-VTU/vtu.html" class="button1">
-          <button class="hero-options-last">
-            <img class="button-image" src="../icons/calculator.svg" alt="Simulador financiero">
-            Simulador financiero
-          </button>
-          <a />
+    </a>
+    <a href="/Comparador-inversion/comparador-inversion.html" class="button1">
+      <button class="hero-options-middle2">
+        <img class="button-image" src="../img/comparador.svg" alt="Blog">
+        Comparador financiero
+      </button>
+    </a>
+    <a href="../Simuladores-VTU/vtu.html" class="button1">
+      <button class="hero-options-last">
+        <img class="button-image" src="../icons/calculator.svg" alt="Simulador financiero">
+        Simulador financiero
+      </button>
+    </a>
   </div>
   <div class="recomendaciones">
     <h3>Recomendaciones</h3>
@@ -106,33 +106,36 @@
     <div class="slider">
       <div class="slider-track">
         <div class="card">
-          <img class="card-image" src="img/gastos.svg" alt="Imagen 1">
+          <img class="card-image" src="/img/gastos.svg" alt="Imagen 1">
           <div class="card-content">
             <h4 class="card-title">Gastos emocionales
             </h4>
             <p class="card-text">Implementar algunas acciones sencillas para reconocer el gasto emocional puede ayudar a
               que sea más fácil ajustarte a tu presupuesto.</p>
+            <!-- <button class="card-button">Ver más videos <span>&rarr;</span></button> -->
           </div>
         </div>
         <div class="card">
-          <img class="card-image" src="img/ponle.svg" alt="Imagen 2">
+          <img class="card-image" src="/img/ponle.svg" alt="Imagen 2">
           <div class="card-content">
             <h4 class="card-title">Ponle alas a tu negocio
             </h4>
             <p class="card-text">Hace algunos años escuchábamos hablar del correo de brujas, o sabíamos de la vecina
               azafata que en sus viajes traía perfumes o ropa para vender; vimos como muchos amigos y …
               .</p>
-            <a class="boton-noticia" href="/Blog-noticia/noticia.html">
+            <!-- <a class="boton-noticia" href="/Blog-noticia/noticia.html"> -->
+            <!-- <button class="card-button">Ver más artículos<span>&rarr;</span></button> -->
             </a>
           </div>
         </div>
         <div class="card">
-          <img class="card-image" src="img/programa.svg" alt="Imagen 3">
+          <img class="card-image" src="/img/programa.svg" alt="Imagen 3">
           <div class="card-content">
             <h4 class="card-title">Programa de Apoyo al Empleo Formal (PAEF)
             </h4>
             <p class="card-text">Si eres un empleador podrás recibir un beneficio monetario mensual
               .</p>
+            <!-- <button class="card-button">Ver más documentos<span>&rarr;</span></button> -->
           </div>
         </div>
       </div>
@@ -159,30 +162,7 @@
   <script src="/Boton-Test/boton-ayuda-component.js"></script>
   <script type="module" src="../Footer/footer-component.js"></script>
   <script src="landing.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      direction: "vertical",
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
-    window.onload = function () {
-      adjustSwiperSize();
 
-      window.addEventListener("resize", adjustSwiperSize);
-    };
-
-    function adjustSwiperSize() {
-      let swiper = document.querySelector(".mySwiper");
-      let img = swiper.querySelector(".swiper-slide:first-child img");
-
-      swiper.style.height = `${img.offsetHeight}px`;
-      swiper.style.width = `${img.offsetWidth}px`;
-    }
-
-  </script>
 </body>
 
 </html>
