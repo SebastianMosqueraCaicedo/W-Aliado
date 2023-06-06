@@ -114,11 +114,11 @@
 @media screen and (max-width: 1008px){
 
 	.hero2 img{
-		content: url(/img/fondo-PQRS-mobi.webp);
+		content: url(/img/fondo-PQRS-mobi.png);
 	}
 
 	.ejemplo-output img{
-		content: url(/img/pqrs-segundo-mobi.webp);
+		content: url(/img/pqrs-segundo-mobi.png);
 		width: 90%;
 	}
 	/* status */

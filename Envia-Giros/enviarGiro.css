@@ -57,7 +57,7 @@ a {
 
 .cover-page {
     position: relative;
-    background: url(../img/portada-enviar-giro.webp);
+    background: url(../img/portada-enviar-giro.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 427px;
@@ -306,7 +306,7 @@ a {
 @media (min-width: 600px) {  
 
   .cover-page {
-    background: url(../img/portada-enviar-giro-tablet.webp);
+    background: url(../img/portada-enviar-giro-tablet.jpg);
     background-repeat: no-repeat;
   }
 
@@ -489,7 +489,7 @@ a {
   
   .cover-page {
     position: relative;
-    background: url(../img/portada-enviarGiro-desktop.webp);
+    background: url(../img/portada-enviarGiro-desktop.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 479px;
@@ -624,7 +624,7 @@ a {
   }
 
   .cover-page {
-    background: url(../img/portada-enviarGiro-desktop2.webp);
+    background: url(../img/portada-enviarGiro-desktop2.jpg);
   }
   
   .information {

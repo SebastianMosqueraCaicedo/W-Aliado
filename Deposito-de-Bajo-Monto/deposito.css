@@ -61,7 +61,7 @@ custom-footer {
 
 .cover-page {
     position: relative;
-    background: url(../img/portada-deposito-jpg.webp);
+    background: url(../img/portada-deposito.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 553px;
@@ -314,7 +314,7 @@ custom-footer {
 @media (min-width: 600px) {  
 
   .cover-page {
-    background: url(../img/portada-deposito-tablet.webp);
+    background: url(../img/portada-deposito-tablet.jpg);
     background-repeat: no-repeat;
   }
 
@@ -503,7 +503,7 @@ custom-footer {
   
   .cover-page {
     position: relative;
-    background: url(../img/portada-deposito-desktop.webp);
+    background: url(../img/portada-deposito-desktop.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 479px;
@@ -647,7 +647,7 @@ custom-footer {
   }
 
   .cover-page {
-    background: url(../img/portada-deposito-desktop-large.webp);
+    background: url(../img/portada-deposito-desktop-large.jpg);
   }
   
   .information {

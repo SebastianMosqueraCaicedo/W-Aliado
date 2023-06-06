@@ -63,7 +63,7 @@ a{
 
 .cover-page {
     position: relative;
-    background: url(/img/portada-huella-jpg.webp);
+    background: url(/img/portada-huella.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 633px;
@@ -239,7 +239,7 @@ button:hover {
   
   .cover-page {
     position: relative;
-    background: url(/img/portada-huella-jpg.webp);
+    background: url(/img/portada-huella.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 634px;

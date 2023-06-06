@@ -56,7 +56,7 @@ a {
 
 .cover-page {
   position: relative;
-  background: url(../img/portada-ahorro-cuenta.webp);
+  background: url(../img/portada-ahorro-cuenta.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 481px;
@@ -297,7 +297,7 @@ a {
 
 
   .cover-page {
-    background: url(../img/portada-ahorro-cuenta-tablet.webp);
+    background: url(../img/portada-ahorro-cuenta-tablet.jpg);
     background-repeat: no-repeat;
   }
 
@@ -456,7 +456,7 @@ a {
   
   .cover-page {
     position: relative;
-    background: url(../img/portada-ahorro-cuenta-desktop2.webp);
+    background: url(../img/portada-ahorro-cuenta-desktop2.jpg);
     background-repeat: no-repeat;
     width: 100%;
     height: 479px;

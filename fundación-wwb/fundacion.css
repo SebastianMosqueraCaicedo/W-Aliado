@@ -64,7 +64,7 @@ a {
 
 .cover-page {
   position: relative;
-  background: url(/img/portada-fundacion.webp);
+  background: url(/img/portada-fundacion.jpg);
   background-repeat: no-repeat;
   width: 100%;
   height: 633px;
@@ -155,7 +155,7 @@ li {
 
   .cover-page {
     position: relative;
-    background: url(/img/portada-fundacion-wwb.webp);
+    background: url(/img/portada-fundacion-wwb.png);
     background-repeat: no-repeat;
     width: 100%;
     height: 479px;
