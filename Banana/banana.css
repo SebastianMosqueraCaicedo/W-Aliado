@@ -472,14 +472,25 @@
 	}
 	
 	.tut-com-xtra img {
-		width: 20%;
+		width: 10%;
 	}
 	
 	.tut-com-head img {
-		width: 10%;	
+		width: 6%;	
 	}
 	
 	.tut-com-head div img {
-		width: 50%;
+		width: 40%;
 	}
+}
+.tut-com-xtra img {
+	width: 20%;
+}
+
+.tut-com-head img {
+	width: 10%;	
+}
+	
+.tut-com-head div img {
+	width: 50%;
 }
